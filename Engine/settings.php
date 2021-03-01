@@ -22,6 +22,6 @@ else{
 }
 $styleName = $themeFiles[0];
 if ($styleName != $style){
-    rename('Theme/'.$styleName,'Theme/'.$style);
+    rename('theme/'.$styleName,'theme/'.$style);
     $styleName = $style;
 }

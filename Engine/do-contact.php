@@ -3,7 +3,7 @@ $path = "../";
 $title = "تماس با ما | استیم فارسی";
 include 'settings.php';
 include 'functions.php';
-include '../Theme/header.php';
+include '../theme/header.php';
 // get values from html
 $name = $_POST['name'];
 $subject = $_POST['subject'];
@@ -25,5 +25,5 @@ $alert = alert("درخواست شما با موفقیت ثبت شد!!!","پس ا
 </body>
 </html>
 <?php
-include '../Theme/footer.php';
+include '../theme/footer.php';
 ?>
