@@ -17,7 +17,7 @@ include $settings;
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.rtl.min.css" integrity="sha384-4dNpRvNX0c/TdYEbYup8qbjvjaMrgUPh+g4I03CnNtANuv+VAvPL6LqdwzZKV38G" crossorigin="anonymous">
-    <link rel="icon" href='<?php if (isset($path)) echo $path ?>Images/steam-icon.png' type="images/png" sizes="16*16">
+    <link rel="icon" href='<?php if (isset($path)) echo $path ?>images/steam-icon.png' type="images/png" sizes="16*16">
     <link rel="stylesheet" href="<?php if (isset($path)) echo $path; ?>theme/<?php echo $style; ?>">
     <link rel="stylesheet" href="<?php if (isset($path)) echo $path; ?>theme/responsive.css">
     <title><?php if (isset($title)) echo $title; else echo "استیم فارسی | عنوان ندارد"; ?></title>
