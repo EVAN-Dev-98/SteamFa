@@ -1,25 +1,50 @@
-<footer class="container-fluid bg-steamfa2 text-center text-light fixed-bottom">
-    <section class="container p-4">
-        <section class="row">
-            <section class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h3>ستون اول</h3>
-                <p>متن ستون اول</p>
-            </section>
-            <section class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h3>ستون دوم</h3>
-                <p>متن ستون دوم</p>
-            </section>
-            <section class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                <h3>ستون سوم</h3>
-                <p>متن ستون سوم</p>
-            </section>
-            <section class="container p-2 bg-steamfa1">
-                <p>By EVAN ( SAJAD GHOLAMI )</p>
-            </section>
-        </section>
-    </section>
+<footer>
+   <section class="main-footer">
+      <section class="col">
+         <h4>درباره ما</h4>
+         <p>فروشگاه استیم فارسی - ما در این فروشگاه امکان خرید و فروش آیتم های استیم را فراهم کرده ایم، شما میتوانید آیتم های خود را به قیمت روز به ما بفروشید و مبلغ آنرا دریافت کرده و یا آیتم دیگری در فروشگاه انتخاب کنید، در استیم فارسی امکان شارژ استیم ولت شما به میزان دلخواه شما نیز وجود دارد.
+         </p>
+      </section>
+      <section class="col">
+         <h4>ما را دنبال کنید</h4>
+         <ul>
+            <li><a href="https://www.instagram.com/evan_ir_official/" target="_follow"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://t.me/ASCII_83_71_72" target="_follow"><i class="fab fa-telegram-plane"></i></a></li>
+            <li><a href="" target="_follow"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="" target="_follow"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="" target="_follow"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="" target="_follow"><i class="fab fa-google-plus-g"></i></a></li>
+         </ul>
+      </section>
+      <section class="col">
+         <h4>جست و جو</h4>
+         <li><input id="footer_search" class="search" type="text" name="search" value="" placeholder="دنبال چی میگردی ؟" onfocus="this.placeholder=''" onblur="this.placeholder='دنبال چی میگردی ؟'"></li>
+         <h4>عضویت در خبرنامه</h4>
+         <span id="nlicon" class="nl-icon"><i class="fas fa-envelope"></i></span>
+         <input id="nl" class="nl" type="text" name="nl" value="" placeholder="ایمیل خود را وارد کنید." onfocus="focused(this)" onblur="unfocused(this)">
+         <a id="nlbtn" class="nl-btn" href="">تایید</a>
+         <script>
+            var nlicon = document.getElementById("nlicon");
+            var nl = document.getElementById("nl");
+            var nlbtn = document.getElementById("nlbtn");
+            function focused(f){
+               f.classList.add("focused");
+               nlicon.classList.add("focused");
+               nlbtn.classList.add("focused");
+               f.placeholder = '';
+            }
+            function unfocused(uf){
+               uf.classList.remove("focused");
+               nlicon.classList.remove("focused");
+               nlbtn.classList.remove("focused");
+               uf.placeholder = 'ایمیل خود را وارد کنید.';
+            }
+         </script>
+      </section>
+      <section class="info" role="contentinfo">
+         <p>Made By Evan With ♥ | Version : <?php echo $SiteVersion; ?></p>
+      </section>
+   </section>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
 </body>
 </html>

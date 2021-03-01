@@ -1,7 +1,7 @@
 <?php
-$title = "تماس با ما | استیم فارسی";
+$title = "درباره ما | استیم فارسی";
 include 'theme/header.php';
 include 'theme/showcase.php';
-include 'theme/contact.php';
+include 'theme/about.php';
 include 'theme/footer.php';
 ?>

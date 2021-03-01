@@ -4,31 +4,26 @@ $title = "تماس با ما | استیم فارسی";
 include 'settings.php';
 include 'functions.php';
 include '../Theme/header.php';
-include '../Theme/footer.php';
 // get values from html
-$subject = $_POST['title'];
+$name = $_POST['name'];
+$subject = $_POST['subject'];
 $email = $_POST['email'];
-$desc = $_POST['description'];
+$desc = $_POST['message'];
 
-$dbc = new mysqli(DBHOST,DBUSER,DBPASS,DBNAME);
+$query = "INSERT INTO contact (name , subject , email , description) VALUES ('{$name}' ,'{$subject}' , '{$email}' , '{$desc}')";
 
-if ($dbc->connect_errno){
-    echo $dbc->connect_error;
-    exit();
-}
+$db = new DB();
+$db->Execute($query);
 
-$dbc->set_charset('utf8mb4');
-
-$query = "INSERT INTO contact (title , email , description) VALUES ('{$subject}' , '{$email}' , '{$desc}')";
-
-$result = $dbc->query($query);
-
-$dbc->close();
 
 $alert = alert("درخواست شما با موفقیت ثبت شد!!!","پس از بررسی پاسخ به ایمیل شما ارسال خواهد شد.","success");
 ?>
 <html lang="fa">
 <body>
+<section style="margin-top: 150px"></section>
     <?php if (isset($alert)) echo $alert; ?>
 </body>
 </html>
+<?php
+include '../Theme/footer.php';
+?>

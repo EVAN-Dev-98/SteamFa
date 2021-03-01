@@ -1,5 +1,7 @@
 <?php
 $title = "صفحه اصلی | استیم فارسی";
-include 'Theme/header.php';
-include 'Theme/footer.php';
+include 'theme/header.php';
+include 'theme/showcase.php';
+include 'theme/footer.php';
 ?>
+
