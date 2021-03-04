@@ -33,3 +33,5 @@ if ($responsiveName != $responsive){
     rename('theme/'.$responsiveName,'theme/'.$responsive);
     $responsiveName = $responsive;
 }
+
+$SoftSetup = true;
