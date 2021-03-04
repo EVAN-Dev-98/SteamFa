@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- change version to 3.5">
+    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Engine/do-contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/do-contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/setup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/information/DB.php" beforeDir="false" afterPath="$PROJECT_DIR$/information/DB.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/information/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/information/settings.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/showcase.php" beforeDir="false" afterPath="$PROJECT_DIR$/theme/showcase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/information/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/information/functions.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +59,7 @@
       <workItem from="1614668836857" duration="1350000" />
       <workItem from="1614714592822" duration="647000" />
       <workItem from="1614803995602" duration="740000" />
-      <workItem from="1614827145979" duration="8850000" />
+      <workItem from="1614827145979" duration="9613000" />
     </task>
     <task id="LOCAL-00001" summary="- change directions">
       <created>1614875491541</created>
@@ -106,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614885739264</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="done">
+      <created>1614890453020</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1614890453020</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +122,7 @@
     <MESSAGE value="- redirect to homepage" />
     <MESSAGE value="- a bit changes&#10;have fun&#10;bigs latter haha" />
     <MESSAGE value="- change version to 3.5" />
-    <option name="LAST_COMMIT_MESSAGE" value="- change version to 3.5" />
+    <MESSAGE value="done" />
+    <option name="LAST_COMMIT_MESSAGE" value="done" />
   </component>
 </project>

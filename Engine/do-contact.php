@@ -1,12 +1,11 @@
 <?php
-/* Created By Evan ( Sajad Gholami ) */
 
 $path = "../";
 $title = "تماس با ما | استیم فارسی";
 include '../information/settings.php';
 include '../information/functions.php';
 include '../theme/header.php';
-include '../theme/showcase.php';
+
 // get values from html
 if (isset($_POST['submit'])){
     $name = $_POST['name'];
@@ -25,6 +24,8 @@ if (isset($_POST['submit'])){
 else{
     redirect($path);
 }
+
+include '../theme/showcase.php';
 ?>
 <html lang="fa">
 <body>

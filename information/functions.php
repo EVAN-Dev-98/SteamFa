@@ -13,7 +13,7 @@ if (!function_exists('alert')) {
 }
 if (!function_exists('redirect')){
     function redirect ($address){
-        header("Location: {$address}");
+        header("location:{$address}");
         exit();
     }
 }
