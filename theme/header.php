@@ -6,7 +6,7 @@ if (isset($path)){
 else{
     $settings = 'information/settings.php';
 }
-include '../information/settings.php';
+include $settings;
 ?>
 <!DOCTYPE html>
 <html lang="fa">
