@@ -20,7 +20,7 @@ if (isset($_POST['submit'])){
     $alert = alert("درخواست شما با موفقیت ثبت شد!!!","پس از بررسی پاسخ به ایمیل شما ارسال خواهد شد.","success");
 }
 else{
-    $alert = alert("به صفحه اصلی وبسایت منتقل شوید!","<a href='../index.php'>صفحه اصلی</a>","warning");
+    redirect('../');
 }
 ?>
 <html lang="fa">
