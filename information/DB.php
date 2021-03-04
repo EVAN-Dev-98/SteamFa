@@ -2,9 +2,11 @@
 if (!class_exists('DB')){
     class DB{
         var $dbc;
-        function __construct(){
+        function __construct($Soft = true){
             $this->Connect();
-            $this->SelectDB();
+            if ($Soft){
+                $this->SelectDB();
+            }
             $this->dbc->set_charset(CHARSET);
         }
         function Connect(){
