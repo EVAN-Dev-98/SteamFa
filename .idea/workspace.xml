@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/DB.php" beforeDir="false" afterPath="$PROJECT_DIR$/information/DB.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Engine/do-contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/do-contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/information/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/information/settings.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/theme/header.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,11 +54,23 @@
       <workItem from="1614668836857" duration="1350000" />
       <workItem from="1614714592822" duration="647000" />
       <workItem from="1614803995602" duration="740000" />
-      <workItem from="1614827145979" duration="1671000" />
+      <workItem from="1614827145979" duration="1773000" />
     </task>
+    <task id="LOCAL-00001" summary="- change directions">
+      <created>1614875491541</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1614875491541</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="- change directions" />
+    <option name="LAST_COMMIT_MESSAGE" value="- change directions" />
   </component>
 </project>

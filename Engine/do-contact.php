@@ -5,7 +5,7 @@ include '../information/settings.php';
 include '../information/functions.php';
 include '../theme/header.php';
 // get values from html
-if (1 == 2){
+if (isset($_POST['submit'])){
     $name = $_POST['name'];
     $subject = $_POST['subject'];
     $email = $_POST['email'];
