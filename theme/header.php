@@ -1,5 +1,4 @@
 <?php
-/* Created By Evan ( Sajad Gholami ) */
 if (isset($path)){
     $settings = $path.'information/settings.php';
 }

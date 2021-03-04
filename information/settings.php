@@ -1,4 +1,6 @@
 <?php
+/* Created By Evan ( Sajad Gholami ) */
+
 if (! defined('DBHOST') ) define('DBHOST','localhost');
 if (! defined('DBUSER') ) define('DBUSER','root');
 if (! defined('DBPASS') ) define('DBPASS','');
@@ -10,7 +12,7 @@ $dbPass = DBPASS;
 $dbName = DBNAME;
 $dbCharset = CHARSET;
 
-$SiteVersion = 3.4;
+$SiteVersion = 3.5;
 
 $style = "styles-V".$SiteVersion.".css";
 $responsive = "responsive-V".$SiteVersion.".css";

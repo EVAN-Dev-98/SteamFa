@@ -1,4 +1,6 @@
 <?php
+/* Created By Evan ( Sajad Gholami ) */
+
 $path = "../";
 $title = "تماس با ما | استیم فارسی";
 include '../information/settings.php';
