@@ -1,12 +1,12 @@
 <?php
 /* Created By Evan ( Sajad Gholami ) */
 if (isset($path)){
-    $settings = $path.'Engine/settings.php';
+    $settings = $path.'information/settings.php';
 }
 else{
-    $settings = 'Engine/settings.php';
+    $settings = 'information/settings.php';
 }
-include $settings;
+include '../information/settings.php';
 ?>
 <!DOCTYPE html>
 <html lang="fa">

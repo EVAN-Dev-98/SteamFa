@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/DB.php" beforeDir="false" afterPath="$PROJECT_DIR$/information/DB.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/do-contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/do-contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/information/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/information/settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/theme/header.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +33,11 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\GitHub\SteamFa\information" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
@@ -42,7 +52,13 @@
       <workItem from="1614632437811" duration="896000" />
       <workItem from="1614633381397" duration="68000" />
       <workItem from="1614633949268" duration="515000" />
-      <workItem from="1614634737623" duration="64000" />
+      <workItem from="1614634737623" duration="132000" />
+      <workItem from="1614635037638" duration="422000" />
+      <workItem from="1614635741917" duration="13000" />
+      <workItem from="1614668836857" duration="1350000" />
+      <workItem from="1614714592822" duration="647000" />
+      <workItem from="1614803995602" duration="740000" />
+      <workItem from="1614827145979" duration="1671000" />
     </task>
     <servers />
   </component>
