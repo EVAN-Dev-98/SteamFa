@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Engine/do-add.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Manager/AddProduct.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/panel-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/theme/PanelAddProduct.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/theme/PanelSidebar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/theme/responsive-V3.7.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/theme/styles-V3.7.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Manager/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Manager/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/information/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/information/settings.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/AdminFooter.php" beforeDir="false" afterPath="$PROJECT_DIR$/theme/PanelFooter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/AdminHeader.php" beforeDir="false" afterPath="$PROJECT_DIR$/theme/PanelHeader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/theme/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/responsive-V3.5.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/styles-V3.5.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/do-add.php" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/do-add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/PanelAddProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/theme/PanelAddProduct.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +62,7 @@
       <workItem from="1614827145979" duration="9613000" />
       <workItem from="1616440129514" duration="12000" />
       <workItem from="1616488498778" duration="1204000" />
-      <workItem from="1616518042777" duration="7871000" />
+      <workItem from="1616518042777" duration="9009000" />
     </task>
     <task id="LOCAL-00001" summary="- change directions">
       <created>1614875491541</created>
@@ -139,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616489710016</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="- add product html ok">
+      <created>1616529312151</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1616529312151</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +149,7 @@
     <MESSAGE value="done" />
     <MESSAGE value="- add Manager panel" />
     <MESSAGE value="- add admin footer" />
-    <option name="LAST_COMMIT_MESSAGE" value="- add admin footer" />
+    <MESSAGE value="- add product html ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="- add product html ok" />
   </component>
 </project>
