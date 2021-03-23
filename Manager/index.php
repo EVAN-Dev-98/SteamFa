@@ -4,3 +4,4 @@
 $path = '../';
 $title = "پنل مدیریت | صفحه اصلی";
 include $path.'theme/AdminHeader.php';
+include $path.'theme/AdminFooter.php';
