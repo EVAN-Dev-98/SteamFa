@@ -63,7 +63,7 @@ include $settings;
         </nav>
         <nav class="left">
            <ul>
-              <li class="account"><a href="<?php if (isset($path)) echo $path; ?>Manager/" target="_steamfa">حساب کاربری</a></li>
+              <li class="account"><a href="<?php if (isset($path)) echo $path; ?>Manager/" target="_steamfapanel">حساب کاربری</a></li>
               <li class="search"><input class="search-input" type="text" name="search" value="" placeholder="دنبال چی میگردی ؟" onfocus="this.placeholder=''" onblur="this.placeholder='دنبال چی میگردی ؟'"></li>
               <li class="search-icon"><a href="#footer_search"></a></li>
            </ul>
