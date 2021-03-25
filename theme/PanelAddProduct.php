@@ -48,6 +48,10 @@
                 </select>
             </section>
             <section class="mb-3">
+                <label for="number" class="form-label">تعداد : </label>
+                <input class="form-control" type="number" min="0" step="1" name="number" id="number">
+            </section>
+            <section class="mb-3">
                 <label for="img" class="form-label">تصویر : </label>
                 <input class="form-control" type="file" name="img" id="img">
             </section>
