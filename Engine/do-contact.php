@@ -26,12 +26,7 @@ else{
 }
 
 include '../theme/showcase.php';
-?>
-<html lang="fa">
-<body>
-    <?php if (isset($alert)) echo $alert; ?>
-</body>
-</html>
-<?php
+
+if (isset($alert)) echo $alert;
+
 include '../theme/footer.php';
-?>

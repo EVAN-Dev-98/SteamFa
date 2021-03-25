@@ -55,7 +55,7 @@
                 <label for="img" class="form-label">تصویر : </label>
                 <input class="form-control" type="file" name="img" id="img">
             </section>
-            <input type="submit" value="افزودن" class="btn btn-primary">
+            <input type="submit" name="submit" value="افزودن" class="btn btn-primary">
         </form>
     </main>
 </section>

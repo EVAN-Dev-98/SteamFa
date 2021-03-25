@@ -14,23 +14,25 @@ if (isset($_POST['submit'])){
     $type = $_POST['type'];
     $quality = $_POST['quality'];
     $number = $_POST['number'];
-    $img = /* $_POST['img']; */ $path . 'images/ak-47-bloodsport.png';
+    $img = /* $_POST['img']; */ 'images/ak-47-bloodsport.png';
 
     $query = "INSERT INTO product (name , game , type , quality , number , img) VALUES ('{$name}' ,'{$game}' , '{$type}' , '{$quality}' , '{$number}', '{$img}')";
 
     $db = new DB();
     $db->Execute($query);
 
-
-    $alert = alert("محصول مورد نظر با موفقیت افزوده شد!!!","<a href='../'>باگشت به صفحه اصلی</a>","success");
+    $panel_location = $path . 'Manager/';
+    $alert = alert("محصول مورد نظر با موفقیت افزوده شد!!!","<a href='$panel_location'>باگشت به صفحه اصلی پنل مدیریت</a>","success");
 }
 else{
     redirect($path);
 }
-
 ?>
-    <html lang="fa">
-    <body>
-    <?php if (isset($alert)) echo $alert; ?>
-    </body>
-    </html>
+<section class="panel">
+    <header>
+        <h2>افزودن محصول</h2>
+    </header>
+    <main>
+        <?php if (isset($alert)) echo $alert; ?>
+    </main>
+</section>

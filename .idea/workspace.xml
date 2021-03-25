@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="">
+    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- add product php ok&#10;- bug fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Engine/do-add.php" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/do-add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/do-contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/do-contact.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/theme/PanelAddProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/theme/PanelAddProduct.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +64,7 @@
       <workItem from="1616440129514" duration="12000" />
       <workItem from="1616488498778" duration="1204000" />
       <workItem from="1616518042777" duration="10289000" />
-      <workItem from="1616698833566" duration="2980000" />
+      <workItem from="1616698833566" duration="4141000" />
     </task>
     <task id="LOCAL-00001" summary="- change directions">
       <created>1614875491541</created>
@@ -149,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616532064635</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="- add product php ok">
+      <created>1616701959132</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1616701959132</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +175,7 @@
     <MESSAGE value="- add product html ok" />
     <MESSAGE value="- add product html ok fixed" />
     <MESSAGE value="- add product html ok fixed css fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="- add product html ok fixed css fixed" />
+    <MESSAGE value="- add product php ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="- add product php ok" />
   </component>
 </project>
