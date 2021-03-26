@@ -15,7 +15,7 @@ $dbName = DBNAME;
 $dbCharset = CHARSET;
 $dbCollate = COLLATE;
 
-$SiteVersion = 3.8;
+$SiteVersion = 3.9;
 
 $style = "styles-V".$SiteVersion.".css";
 $responsive = "responsive-V".$SiteVersion.".css";

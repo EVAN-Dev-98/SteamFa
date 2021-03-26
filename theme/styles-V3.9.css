@@ -989,3 +989,6 @@ footer .main-footer .info p {
 .panel main{
      padding: 10px 50px 50px;
 }
+.fix-header{
+     margin-top: 200px;
+}

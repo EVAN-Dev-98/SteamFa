@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="" />
+    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/engine/do-login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine/do-register.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/register.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/PanelLogin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/PanelRegister.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/responsive-V3.9.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/styles-V3.9.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/do-add.php" beforeDir="false" afterPath="$PROJECT_DIR$/engine/do-add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/do-contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/engine/do-contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/engine/setup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manager/AddProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/AddProduct.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manager/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/information/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/information/settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/PanelAddProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/theme/PanelAddProduct.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/theme/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/theme/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/responsive-V3.8.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/styles-V3.8.css" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,7 +80,8 @@
       <workItem from="1616440129514" duration="12000" />
       <workItem from="1616488498778" duration="1204000" />
       <workItem from="1616518042777" duration="10289000" />
-      <workItem from="1616698833566" duration="4750000" />
+      <workItem from="1616698833566" duration="5210000" />
+      <workItem from="1616781408530" duration="3425000" />
     </task>
     <task id="LOCAL-00001" summary="- change directions">
       <created>1614875491541</created>
@@ -159,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616703130190</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="rename files">
+      <created>1616704157150</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1616704157150</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +208,7 @@
     <MESSAGE value="- add product html ok fixed css fixed" />
     <MESSAGE value="- add product php ok" />
     <MESSAGE value="- add product php ok&#10;- bug fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="- add product php ok&#10;- bug fixed" />
+    <MESSAGE value="rename files" />
+    <option name="LAST_COMMIT_MESSAGE" value="rename files" />
   </component>
 </project>

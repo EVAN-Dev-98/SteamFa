@@ -21,7 +21,7 @@ if (isset($_POST['submit'])){
     $db = new DB();
     $db->Execute($query);
 
-    $panel_location = $path . 'Manager/';
+    $panel_location = $path . 'manager/';
     $alert = alert("محصول مورد نظر با موفقیت افزوده شد!!!","<a href='$panel_location'>باگشت به صفحه اصلی پنل مدیریت</a>","success");
 }
 else{
