@@ -1,9 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- add setup">
+    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- in panelsidebar.php rename Manager to manager bug fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/PanelSidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/theme/PanelSidebar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/about.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/do-add.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/do-add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/do-contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/do-contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/do-login.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/do-login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/do-register.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/do-register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/setup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Gandom/Gandom.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/fonts/Gandom/Gandom.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Gandom/Gandom.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/fonts/Gandom/Gandom.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Gandom/Gandom.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/fonts/Gandom/Gandom.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Gandom/Gandom.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/fonts/Gandom/Gandom.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Primus/Primus.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/fonts/Primus/Primus.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Primus/Primus.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/fonts/Primus/Primus.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Primus/Primus.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/fonts/Primus/Primus.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Primus/Primus.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/fonts/Primus/Primus.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Yekan/Yekan.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/fonts/Yekan/Yekan.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Yekan/Yekan.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/fonts/Yekan/Yekan.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Yekan/Yekan.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/fonts/Yekan/Yekan.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Yekan/Yekan.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/fonts/Yekan/Yekan.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Horizon-Forbidden-West.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/Horizon-Forbidden-West.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Planet-Coaster.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/Planet-Coaster.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/ak-47-bloodsport.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/ak-47-bloodsport.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/arcana-juggernaut.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/arcana-juggernaut.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/awp-asiimov.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/awp-asiimov.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/hamburger-menu-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/hamburger-menu-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/panel-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/panel-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/r6-credits.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/r6-credits.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/search.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/search.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/steam-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/steam-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/steam-wallpaper.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/steam-wallpaper.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/information/DB.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/DB.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/information/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/information/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/AddProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/manager/AddProduct.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/manager/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/manager/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/manager/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/PanelAddProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/theme/PanelAddProduct.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/PanelFooter.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/theme/PanelFooter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/PanelHeader.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/theme/PanelHeader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/PanelLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/theme/PanelLogin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/PanelRegister.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/theme/PanelRegister.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/PanelSidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/theme/PanelSidebar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/theme/about.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/theme/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/theme/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/theme/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/main_menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/theme/main_menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/responsive-V3.9.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/responsive-V3.9.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/showcase.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/theme/showcase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/styles-V3.9.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/styles-V3.9.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,11 +81,15 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\SteamFa\public" />
+      <recent name="C:\wamp64\www\SteamFa\public\assets\css" />
+      <recent name="C:\wamp64\www\SteamFa\public\assets" />
+      <recent name="C:\wamp64\www\SteamFa\includes" />
       <recent name="C:\wamp64\www\GitHub\SteamFa\information" />
     </key>
   </component>
@@ -64,7 +119,8 @@
       <workItem from="1616518042777" duration="10289000" />
       <workItem from="1616698833566" duration="5210000" />
       <workItem from="1616781408530" duration="3425000" />
-      <workItem from="1617880039364" duration="6426000" />
+      <workItem from="1617880039364" duration="6778000" />
+      <workItem from="1617909376839" duration="6871000" />
     </task>
     <task id="LOCAL-00001" summary="- change directions">
       <created>1614875491541</created>
@@ -178,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617886271715</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="- in panelsidebar.php rename Manager to manager bug fixed">
+      <created>1617887065276</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1617887065276</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +257,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -211,6 +275,7 @@
     <MESSAGE value="- add product php ok&#10;- bug fixed" />
     <MESSAGE value="rename files" />
     <MESSAGE value="- add setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="- add setup" />
+    <MESSAGE value="- in panelsidebar.php rename Manager to manager bug fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="- in panelsidebar.php rename Manager to manager bug fixed" />
   </component>
 </project>

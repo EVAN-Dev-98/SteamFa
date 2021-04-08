@@ -31,7 +31,7 @@ if (isset($_POST['submit'])){
     else{
         include $path . 'theme/header.php';
 
-        $alert = alert("گذرواژه با تکرار آن برابر نیست !!!","<a href='../manager/register.php'>بازگشت به صفحه ثبت نام</a>","danger");
+        $alert = alert("گذرواژه با تکرار آن برابر نیست !!!", "<a href='../public/manager/register.php'>بازگشت به صفحه ثبت نام</a>","danger");
     }
 
 }

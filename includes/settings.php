@@ -16,7 +16,7 @@ $dbCharset = CHARSET;
 $dbCollate = COLLATE;
 
 $SiteVersion = 3.9;
-
+/*
 $style = "styles-V".$SiteVersion.".css";
 $responsive = "responsive-V".$SiteVersion.".css";
 if (isset($path)){
@@ -36,5 +36,5 @@ if ($responsiveName != $responsive){
     rename('theme/'.$responsiveName,'theme/'.$responsive);
     $responsiveName = $responsive;
 }
-
+*/
 $SoftSetup = true;
