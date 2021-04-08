@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="">
+    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- add setup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine/do-add.php" beforeDir="false" afterPath="$PROJECT_DIR$/engine/do-add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine/setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/engine/setup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/information/DB.php" beforeDir="false" afterPath="$PROJECT_DIR$/information/DB.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/information/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/information/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/PanelSidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/theme/PanelSidebar.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +64,7 @@
       <workItem from="1616518042777" duration="10289000" />
       <workItem from="1616698833566" duration="5210000" />
       <workItem from="1616781408530" duration="3425000" />
-      <workItem from="1617880039364" duration="5552000" />
+      <workItem from="1617880039364" duration="6426000" />
     </task>
     <task id="LOCAL-00001" summary="- change directions">
       <created>1614875491541</created>
@@ -174,11 +171,29 @@
       <option name="project" value="LOCAL" />
       <updated>1616704157150</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="- add setup">
+      <created>1617886271715</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1617886271715</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -195,6 +210,7 @@
     <MESSAGE value="- add product php ok" />
     <MESSAGE value="- add product php ok&#10;- bug fixed" />
     <MESSAGE value="rename files" />
-    <option name="LAST_COMMIT_MESSAGE" value="rename files" />
+    <MESSAGE value="- add setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="- add setup" />
   </component>
 </project>
