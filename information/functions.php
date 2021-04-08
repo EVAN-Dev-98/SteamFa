@@ -11,6 +11,24 @@ if (!function_exists('alert')) {
         return $alert;
     }
 }
+
+if (!function_exists('alerts')) {
+    function alerts($text = '' , $des = '' , $type = 'danger'){
+        static $alerts = '';
+        if ($text != ''){
+            $alerts .= alert($text,$des,$type);
+        }
+        elseif ($alerts != ''){
+            $result = $alerts;
+            $alerts = '';
+            return $result;
+        }
+        else
+            return false;
+    }
+}
+
+
 if (!function_exists('redirect')){
     function redirect ($address){
         header("location:{$address}");

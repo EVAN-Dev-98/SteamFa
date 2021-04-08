@@ -16,7 +16,7 @@ if (isset($_POST['submit'])){
     $number = $_POST['number'];
     $img = /* $_POST['img']; */ 'images/ak-47-bloodsport.png';
 
-    $query = "INSERT INTO product (name , game , type , quality , number , img) VALUES ('{$name}' ,'{$game}' , '{$type}' , '{$quality}' , '{$number}', '{$img}')";
+    $query = "INSERT INTO products (name , game , type , quality , number , img) VALUES ('{$name}' ,'{$game}' , '{$type}' , '{$quality}' , '{$number}', '{$img}')";
 
     $db = new DB();
     $db->Execute($query);

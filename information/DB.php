@@ -29,6 +29,8 @@ if (!class_exists('DB')){
                 echo alert("خطا در اجرای دستورات","خطا : " . $this->dbc->error ,"danger");
                 exit();
             }
+            else
+                return true;
         }
         function __destruct(){
             $this->dbc->close();
