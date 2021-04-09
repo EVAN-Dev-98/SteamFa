@@ -8,21 +8,15 @@ include $path . '../includes/functions.php';
 
 // get values from html
 if (isset($_POST['submit'])){
-    $type = 1;
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $username = $_POST['username'];
+    $_POST['type'] = 1;
     $password = $_POST['password'];
     $repassword = $_POST['repassword'];
 
     if ($password == $repassword){
 
-        $password = md5($password);
+        $_POST['password'] = md5($password);
 
-        $query = "INSERT INTO users (type , name , email , username , password) VALUES ('{$type}' ,'{$name}' , '{$email}' , '{$username}' , '{$password}')";
-
-        $db = new DB();
-        $db->Execute($query);
+        Users::add($_POST);
 
         $panel_location = $path . 'manager/';
         redirect($panel_location);

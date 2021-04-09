@@ -22,7 +22,7 @@ if ($result){
 
 $db->SelectDB();
 
-$Query = "CREATE TABLE IF NOT EXISTS contact (
+$Query = "CREATE TABLE IF NOT EXISTS messages (
     ID INT NOT NULL AUTO_INCREMENT,
     name VARCHAR(100),
     subject VARCHAR(100),

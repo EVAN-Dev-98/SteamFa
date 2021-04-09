@@ -15,7 +15,7 @@ $dbName = DBNAME;
 $dbCharset = CHARSET;
 $dbCollate = COLLATE;
 
-$SiteVersion = 3.9;
+$SiteVersion = 5.2;
 /*
 $style = "styles-V".$SiteVersion.".css";
 $responsive = "responsive-V".$SiteVersion.".css";
@@ -37,4 +37,4 @@ if ($responsiveName != $responsive){
     $responsiveName = $responsive;
 }
 */
-$SoftSetup = false;
+$SoftSetup = true;

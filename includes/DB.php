@@ -1,5 +1,7 @@
 <?php
 include 'Product.php';
+include 'Users.php';
+include 'Messages.php';
 
 if (!class_exists('DB')){
     class DB{
