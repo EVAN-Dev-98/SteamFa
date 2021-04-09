@@ -1,8 +1,8 @@
 <?php
 
 $path = "../";
-include $path . 'information/settings.php';
-include $path . 'information/functions.php';
+include 'settings.php';
+include 'functions.php';
 
 $db = new DB(false);
 
@@ -35,7 +35,7 @@ if ($result){
     alerts('جدول تماس باما با موفقیت ایجاد شد','','success');
 }
 
-$Query = "CREATE TABLE IF NOT EXISTS products (
+$Query = "CREATE TABLE IF NOT EXISTS product (
     ID INT NOT NULL AUTO_INCREMENT,
     name VARCHAR(100),
     game VARCHAR(100),
@@ -68,7 +68,7 @@ if ($result){
 $alerts = alerts();
 
 $title = "پنل مدیریت | نصب و راه اندازی";
-include $path . 'theme/PanelHeader.php';
+include $path . 'public/theme/PanelHeader.php';
 ?>
 <section class="container fix-header">
     <?php if (isset($alerts)) echo $alerts; ?>

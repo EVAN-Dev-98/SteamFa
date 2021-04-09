@@ -37,4 +37,4 @@ if ($responsiveName != $responsive){
     $responsiveName = $responsive;
 }
 */
-$SoftSetup = true;
+$SoftSetup = false;
