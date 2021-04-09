@@ -2,10 +2,10 @@
 
 $path = "../";
 $title = "پنل مدیریت | افزودن محصول";
-include '../information/settings.php';
-include '../information/functions.php';
-include $path . 'theme/PanelHeader.php';
-include $path . 'theme/PanelSidebar.php';
+include 'settings.php';
+include 'functions.php';
+include $path . 'public/theme/PanelHeader.php';
+include $path . 'public/theme/PanelSidebar.php';
 
 // get values from html
 if (isset($_POST['submit'])){
@@ -21,7 +21,7 @@ if (isset($_POST['submit'])){
     $db = new DB();
     $db->Execute($query);
 
-    $panel_location = $path . 'manager/';
+    $panel_location = $path . 'public/manager/';
     $alert = alert("محصول مورد نظر با موفقیت افزوده شد!!!","<a href='$panel_location'>باگشت به صفحه اصلی پنل مدیریت</a>","success");
 }
 else{

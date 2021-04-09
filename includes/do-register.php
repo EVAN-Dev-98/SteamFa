@@ -2,8 +2,8 @@
 
 $path = '../';
 $title = "ثبت نام | استیم فارسی";
-include '../information/settings.php';
-include '../information/functions.php';
+include 'settings.php';
+include 'functions.php';
 
 
 // get values from html
@@ -24,12 +24,12 @@ if (isset($_POST['submit'])){
         $db = new DB();
         $db->Execute($query);
 
-        $panel_location = $path . 'manager/';
+        $panel_location = $path . 'public/manager/';
         redirect($panel_location);
     }
 
     else{
-        include $path . 'theme/header.php';
+        include $path . 'public/theme/header.php';
 
         $alert = alert("گذرواژه با تکرار آن برابر نیست !!!", "<a href='../public/manager/register.php'>بازگشت به صفحه ثبت نام</a>","danger");
     }

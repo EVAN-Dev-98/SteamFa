@@ -3,7 +3,7 @@
     <h2>افزودن محصول</h2>
     </header>
     <main>
-        <form action="<?php if (isset($path)) echo $path; ?>engine/do-add.php" method="post">
+        <form action="<?php if (isset($path)) echo $path; ?>../includes/do-add.php" method="post">
             <section class="mb-3">
                 <label for="name" class="form-label">نام محصول : </label>
                 <input type="text" class="form-control" id="name" name="name" placeholder="به عنوان مثال : AWP | Asiimov" required>

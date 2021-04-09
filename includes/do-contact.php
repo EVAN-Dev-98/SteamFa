@@ -1,10 +1,10 @@
 <?php
 
-$path = "../";
+$path = "";
 $title = "تماس با ما | استیم فارسی";
 include 'settings.php';
 include 'functions.php';
-include $path . 'public/theme/header.php';
+include '../public/theme/header.php';
 
 // get values from html
 if (isset($_POST['submit'])){
@@ -19,14 +19,14 @@ if (isset($_POST['submit'])){
     $db->Execute($query);
 
 
-    $alert = alert("درخواست شما با موفقیت ثبت شد!!!", "<a href='..'>باگشت به صفحه اصلی</a>","success");
+    $alert = alert("درخواست شما با موفقیت ثبت شد!!!", "<a href='../public'>باگشت به صفحه اصلی</a>","success");
 }
 else{
-    redirect($path);
+    redirect('../public');
 }
 
-include $path . 'public/theme/showcase.php';
+include '../public/theme/showcase.php';
 
 if (isset($alert)) echo $alert;
 
-include $path . 'public/theme/footer.php';
+include '../public/theme/footer.php';
