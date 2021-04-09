@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- in panelsidebar.php rename Manager to manager bug fixed">
+    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- directory changes">
+      <change afterPath="$PROJECT_DIR$/public/engine/do-login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/do-add.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/do-add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/do-contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/do-contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/do-register.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/do-register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/DB.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/DB.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/do-add.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/engine/do-add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/do-contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/engine/do-contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/do-login.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/do-register.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/engine/do-register.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/theme/PanelAddProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/theme/PanelAddProduct.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/theme/PanelLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/theme/PanelLogin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/theme/PanelRegister.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/theme/PanelRegister.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/theme/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/theme/contact.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,11 +43,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\SteamFa\public\Engine" />
       <recent name="C:\wamp64\www\SteamFa\public" />
       <recent name="C:\wamp64\www\SteamFa\public\assets\css" />
       <recent name="C:\wamp64\www\SteamFa\public\assets" />
       <recent name="C:\wamp64\www\SteamFa\includes" />
-      <recent name="C:\wamp64\www\GitHub\SteamFa\information" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -77,7 +80,7 @@
       <workItem from="1617909376839" duration="6871000" />
       <workItem from="1617950352536" duration="2517000" />
       <workItem from="1617962401445" duration="13000" />
-      <workItem from="1617965523215" duration="902000" />
+      <workItem from="1617965523215" duration="2416000" />
     </task>
     <task id="LOCAL-00001" summary="- change directions">
       <created>1614875491541</created>
@@ -198,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617887065276</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="- directory changes">
+      <created>1617971214711</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1617971214711</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +243,7 @@
     <MESSAGE value="rename files" />
     <MESSAGE value="- add setup" />
     <MESSAGE value="- in panelsidebar.php rename Manager to manager bug fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="- in panelsidebar.php rename Manager to manager bug fixed" />
+    <MESSAGE value="- directory changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="- directory changes" />
   </component>
 </project>
