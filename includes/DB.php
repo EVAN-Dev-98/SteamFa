@@ -1,9 +1,11 @@
 <?php
-include 'Product.php';
-include 'Users.php';
-include 'Messages.php';
 
-if (!class_exists('DB')){
+// we most include all tables Class :)
+include "Product.php";
+include "Users.php";
+include "Messages.php";
+
+if (!class_exists("DB")){
     class DB{
         var $dbc;
         function __construct($Soft = true){
@@ -28,12 +30,20 @@ if (!class_exists('DB')){
             }
         }
         function Execute($query){
-            $this->dbc->query($query);
+            $result = $this->dbc->query($query);
             if ($this->dbc->error){
-                echo alert("خطا در اجرای دستورات","خطا : " . $this->dbc->error ,"danger");
-                exit();
+                $error = alert("خطا در اجرای دستورات","خطا : " . $this->dbc->error ,"danger");
+                die($error);
+                /* return false; */
             }
-            else
+            elseif ($result != true && $result != false){ // select
+                $table = $result -> featch_all(MYSQLI_ASSOC);
+                return $table;
+            }
+            elseif ($this -> dbc-> insert_id){ // insert
+                return $this -> dbc -> insert_id;
+            }
+            else // update / delete
                 return true;
         }
         function __destruct(){

@@ -1,5 +1,5 @@
 <section class="container fix-header">
-    <form action="<?php if (isset($path)) echo $path; ?>engine/do-register.php" method="post">
+    <form action="<?php echo_engine("do-register.php"); ?>" method="post">
         <h2>ثبت نام</h2>
         <section class="mb-3">
             <label for="name" class="form-label">نام و نام خانوادگی : </label>

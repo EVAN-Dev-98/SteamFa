@@ -1,24 +1,26 @@
 <?php
+/* Created By Evan ( Sajad Gholami ) */
 
-$path = "../";
+include "__php__.php";
+
 $title = "تماس با ما | استیم فارسی";
-include $path . '../includes/settings.php';
-include $path . '../includes/functions.php';
-include $path . 'theme/header.php';
+include $inc . "settings.php";
+include $inc . "functions.php";
+get_view("header","",$title);
 
 // get values from html
 if (isset($_POST['submit'])){
 
     Messages::add($_POST);
 
-    $alert = alert("درخواست شما با موفقیت ثبت شد!!!", "<a href='..'>باگشت به صفحه اصلی</a>","success");
+    $alert = alert("درخواست شما با موفقیت ثبت شد!!!", "<a href='../'>باگشت به صفحه اصلی</a>","success");
 }
 else{
-    redirect($path . 'public');
+    redirect("../");
 }
 
-include $path . 'theme/showcase.php';
+get_view("showcase");
 
 if (isset($alert)) echo $alert;
 
-include $path . 'theme/footer.php';
+get_view("footer");

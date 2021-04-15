@@ -1,8 +1,12 @@
 <?php
 /* Created By Evan ( Sajad Gholami ) */
 
-$path = '../';
+include "__php__.php";
+
+include $inc . "functions.php";
+
 $title = "پنل مدیریت | افزودن محصول";
-include $path . 'theme/PanelHeader.php';
-include $path . 'theme/PanelSidebar.php';
-include $path . 'theme/PanelAddProduct.php';
+
+get_view("header","panel",$title);
+get_view("sidebar","panel");
+get_view("addproduct","panel");

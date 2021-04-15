@@ -1,8 +1,8 @@
 <?php
 
-$path = "../";
-include 'settings.php';
-include 'functions.php';
+include "../public/__php__.php";
+include $inc . "settings.php";
+include $inc . "functions.php";
 
 $db = new DB(false);
 
@@ -68,7 +68,8 @@ if ($result){
 $alerts = alerts();
 
 $title = "پنل مدیریت | نصب و راه اندازی";
-include $path . 'public/theme/PanelHeader.php';
+
+get_view("header","panel",$title);
 ?>
 <section class="container fix-header">
     <?php if (isset($alerts)) echo $alerts; ?>

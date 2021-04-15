@@ -1,5 +1,5 @@
 <section class="container fix-header">
-    <form action="<?php if (isset($path)) echo $path; ?>../includes/do-login.php" method="post">
+    <form action="<?php echo $inc ?>do-login.php" method="post">
         <h2>ورود</h2>
         <section class="mb-3">
             <label for="username" class="form-label">نام کاربری : </label>

@@ -42,7 +42,7 @@
          </script>
       </section>
       <section class="info" role="contentinfo">
-         <p>Made By Evan With ♥ | Version : <?php echo $SiteVersion; ?></p>
+         <p>Made By Evan With ♥ | Version : <?php include $inc . "settings.php"; echo $SiteVersion; ?></p>
       </section>
    </section>
 </footer>

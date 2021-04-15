@@ -1,5 +1,5 @@
 <ul>
-    <li class="selected"><a href="<?php if (isset($path)) echo $path; ?>index.php">صفحه اصلی</a></li>
+    <li class="selected"><a href="<?php echo_public("index.php"); ?>">صفحه اصلی</a></li>
     <li><a href="">عنوان اول</a></li>
     <li><a href="">عنوان دوم</a></li>
     <li><a href="">عنوان سوم</a></li>

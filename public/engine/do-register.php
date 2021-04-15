@@ -1,10 +1,11 @@
 <?php
+/* Created By Evan ( Sajad Gholami ) */
 
-$path = '../';
+include "__php__.php";
+
 $title = "ثبت نام | استیم فارسی";
-include $path . '../includes/settings.php';
-include $path . '../includes/functions.php';
-
+include $inc . "settings.php";
+include $inc . "functions.php";
 
 // get values from html
 if (isset($_POST['submit'])){
@@ -18,19 +19,18 @@ if (isset($_POST['submit'])){
 
         Users::add($_POST);
 
-        $panel_location = $path . 'manager/';
-        redirect($panel_location);
+        redirect("../manager/");
     }
 
     else{
-        include $path . 'theme/header.php';
+        get_view("header","",$title);
 
         $alert = alert("گذرواژه با تکرار آن برابر نیست !!!", "<a href='../manager/register.php'>بازگشت به صفحه ثبت نام</a>","danger");
     }
 
 }
 else{
-    redirect($path);
+    redirect("../");
 }
 ?>
 <section class="container fix-header">

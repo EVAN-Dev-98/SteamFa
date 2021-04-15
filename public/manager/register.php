@@ -1,7 +1,11 @@
 <?php
 /* Created By Evan ( Sajad Gholami ) */
 
-$path = '../';
+include "__php__.php";
+
+include $inc . "functions.php";
+
 $title = "ثبت نام | استیم فارسی";
-include $path . 'theme/header.php';
-include $path . 'theme/PanelRegister.php';
+
+get_view("header","",$title);
+get_view("register","panel");

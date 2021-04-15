@@ -1,5 +1,6 @@
 <?php
 /* Created By Evan ( Sajad Gholami ) */
+$SiteNameDir = "SteamFa";
 
 if (! defined('DBHOST') ) define('DBHOST','localhost');
 if (! defined('DBUSER') ) define('DBUSER','root');
@@ -16,25 +17,6 @@ $dbCharset = CHARSET;
 $dbCollate = COLLATE;
 
 $SiteVersion = 5.2;
-/*
-$style = "styles-V".$SiteVersion.".css";
-$responsive = "responsive-V".$SiteVersion.".css";
-if (isset($path)){
-    $newpath = $path."theme";
-    $themeFiles = scandir($newpath,1);
-}
-else{
-    $themeFiles = scandir("theme",1);
-}
-$styleName = $themeFiles[0];
-$responsiveName = $themeFiles[2];
-if ($styleName != $style){
-    rename('theme/'.$styleName,'theme/'.$style);
-    $styleName = $style;
-}
-if ($responsiveName != $responsive){
-    rename('theme/'.$responsiveName,'theme/'.$responsive);
-    $responsiveName = $responsive;
-}
-*/
+
 $SoftSetup = true;
+$FirstTime = false;
