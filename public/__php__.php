@@ -2,6 +2,7 @@
 
 $root = __DIR__ . "/";
 $inc = $root . "../includes/";
+$eng = $root . "engine/";
 
 include $inc . "settings.php";
 

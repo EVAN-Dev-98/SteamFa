@@ -11,9 +11,11 @@ get_view("header","",$title);
 // get values from html
 if (isset($_POST['submit'])){
 
+    $db = new DB();
+
     Messages::add($_POST);
 
-    $alert = alert("درخواست شما با موفقیت ثبت شد!!!", "<a href='../'>باگشت به صفحه اصلی</a>","success");
+    $alert = alertS();
 }
 else{
     redirect("../");

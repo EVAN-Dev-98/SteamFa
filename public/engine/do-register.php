@@ -17,6 +17,8 @@ if (isset($_POST['submit'])){
 
         $_POST['password'] = md5($password);
 
+        $db = new DB();
+
         Users::add($_POST);
 
         redirect("../manager/");

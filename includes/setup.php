@@ -1,6 +1,6 @@
 <?php
 
-include "../public/__php__.php";
+include "__php__.php";
 include $inc . "settings.php";
 include $inc . "functions.php";
 
@@ -9,20 +9,20 @@ $db = new DB(false);
 if (!$SoftSetup){
     $Query = "DROP DATABASE IF EXISTS {$dbName}";
     $result = $db->Execute($Query);
-    if ($result){
+    if ($result ==0){
         alerts('دیتابیس با موفقیت حذف شد','','success');
     }
 }
 
 $Query = "CREATE DATABASE IF NOT EXISTS {$dbName} CHARSET {$dbCharset} COLLATE {$dbCollate}";
 $result = $db->Execute($Query);
-if ($result){
+if ($result == 0){
     alerts('دیتابیس با موفقیت ایجاد شد','','success');
 }
 
 $db->SelectDB();
 
-$Query = "CREATE TABLE IF NOT EXISTS messages (
+$Query = "CREATE TABLE IF NOT EXISTS Messages (
     ID INT NOT NULL AUTO_INCREMENT,
     name VARCHAR(100),
     subject VARCHAR(100),
@@ -31,11 +31,11 @@ $Query = "CREATE TABLE IF NOT EXISTS messages (
     PRIMARY KEY (ID)
     )ENGINE = INNODB";
 $result = $db->Execute($Query);
-if ($result){
+if ($result == 0){
     alerts('جدول تماس باما با موفقیت ایجاد شد','','success');
 }
 
-$Query = "CREATE TABLE IF NOT EXISTS product (
+$Query = "CREATE TABLE IF NOT EXISTS Product (
     ID INT NOT NULL AUTO_INCREMENT,
     name VARCHAR(100),
     game VARCHAR(100),
@@ -46,11 +46,11 @@ $Query = "CREATE TABLE IF NOT EXISTS product (
     PRIMARY KEY (ID)
     )ENGINE = INNODB";
 $result = $db->Execute($Query);
-if ($result){
+if ($result == 0){
     alerts('جدول محصولات با موفقیت ایجاد شد','','success');
 }
 
-$Query = "CREATE TABLE IF NOT EXISTS users (
+$Query = "CREATE TABLE IF NOT EXISTS Users (
     ID INT NOT NULL AUTO_INCREMENT,
     type INT,
     name VARCHAR(100),
@@ -61,7 +61,7 @@ $Query = "CREATE TABLE IF NOT EXISTS users (
     PRIMARY KEY (ID)
     )ENGINE = INNODB";
 $result = $db->Execute($Query);
-if ($result){
+if ($result == 0){
     alerts('جدول کاربران با موفقیت ایجاد شد','','success');
 }
 

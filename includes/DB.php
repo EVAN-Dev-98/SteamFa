@@ -36,11 +36,10 @@ if (!class_exists("DB")){
                 die($error);
                 /* return false; */
             }
-            elseif ($result != true && $result != false){ // select
-                $table = $result -> featch_all(MYSQLI_ASSOC);
-                return $table;
+            elseif ($result !== true && $result !== false){ // select
+                return $result -> fetch_all(MYSQLI_ASSOC);
             }
-            elseif ($this -> dbc-> insert_id){ // insert
+            elseif ( isset($this -> dbc-> insert_id) ){ // insert
                 return $this -> dbc -> insert_id;
             }
             else // update / delete

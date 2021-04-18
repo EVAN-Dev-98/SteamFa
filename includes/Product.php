@@ -12,12 +12,19 @@ if (!class_exists('Product')){
             return "'" . join($sep , $values) . "'";
         }
         static function add( $params ){
-            $TableName = __CLASS__;
+            $TableName = get_class();
             $columnsString = self::columnsList( $params );
             $valuesString = self::valuesList( $params );
             $query = "INSERT INTO {$TableName} ({$columnsString}) VALUES ({$valuesString})";
-            $db = new DB();
-            $db->Execute($query);
+            $result = $GLOBALS['db'] -> Execute($query);
+            if ($result){
+                alerts("محصول مورد نظر با موفقیت افزوده شد!!!","","success");
+            }
+        }
+        static function find($where = "true" , $order = "id DESC" , $count = 100 , $offset = 0){
+            $TableName = get_class();
+            $query = "SELECT * FROM {$TableName} WHERE {$where} ORDER BY {$order} LIMIT {$offset} , {$count}";
+            return $GLOBALS['db'] -> Execute($query);
         }
     }
 }

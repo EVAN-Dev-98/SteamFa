@@ -12,13 +12,12 @@ get_view("sidebar","panel");
 
 // get values from html
 if (isset($_POST['submit'])){
-
-    $_POST['img'] = echo_assets("images/ak-47-bloodsport.png");
+    $_POST['img'] = "/SteamFa/public/assets/images/ak-47-bloodsport.png";
+    $db = new DB();
 
     Product::add($_POST);
 
-    $panel_location = '../manager/';
-    $alert = alert("محصول مورد نظر با موفقیت افزوده شد!!!","<a href='$panel_location'>باگشت به صفحه اصلی پنل مدیریت</a>","success");
+    $alert = alerts();
 }
 else{
     redirect("../");

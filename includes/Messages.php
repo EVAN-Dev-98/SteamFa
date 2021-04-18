@@ -12,12 +12,14 @@ if (!class_exists('Messages')){
             return "'" . join($sep , $values) . "'";
         }
         static function add( $params ){
-            $TableName = __CLASS__;
+            $TableName = get_class();
             $columnsString = self::columnsList( $params );
             $valuesString = self::valuesList( $params );
             $query = "INSERT INTO {$TableName} ({$columnsString}) VALUES ({$valuesString})";
-            $db = new DB();
-            $db->Execute($query);
+            $result = $GLOBALS['db'] -> Execute($query);
+            if ($result){
+                alerts("درخواست شما با موفقیت ثبت شد!!!","","success");
+            }
         }
     }
 }

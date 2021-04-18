@@ -18,8 +18,7 @@ if (!class_exists('Users')){
             $columnsString = self::columnsList( $params );
             $valuesString = self::valuesList( $params );
             $query = "INSERT INTO {$TableName} ({$columnsString}) VALUES ({$valuesString})";
-            $db = new DB();
-            $db->Execute($query);
+            $result = $GLOBALS['db'] ->Execute($query);
         }
     }
 }
