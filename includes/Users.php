@@ -20,5 +20,10 @@ if (!class_exists('Users')){
             $query = "INSERT INTO {$TableName} ({$columnsString}) VALUES ({$valuesString})";
             $result = $GLOBALS['db'] ->Execute($query);
         }
+        static function find($where = "true" , $order = "id" , $count = 100 , $offset = 0){
+            $TableName = get_class();
+            $query = "SELECT * FROM {$TableName} WHERE {$where} ORDER BY {$order} LIMIT {$offset} , {$count}";
+            return $GLOBALS['db'] -> Execute($query);
+        }
     }
 }
