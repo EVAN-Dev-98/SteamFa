@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- add catalog.php">
-      <change afterPath="$PROJECT_DIR$/public/engine/get-users.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/manager/show-users.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/views/users-panel.php" afterDir="false" />
+    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- add list of all users in panel&#10;- change AddProduct to add-product">
+      <change afterPath="$PROJECT_DIR$/public/engine/get-message.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/manager/show-messages.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/views/message-panel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/Users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manager/AddProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/manager/add-product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/Messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/Messages.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/views/sidebar-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/sidebar-panel.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +120,8 @@
       <workItem from="1618737978812" duration="599000" />
       <workItem from="1618747972235" duration="7068000" />
       <workItem from="1618767747632" duration="4422000" />
-      <workItem from="1618783036107" duration="3283000" />
+      <workItem from="1618783036107" duration="3411000" />
+      <workItem from="1618863658863" duration="3607000" />
     </task>
     <task id="LOCAL-00001" summary="- change directions">
       <created>1614875491541</created>
@@ -284,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618778269175</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="- add list of all users in panel&#10;- change AddProduct to add-product">
+      <created>1618786419869</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1618786419869</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,7 +331,9 @@
     <MESSAGE value="- change name contact in db to messages&#10;- add Messages and Users Class" />
     <MESSAGE value="- change directory&#10;- change all address system from static to dynamic with __php__.php&#10;- fix bug from register - addproduct - contact&#10;- catalog az soon" />
     <MESSAGE value="- add catalog.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="- add catalog.php" />
+    <MESSAGE value="- add list of all users in panel" />
+    <MESSAGE value="- add list of all users in panel&#10;- change AddProduct to add-product" />
+    <option name="LAST_COMMIT_MESSAGE" value="- add list of all users in panel&#10;- change AddProduct to add-product" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
