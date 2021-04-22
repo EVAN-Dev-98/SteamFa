@@ -14,9 +14,9 @@ get_view("sidebar","panel");
 if (isset($_POST['submit'])){
     $_POST['img'] = "/SteamFa/public/assets/images/ak-47-bloodsport.png";
     $db = new DB();
-
-    Product::add($_POST);
-
+    $params = $_POST;
+    unset($params['submit']);
+    Product::add($params);
     $alert = alerts();
 }
 else{

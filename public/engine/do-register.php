@@ -16,11 +16,11 @@ if (isset($_POST['submit'])){
     if ($password == $repassword){
 
         $_POST['password'] = md5($password);
-
         $db = new DB();
-
-        Users::add($_POST);
-
+        $params = $_POST;
+        unset($params['submit']);
+        unset($params['repassword']);
+        Users::add($params);
         redirect("../manager/");
     }
 

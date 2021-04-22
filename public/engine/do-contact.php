@@ -10,11 +10,10 @@ get_view("header","",$title);
 
 // get values from html
 if (isset($_POST['submit'])){
-
     $db = new DB();
-
-    Messages::add($_POST);
-
+    $params = $_POST;
+    unset($params['submit']);
+    Messages::add($params);
     $alert = alertS();
 }
 else{
