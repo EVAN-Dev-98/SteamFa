@@ -19,7 +19,7 @@ if (!class_exists('Messages')){
                 alerts("{$TableName} شما با موفقیت ثبت شد!","","success");
             }
         }
-        static function find($where = "true" , $order = "id" , $count = 100 , $offset = 0){
+        static function find($where = "true" , $order = "id DESC" , $count = 100 , $offset = 0){
             $TableName = get_class();
             $query = "SELECT * FROM {$TableName} WHERE {$where} ORDER BY {$order} LIMIT {$offset} , {$count}";
             return $GLOBALS['db'] -> Execute($query);

@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- add show messages in panel">
+    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- class rework">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/Messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/Messages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/Product.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/Users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/engine/do-add.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/engine/do-add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/engine/do-contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/engine/do-contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/engine/do-register.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/engine/do-register.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,6 +121,7 @@
       <workItem from="1618863658863" duration="5570000" />
       <workItem from="1619038111644" duration="1268000" />
       <workItem from="1619095174482" duration="1054000" />
+      <workItem from="1619098694537" duration="371000" />
     </task>
     <task id="LOCAL-00001" summary="- change directions">
       <created>1614875491541</created>
@@ -301,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618872229146</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="- class rework">
+      <created>1619098960007</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1619098960007</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,7 +348,8 @@
     <MESSAGE value="- add list of all users in panel" />
     <MESSAGE value="- add list of all users in panel&#10;- change AddProduct to add-product" />
     <MESSAGE value="- add show messages in panel" />
-    <option name="LAST_COMMIT_MESSAGE" value="- add show messages in panel" />
+    <MESSAGE value="- class rework" />
+    <option name="LAST_COMMIT_MESSAGE" value="- class rework" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

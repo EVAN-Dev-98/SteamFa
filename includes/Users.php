@@ -10,16 +10,16 @@ if (!class_exists('Users')){
             return "'" . join($sep , $values) . "'";
         }
         static function add( $params ){
-            $TableName = __CLASS__;
+            $TableName = get_class();
             $columnsString = self::columnsList( $params );
             $valuesString = self::valuesList( $params );
             $query = "INSERT INTO {$TableName} ({$columnsString}) VALUES ({$valuesString})";
-            $result = $GLOBALS['db'] ->Execute($query);
+            $result = $GLOBALS['db'] -> Execute($query);
             if ($result){
                 alerts("{$TableName} شما با موفقیت ثبت شد!","","success");
             }
         }
-        static function find($where = "true" , $order = "id" , $count = 100 , $offset = 0){
+        static function find($where = "true" , $order = "id DESC" , $count = 100 , $offset = 0){
             $TableName = get_class();
             $query = "SELECT * FROM {$TableName} WHERE {$where} ORDER BY {$order} LIMIT {$offset} , {$count}";
             return $GLOBALS['db'] -> Execute($query);
