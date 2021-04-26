@@ -21,13 +21,13 @@ if (isset($_POST['submit'])){
         unset($params['submit']);
         unset($params['repassword']);
         Users::add($params);
-        redirect("../manager/");
+        redirect("../account/");
     }
 
     else{
         get_view("header","",$title);
 
-        $alert = alert("گذرواژه با تکرار آن برابر نیست !!!", "<a href='../manager/register.php'>بازگشت به صفحه ثبت نام</a>","danger");
+        $alert = alert("گذرواژه با تکرار آن برابر نیست !!!", "<a href='../View/account/sign-up.php'>بازگشت به صفحه ثبت نام</a>","danger");
     }
 
 }

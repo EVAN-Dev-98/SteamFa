@@ -6,8 +6,8 @@ include "__php__.php";
 $title = "پنل مدیریت | افزودن محصول";
 include $inc . "settings.php";
 include $inc . "functions.php";
-get_view("header","panel",$title);
-get_view("sidebar","panel");
+get_view("header","account",$title);
+get_view("sidebar","account");
 
 
 // get values from html

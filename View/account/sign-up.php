@@ -5,7 +5,7 @@ include "__php__.php";
 
 include $inc . "functions.php";
 
-$title = "ورود | استیم فارسی";
+$title = "ثبت نام | استیم فارسی";
 
 get_view("header","",$title);
-get_view("login","panel");
+get_view("register","account");

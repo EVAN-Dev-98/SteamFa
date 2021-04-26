@@ -17,7 +17,7 @@ $alerts = alerts();
     <main>
         <?php
         foreach ($table as $row){
-            get_view("message","panel");
+            get_view("message","account");
         }
         ?>
     </main>

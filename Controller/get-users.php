@@ -31,7 +31,7 @@ $alerts = alerts();
                 $count = 0;
                 foreach ($table as $row){
                     $count++;
-                    get_view("users","panel");
+                    get_view("users","account");
                 }
                 ?>
             </tbody>

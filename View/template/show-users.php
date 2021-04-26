@@ -7,6 +7,6 @@ include $inc . "functions.php";
 
 $title = "پنل مدیریت | مشاهده کاربران";
 
-get_view("header","panel",$title);
-get_view("sidebar","panel");
+get_view("header","account",$title);
+get_view("sidebar","account");
 include $eng . "get-users.php";

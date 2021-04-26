@@ -69,7 +69,7 @@ $alerts = alerts();
 
 $title = "پنل مدیریت | نصب و راه اندازی";
 
-get_view("header","panel",$title);
+get_view("header","account",$title);
 ?>
 <section class="container fix-header">
     <?php if (isset($alerts)) echo $alerts; ?>

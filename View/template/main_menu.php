@@ -1,5 +1,5 @@
 <ul>
-    <li class="selected"><a href="<?php echo_public("index.php"); ?>">صفحه اصلی</a></li>
+    <li class="selected"><a href="<?php echo_public("home.php"); ?>">صفحه اصلی</a></li>
     <li><a href="<?php echo_public("catalog.php"); ?>">فروشگاه</a></li>
     <li><a href="">عنوان دوم</a></li>
     <li><a href="">عنوان سوم</a></li>

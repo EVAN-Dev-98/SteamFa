@@ -15,7 +15,7 @@ get_view("head","",$title);
         <nav class="left">
             <ul>
                 <li><a href="">نام شما</a></li>
-                <li><a href="<?php echo_public("index.php"); ?>" target="_steamfa">مشاهده سایت</a></li>
+                <li><a href="<?php echo_public("home.php"); ?>" target="_steamfa">مشاهده سایت</a></li>
             </ul>
         </nav>
     </section>
