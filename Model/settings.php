@@ -1,6 +1,5 @@
 <?php
 /* Created By Evan ( Sajad Gholami ) */
-$SiteNameDir = "SteamFa";
 
 if (! defined('DBHOST') ) define('DBHOST','localhost');
 if (! defined('DBUSER') ) define('DBUSER','root');

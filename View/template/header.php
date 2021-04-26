@@ -1,5 +1,5 @@
 <?php
-get_view("head","",$title);
+get_template("head","",$title);
 ?>
 <body>
 <!-- Header -->
@@ -13,14 +13,14 @@ get_view("head","",$title);
     </nav>
     <nav class="left">
        <ul>
-          <li><a href="<?php echo_public("about.php"); ?>">درباره ما</a></li>
-          <li><a href="<?php echo_public("contact.php"); ?>">تماس با ما</a></li>
+          <li><a href="<?php echo_view("about.php"); ?>">درباره ما</a></li>
+          <li><a href="<?php echo_view("contact.php"); ?>">تماس با ما</a></li>
        </ul>
     </nav>
  </section>
  <section class="main-header">
     <section class="hamburger-menu" id="hamburger-menu">
-        <?php include 'main_menu.php'; ?>
+        <?php get_template("main","menu"); ?>
     </section>
     <section class="hamburger-menu-icon" id="hamburger-menu-icon"></section>
     <script>
@@ -31,21 +31,21 @@ get_view("head","",$title);
        });
     </script>
     <section class="logo">
-       <a href="<?php echo_public("home.php"); ?>"><img src="<?php echo_assets("images/steam-icon.png"); ?>" alt="steamfarsi"></a>
+       <a href="<?php echo_view("home.php"); ?>"><img src="<?php echo_assets("images/steam-icon.png"); ?>" alt="steamfarsi"></a>
     </section>
     <section class="site-name">
-       <a href="<?php echo_public("home.php"); ?>">
+       <a href="<?php echo_view("home.php"); ?>">
           <h1>استیم فارسی</h1>
        </a>
     </section>
     <nav class="right">
-        <?php include 'main_menu.php'; ?>
+        <?php get_template("main","menu"); ?>
     </nav>
     <nav class="left">
        <ul>
-          <li class="account"><a href="<?php echo_manager("sign-in.php"); ?>" target="_steamfapanel">ورود</a></li>
-          <li class="account"><a href="<?php echo_manager("sign-up.php"); ?>" target="_steamfapanel">ثبت نام</a></li>
-          <li class="account"><a href="<?php echo_manager("home.php"); ?>" target="_steamfapanel">پنل کاربری</a></li>
+          <li class="account"><a href="<?php echo_account("sign-in.php"); ?>" target="_steamfapanel">ورود</a></li>
+          <li class="account"><a href="<?php echo_account("sign-up.php"); ?>" target="_steamfapanel">ثبت نام</a></li>
+          <li class="account"><a href="<?php echo_account("home.php"); ?>" target="_steamfapanel">پنل کاربری</a></li>
           <li class="search"><input class="search-input" type="text" name="search" value="" placeholder="دنبال چی میگردی ؟" onfocus="this.placeholder=''" onblur="this.placeholder='دنبال چی میگردی ؟'"></li>
           <li class="search-icon"><a href="#footer_search"></a></li>
        </ul>

@@ -1,7 +1,7 @@
 <?php
 /* Created By Evan ( Sajad Gholami ) */
 
-include "DB.php";
+include "DB/DB.php";
 
 if (!function_exists("alert")) {
     function alert($text, $des, $type)
@@ -38,17 +38,31 @@ if (!function_exists("redirect")){
     }
 }
 
+// for include maybe catalog.php in View folder
 if (!function_exists("get_view")){
-    function get_view($name , $addition = "" , $title = "استیم فارسی | عنوان ندارد"){
+    function get_view($name , $addition = ""){
         if (!$addition == ""){
             $addition = "-{$addition}";
         }
         include "__php__.php";
-        $address = "{$root}views/{$name}{$addition}.php";
+        $address = "{$View}{$name}{$addition}.php";
         include ($address);
     }
 }
 
+// for include maybe header.php in View/template folder
+if (!function_exists("get_template")){
+    function get_template($name , $addition = "" , $title = "استیم فارسی | عنوان ندارد"){
+        if (!$addition == ""){
+            $addition = "-{$addition}";
+        }
+        include "__php__.php";
+        $address = "{$Template}{$name}{$addition}.php";
+        include ($address);
+    }
+}
+
+// for echo address assets in folder like images
 if (!function_exists("echo_assets")){
     function echo_assets($name){
         include "__php__.php";
@@ -57,26 +71,29 @@ if (!function_exists("echo_assets")){
     }
 }
 
-if (!function_exists("echo_manager")){
-    function echo_manager($name){
+// for echo address dashboard or maybe sign-in.php
+if (!function_exists("echo_account")){
+    function echo_account($name){
         include "__php__.php";
-        $address = $manager . $name;
+        $address = $account . $name;
         echo $address;
     }
 }
 
-if (!function_exists("echo_engine")){
-    function echo_engine($name){
+// for echo address model folder like functions.php
+if (!function_exists("echo_model")){
+    function echo_model($name){
         include "__php__.php";
-        $address = $engine . $name;
+        $address = $model . $name;
         echo $address;
     }
 }
 
-if (!function_exists("echo_public")){
-    function echo_public($name){
+// for echo address view folder like catalog.php
+if (!function_exists("echo_view")){
+    function echo_view($name){
         include "__php__.php";
-        $address = $public . $name;
+        $address = $view . $name;
         echo $address;
     }
 }

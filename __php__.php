@@ -1,12 +1,15 @@
 <?php
 
-$root = __DIR__ . "__php__.php/";
-$inc = $root . "../includes/";
-$eng = $root . "controller/";
+$root = __DIR__ . "/";
 
-include $inc . "settings.php";
-
-$assets = "/{$SiteNameDir}/public/assets/";
-$manager = "/{$SiteNameDir}/public/account/";
-$engine = "/{$SiteNameDir}/public/controller/";
-$public = "/{$SiteNameDir}/public/";
+// For Includes
+$Model = $root . "Model/";
+$View = $root . "View/";
+$Controller = $root . "Controller/";
+$Template = $View . "template/";
+// For Echo
+$model = "/SteamFa/Model/";
+$view = "/SteamFa/View/";
+$controller = "/SteamFa/Controller/";
+$assets = "/SteamFa/View/assets/";
+$account = "/SteamFa/View/account/";

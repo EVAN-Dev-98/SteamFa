@@ -1,7 +1,3 @@
-<?php
-include "__php__.php";
-include $inc . "functions.php";
-?>
 <!DOCTYPE html>
 <html lang="fa">
 <head>
