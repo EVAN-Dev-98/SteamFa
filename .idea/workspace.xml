@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- class rework">
-      <change afterPath="$PROJECT_DIR$/public/engine/do-edit-user.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/manager/edit-user.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/views/users-edit.php" afterDir="false" />
+    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- chert o pert neveshtam">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/views/sidebar-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/sidebar-panel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/manager/edit-user.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/manager/edit-user.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +122,8 @@
       <workItem from="1619095174482" duration="1054000" />
       <workItem from="1619098694537" duration="2581000" />
       <workItem from="1619207347456" duration="255000" />
-      <workItem from="1619294275688" duration="951000" />
+      <workItem from="1619294275688" duration="1553000" />
+      <workItem from="1619381239367" duration="270000" />
     </task>
     <task id="LOCAL-00001" summary="- change directions">
       <created>1614875491541</created>
@@ -316,7 +314,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619099093445</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="- chert o pert neveshtam">
+      <created>1619295267687</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1619295267687</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -360,7 +365,8 @@
     <MESSAGE value="- add list of all users in panel&#10;- change AddProduct to add-product" />
     <MESSAGE value="- add show messages in panel" />
     <MESSAGE value="- class rework" />
-    <option name="LAST_COMMIT_MESSAGE" value="- class rework" />
+    <MESSAGE value="- chert o pert neveshtam" />
+    <option name="LAST_COMMIT_MESSAGE" value="- chert o pert neveshtam" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
