@@ -2,11 +2,11 @@
 /* Created By Evan ( Sajad Gholami ) */
 
 include "__php__.php";
+include  $Model . "initializer.php";
 
 $title = "تماس با ما | استیم فارسی";
-include $inc . "settings.php";
-include $inc . "functions.php";
-get_view("header","",$title);
+
+get_template("header","",$title);
 
 // get values from html
 if (isset($_POST['submit'])){
@@ -20,8 +20,8 @@ else{
     redirect("../");
 }
 
-get_view("showcase");
+get_template("showcase");
 
 if (isset($alert)) echo $alert;
 
-get_view("footer");
+get_template("footer");

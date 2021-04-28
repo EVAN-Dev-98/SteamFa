@@ -2,10 +2,9 @@
 /* Created By Evan ( Sajad Gholami ) */
 
 include "__php__.php";
-
-include $inc . "functions.php";
+include  $Model . "initializer.php";
 
 $title = "ثبت نام | استیم فارسی";
 
-get_view("header","",$title);
-get_view("register","account");
+get_template("header","",$title);
+get_template("sign","up");

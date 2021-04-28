@@ -1,15 +1,15 @@
 <?php
+/* Created By Evan ( Sajad Gholami ) */
 
 include "__php__.php";
+include  $Model . "initializer.php";
 
-include $inc . "settings.php";
-include $inc . "functions.php";
 $title = "محصولات | استیم فارسی";
-get_view("header",null,$title);
-get_view("showcase",null,null);
+get_template("header",null,$title);
+get_template("showcase",null,null);
 
-include $eng . "get-product.php";
+include $Controller . "get-product.php";
 
 if (isset($alerts)) echo $alerts;
 
-get_view("footer",null,null);
+get_template("footer",null,null);

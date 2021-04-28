@@ -2,11 +2,10 @@
 /* Created By Evan ( Sajad Gholami ) */
 
 include "__php__.php";
-
-include $inc . "functions.php";
+include  $Model . "initializer.php";
 
 $title = "پنل مدیریت | پیام ها";
 
-get_view("header","account",$title);
-get_view("sidebar","account");
-include $eng . "get-message.php";
+get_template("header","account",$title);
+get_template("sidebar","account");
+include $Controller . "get-message.php";

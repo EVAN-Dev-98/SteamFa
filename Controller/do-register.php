@@ -2,10 +2,9 @@
 /* Created By Evan ( Sajad Gholami ) */
 
 include "__php__.php";
+include  $Model . "initializer.php";
 
 $title = "ثبت نام | استیم فارسی";
-include $inc . "settings.php";
-include $inc . "functions.php";
 
 // get values from html
 if (isset($_POST['submit'])){
@@ -25,7 +24,7 @@ if (isset($_POST['submit'])){
     }
 
     else{
-        get_view("header","",$title);
+        get_template("header","",$title);
 
         $alert = alert("گذرواژه با تکرار آن برابر نیست !!!", "<a href='../View/account/sign-up.php'>بازگشت به صفحه ثبت نام</a>","danger");
     }

@@ -2,12 +2,11 @@
 /* Created By Evan ( Sajad Gholami ) */
 
 include "__php__.php";
+include  $Model . "initializer.php";
 
 $title = "پنل مدیریت | افزودن محصول";
-include $inc . "settings.php";
-include $inc . "functions.php";
-get_view("header","account",$title);
-get_view("sidebar","account");
+get_template("header","account",$title);
+get_template("sidebar","account");
 
 
 // get values from html

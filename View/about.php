@@ -2,12 +2,12 @@
 /* Created By Evan ( Sajad Gholami ) */
 
 include "__php__.php";
+include  $Model . "initializer.php";
 
-include $inc . "functions.php";
 
 $title = "درباره ما | استیم فارسی";
 
-get_view("header","",$title);
-get_view("showcase");
-get_view("about");
-get_view("footer");
+get_template("header","",$title);
+get_template("showcase");
+get_template("about");
+get_template("footer");

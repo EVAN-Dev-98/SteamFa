@@ -1,9 +1,7 @@
 <?php
 
 include "__php__.php";
-
-include $inc . "settings.php";
-include $inc . "functions.php";
+include  $Model . "initializer.php";
 
 $db = new DB();
 $table = Product::find();
@@ -15,7 +13,7 @@ $alerts = alerts();
 <?php
 $count = 0;
 foreach ($table as $row){
-    get_view("product","template");
+    get_template("product","template");
     $count++;
 }
 ?>

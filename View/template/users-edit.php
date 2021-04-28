@@ -3,7 +3,7 @@
         <h2>ویرایش اطلاعات</h2>
     </header>
     <main>
-        <form action="<?php echo_engine("do-edit-user.php"); ?>" method="post">
+        <form action="<?php echo_controller("do-edit-user.php"); ?>" method="post">
             <h2>ثبت نام</h2>
             <section class="mb-3">
                 <label for="name" class="form-label">نام و نام خانوادگی : </label>

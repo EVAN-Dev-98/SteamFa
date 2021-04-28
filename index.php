@@ -1,5 +1,6 @@
 <?php
 
 include "__php__.php";
+include  $Model . "initializer.php";
 
-include "View/home.php";
+get_view("home");

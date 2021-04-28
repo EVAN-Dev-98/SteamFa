@@ -1,4 +1,4 @@
-<form action="<?php echo_engine("do-contact.php"); ?>" method="post" class="contact">
+<form action="<?php echo_controller("do-contact.php"); ?>" method="post" class="contact">
    <p class="form-title">فرم تماس با ما</p>
    <br>
    <label class="form-lbl" for="name">نام : </label>

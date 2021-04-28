@@ -45,7 +45,7 @@ get_template("head","",$title);
        <ul>
           <li class="account"><a href="<?php echo_account("sign-in.php"); ?>" target="_steamfapanel">ورود</a></li>
           <li class="account"><a href="<?php echo_account("sign-up.php"); ?>" target="_steamfapanel">ثبت نام</a></li>
-          <li class="account"><a href="<?php echo_account("home.php"); ?>" target="_steamfapanel">پنل کاربری</a></li>
+          <li class="account"><a href="<?php echo_account("dashboard.php"); ?>" target="_steamfapanel">پنل کاربری</a></li>
           <li class="search"><input class="search-input" type="text" name="search" value="" placeholder="دنبال چی میگردی ؟" onfocus="this.placeholder=''" onblur="this.placeholder='دنبال چی میگردی ؟'"></li>
           <li class="search-icon"><a href="#footer_search"></a></li>
        </ul>

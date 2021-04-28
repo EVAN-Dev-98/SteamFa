@@ -1,9 +1,7 @@
 <?php
 
 include "__php__.php";
-
-include $inc . "settings.php";
-include $inc . "functions.php";
+include  $Model . "initializer.php";
 
 $db = new DB();
 $table = Users::find();
@@ -31,7 +29,7 @@ $alerts = alerts();
                 $count = 0;
                 foreach ($table as $row){
                     $count++;
-                    get_view("users","account");
+                    get_template("users","template");
                 }
                 ?>
             </tbody>

@@ -71,6 +71,15 @@ if (!function_exists("echo_assets")){
     }
 }
 
+// for echo address assets in folder like images
+if (!function_exists("echo_controller")){
+    function echo_controller($name){
+        include "__php__.php";
+        $address = $controller . $name;
+        echo $address;
+    }
+}
+
 // for echo address dashboard or maybe sign-in.php
 if (!function_exists("echo_account")){
     function echo_account($name){

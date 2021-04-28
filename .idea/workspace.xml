@@ -1,19 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- All Directory Changes with MVC Standard&#10;- Need Edit All Files&#10;this commit just changes directory and need edit all files to work&#10;edit az SOON :)">
-      <change afterPath="$PROJECT_DIR$/View/__php__.php" afterDir="false" />
+    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- edit functions&#10;- edit home page">
+      <change afterPath="$PROJECT_DIR$/Model/DB/__php__.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/items - steamfa.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/__php__.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/__php__.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/do-add.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/do-contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/do-login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-sign-in.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/do-register.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/get-message.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/get-message.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/get-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/get-product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/get-users.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/get-users.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/initializer.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/initializer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/settings.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/head.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/about.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/account/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/dashboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/account/sign-in.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/sign-in.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/account/sign-up.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/sign-up.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/catalog.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/catalog.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/add-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/add-product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/addproduct-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/addproduct-panel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/edit-user.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/edit-user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/footer-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/footer-panel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/header-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/header-panel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/template/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/main_menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/main-menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/__php__.php" beforeDir="false" afterPath="$PROJECT_DIR$/__php__.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/login-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/sign-in.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/message-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/message-template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/register-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/sign-up.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/show-messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/show-messages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/show-users.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/show-users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/sidebar-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/sidebar-panel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/users-edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/users-edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/users-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/users-template.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +68,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/View" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Model/DB" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -57,6 +77,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\SteamFa\Model\DB" />
       <recent name="C:\wamp64\www\SteamFa\View" />
       <recent name="C:\wamp64\www\SteamFa\includes" />
       <recent name="C:\wamp64\www\SteamFa\public\theme" />
@@ -136,7 +157,10 @@
       <workItem from="1619207347456" duration="255000" />
       <workItem from="1619294275688" duration="1553000" />
       <workItem from="1619381239367" duration="270000" />
-      <workItem from="1619433751752" duration="11860000" />
+      <workItem from="1619433751752" duration="14458000" />
+      <workItem from="1619533752040" duration="18000" />
+      <workItem from="1619551954992" duration="1647000" />
+      <workItem from="1619647961795" duration="1460000" />
     </task>
     <task id="LOCAL-00001" summary="- change directions">
       <created>1614875491541</created>
@@ -348,7 +372,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619435759644</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="- edit functions&#10;- edit home page">
+      <created>1619472318001</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1619472318001</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,7 +399,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="- a bit changes&#10;have fun&#10;bigs latter haha" />
     <MESSAGE value="- change version to 3.5" />
     <MESSAGE value="done" />
     <MESSAGE value="- add Manager panel" />
@@ -393,7 +423,8 @@
     <MESSAGE value="- chert o pert neveshtam" />
     <MESSAGE value="- ok" />
     <MESSAGE value="- All Directory Changes with MVC Standard&#10;- Need Edit All Files&#10;this commit just changes directory and need edit all files to work&#10;edit az SOON :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="- All Directory Changes with MVC Standard&#10;- Need Edit All Files&#10;this commit just changes directory and need edit all files to work&#10;edit az SOON :)" />
+    <MESSAGE value="- edit functions&#10;- edit home page" />
+    <option name="LAST_COMMIT_MESSAGE" value="- edit functions&#10;- edit home page" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
