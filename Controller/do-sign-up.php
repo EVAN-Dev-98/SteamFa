@@ -20,7 +20,7 @@ if (isset($_POST['submit'])){
         unset($params['submit']);
         unset($params['repassword']);
         Users::add($params);
-        redirect("../account/");
+        redirect("../View/account/dashboard.php");
     }
 
     else{
@@ -31,7 +31,7 @@ if (isset($_POST['submit'])){
 
 }
 else{
-    redirect("../");
+    redirect(".." . echo_view("home.php"));
 }
 ?>
 <section class="container fix-header">

@@ -5,8 +5,8 @@ include "__php__.php";
 include  $Model . "initializer.php";
 
 $title = "پنل مدیریت | افزودن محصول";
-get_template("header","account",$title);
-get_template("sidebar","account");
+get_template("header","panel",$title);
+get_template("sidebar","panel");
 
 
 // get values from html

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- Fixed Error : __php__.php include&#10;- More features coming soon :)">
-      <change beforePath="$PROJECT_DIR$/Model/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/settings.php" afterDir="false" />
+    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- rename file do-register to do-sign-up">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/do-sign-up.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-sign-up.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +130,7 @@
       <workItem from="1619533752040" duration="18000" />
       <workItem from="1619551954992" duration="1647000" />
       <workItem from="1619647961795" duration="3019000" />
-      <workItem from="1619699718784" duration="2237000" />
+      <workItem from="1619699718784" duration="3893000" />
     </task>
     <task id="LOCAL-00001" summary="- change directions">
       <created>1614875491541</created>
@@ -369,7 +370,21 @@
       <option name="project" value="LOCAL" />
       <updated>1619703587760</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="- site version == 6 :)">
+      <created>1619703880110</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1619703880110</updated>
+    </task>
+    <task id="LOCAL-00036" summary="- rename file do-register to do-sign-up">
+      <created>1619705355849</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1619705355849</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -389,8 +404,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="- add Manager panel" />
-    <MESSAGE value="- add admin footer" />
     <MESSAGE value="- add product html ok" />
     <MESSAGE value="- add product html ok fixed" />
     <MESSAGE value="- add product html ok fixed css fixed" />
@@ -414,7 +427,9 @@
     <MESSAGE value="- edit functions&#10;- edit home page" />
     <MESSAGE value="- add __php__" />
     <MESSAGE value="- Fixed Error : __php__.php include&#10;- More features coming soon :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Fixed Error : __php__.php include&#10;- More features coming soon :)" />
+    <MESSAGE value="- site version == 6 :)" />
+    <MESSAGE value="- rename file do-register to do-sign-up" />
+    <option name="LAST_COMMIT_MESSAGE" value="- rename file do-register to do-sign-up" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
