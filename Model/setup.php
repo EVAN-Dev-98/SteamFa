@@ -1,8 +1,7 @@
 <?php
 
 include "__php__.php";
-include $inc . "settings.php";
-include $inc . "functions.php";
+include  $Model . "initializer.php";
 
 $db = new DB(false);
 
@@ -54,6 +53,7 @@ $Query = "CREATE TABLE IF NOT EXISTS Users (
     ID INT NOT NULL AUTO_INCREMENT,
     type INT,
     name VARCHAR(100),
+    family VARCHAR(255),
     email VARCHAR(255),
     username VARCHAR(150),
     password VARCHAR(255),
@@ -69,7 +69,7 @@ $alerts = alerts();
 
 $title = "پنل مدیریت | نصب و راه اندازی";
 
-get_view("header","account",$title);
+get_template("header","panel",$title);
 ?>
 <section class="container fix-header">
     <?php if (isset($alerts)) echo $alerts; ?>
