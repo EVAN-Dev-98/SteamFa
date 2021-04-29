@@ -1,5 +1,7 @@
 <?php
 
+include "__php__.php";
+
 // we most include all tables Class :)
 include "Product.php";
 include "Users.php";
