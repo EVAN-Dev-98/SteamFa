@@ -1,2 +1,2 @@
 <?php
-include "../__php__.php";
+include __DIR__ . "/../__php__.php";

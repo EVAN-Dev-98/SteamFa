@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- edit functions&#10;- edit home page">
-      <change afterPath="$PROJECT_DIR$/View/dashboard.php" afterDir="false" />
+    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- add __php__">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/DB/DB.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DB/DB.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/__php__.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/__php__.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/do-add.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/DB/__php__.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DB/__php__.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/__php__.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/__php__.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/__php__.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/__php__.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/account/__php__.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/__php__.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/__php__.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/__php__.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/add-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/add-product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/edit-user.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/edit-user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/show-messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/show-messages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/show-users.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/show-users.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +47,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/View" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -47,18 +56,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\SteamFa" />
       <recent name="C:\wamp64\www\SteamFa\View" />
       <recent name="C:\wamp64\www\SteamFa\Model\DB" />
       <recent name="C:\wamp64\www\SteamFa\includes" />
       <recent name="C:\wamp64\www\SteamFa\public\theme" />
-      <recent name="C:\wamp64\www\SteamFa\public\manager" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\SteamFa\View\account" />
       <recent name="C:\wamp64\www\SteamFa\View\template" />
       <recent name="C:\wamp64\www\SteamFa\View" />
       <recent name="C:\wamp64\www\SteamFa" />
       <recent name="C:\wamp64\www\SteamFa\Controller" />
-      <recent name="C:\wamp64\www\SteamFa\Model" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -131,6 +140,7 @@
       <workItem from="1619533752040" duration="18000" />
       <workItem from="1619551954992" duration="1647000" />
       <workItem from="1619647961795" duration="3019000" />
+      <workItem from="1619699718784" duration="1818000" />
     </task>
     <task id="LOCAL-00001" summary="- change directions">
       <created>1614875491541</created>
@@ -356,7 +366,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619649695107</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="- add __php__">
+      <created>1619699810952</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1619699810953</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -376,7 +393,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="- change version to 3.5" />
     <MESSAGE value="done" />
     <MESSAGE value="- add Manager panel" />
     <MESSAGE value="- add admin footer" />
@@ -401,7 +417,8 @@
     <MESSAGE value="- ok" />
     <MESSAGE value="- All Directory Changes with MVC Standard&#10;- Need Edit All Files&#10;this commit just changes directory and need edit all files to work&#10;edit az SOON :)" />
     <MESSAGE value="- edit functions&#10;- edit home page" />
-    <option name="LAST_COMMIT_MESSAGE" value="- edit functions&#10;- edit home page" />
+    <MESSAGE value="- add __php__" />
+    <option name="LAST_COMMIT_MESSAGE" value="- add __php__" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

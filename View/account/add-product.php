@@ -2,7 +2,7 @@
 /* Created By Evan ( Sajad Gholami ) */
 
 include "__php__.php";
-include  $Model . "initializer.php";
+include $Model . "initializer.php";
 
 $title = "پنل مدیریت | افزودن محصول";
 

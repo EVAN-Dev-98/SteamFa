@@ -11,7 +11,7 @@ get_template("sidebar","account");
 
 // get values from html
 if (isset($_POST['submit'])){
-    $_POST['img'] = "/SteamFa/public/assets/images/ak-47-bloodsport.png";
+    $_POST['img'] = "/SteamFa/View/assets/images/ak-47-bloodsport.png";
     $db = new DB();
     $params = $_POST;
     unset($params['submit']);
