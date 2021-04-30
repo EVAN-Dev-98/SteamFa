@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- ReWork Sign-Up Form&#10;- Remove username field from sign-up form and use email for sign-in and users unique parameter">
-      <change afterPath="$PROJECT_DIR$/Controller/edit-user.php" afterDir="false" />
+    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- edit user profile in panel">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/do-edit-user.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/get-users.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/get-users.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/DB/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DB/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/DB/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DB/Users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/setup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/account/edit-user.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/profile-user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/View/assets/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/sidebar-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/sidebar-panel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/users-edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/profile-panel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/users-template.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/users-template.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +130,7 @@
       <workItem from="1619533752040" duration="18000" />
       <workItem from="1619551954992" duration="1647000" />
       <workItem from="1619647961795" duration="3019000" />
-      <workItem from="1619699718784" duration="21409000" />
+      <workItem from="1619699718784" duration="22727000" />
     </task>
     <task id="LOCAL-00001" summary="- change directions">
       <created>1614875491541</created>
@@ -408,7 +398,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619708557661</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="- edit user profile in panel">
+      <created>1619793417438</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1619793417439</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -428,7 +425,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="- add product html ok fixed" />
     <MESSAGE value="- add product html ok fixed css fixed" />
     <MESSAGE value="- add product php ok" />
     <MESSAGE value="- add product php ok&#10;- bug fixed" />
@@ -453,7 +449,8 @@
     <MESSAGE value="- site version == 6 :)" />
     <MESSAGE value="- rename file do-register to do-sign-up" />
     <MESSAGE value="- ReWork Sign-Up Form&#10;- Remove username field from sign-up form and use email for sign-in and users unique parameter" />
-    <option name="LAST_COMMIT_MESSAGE" value="- ReWork Sign-Up Form&#10;- Remove username field from sign-up form and use email for sign-in and users unique parameter" />
+    <MESSAGE value="- edit user profile in panel" />
+    <option name="LAST_COMMIT_MESSAGE" value="- edit user profile in panel" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

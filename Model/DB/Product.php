@@ -1,6 +1,6 @@
 <?php
-if (!class_exists('Users')){
-    class Users{
+if (!class_exists('Product')){
+    class Product{
         static function columnsList( $vars , $sep = ", "){
             $keys = array_keys($vars);
             return join($sep , $keys);
