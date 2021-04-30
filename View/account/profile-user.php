@@ -8,4 +8,5 @@ $title = "پنل مدیریت | ویرایش اطلاعات";
 
 get_template("header","panel",$title);
 get_template("sidebar","panel");
-get_template("users","edit");
+include $Controller . "edit-user.php";
+get_template("profile","panel");

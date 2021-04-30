@@ -55,8 +55,9 @@ $Query = "CREATE TABLE IF NOT EXISTS Users (
     name VARCHAR(100),
     family VARCHAR(255),
     email VARCHAR(255),
-    username VARCHAR(150),
     password VARCHAR(255),
+    gender VARCHAR (6),
+    steam_url VARCHAR (255),
     img VARCHAR(255),
     PRIMARY KEY (ID)
     )ENGINE = INNODB";

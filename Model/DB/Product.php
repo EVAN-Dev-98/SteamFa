@@ -1,6 +1,6 @@
 <?php
-if (!class_exists('Product')){
-    class Product{
+if (!class_exists('Users')){
+    class Users{
         static function columnsList( $vars , $sep = ", "){
             $keys = array_keys($vars);
             return join($sep , $keys);
@@ -8,6 +8,13 @@ if (!class_exists('Product')){
         static function valuesList( $vars , $sep = "', '"){
             $values = array_values($vars);
             return "'" . join($sep , $values) . "'";
+        }
+        static function columnsValueList( $params, $sep = ", "){
+            unset($params['id']);
+            foreach ( $params as $key => $value){
+                $varPairs[] = "{$key} = '{$value}'";
+            }
+            return join($sep, $varPairs);
         }
         static function add( $params ){
             $TableName = get_class();
@@ -23,6 +30,15 @@ if (!class_exists('Product')){
             $TableName = get_class();
             $query = "SELECT * FROM {$TableName} WHERE {$where} ORDER BY {$order} LIMIT {$offset} , {$count}";
             return $GLOBALS['db'] -> Execute($query);
+        }
+        static function update( $params ){
+            $TableName = get_class();
+            $columnsValueList = self::columnsValueList( $params );
+            $query = "UPDATE {$TableName} SET {$columnsValueList} WHERE ID = {$params['id']}";
+            $result = $GLOBALS['db'] -> Execute($query);
+            if ($result){
+                alerts("{$TableName} شما با موفقیت ویرایش شد!","","success");
+            }
         }
     }
 }

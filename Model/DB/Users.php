@@ -9,6 +9,13 @@ if (!class_exists('Users')){
             $values = array_values($vars);
             return "'" . join($sep , $values) . "'";
         }
+        static function columnsValueList( $params, $sep = ", "){
+            unset($params['id']);
+            foreach ( $params as $key => $value){
+                $varPairs[] = "{$key} = '{$value}'";
+            }
+            return join($sep, $varPairs);
+        }
         static function add( $params ){
             $TableName = get_class();
             $columnsString = self::columnsList( $params );
@@ -23,6 +30,15 @@ if (!class_exists('Users')){
             $TableName = get_class();
             $query = "SELECT * FROM {$TableName} WHERE {$where} ORDER BY {$order} LIMIT {$offset} , {$count}";
             return $GLOBALS['db'] -> Execute($query);
+        }
+        static function update( $params ){
+            $TableName = get_class();
+            $columnsValueList = self::columnsValueList( $params );
+            $query = "UPDATE {$TableName} SET {$columnsValueList} WHERE ID = {$params['id']}";
+            $result = $GLOBALS['db'] -> Execute($query);
+            if ($result){
+                alerts("{$TableName} شما با موفقیت ویرایش شد!","","success");
+            }
         }
     }
 }

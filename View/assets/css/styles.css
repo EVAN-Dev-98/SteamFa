@@ -992,3 +992,9 @@ footer .main-footer .info p {
 .fix-header{
      margin-top: 200px;
 }
+.dir-ltr{
+     direction: ltr;
+}
+.dir-rtl{
+     direction: rtl;
+}

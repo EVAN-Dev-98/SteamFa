@@ -19,7 +19,7 @@ $alerts = alerts();
                 <th scope="col"></th>
                 <th scope="col">شناسه کاربری</th>
                 <th scope="col">نام</th>
-                <th scope="col">تام کاربری</th>
+                <th scope="col">نام خانوادگی</th>
                 <th scope="col">ایمیل</th>
                 <th scope="col">نوع حساب</th>
             </tr>
