@@ -16,12 +16,14 @@ $alerts = alerts();
         <table class="table table-dark table-hover">
             <thead>
             <tr>
-                <th scope="col"></th>
+                <th scope="col">ردیف</th>
                 <th scope="col">شناسه کاربری</th>
                 <th scope="col">نام</th>
                 <th scope="col">نام خانوادگی</th>
                 <th scope="col">ایمیل</th>
                 <th scope="col">نوع حساب</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
             </tr>
             </thead>
             <tbody>

@@ -4,10 +4,10 @@
 include "__php__.php";
 include $Model . "initializer.php";
 
-$title = "پنل مدیریت | مشاهده کاربران";
+$title = "پنل مدیریت | مشاهده محصولات";
 
 $file = __FILE__;
 $active = basename($file);
 get_template("header","panel",$title);
 get_template("sidebar","panel");
-include $Controller . "get-users.php";
+include $Controller . "get-product-list.php";
