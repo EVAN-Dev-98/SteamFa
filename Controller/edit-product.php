@@ -10,6 +10,7 @@ if ( isset($_GET['id']) ){
         $parameters = $_POST;
         $parameters['id'] = $_GET['id'];
         unset($parameters['submit']);
+        $parameters['img'] = "/SteamFa/View/assets/images/ak-47-bloodsport.png";
         Product::update( $parameters );
         redirect("../View/account/show-product-list.php");
     }
