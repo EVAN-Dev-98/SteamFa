@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- add edit product&#10;- add edit user&#10;- Optimization panel">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/edit-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/edit-product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/edit-user.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/edit-user.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +132,7 @@
       <workItem from="1619647961795" duration="3019000" />
       <workItem from="1619699718784" duration="26634000" />
       <workItem from="1619814657330" duration="7251000" />
-      <workItem from="1619860302188" duration="116000" />
+      <workItem from="1619860302188" duration="995000" />
     </task>
     <task id="LOCAL-00001" summary="- change directions">
       <created>1614875491541</created>
@@ -429,7 +428,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619821577836</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="- add edit product&#10;- add edit user&#10;- Optimization panel">
+      <created>1619860475935</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1619860475935</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

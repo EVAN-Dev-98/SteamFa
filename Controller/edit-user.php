@@ -11,7 +11,7 @@ if ( isset($_GET['id']) ){
         $parameters['id'] = $_GET['id'];
         unset($parameters['submit']);
         Users::update( $parameters );
-        redirect("../View/account/profile-user.php");
+        redirect("../View/account/show-users.php");
     }
 
     $table = Users::find("ID = {$_GET['id']}");
