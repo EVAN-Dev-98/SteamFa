@@ -3,49 +3,62 @@
 include "__php__.php";
 
 // we most include all tables Class :)
+include "Table.php";
 include "Product.php";
-include "Users.php";
+include "User.php";
 include "Messages.php";
+include "Role.php";
 
 if (!class_exists("DB")){
     class DB{
         var $dbc;
-        function __construct($Soft = true){
+        public function __construct($Soft = true){
             $this->Connect();
             if ($Soft){
                 $this->SelectDB();
             }
             $this->dbc->set_charset(CHARSET);
         }
-        function Connect(){
+        private function Connect(){
             $this->dbc = new mysqli(DBHOST,DBUSER,DBPASS);
             if ($this->dbc->connect_errno) {
                 echo alert("خطا در اتصال به دیتابیس","خطا : " . $this->dbc->connect_error ,"danger");
                 exit();
             }
         }
-        function SelectDB(){
+        public function SelectDB(){
             $this->dbc->select_db(DBNAME);
             if ($this->dbc->error){
                 echo alert("خطا در انتخاب دیتابیس","خطا : " . $this->dbc->error ,"danger");
                 exit();
             }
         }
-        function Execute($query){
-            $result = $this->dbc->query($query);
-            if ($this->dbc->error){
-                $error = alert("خطا در اجرای دستورات","خطا : " . $this->dbc->error ,"danger");
-                die($error);
-                /* return false; */
+        public function Execute($query){
+            $result = $this -> dbc -> query($query);
+            if ( $this -> dbc -> errno == 1050 ){
+                return $this -> dbc -> errno;
             }
-            elseif ($result !== true && $result !== false){ // select
-                return $result -> fetch_all(MYSQLI_ASSOC);
+            elseif ( $this -> dbc -> errno == 1007 ){
+                return $this -> dbc -> errno;
             }
-            elseif ( isset($this -> dbc-> insert_id) ){ // insert
-                return $this -> dbc -> insert_id;
+            elseif ( $this -> dbc -> error ){
+                alerts("خطا در اجرای دستورات","خطا : " . $this->dbc->error ,"danger");
+                return false;
             }
-            else // update / delete
-                return true;
+
+            else{
+
+                if ( $result !== true && $result !== false ){ // select
+                    return $result -> fetch_all( MYSQLI_ASSOC );
+                }
+                else{
+                    if ( isset( $this -> dbc-> insert_id ) ){ // insert
+                        return $this -> dbc -> insert_id;
+                    }
+                    else // update / delete
+                        return $result;
+                }
+            }
         }
         function __destruct(){
             $this->dbc->close();

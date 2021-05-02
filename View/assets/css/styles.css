@@ -986,6 +986,10 @@ footer .main-footer .info p {
      color: #ffffff;
      transition: 0.5s;
 }
+.panel-sidebar .items .avatar{
+     display: block;
+     margin: 20px auto;
+}
 .panel{
      border-radius: 1em;
      margin: 100px 300px 50px 50px;

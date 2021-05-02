@@ -19,7 +19,7 @@ if (isset($_POST['submit'])){
         $params = $_POST;
         unset($params['submit']);
         unset($params['repassword']);
-        Users::add($params);
+        User::add($params);
         redirect("../View/account/dashboard.php");
     }
 

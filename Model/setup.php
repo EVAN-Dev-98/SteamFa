@@ -13,15 +13,18 @@ if (!$SoftSetup){
     }
 }
 
-$Query = "CREATE DATABASE IF NOT EXISTS {$dbName} CHARSET {$dbCharset} COLLATE {$dbCollate}";
+$Query = "CREATE DATABASE {$dbName} CHARSET {$dbCharset} COLLATE {$dbCollate}";
 $result = $db->Execute($Query);
 if ($result == 0){
     alerts('دیتابیس با موفقیت ایجاد شد','','success');
 }
+elseif ($result == 1007){
+    alerts("دیتابیس از قبل ساخته شده است","","info");
+}
 
-$db->SelectDB();
+$db -> SelectDB();
 
-$Query = "CREATE TABLE IF NOT EXISTS Messages (
+$Query = "CREATE TABLE Messages (
     ID INT NOT NULL AUTO_INCREMENT,
     name VARCHAR(100),
     subject VARCHAR(100),
@@ -33,8 +36,11 @@ $result = $db->Execute($Query);
 if ($result == 0){
     alerts('جدول تماس باما با موفقیت ایجاد شد','','success');
 }
+elseif ($result == 1050){
+    alerts("جدول تماس باما در پایگاه داده وجود دارد","","info");
+}
 
-$Query = "CREATE TABLE IF NOT EXISTS Product (
+$Query = "CREATE TABLE Product (
     ID INT NOT NULL AUTO_INCREMENT,
     name VARCHAR(100),
     game VARCHAR(100),
@@ -48,12 +54,15 @@ $result = $db->Execute($Query);
 if ($result == 0){
     alerts('جدول محصولات با موفقیت ایجاد شد','','success');
 }
+elseif ($result == 1050){
+    alerts("جدول محصولات در پایگاه داده وجود دارد","","info");
+}
 
-$Query = "CREATE TABLE IF NOT EXISTS Users (
+$Query = "CREATE TABLE User (
     ID INT NOT NULL AUTO_INCREMENT,
-    type INT,
-    name VARCHAR(100),
-    family VARCHAR(255),
+    role_id INT,
+    fname VARCHAR(100),
+    lname VARCHAR(255),
     email VARCHAR(255),
     password VARCHAR(255),
     gender VARCHAR (6),
@@ -64,6 +73,68 @@ $Query = "CREATE TABLE IF NOT EXISTS Users (
 $result = $db->Execute($Query);
 if ($result == 0){
     alerts('جدول کاربران با موفقیت ایجاد شد','','success');
+}
+elseif ($result == 1050){
+    alerts("جدول کاربران در پایگاه داده وجود دارد","","info");
+}
+
+$Query = "CREATE TABLE Role (
+    ID INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR (20),
+    UserAdd BOOLEAN DEFAULT 0,
+    UserEdit BOOLEAN DEFAULT 0,
+    UserOtherEdit BOOLEAN DEFAULT 0,
+    ProductAdd BOOLEAN DEFAULT 0,
+    ProductEdit BOOLEAN DEFAULT 0,
+    ProductOtherEdit BOOLEAN DEFAULT 0,
+    PRIMARY KEY (ID)
+    )ENGINE = INNODB";
+$result = $db->Execute($Query);
+if ($result == 0){
+    alerts('جدول نقش ها با موفقیت ایجاد شد','','success');
+}
+elseif ($result == 1050){
+    alerts("جدول نقش ها در پایگاه داده وجود دارد","","info");
+}
+
+if (!$SoftSetup){
+
+    global $db;
+    $db = new DB();
+
+    $AdminUser = array(
+        "role_id" => 1,
+        "fname" => "Admin",
+        "email" => "Admin@{$SiteName}.ir",
+        "password" => password_hash("1234", PASSWORD_DEFAULT),
+        "img" => "/SteamFa/View/assets/images/icons/user-1.png",
+    );
+
+    $Administrator = array(
+        "ID" => 1,
+        "name" => "Administrator",
+        "UserAdd" => 1,
+        "UserEdit" => 1,
+        "UserOtherEdit" => 1,
+        "ProductAdd" => 1,
+        "ProductEdit" => 1,
+        "ProductOtherEdit" => 1,
+    );
+
+    $Normal = array(
+        "ID" => 2,
+        "name" => "Normal",
+        "UserAdd" => 1,
+        "UserEdit" => 1,
+        "UserOtherEdit" => 0,
+        "ProductAdd" => 0,
+        "ProductEdit" => 0,
+        "ProductOtherEdit" => 0,
+    );
+
+    User::add($AdminUser);
+    Role::add($Administrator);
+    Role::add($Normal);
 }
 
 $alerts = alerts();

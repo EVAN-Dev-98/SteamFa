@@ -1,6 +1,6 @@
 <?php
-if (!class_exists('Users')){
-    class Users{
+if (!class_exists('Table')){
+    class Table{
         static function columnsList( $vars , $sep = ", "){
             $keys = array_keys($vars);
             return join($sep , $keys);
@@ -17,22 +17,24 @@ if (!class_exists('Users')){
             return join($sep, $varPairs);
         }
         static function add( $params ){
-            $TableName = get_class();
+            global $db;
+            $TableName = static::class;
             $columnsString = self::columnsList( $params );
             $valuesString = self::valuesList( $params );
             $query = "INSERT INTO {$TableName} ({$columnsString}) VALUES ({$valuesString})";
-            $result = $GLOBALS['db'] -> Execute($query);
+            $result = $db -> Execute($query);
             if ($result){
                 alerts("{$TableName} شما با موفقیت ثبت شد!","","success");
             }
+            return $result;
         }
         static function find($where = "true" , $order = "id DESC" , $count = 100 , $offset = 0){
-            $TableName = get_class();
+            $TableName = static::class;
             $query = "SELECT * FROM {$TableName} WHERE {$where} ORDER BY {$order} LIMIT {$offset} , {$count}";
             return $GLOBALS['db'] -> Execute($query);
         }
         static function update( $params ){
-            $TableName = get_class();
+            $TableName = static::class;
             $columnsValueList = self::columnsValueList( $params );
             $query = "UPDATE {$TableName} SET {$columnsValueList} WHERE ID = {$params['id']}";
             $result = $GLOBALS['db'] -> Execute($query);

@@ -4,7 +4,7 @@ include "__php__.php";
 include  $Model . "initializer.php";
 
 $db = new DB();
-$table = Users::find();
+$table = User::find();
 $alerts = alerts();
 
 ?>

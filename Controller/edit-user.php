@@ -10,11 +10,11 @@ if ( isset($_GET['id']) ){
         $parameters = $_POST;
         $parameters['id'] = $_GET['id'];
         unset($parameters['submit']);
-        Users::update( $parameters );
+        User::update( $parameters );
         redirect("../View/account/show-users.php");
     }
 
-    $table = Users::find("ID = {$_GET['id']}");
+    $table = User::find("ID = {$_GET['id']}");
     if (isset($table[0])){
         $row = $table[0];
     }

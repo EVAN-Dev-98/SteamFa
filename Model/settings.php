@@ -1,6 +1,8 @@
 <?php
 /* Created By Evan ( Sajad Gholami ) */
 
+$SiteName = "SteamFa";
+
 if (! defined('DBHOST') ) define('DBHOST','localhost');
 if (! defined('DBUSER') ) define('DBUSER','root');
 if (! defined('DBPASS') ) define('DBPASS','');
@@ -18,4 +20,4 @@ $dbCollate = COLLATE;
 $SiteVersion = 6.5;
 
 $SoftSetup = true;
-$FirstTime = false;
+$FirstTime = true;
