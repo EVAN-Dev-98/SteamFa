@@ -16,17 +16,8 @@ if (isset($_POST['submit'])){
     $params = $_POST;
     unset($params['submit']);
     Product::add($params);
-    $alert = alerts();
+    redirect("../View/account/show-product-list.php");
 }
 else{
     redirect("../");
 }
-?>
-<section class="panel">
-    <header>
-        <h2>افزودن محصول</h2>
-    </header>
-    <main>
-        <?php if (isset($alert)) echo $alert; ?>
-    </main>
-</section>

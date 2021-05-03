@@ -1,16 +1,20 @@
 <section class="container fix-header">
+    <?php
+    if (isset($alerts))
+        echo $alerts;
+    ?>
     <form action="<?php echo_controller("do-sign-up.php"); ?>" method="post">
         <h2>ثبت نام</h2>
         <section class="row g-2 mt-5 mb-3">
             <section class="col-md-5">
                 <section class="form-floating">
-                    <input type="text" class="form-control" name="name" id="floatingInputName" placeholder="نام" required>
+                    <input type="text" class="form-control" name="fname" id="floatingInputName" placeholder="نام" required>
                     <label for="floatingInputName">نام</label>
                 </section>
             </section>
             <section class="col-md-7">
                 <section class="form-floating">
-                    <input type="text" class="form-control" name="family" id="floatingInputFamily" placeholder="نام خانوادگی">
+                    <input type="text" class="form-control" name="lname" id="floatingInputFamily" placeholder="نام خانوادگی">
                     <label for="floatingInputFamily">نام خانوادگی</label>
                 </section>
             </section>

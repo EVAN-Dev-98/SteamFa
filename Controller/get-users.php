@@ -5,7 +5,6 @@ include  $Model . "initializer.php";
 
 $db = new DB();
 $table = User::find();
-$alerts = alerts();
 
 ?>
 <section class="panel">
@@ -13,6 +12,10 @@ $alerts = alerts();
         <h2>مشاهده کاربران</h2>
     </header>
     <main>
+        <?php
+        if (isset($alerts))
+            echo $alerts;
+        ?>
         <table class="table table-dark table-hover">
             <thead>
             <tr>

@@ -7,7 +7,7 @@ global $row;
         <h5 class="card-title"><?php echo $row['subject']; ?></h5>
         <p class="card-text"><?php echo $row['message']; ?></p>
         <section class="mt-2">
-            <a href="<?php // delete from id example go to page delete echo $row['ID']  ?>" class="btn btn-outline-danger">حذف</a>
+            <a href="<?php echo_controller("delete-message.php?id={$row['ID']}"); ?>" class="btn btn-outline-danger">حذف</a>
         </section>
     </section>
     <section class="card-footer">

@@ -13,6 +13,10 @@ $alerts = alerts();
         <h2>مشاهده آیتم ها</h2>
     </header>
     <main>
+        <?php
+        if (isset($alerts))
+            echo $alerts;
+        ?>
         <table class="table table-dark table-hover">
             <thead>
             <tr>

@@ -14,8 +14,8 @@ global $alerts;
         <form action="<?php echo_controller("edit-user.php"); ?>?id=<?php if (isset($_GET['id'])) echo $_GET['id']; ?>" method="post">
             <section class="input-group mb-3">
                 <span class="input-group-text">نام و نام خانوادگی</span>
-                <input type="text" name="name" value="<?php if (isset($row['name'])) echo $row['name']; ?>" aria-label="name" class="form-control">
-                <input type="text" name="family" value="<?php if (isset($row['family'])) echo $row['family']; ?>" aria-label="family" class="form-control">
+                <input type="text" name="fname" value="<?php if (isset($row['fname'])) echo $row['fname']; ?>" aria-label="name" class="form-control">
+                <input type="text" name="lname" value="<?php if (isset($row['lname'])) echo $row['lname']; ?>" aria-label="family" class="form-control">
             </section>
             <section class="input-group mb-3">
                 <input type="email" name="email" value="<?php if (isset($row['email'])) echo $row['email']; ?>" class="form-control" aria-label="email" aria-describedby="email" readonly>

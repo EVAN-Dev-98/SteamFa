@@ -8,7 +8,6 @@ $title = "ثبت نام | استیم فارسی";
 
 // get values from html
 if (isset($_POST['submit'])){
-    $_POST['type'] = 1;
     $password = $_POST['password'];
     $repassword = $_POST['repassword'];
 

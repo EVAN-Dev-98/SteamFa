@@ -21,7 +21,8 @@ if (!class_exists('Table')){
             $TableName = static::class;
             $columnsString = self::columnsList( $params );
             $valuesString = self::valuesList( $params );
-            $query = "INSERT INTO {$TableName} ({$columnsString}) VALUES ({$valuesString})";
+            $query = "INSERT INTO {$TableName} ({$columnsString})
+                      VALUES ({$valuesString})";
             $result = $db -> Execute($query);
             if ($result){
                 alerts("{$TableName} شما با موفقیت ثبت شد!","","success");
@@ -30,16 +31,31 @@ if (!class_exists('Table')){
         }
         static function find($where = "true" , $order = "id DESC" , $count = 100 , $offset = 0){
             $TableName = static::class;
-            $query = "SELECT * FROM {$TableName} WHERE {$where} ORDER BY {$order} LIMIT {$offset} , {$count}";
+            $query = "SELECT * FROM {$TableName}
+                      WHERE {$where} AND status != 'deleted'
+                      ORDER BY {$order}
+                      LIMIT {$offset} , {$count}";
             return $GLOBALS['db'] -> Execute($query);
         }
         static function update( $params ){
             $TableName = static::class;
             $columnsValueList = self::columnsValueList( $params );
-            $query = "UPDATE {$TableName} SET {$columnsValueList} WHERE ID = {$params['id']}";
+            $query = "UPDATE {$TableName}
+                      SET {$columnsValueList}
+                      WHERE ID = {$params['id']}";
             $result = $GLOBALS['db'] -> Execute($query);
             if ($result){
                 alerts("{$TableName} شما با موفقیت ویرایش شد!","","success");
+            }
+        }
+        static function delete( $id ){
+            $TableName = static::class;
+            $query = "UPDATE {$TableName}
+                      SET status = 'deleted'
+                      WHERE ID = {$id}";
+            $result = $GLOBALS['db'] -> Execute($query);
+            if ($result){
+                alerts("{$TableName} شما با موفقیت حذف شد!","","success");
             }
         }
     }

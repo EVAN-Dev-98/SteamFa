@@ -30,6 +30,7 @@ $Query = "CREATE TABLE Messages (
     subject VARCHAR(100),
     email VARCHAR(100),
     message TEXT,
+    status VARCHAR (20) DEFAULT 'normal',
     PRIMARY KEY (ID)
     )ENGINE = INNODB";
 $result = $db->Execute($Query);
@@ -48,6 +49,7 @@ $Query = "CREATE TABLE Product (
     quality VARCHAR(100),
     number INT,
     img VARCHAR(255),
+    status VARCHAR (20) DEFAULT 'normal',
     PRIMARY KEY (ID)
     )ENGINE = INNODB";
 $result = $db->Execute($Query);
@@ -60,7 +62,7 @@ elseif ($result == 1050){
 
 $Query = "CREATE TABLE User (
     ID INT NOT NULL AUTO_INCREMENT,
-    role_id INT,
+    role_id INT DEFAULT 2,
     fname VARCHAR(100),
     lname VARCHAR(255),
     email VARCHAR(255),
@@ -68,6 +70,7 @@ $Query = "CREATE TABLE User (
     gender VARCHAR (6),
     steam_url VARCHAR (255),
     img VARCHAR(255),
+    status VARCHAR (20) DEFAULT 'normal',
     PRIMARY KEY (ID)
     )ENGINE = INNODB";
 $result = $db->Execute($Query);
@@ -87,6 +90,7 @@ $Query = "CREATE TABLE Role (
     ProductAdd BOOLEAN DEFAULT 0,
     ProductEdit BOOLEAN DEFAULT 0,
     ProductOtherEdit BOOLEAN DEFAULT 0,
+    status VARCHAR (20) DEFAULT 'normal',
     PRIMARY KEY (ID)
     )ENGINE = INNODB";
 $result = $db->Execute($Query);

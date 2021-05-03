@@ -1,30 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- add edit product&#10;- add edit user&#10;- Optimization panel">
-      <change afterPath="$PROJECT_DIR$/Model/DB/Table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Model/DB/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/icons/agenda.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/icons/chat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/icons/email.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/icons/online-shop.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/icons/settings.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/icons/shop.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/icons/teamwork.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/icons/user-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/icons/user.png" afterDir="false" />
+    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- Database Table Classes Use inheritance :)&#10;- Improvement setup Like Handle Some Errors&#10;- The panel became more beautiful">
+      <change afterPath="$PROJECT_DIR$/Controller/delete-message.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/delete-product.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/delete-user.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/add-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/add-product.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/do-sign-up.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-sign-up.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/edit-user.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/edit-user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/get-product-list.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/get-product-list.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/get-users.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/get-users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/DB/DB.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DB/DB.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/DB/Messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DB/Messages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/DB/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DB/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/DB/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DB/Role.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/DB/Table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DB/Table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/settings.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/setup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/View/assets/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/sidebar-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/sidebar-panel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/message-template.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/message-template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/product-list-template.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/product-list-template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/profile-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/profile-panel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/sign-up.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/sign-up.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/users-template.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/users-template.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +148,8 @@
       <workItem from="1619814657330" duration="7251000" />
       <workItem from="1619860302188" duration="2036000" />
       <workItem from="1619906224286" duration="4470000" />
-      <workItem from="1619966585937" duration="9673000" />
+      <workItem from="1619966585937" duration="10774000" />
+      <workItem from="1620029967154" duration="7462000" />
     </task>
     <task id="LOCAL-00001" summary="- change directions">
       <created>1614875491541</created>
@@ -472,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619861589894</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="- Database Table Classes Use inheritance :)&#10;- Improvement setup Like Handle Some Errors&#10;- The panel became more beautiful">
+      <created>1619992032980</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1619992032980</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -492,7 +493,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="- add product php ok&#10;- bug fixed" />
     <MESSAGE value="rename files" />
     <MESSAGE value="- add setup" />
     <MESSAGE value="- in panelsidebar.php rename Manager to manager bug fixed" />
@@ -517,7 +517,8 @@
     <MESSAGE value="- edit user profile in panel" />
     <MESSAGE value="- Optimization panel" />
     <MESSAGE value="- add edit product&#10;- add edit user&#10;- Optimization panel" />
-    <option name="LAST_COMMIT_MESSAGE" value="- add edit product&#10;- add edit user&#10;- Optimization panel" />
+    <MESSAGE value="- Database Table Classes Use inheritance :)&#10;- Improvement setup Like Handle Some Errors&#10;- The panel became more beautiful" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Database Table Classes Use inheritance :)&#10;- Improvement setup Like Handle Some Errors&#10;- The panel became more beautiful" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
