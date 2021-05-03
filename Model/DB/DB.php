@@ -60,7 +60,7 @@ if (!class_exists("DB")){
                 }
             }
         }
-        function __destruct(){
+        public function __destruct(){
             $this->dbc->close();
         }
     }
