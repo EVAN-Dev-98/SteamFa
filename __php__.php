@@ -7,12 +7,16 @@ $Model = $root . "Model/";
 $View = $root . "View/";
 $Controller = $root . "Controller/";
 $Template = $View . "template/";
-// For Echo
-$model = "/SteamFa/Model/";
-$view = "/SteamFa/View/";
-$controller = "/SteamFa/Controller/";
-$assets = "/SteamFa/View/assets/";
-$account = "/SteamFa/View/account/";
-
 
 include_once  $Model . "initializer.php";
+
+global $SiteDir;
+
+// For Echo
+$model = "{$SiteDir}/Model/";
+$view = "{$SiteDir}/View/";
+$controller = "{$SiteDir}/Controller/";
+$assets = "{$SiteDir}/View/assets/";
+$account = "{$SiteDir}/View/account/";
+
+

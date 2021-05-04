@@ -2,6 +2,7 @@
 /* Created By Evan ( Sajad Gholami ) */
 
 $SiteName = "SteamFa";
+$SiteDir = "/SteamFa";
 
 if (! defined('DBHOST') ) define('DBHOST','localhost');
 if (! defined('DBUSER') ) define('DBUSER','root');
