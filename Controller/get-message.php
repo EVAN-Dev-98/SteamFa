@@ -14,7 +14,7 @@ $alerts = alerts();
     <main>
         <?php
         foreach ($table as $row){
-            get_template("message","template",null,$row);
+            get_template_part("message","template",$row);
         }
         ?>
     </main>

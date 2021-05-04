@@ -35,7 +35,7 @@ $alerts = alerts();
             $count = 0;
             foreach ($table as $row){
                 $count++;
-                get_template("product-list","template",null,$row);
+                get_template_part("product-list","template",$row);
             }
             ?>
             </tbody>

@@ -3,11 +3,11 @@ global $count;
 ?>
 <tr>
     <th scope="row"><?php echo $count; ?></th>
-    <td><?php echo $row['ID'] ?></td>
-    <td><?php echo $row['fname'] ?></td>
-    <td><?php echo $row['lname'] ?></td>
-    <td><?php echo $row['email'] ?></td>
-    <td><?php if ($row['role_id'] == 1) echo "مدیر"; elseif ($row['role_id'] == 2) echo "کاربر عادی"; ?></td>
-    <td><a href="<?php echo controller("delete-user.php?id={$row['ID']}"); ?>" class="btn btn-outline-danger text-light">حذف</a></td>
-    <td><a href="<?php echo account("profile-user.php?id={$row['ID']}"); ?>" class="btn btn-outline-warning text-light">ویرایش</a></td>
+    <td><?php echo $ID; ?></td>
+    <td><?php echo $fname; ?></td>
+    <td><?php echo $lname; ?></td>
+    <td><?php echo $email; ?></td>
+    <td><?php if ($role_id == 1) echo "مدیر"; elseif ($role_id == 2) echo "کاربر عادی"; ?></td>
+    <td><a href="<?php echo controller("delete-user.php?id={$ID}"); ?>" class="btn btn-outline-danger text-light">حذف</a></td>
+    <td><a href="<?php echo account("profile-user.php?id={$ID}"); ?>" class="btn btn-outline-warning text-light">ویرایش</a></td>
 </tr>

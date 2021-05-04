@@ -12,7 +12,7 @@ $alerts = alerts();
 <?php
 $count = 0;
 foreach ($table as $row){
-    get_template("product","template",null,$row);
+    get_template_part("product","template",$row);
     $count++;
 }
 ?>

@@ -33,7 +33,7 @@ $table = User::find();
                 $count = 0;
                 foreach ($table as $row){
                     $count++;
-                    get_template("users","template",null,$row);
+                    get_template_part("users","template",$row);
                 }
                 ?>
             </tbody>

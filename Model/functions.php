@@ -52,13 +52,25 @@ if (!function_exists("get_view")){
 
 // for include maybe header.php in View/template folder
 if (!function_exists("get_template")){
-    function get_template($name , $addition = "" , $title = "استیم فارسی | عنوان ندارد" , $row = array()){
+    function get_template($name , $addition = "" , $title = "استیم فارسی | عنوان ندارد"){
         if (!$addition == ""){
             $addition = "-{$addition}";
         }
         include "__php__.php";
-        $address = "{$Template}{$name}{$addition}.php";
-        include ($address);
+        include "{$Template}{$name}{$addition}.php";
+    }
+}
+
+// for include template part like product article and maybe message article
+if (!function_exists("get_template_part")){
+    function get_template_part($name , $addition = "" , $args = array()){
+        if (!$addition == ""){
+            $addition = "-{$addition}";
+        }
+        include "__php__.php";
+        $include_path = "{$Template}{$name}{$addition}.php";
+        extract($args);
+        include ($include_path);
     }
 }
 
@@ -91,5 +103,14 @@ if (!function_exists("view")){
     function view($name){
         include "__php__.php";
         return $view . $name;
+    }
+}
+
+// for extract array to variables with key name
+if (!function_exists("extract")){
+    function extract($args){
+        foreach ($args as $key => $value){
+            $$key = $value;
+        }
     }
 }
