@@ -110,7 +110,7 @@ if (!function_exists("view")){
 if (!function_exists("extract")){
     function extract($args){
         foreach ($args as $key => $value){
-            $$key = $value;
+            $$key = htmlspecialchars($value);
         }
     }
 }

@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- bug fixed">
+    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- use dynamic variables in extract function :)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/get-message.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/get-message.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/get-product-list.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/get-product-list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/get-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/get-product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/get-users.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/get-users.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/message-template.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/message-template.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/product-list-template.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/product-list-template.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/product-template.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/product-template.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/users-template.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/users-template.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,14 +137,7 @@
       <workItem from="1619906224286" duration="4470000" />
       <workItem from="1619966585937" duration="10774000" />
       <workItem from="1620029967154" duration="9430000" />
-      <workItem from="1620127832004" duration="7578000" />
-    </task>
-    <task id="LOCAL-00005" summary="- a bit changes&#10;have fun&#10;bigs latter haha">
-      <created>1614876569246</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1614876569246</updated>
+      <workItem from="1620127832004" duration="8263000" />
     </task>
     <task id="LOCAL-00006" summary="- change version to 3.5">
       <created>1614885739263</created>
@@ -490,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620157890272</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="- use dynamic variables in extract function :)">
+      <created>1620158909420</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1620158909420</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -510,7 +502,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="- change name contact in db to messages&#10;- add Messages and Users Class" />
     <MESSAGE value="- change directory&#10;- change all address system from static to dynamic with __php__.php&#10;- fix bug from register - addproduct - contact&#10;- catalog az soon" />
     <MESSAGE value="- add catalog.php" />
     <MESSAGE value="- add list of all users in panel" />
@@ -535,7 +526,8 @@
     <MESSAGE value="- SiteVersion = 6.7" />
     <MESSAGE value="- improvement include All Files :)" />
     <MESSAGE value="- bug fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="- bug fixed" />
+    <MESSAGE value="- use dynamic variables in extract function :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="- use dynamic variables in extract function :)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
