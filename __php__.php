@@ -13,3 +13,6 @@ $view = "/SteamFa/View/";
 $controller = "/SteamFa/Controller/";
 $assets = "/SteamFa/View/assets/";
 $account = "/SteamFa/View/account/";
+
+
+include_once  $Model . "initializer.php";

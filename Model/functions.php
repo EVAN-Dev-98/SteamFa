@@ -52,7 +52,7 @@ if (!function_exists("get_view")){
 
 // for include maybe header.php in View/template folder
 if (!function_exists("get_template")){
-    function get_template($name , $addition = "" , $title = "استیم فارسی | عنوان ندارد"){
+    function get_template($name , $addition = "" , $title = "استیم فارسی | عنوان ندارد" , $row = array()){
         if (!$addition == ""){
             $addition = "-{$addition}";
         }
@@ -63,46 +63,33 @@ if (!function_exists("get_template")){
 }
 
 // for echo address assets in folder like images
-if (!function_exists("echo_assets")){
-    function echo_assets($name){
+if (!function_exists("assets")){
+    function assets($name){
         include "__php__.php";
-        $address = $assets . $name;
-        echo $address;
+        return $assets . $name;
     }
 }
 
 // for echo address assets in folder like images
-if (!function_exists("echo_controller")){
-    function echo_controller($name){
+if (!function_exists("controller")){
+    function controller($name){
         include "__php__.php";
-        $address = $controller . $name;
-        echo $address;
+        return $controller . $name;
     }
 }
 
 // for echo address dashboard or maybe sign-in.php
-if (!function_exists("echo_account")){
-    function echo_account($name){
+if (!function_exists("account")){
+    function account($name){
         include "__php__.php";
-        $address = $account . $name;
-        echo $address;
-    }
-}
-
-// for echo address model folder like functions.php
-if (!function_exists("echo_model")){
-    function echo_model($name){
-        include "__php__.php";
-        $address = $model . $name;
-        echo $address;
+        return $account . $name;
     }
 }
 
 // for echo address view folder like catalog.php
-if (!function_exists("echo_view")){
-    function echo_view($name){
+if (!function_exists("view")){
+    function view($name){
         include "__php__.php";
-        $address = $view . $name;
-        echo $address;
+        return $view . $name;
     }
 }

@@ -15,7 +15,7 @@ get_template("head","",$title);
         <nav class="left">
             <ul>
                 <li><a href="">نام شما</a></li>
-                <li><a href="<?php echo_view("home.php"); ?>" target="_steamfa">مشاهده سایت</a></li>
+                <li><a href="<?php echo view("home.php"); ?>" target="_steamfa">مشاهده سایت</a></li>
             </ul>
         </nav>
     </section>

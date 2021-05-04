@@ -11,7 +11,7 @@ global $alerts;
         if (isset($alerts))
             echo $alerts;
         ?>
-        <form action="<?php echo_controller("edit-user.php"); ?>?id=<?php if (isset($_GET['id'])) echo $_GET['id']; ?>" method="post">
+        <form action="<?php echo controller("edit-user.php"); ?>?id=<?php if (isset($_GET['id'])) echo $_GET['id']; ?>" method="post">
             <section class="input-group mb-3">
                 <span class="input-group-text">نام و نام خانوادگی</span>
                 <input type="text" name="fname" value="<?php if (isset($row['fname'])) echo $row['fname']; ?>" aria-label="name" class="form-control">

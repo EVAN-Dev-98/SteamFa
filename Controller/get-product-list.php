@@ -1,7 +1,6 @@
 <?php
 
 include "__php__.php";
-include $Model . "initializer.php";
 
 $db = new DB();
 $table = Product::find();
@@ -36,7 +35,7 @@ $alerts = alerts();
             $count = 0;
             foreach ($table as $row){
                 $count++;
-                get_template("product-list","template");
+                get_template("product-list","template",null,$row);
             }
             ?>
             </tbody>

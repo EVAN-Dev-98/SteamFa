@@ -3,7 +3,7 @@
     if (isset($alerts))
         echo $alerts;
     ?>
-    <form action="<?php echo_controller("do-sign-up.php"); ?>" method="post">
+    <form action="<?php echo controller("do-sign-up.php"); ?>" method="post">
         <h2>ثبت نام</h2>
         <section class="row g-2 mt-5 mb-3">
             <section class="col-md-5">

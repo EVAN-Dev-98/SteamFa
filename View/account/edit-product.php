@@ -2,7 +2,6 @@
 /* Created By Evan ( Sajad Gholami ) */
 
 include "__php__.php";
-include $Model . "initializer.php";
 
 $title = "پنل مدیریت | ویرایش آیتم";
 

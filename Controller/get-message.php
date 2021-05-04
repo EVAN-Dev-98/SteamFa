@@ -1,7 +1,6 @@
 <?php
 
 include "__php__.php";
-include  $Model . "initializer.php";
 
 $db = new DB();
 $table = Messages::find();
@@ -15,7 +14,7 @@ $alerts = alerts();
     <main>
         <?php
         foreach ($table as $row){
-            get_template("message","template");
+            get_template("message","template",null,$row);
         }
         ?>
     </main>

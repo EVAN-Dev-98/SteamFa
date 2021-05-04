@@ -1,7 +1,6 @@
 <?php
 
 include "__php__.php";
-include  $Model . "initializer.php";
 
 if ( isset($_GET['id']) ){
     $db = new DB();
@@ -11,7 +10,7 @@ if ( isset($_GET['id']) ){
         $parameters['id'] = $_GET['id'];
         unset($parameters['submit']);
         User::update( $parameters );
-        redirect("../View/account/show-users.php");
+        redirect(account("show-users.php"));
     }
 
     $table = User::find("ID = {$_GET['id']}");

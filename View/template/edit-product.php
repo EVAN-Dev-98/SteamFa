@@ -11,7 +11,7 @@ global $alerts;
         if (isset($alerts))
             echo $alerts;
         ?>
-        <form action="<?php echo_controller("edit-product.php"); ?>?id=<?php if (isset($_GET['id'])) echo $_GET['id']; ?>" method="post">
+        <form action="<?php echo controller("edit-product.php"); ?>?id=<?php if (isset($_GET['id'])) echo $_GET['id']; ?>" method="post">
             <section class="mb-3">
                 <label for="name" class="form-label">نام محصول : </label>
                 <input type="text" class="form-control" id="name" name="name" value="<?php if (isset($row['name'])) echo $row['name']; ?>" placeholder="به عنوان مثال : AWP | Asiimov" required>

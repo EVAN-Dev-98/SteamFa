@@ -1,5 +1,5 @@
 <section class="container fix-header">
-    <form action="<?php echo_controller("do-sign-in.php"); ?>" method="post">
+    <form action="<?php echo controller("do-sign-in.php"); ?>" method="post">
         <h2>ورود</h2>
         <section class="mb-3">
             <label for="username" class="form-label">نام کاربری : </label>

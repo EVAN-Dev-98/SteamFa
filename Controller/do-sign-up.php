@@ -2,7 +2,6 @@
 /* Created By Evan ( Sajad Gholami ) */
 
 include "__php__.php";
-include  $Model . "initializer.php";
 
 $title = "ثبت نام | استیم فارسی";
 
@@ -19,7 +18,7 @@ if (isset($_POST['submit'])){
         unset($params['submit']);
         unset($params['repassword']);
         User::add($params);
-        redirect("../View/account/dashboard.php");
+        redirect(account("dashboard.php"));
     }
 
     else{
@@ -30,7 +29,7 @@ if (isset($_POST['submit'])){
 
 }
 else{
-    redirect(".." . echo_view("home.php"));
+    redirect(view("home.php"));
 }
 ?>
 <section class="container fix-header">

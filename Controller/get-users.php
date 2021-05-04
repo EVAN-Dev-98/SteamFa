@@ -1,7 +1,6 @@
 <?php
 
 include "__php__.php";
-include  $Model . "initializer.php";
 
 $db = new DB();
 $table = User::find();
@@ -34,7 +33,7 @@ $table = User::find();
                 $count = 0;
                 foreach ($table as $row){
                     $count++;
-                    get_template("users","template");
+                    get_template("users","template",null,$row);
                 }
                 ?>
             </tbody>

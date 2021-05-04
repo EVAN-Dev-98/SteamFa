@@ -2,7 +2,6 @@
 /* Created By Evan ( Sajad Gholami ) */
 
 include "__php__.php";
-include  $Model . "initializer.php";
 
 $title = "محصولات | استیم فارسی";
 get_template("header",null,$title);

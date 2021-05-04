@@ -1,7 +1,6 @@
 <?php
 
 include "__php__.php";
-include  $Model . "initializer.php";
 
 if ( isset($_GET['id']) ){
     $db = new DB();
@@ -10,9 +9,9 @@ if ( isset($_GET['id']) ){
         $parameters = $_POST;
         $parameters['id'] = $_GET['id'];
         unset($parameters['submit']);
-        $parameters['img'] = "/SteamFa/View/assets/images/ak-47-bloodsport.png";
+        $parameters['img'] = assets("images/ak-47-bloodsport.png");;
         Product::update( $parameters );
-        redirect("../View/account/show-product-list.php");
+        redirect(account("show-product-list.php"));
     }
 
     $table = Product::find("ID = {$_GET['id']}");
