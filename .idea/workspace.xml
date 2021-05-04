@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- use dynamic variables in extract function :)">
+    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- use php -&gt; htmlspecialchars() function">
+      <change afterPath="$PROJECT_DIR$/Controller/get-product-detail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/product-detail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/template/product-detail-template.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/product-template.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/product-template.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +41,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Model/DB" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/View/template" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -47,11 +50,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\SteamFa\Model\DB" />
       <recent name="C:\wamp64\www\SteamFa\View\template" />
-      <recent name="C:\wamp64\www\SteamFa" />
+      <recent name="C:\wamp64\www\SteamFa\Controller" />
       <recent name="C:\wamp64\www\SteamFa\View" />
-      <recent name="C:\wamp64\www\SteamFa\includes" />
+      <recent name="C:\wamp64\www\SteamFa\Model\DB" />
+      <recent name="C:\wamp64\www\SteamFa" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\SteamFa\View\account" />
@@ -137,14 +140,7 @@
       <workItem from="1619906224286" duration="4470000" />
       <workItem from="1619966585937" duration="10774000" />
       <workItem from="1620029967154" duration="9430000" />
-      <workItem from="1620127832004" duration="8263000" />
-    </task>
-    <task id="LOCAL-00006" summary="- change version to 3.5">
-      <created>1614885739263</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1614885739264</updated>
+      <workItem from="1620127832004" duration="10271000" />
     </task>
     <task id="LOCAL-00007" summary="done">
       <created>1614890453020</created>
@@ -482,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620158909420</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="- use php -&gt; htmlspecialchars() function">
+      <created>1620161682012</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1620161682012</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -502,7 +505,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="- change directory&#10;- change all address system from static to dynamic with __php__.php&#10;- fix bug from register - addproduct - contact&#10;- catalog az soon" />
     <MESSAGE value="- add catalog.php" />
     <MESSAGE value="- add list of all users in panel" />
     <MESSAGE value="- add list of all users in panel&#10;- change AddProduct to add-product" />
@@ -527,7 +529,8 @@
     <MESSAGE value="- improvement include All Files :)" />
     <MESSAGE value="- bug fixed" />
     <MESSAGE value="- use dynamic variables in extract function :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="- use dynamic variables in extract function :)" />
+    <MESSAGE value="- use php -&gt; htmlspecialchars() function" />
+    <option name="LAST_COMMIT_MESSAGE" value="- use php -&gt; htmlspecialchars() function" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,8 +1,8 @@
-<section class="col-3 my-3">
+<section class="col my-3">
 <article class="card shadow-sm">
-    <img src="<?php echo $img; ?>" class="card-img-top">
+    <h2 class="card-header card-title">نام آیتم : <?php echo $name; ?></h2>
     <section class="card-body">
-        <h4 class="card-title text-center"><a href="<?php echo view("product-detail.php?id={$ID}"); ?>" target="_steamfa_product"><?php echo $name; ?></a></h4>
+        <img src="<?php echo $img; ?>" class="card-img-top mb-3">
         <p class="card-text">بازی : <?php echo $game; ?></p>
         <p class="card-text">نوع : <?php echo $type; ?></p>
         <p class="card-text">کیفیت : <?php echo $quality; ?></p>
