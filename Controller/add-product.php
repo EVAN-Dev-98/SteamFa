@@ -13,8 +13,8 @@ if (isset($_POST['submit'])){
     $_POST['img'] = assets("images/ak-47-bloodsport.png");
     $db = new DB();
     $params = $_POST;
-    unset($params['submit']);
-    Product::add($params);
+    unset($params['submit']);/*
+    Product::add($params);*/
     redirect(account("show-product-list.php"));
 }
 else{

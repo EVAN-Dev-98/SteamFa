@@ -1,6 +1,9 @@
 <?php
 
 include "__php__.php";
+include "settings.php";
+include "functions.php";
+
 
 $db = new DB(false);
 
@@ -24,7 +27,7 @@ elseif ($result == 1007){
 $db -> SelectDB();
 
 $Query = "CREATE TABLE Messages (
-    ID INT NOT NULL AUTO_INCREMENT,
+    id INT NOT NULL AUTO_INCREMENT,
     name VARCHAR(100),
     subject VARCHAR(100),
     email VARCHAR(100),
@@ -40,12 +43,13 @@ elseif ($result == 1050){
     alerts("جدول تماس باما در پایگاه داده وجود دارد","","info");
 }
 
-$Query = "CREATE TABLE Product (
-    ID INT NOT NULL AUTO_INCREMENT,
+$Query = "CREATE TABLE CSGO (
+    id INT NOT NULL AUTO_INCREMENT,
     name VARCHAR(100),
-    game VARCHAR(100),
     type VARCHAR(100),
+    weapon VARCHAR(100),
     quality VARCHAR(100),
+    category VARCHAR(100),
     number INT,
     img VARCHAR(255),
     status VARCHAR (20) DEFAULT 'normal',
@@ -53,14 +57,49 @@ $Query = "CREATE TABLE Product (
     )ENGINE = INNODB";
 $result = $db->Execute($Query);
 if ($result == 0){
-    alerts('جدول محصولات با موفقیت ایجاد شد','','success');
+    alerts('جدول آیتم های کانتر با موفقیت ایجاد شد','','success');
 }
 elseif ($result == 1050){
-    alerts("جدول محصولات در پایگاه داده وجود دارد","","info");
+    alerts("جدول آیتم های کانتر در پایگاه داده وجود دارد","","info");
+}
+
+$Query = "CREATE TABLE DOTA2 (
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(100),
+    hero_id INT,
+    type VARCHAR(100),
+    quality VARCHAR(100),
+    img VARCHAR(255),
+    number INT,
+    status VARCHAR (20) DEFAULT 'normal',
+    PRIMARY KEY (ID)
+    )ENGINE = INNODB";
+$result = $db->Execute($Query);
+if ($result == 0){
+    alerts('جدول آیتم های دوتا 2 با موفقیت ایجاد شد','','success');
+}
+elseif ($result == 1050){
+    alerts("جدول آیتم های دوتا 2 در پایگاه داده وجود دارد","","info");
+}
+
+$Query = "CREATE TABLE Hero (
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(100),
+    category VARCHAR(100),
+    img VARCHAR(255),
+    status VARCHAR (20) DEFAULT 'normal',
+    PRIMARY KEY (ID)
+    )ENGINE = INNODB";
+$result = $db->Execute($Query);
+if ($result == 0){
+    alerts('جدول هیرو های دوتا 2 با موفقیت ایجاد شد','','success');
+}
+elseif ($result == 1050){
+    alerts("جدول هیرو های دوتا 2 در پایگاه داده وجود دارد","","info");
 }
 
 $Query = "CREATE TABLE User (
-    ID INT NOT NULL AUTO_INCREMENT,
+    id INT NOT NULL AUTO_INCREMENT,
     role_id INT DEFAULT 2,
     fname VARCHAR(100),
     lname VARCHAR(255),
@@ -81,7 +120,7 @@ elseif ($result == 1050){
 }
 
 $Query = "CREATE TABLE Role (
-    ID INT NOT NULL AUTO_INCREMENT,
+    id INT NOT NULL AUTO_INCREMENT,
     name VARCHAR (20),
     UserAdd BOOLEAN DEFAULT 0,
     UserEdit BOOLEAN DEFAULT 0,
@@ -94,10 +133,10 @@ $Query = "CREATE TABLE Role (
     )ENGINE = INNODB";
 $result = $db->Execute($Query);
 if ($result == 0){
-    alerts('جدول نقش ها با موفقیت ایجاد شد','','success');
+    alerts('جدول نقش های کاربران با موفقیت ایجاد شد','','success');
 }
 elseif ($result == 1050){
-    alerts("جدول نقش ها در پایگاه داده وجود دارد","","info");
+    alerts("جدول نقش های کاربران در پایگاه داده وجود دارد","","info");
 }
 
 if (!$SoftSetup){
@@ -114,7 +153,7 @@ if (!$SoftSetup){
     );
 
     $Administrator = array(
-        "ID" => 1,
+        "id" => 1,
         "name" => "Administrator",
         "UserAdd" => 1,
         "UserEdit" => 1,
@@ -125,7 +164,7 @@ if (!$SoftSetup){
     );
 
     $Normal = array(
-        "ID" => 2,
+        "id" => 2,
         "name" => "Normal",
         "UserAdd" => 1,
         "UserEdit" => 1,
@@ -135,11 +174,16 @@ if (!$SoftSetup){
         "ProductOtherEdit" => 0,
     );
 
+    include "DB/Hero-List.php";
+
     User::add($AdminUser);
     Role::add($Administrator);
     Role::add($Normal);
-}
 
+    foreach ($hero as $params){
+        Hero::add($params);
+    }
+}
 $alerts = alerts();
 
 $title = "پنل مدیریت | نصب و راه اندازی";

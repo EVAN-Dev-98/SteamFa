@@ -4,7 +4,9 @@ include "__php__.php";
 
 // we most include all tables Class :)
 include "Table.php";
-include "Product.php";
+include "CSGO.php";
+include "DOTA2.php";
+include "Hero.php";
 include "User.php";
 include "Messages.php";
 include "Role.php";
@@ -35,17 +37,13 @@ if (!class_exists("DB")){
         }
         public function Execute($query){
             $result = $this -> dbc -> query($query);
-            if ( $this -> dbc -> errno == 1050 ){
-                return $this -> dbc -> errno;
-            }
-            elseif ( $this -> dbc -> errno == 1007 ){
+            if ( $this -> dbc -> errno == 1050 || $this -> dbc -> errno == 1007 ){
                 return $this -> dbc -> errno;
             }
             elseif ( $this -> dbc -> error ){
                 alerts("خطا در اجرای دستورات","خطا : " . $this->dbc->error ,"danger");
                 return false;
             }
-
             else{
 
                 if ( $result !== true && $result !== false ){ // select

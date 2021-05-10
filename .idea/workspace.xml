@@ -1,12 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- use php -&gt; htmlspecialchars() function">
-      <change afterPath="$PROJECT_DIR$/Controller/get-product-detail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/product-detail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/template/product-detail-template.php" afterDir="false" />
+    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- add product-detail">
+      <change afterPath="$PROJECT_DIR$/Controller/get-hero.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/DB/CSGO.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/DB/DOTA2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/DB/Hero-List.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/DB/Hero.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/DB/download-image.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/all-heroes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/abaddon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/alchemist.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/ancient apparition.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/anti-mage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/arc warden.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/axe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/bane.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/batrider.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/beastmaster.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/bloodseeker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/bounty hunter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/brewmaster.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/bristleback.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/broodmother.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/centaur warrunner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/chaos knight.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/chen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/clinkz.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/clockwerk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/crystal maiden.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/dark seer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/dark willow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/dawnbreaker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/dazzle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/death prophet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/disruptor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/doom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/dragon knight.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/drow ranger.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/earth spirit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/earthshaker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/elder titan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/ember spirit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/enchantress.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/enigma.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/faceless void.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/grimstroke.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/gyrocopter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/hoodwink.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/huskar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/invoker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/io.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/jakiro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/juggernaut.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/keeper of the light.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/kunkka.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/legion commander.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/leshrac.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/lich.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/lifestealer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/lina.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/lion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/lone druid.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/luna.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/lycan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/magnus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/mars.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/medusa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/meepo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/mirana.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/monkey king.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/morphling.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/naga siren.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/nature's prophet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/necrophos.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/night stalker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/nyx assassin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/ogre magi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/omniknight.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/oracle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/outworld destroyer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/pangolier.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/phantom assassin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/phantom lancer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/phoenix.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/puck.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/pudge.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/pugna.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/queen of pain.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/razor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/riki.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/rubick.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/sand king.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/shadow demon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/shadow fiend.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/shadow shaman.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/silencer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/skywrath mage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/slardar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/slark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/snapfire.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/sniper.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/spectre.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/spirit breaker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/storm spirit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/sven.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/techies.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/templar assassin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/terrorblade.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/tidehunter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/timbersaw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/tinker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/tiny.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/treant protector.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/troll warlord.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/tusk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/underlord.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/undying.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/ursa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/vengeful spirit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/venomancer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/viper.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/visage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/void spirit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/warlock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/weaver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/windranger.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/winter wyvern.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/witch doctor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/wraith king.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/zeus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/hero_agility.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/hero_intelligence.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/hero_strength.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/template/hero-template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/product-template.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/product-template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/add-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/add-product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/get-product-list.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/get-product-list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/get-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/get-product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/DB/DB.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DB/DB.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/DB/Product.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/initializer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/setup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__php__.php" beforeDir="false" afterPath="$PROJECT_DIR$/__php__.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,11 +194,11 @@
       <recent name="C:\wamp64\www\SteamFa" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\SteamFa\Model\DB" />
       <recent name="C:\wamp64\www\SteamFa\View\account" />
       <recent name="C:\wamp64\www\SteamFa\View\template" />
       <recent name="C:\wamp64\www\SteamFa\View" />
       <recent name="C:\wamp64\www\SteamFa" />
-      <recent name="C:\wamp64\www\SteamFa\Controller" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -140,14 +277,12 @@
       <workItem from="1619906224286" duration="4470000" />
       <workItem from="1619966585937" duration="10774000" />
       <workItem from="1620029967154" duration="9430000" />
-      <workItem from="1620127832004" duration="10271000" />
-    </task>
-    <task id="LOCAL-00007" summary="done">
-      <created>1614890453020</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1614890453020</updated>
+      <workItem from="1620127832004" duration="10345000" />
+      <workItem from="1620164888284" duration="7000" />
+      <workItem from="1620244825274" duration="339000" />
+      <workItem from="1620308218706" duration="13958000" />
+      <workItem from="1620455413505" duration="4000" />
+      <workItem from="1620658562364" duration="15657000" />
     </task>
     <task id="LOCAL-00008" summary="- add Manager panel">
       <created>1616489439011</created>
@@ -485,7 +620,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620161682012</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="- add product-detail">
+      <created>1620164194442</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1620164194442</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -505,7 +647,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="- add catalog.php" />
     <MESSAGE value="- add list of all users in panel" />
     <MESSAGE value="- add list of all users in panel&#10;- change AddProduct to add-product" />
     <MESSAGE value="- add show messages in panel" />
@@ -530,7 +671,8 @@
     <MESSAGE value="- bug fixed" />
     <MESSAGE value="- use dynamic variables in extract function :)" />
     <MESSAGE value="- use php -&gt; htmlspecialchars() function" />
-    <option name="LAST_COMMIT_MESSAGE" value="- use php -&gt; htmlspecialchars() function" />
+    <MESSAGE value="- add product-detail" />
+    <option name="LAST_COMMIT_MESSAGE" value="- add product-detail" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
