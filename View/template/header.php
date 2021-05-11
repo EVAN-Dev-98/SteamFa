@@ -20,6 +20,8 @@ get_template("head","",$title);
  </section>
  <section class="main-header">
     <section class="hamburger-menu" id="hamburger-menu">
+        <li class="account"><a href="<?php echo account("sign-in.php"); ?>" target="_steamfapanel">ورود</a> | <a href="<?php echo account("sign-up.php"); ?>" target="_steamfapanel">ثبت نام</a></li>
+        <li class="account"><a href="<?php echo account("dashboard.php"); ?>" target="_steamfapanel">پنل کاربری</a></li>
         <?php get_template("main","menu"); ?>
     </section>
     <section class="hamburger-menu-icon" id="hamburger-menu-icon"></section>

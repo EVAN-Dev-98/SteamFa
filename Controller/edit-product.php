@@ -10,11 +10,11 @@ if ( isset($_GET['id']) ){
         $parameters['id'] = $_GET['id'];
         unset($parameters['submit']);
         $parameters['img'] = assets("images/ak-47-bloodsport.png");;
-        Product::update( $parameters );
+        /*Product::update( $parameters );*/
         redirect(account("show-product-list.php"));
     }
 
-    $table = Product::find("ID = {$_GET['id']}");
+    /*$table = Product::find("ID = {$_GET['id']}");*/
     if (isset($table[0])){
         $row = $table[0];
     }
