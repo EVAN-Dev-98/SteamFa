@@ -20,5 +20,5 @@ $dbCollate = COLLATE;
 
 $SiteVersion = 7.5;
 
-$SoftSetup = true;
-$FirstTime = false;
+$SoftSetup = false;
+$FirstTime = true;

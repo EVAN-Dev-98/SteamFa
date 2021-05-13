@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- remove product&#10;edit soon :)&#10;- add dota2 table&#10;- add csgo table&#10;- add hero table&#10;- add all heroes of dota2 in table&#10;- automatic insert hero image into database">
+    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- edit some html">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/DB/Product.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/account/add-item.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/js/add-item.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/template/add-item.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/delete-product.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/edit-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/edit-product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/add-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/add-product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/DB/CSGO.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DB/attr_csgo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/DB/DB.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DB/DB.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/DB/DOTA2.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DB/attr_dota2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/DB/Hero.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DB/Hero.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/settings.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/main-menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/main-menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/product-template.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/product-template.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/sidebar-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/sidebar-panel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/users-template.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/users-template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/setup.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +25,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,11 +54,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/View/template" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Model/DB" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -54,10 +68,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\SteamFa\Model\DB" />
       <recent name="C:\wamp64\www\SteamFa\View\template" />
       <recent name="C:\wamp64\www\SteamFa\Controller" />
       <recent name="C:\wamp64\www\SteamFa\View" />
-      <recent name="C:\wamp64\www\SteamFa\Model\DB" />
       <recent name="C:\wamp64\www\SteamFa" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -150,14 +164,9 @@
       <workItem from="1620308218706" duration="13958000" />
       <workItem from="1620455413505" duration="4000" />
       <workItem from="1620658562364" duration="15846000" />
-      <workItem from="1620731089511" duration="1126000" />
-    </task>
-    <task id="LOCAL-00009" summary="- add admin footer">
-      <created>1616489710016</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1616489710016</updated>
+      <workItem from="1620731089511" duration="1174000" />
+      <workItem from="1620743810724" duration="3001000" />
+      <workItem from="1620910371851" duration="10844000" />
     </task>
     <task id="LOCAL-00010" summary="- add product html ok">
       <created>1616529312151</created>
@@ -495,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620682974915</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="- edit some html">
+      <created>1620732269058</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1620732269058</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -515,7 +531,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="- add list of all users in panel&#10;- change AddProduct to add-product" />
     <MESSAGE value="- add show messages in panel" />
     <MESSAGE value="- class rework" />
     <MESSAGE value="- chert o pert neveshtam" />
@@ -540,7 +555,8 @@
     <MESSAGE value="- use php -&gt; htmlspecialchars() function" />
     <MESSAGE value="- add product-detail" />
     <MESSAGE value="- remove product&#10;edit soon :)&#10;- add dota2 table&#10;- add csgo table&#10;- add hero table&#10;- add all heroes of dota2 in table&#10;- automatic insert hero image into database" />
-    <option name="LAST_COMMIT_MESSAGE" value="- remove product&#10;edit soon :)&#10;- add dota2 table&#10;- add csgo table&#10;- add hero table&#10;- add all heroes of dota2 in table&#10;- automatic insert hero image into database" />
+    <MESSAGE value="- edit some html" />
+    <option name="LAST_COMMIT_MESSAGE" value="- edit some html" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

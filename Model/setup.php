@@ -4,7 +4,6 @@ include "__php__.php";
 include "settings.php";
 include "functions.php";
 
-
 $db = new DB(false);
 
 if (!$SoftSetup){
@@ -33,7 +32,7 @@ $Query = "CREATE TABLE Messages (
     email VARCHAR(100),
     message TEXT,
     status VARCHAR (20) DEFAULT 'normal',
-    PRIMARY KEY (ID)
+    PRIMARY KEY (id)
     )ENGINE = INNODB";
 $result = $db->Execute($Query);
 if ($result == 0){
@@ -43,43 +42,54 @@ elseif ($result == 1050){
     alerts("جدول تماس باما در پایگاه داده وجود دارد","","info");
 }
 
-$Query = "CREATE TABLE CSGO (
+$Query = "CREATE TABLE Product (
     id INT NOT NULL AUTO_INCREMENT,
     name VARCHAR(100),
+    attr_name VARCHAR(100),
+    number INT,
+    img VARCHAR(255),
+    status VARCHAR (20) DEFAULT 'normal',
+    PRIMARY KEY (id)
+    )ENGINE = INNODB";
+$result = $db->Execute($Query);
+if ($result == 0){
+    alerts('جدول محصولات با موفقیت ایجاد شد','','success');
+}
+elseif ($result == 1050){
+    alerts("جدول محصولات در پایگاه داده وجود دارد","","info");
+}
+
+$Query = "CREATE TABLE attr_csgo (
+    product_id INT NOT NULL,
     type VARCHAR(100),
     weapon VARCHAR(100),
     quality VARCHAR(100),
     category VARCHAR(100),
-    number INT,
-    img VARCHAR(255),
     status VARCHAR (20) DEFAULT 'normal',
-    PRIMARY KEY (ID)
+    PRIMARY KEY (product_id)
     )ENGINE = INNODB";
 $result = $db->Execute($Query);
 if ($result == 0){
-    alerts('جدول آیتم های کانتر با موفقیت ایجاد شد','','success');
+    alerts('جدول ویژگی های آیتم های کانتر با موفقیت ایجاد شد','','success');
 }
 elseif ($result == 1050){
-    alerts("جدول آیتم های کانتر در پایگاه داده وجود دارد","","info");
+    alerts("جدول ویژگی های آیتم های کانتر در پایگاه داده وجود دارد","","info");
 }
 
-$Query = "CREATE TABLE DOTA2 (
-    id INT NOT NULL AUTO_INCREMENT,
-    name VARCHAR(100),
+$Query = "CREATE TABLE attr_dota2 (
+    product_id INT NOT NULL,
     hero_id INT,
     type VARCHAR(100),
     quality VARCHAR(100),
-    img VARCHAR(255),
-    number INT,
     status VARCHAR (20) DEFAULT 'normal',
-    PRIMARY KEY (ID)
+    PRIMARY KEY (product_id)
     )ENGINE = INNODB";
 $result = $db->Execute($Query);
 if ($result == 0){
-    alerts('جدول آیتم های دوتا 2 با موفقیت ایجاد شد','','success');
+    alerts('جدول ویژگی های آیتم های دوتا 2 با موفقیت ایجاد شد','','success');
 }
 elseif ($result == 1050){
-    alerts("جدول آیتم های دوتا 2 در پایگاه داده وجود دارد","","info");
+    alerts("جدول ویژگی های آیتم های دوتا 2 در پایگاه داده وجود دارد","","info");
 }
 
 $Query = "CREATE TABLE Hero (
@@ -88,7 +98,7 @@ $Query = "CREATE TABLE Hero (
     category VARCHAR(100),
     img VARCHAR(255),
     status VARCHAR (20) DEFAULT 'normal',
-    PRIMARY KEY (ID)
+    PRIMARY KEY (id)
     )ENGINE = INNODB";
 $result = $db->Execute($Query);
 if ($result == 0){
@@ -109,7 +119,7 @@ $Query = "CREATE TABLE User (
     steam_url VARCHAR (255),
     img VARCHAR(255),
     status VARCHAR (20) DEFAULT 'normal',
-    PRIMARY KEY (ID)
+    PRIMARY KEY (id)
     )ENGINE = INNODB";
 $result = $db->Execute($Query);
 if ($result == 0){
@@ -129,7 +139,7 @@ $Query = "CREATE TABLE Role (
     ProductEdit BOOLEAN DEFAULT 0,
     ProductOtherEdit BOOLEAN DEFAULT 0,
     status VARCHAR (20) DEFAULT 'normal',
-    PRIMARY KEY (ID)
+    PRIMARY KEY (id)
     )ENGINE = INNODB";
 $result = $db->Execute($Query);
 if ($result == 0){
@@ -180,8 +190,29 @@ if (!$SoftSetup){
     Role::add($Administrator);
     Role::add($Normal);
 
+    $product_awp_assimow = array(
+        "id" => 1,
+        "name" => "awp | asiimov",
+        "attr_name" => "csgo",
+        "number" => "1",
+        "img" => assets("images/awp-asiimov.jpg"),
+    );
+    $attr_item_1 = array(
+        "product_id" => 1,
+        "type" => "Sniper Rifle",
+        "weapon" => "awp",
+        "quality" => "Field Tested",
+        "category" => "Normal"
+    );
+    Product::add($product_awp_assimow);
+    attr_csgo::add($attr_item_1);
+
     foreach ($hero as $params){
-        Hero::add($params);
+        $result = Hero::add($params);
+    }
+
+    if ($result == count($hero)){
+        alerts("تعداد " . $result . " هیرو ، در جدول هیرو های دوتا 2 درج شد.",null,"success");
     }
 }
 $alerts = alerts();

@@ -4,8 +4,9 @@ include "__php__.php";
 
 // we most include all tables Class :)
 include "Table.php";
-include "CSGO.php";
-include "DOTA2.php";
+include "Product.php";
+include "attr_csgo.php";
+include "attr_dota2.php";
 include "Hero.php";
 include "User.php";
 include "Messages.php";
