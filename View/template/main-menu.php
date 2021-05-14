@@ -5,11 +5,11 @@
     <li><a href="">آیتم های کانتر</a></li>
     <li><a href="">فروشگاه بازی</a></li>
     <li><a href="">گیفت کارت</a></li>
-    <!--li><a href="javascript:void(0)">عنوان چهارم <i class="fas fa-angle-down"></i></a>
+    <li><a href="javascript:void(0)">عنوان چهارم <i class="fas fa-angle-down"></i></a>
         <ul>
             <li><a href="">زیر منو اول</a></li>
             <li><a href="">زیر منو دوم</a></li>
             <li><a href="">زیر منو سوم</a></li>
         </ul>
-    </li-->
+    </li>
 </ul>

@@ -6,11 +6,7 @@ get_template("head","",$title);
 <header id="header">
     <section class="top-header">
         <nav class="right">
-            <ul>
-                <li><a href="">عنوان یک</a></li>
-                <li><a href="">عنوان دو</a></li>
-                <li><a href="">عنوان سه</a></li>
-            </ul>
+
         </nav>
         <nav class="left">
             <ul>
