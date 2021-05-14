@@ -1016,30 +1016,29 @@ footer .main-footer .info p {
      transition: 0.5s;
 }
 .panel-sidebar nav ul li.items a i{
+     width: 30px;
      font-size: 1.3rem;
      margin-left: .6rem;
      margin-right: .05rem;
-     font-weight: 100;
+     font-weight: 900;
      position: relative;
      top: 3px;
 }
 .panel-sidebar nav ul li.items a i.icon-more{
      float: left;
+     width: auto;
      margin: .5rem;
-     font-weight: 400;
      top: 0;
+     transition: .5s;
 }
 .panel-sidebar nav ul li.items a i.down{
      transform: rotate(+90deg);
 }
 .panel-sidebar nav ul li.items ul.more{
      display: none;
-     opacity: 0;
 }
 .panel-sidebar nav ul li.items ul.show{
      display: flex;
-     opacity: 1;
-     transition: 5s;
      padding-left: 0;
      padding-right: 0;
      margin-top: .2rem;

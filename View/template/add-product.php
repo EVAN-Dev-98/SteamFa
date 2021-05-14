@@ -4,58 +4,141 @@
     </header>
     <main>
         <form action="<?php echo controller("add-product.php"); ?>" method="post">
-            <section class="mb-3">
-                <label for="name" class="form-label">نام محصول : </label>
-                <input type="text" class="form-control" id="name" name="name" placeholder="به عنوان مثال : AWP | Asiimov" required>
-            </section>
-            <section class="mb-3">
-                <label for="game" class="form-label">نام بازی : </label>
-                <select class="form-select" id="game" name="game" aria-label="Default select example">
-                    <option value="CS:GO" selected>CS:GO</option>
-                    <option value="Dota 2">Dota 2</option>
-                    <option value="Team Fortress 2">Team Fortress 2</option>
+            <!-- attr_name for product -->
+            <section class="input-group mb-3" id="s_attr_name">
+                <span class="input-group-text">نام بازی : </span>
+                <select class="form-select" id="attr" name="attr_name" onchange="change()">
+                    <option value="attr_csgo" selected>CS:GO</option>
+                    <option value="attr_dota2">Dota 2</option>
                 </select>
             </section>
-            <section class="mb-3">
-                <label for="type" class="form-label">نوع : </label>
-                <select class="form-select" id="type" name="type" aria-label="Default select example">
-                    <option value="Pistol" selected>Pistol</option>
-                    <option value="SMG">SMG</option>
-                    <option value="Rifle">Rifle</option>
-                    <option value="Sniper Rifle">Sniper Rifle</option>
-                    <option value="Shotgun">Shotgun</option>
-                    <option value="Machinegun">Machinegun</option>
-                    <option value="Agent">Agent</option>
-                    <option value="Knife">Knife</option>
-                    <option value="Container">Container</option>
-                    <option value="Sticker">Sticker</option>
-                    <option value="Gloves">Gloves</option>
-                    <option value="Graffiti">Graffiti</option>
-                    <option value="Music Kit">Music Kit</option>
-                    <option value="Key">Key</option>
-                    <option value="Pass">Pass</option>
-                </select>
+            <!-- name csgo for product -->
+            <section class="input-group mb-3" id="s_csgo_name">
+                <span class="input-group-text">نام آیتم : </span>
+                <input type="text" class="form-control" id="csgo_name" name="name" placeholder="به عنوان مثال : AWP | Asiimov" required>
             </section>
-            <section class="mb-3">
-                <label for="quality" class="form-label">کیفیت : </label>
-                <select class="form-select" id="quality" name="quality" aria-label="Default select example">
+            <!-- type for csgo -->
+            <section class="input-group mb-3" id="s_csgo_type">
+                <span class="input-group-text">نوع آیتم : </span>
+                <input class="form-control" list="csgo_type_list" id="csgo_type" name="type" placeholder="نوع آیتم را انتخاب کنید...">
+                <datalist id="csgo_type_list">
+                    <option value="Pistol">
+                    <option value="SMG">
+                    <option value="Rifle">
+                    <option value="Sniper Rifle">
+                    <option value="Shotgun">
+                    <option value="Machinegun">
+                    <option value="Agent">
+                    <option value="Knife">
+                    <option value="Container">
+                    <option value="Sticker">
+                    <option value="Gloves">
+                    <option value="Graffiti">
+                    <option value="Music Kit">
+                    <option value="Key">
+                    <option value="Pass">
+                </datalist>
+            </section>
+            <!-- weapon for csgo -->
+            <section class="input-group mb-3" id="s_csgo_weapon">
+                <span class="input-group-text">نام اسلحه : </span>
+                <input class="form-control" list="csgo_weapon_list" id="csgo_weapon" name="weapon" placeholder="نام اسلحه را انتخاب کنید...">
+                <datalist id="csgo_weapon_list">
+                    <option value="AK-47">
+                    <option value="AUG">
+                    <option value="AWP">
+                    <option value="CZ75-Auto">
+                    <option value="Desert Eagle">
+                    <option value="Dual Berettas">
+                    <option value="FAMAS">
+                    <option value="Five-Seven">
+                    <option value="G3SG1">
+                    <option value="Galil AR">
+                    <option value="Glock-18">
+                    <option value="M249">
+                    <option value="M4A1-S">
+                    <option value="M4A4">
+                    <option value="MAC-10">
+                    <option value="MAG-7">
+                    <option value="MP5-SD">
+                    <option value="MP7">
+                    <option value="MP9">
+                    <option value="Negev">
+                    <option value="Nova">
+                    <option value="P2000">
+                    <option value="P250">
+                    <option value="P90">
+                    <option value="PP-Bizon">
+                    <option value="R8 Revolver">
+                    <option value="Sawed-Off">
+                    <option value="SCAR-20">
+                    <option value="SG 553">
+                    <option value="SSG 08">
+                    <option value="Tec-9">
+                    <option value="UMP-45">
+                    <option value="USP-S">
+                    <option value="XM1014">
+                    <option value="Bayonet">
+                    <option value="Bowie Knife">
+                    <option value="Butterfly Knife">
+                    <option value="Classic Knife">
+                    <option value="Falchion Knife">
+                    <option value="Flip Knife">
+                    <option value="Gut Knife">
+                    <option value="Huntsman Knife">
+                    <option value="Karambit">
+                    <option value="M9 Bayonet">
+                    <option value="Navaja Knife">
+                    <option value="Nomad Knife">
+                    <option value="Paracord Knife">
+                    <option value="Shadow Daggers">
+                    <option value="Skeleton Knife">
+                    <option value="Stiletto Knife">
+                    <option value="Survival Knife">
+                    <option value="Talon Knife">
+                    <option value="Ursus Knife">
+                </datalist>
+            </section>
+            <!-- quality for csgo -->
+            <section class="input-group mb-3" id="s_csgo_quality">
+                <span class="input-group-text">کیفیت : </span>
+                <select class="form-select" id="csgo_quality" name="quality">
                     <option value="Field Tested" selected>Field Tested</option>
                     <option value="Minimal Wear">Minimal Wear</option>
                     <option value="Battle Scarred">Battle Scarred</option>
                     <option value="Well Worn">Well Worn</option>
                     <option value="Factory New">Factory New</option>
-                    <option value="Not Painted">Not Painted</option>
                 </select>
             </section>
-            <section class="mb-3">
-                <label for="number" class="form-label">تعداد : </label>
+            <!-- category for csgo -->
+            <section class="input-group mb-3" id="s_csgo_category">
+                <span class="input-group-text">دسته : </span>
+                <select class="form-select" id="csgo_category" name="category">
+                    <option value="Normal" selected>Normal</option>
+                    <option value="StatTrak™">StatTrak™</option>
+                    <option value="Souvenir">Souvenir</option>
+                    <option value="★">★</option>
+                    <option value="★ StatTrak™">★ StatTrak™</option>
+                </select>
+            </section>
+            <!-- name dota2 for product -->
+            <section class="input-group mb-3" id="s_dota2_name">
+                <span class="input-group-text">نام آیتم : </span>
+                <input type="text" class="form-control" id="dota2_name" name="name" placeholder="به عنوان مثال : Maw of Eztzhok" required>
+            </section>
+            <!-- number for product -->
+            <section class="input-group mb-3" id="s_number">
+                <span class="input-group-text">تعداد : </span>
                 <input class="form-control" type="number" min="0" step="1" name="number" id="number">
             </section>
-            <section class="mb-3">
-                <label for="img" class="form-label">تصویر : </label>
+            <!-- img for product -->
+            <section class="input-group mb-3" id="s_img">
+                <span class="input-group-text">تصویر : </span>
                 <input class="form-control" type="file" name="img" id="img">
             </section>
+            <!-- submit -->
             <input type="submit" name="submit" value="افزودن" class="btn btn-primary">
         </form>
     </main>
 </section>
+<script src="<?php echo assets("js/add-item.js"); ?>"></script>

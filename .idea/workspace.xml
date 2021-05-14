@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- database edit&#10;- Product table for all Products&#10;- attr_{name} for some specific category Products for now used 2 tables like attr_csgo and attr_dota2&#10;- edit setup and perform handle errors and alerts">
-      <change afterPath="$PROJECT_DIR$/View/assets/images/evan.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/js/sidebar-panel.js" afterDir="false" />
+    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- rework panel design">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/settings.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/account/add-item.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/account/add-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/add-product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/account/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/dashboard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/account/edit-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/edit-product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/account/profile-user.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/profile-user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/account/show-messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/show-messages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/account/show-product-list.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/show-product-list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/account/show-users.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/show-users.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/View/assets/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/header-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/header-panel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/main-menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/main-menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/assets/js/add-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/View/assets/js/add-item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/add-item.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/add-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/add-product.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/template/sidebar-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/sidebar-panel.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -168,14 +159,7 @@
       <workItem from="1620731089511" duration="1174000" />
       <workItem from="1620743810724" duration="3001000" />
       <workItem from="1620910371851" duration="11090000" />
-      <workItem from="1620978490041" duration="24737000" />
-    </task>
-    <task id="LOCAL-00011" summary="- add product html ok fixed">
-      <created>1616530883271</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1616530883271</updated>
+      <workItem from="1620978490041" duration="34866000" />
     </task>
     <task id="LOCAL-00012" summary="- add product html ok fixed css fixed">
       <created>1616532064635</created>
@@ -513,7 +497,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620942315738</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="- rework panel design">
+      <created>1621020571806</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1621020571806</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -533,7 +524,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="- class rework" />
     <MESSAGE value="- chert o pert neveshtam" />
     <MESSAGE value="- ok" />
     <MESSAGE value="- All Directory Changes with MVC Standard&#10;- Need Edit All Files&#10;this commit just changes directory and need edit all files to work&#10;edit az SOON :)" />
@@ -558,7 +548,8 @@
     <MESSAGE value="- remove product&#10;edit soon :)&#10;- add dota2 table&#10;- add csgo table&#10;- add hero table&#10;- add all heroes of dota2 in table&#10;- automatic insert hero image into database" />
     <MESSAGE value="- edit some html" />
     <MESSAGE value="- database edit&#10;- Product table for all Products&#10;- attr_{name} for some specific category Products for now used 2 tables like attr_csgo and attr_dota2&#10;- edit setup and perform handle errors and alerts" />
-    <option name="LAST_COMMIT_MESSAGE" value="- database edit&#10;- Product table for all Products&#10;- attr_{name} for some specific category Products for now used 2 tables like attr_csgo and attr_dota2&#10;- edit setup and perform handle errors and alerts" />
+    <MESSAGE value="- rework panel design" />
+    <option name="LAST_COMMIT_MESSAGE" value="- rework panel design" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
