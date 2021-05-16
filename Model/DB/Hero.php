@@ -10,5 +10,13 @@ if (!class_exists('Hero')){
                       VALUES ({$valuesString})";
             return $db -> Execute($query);
         }
+        static public function find($where = "true" , $order = "id" , $count = 200 , $offset = 0){
+            $TableName = static::class;
+            $query = "SELECT * FROM {$TableName}
+                      WHERE {$where} AND status != 'deleted'
+                      ORDER BY {$order}
+                      LIMIT {$offset} , {$count}";
+            return $GLOBALS['db'] -> Execute($query);
+        }
     }
 }

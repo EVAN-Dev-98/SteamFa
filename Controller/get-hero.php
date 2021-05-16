@@ -3,7 +3,7 @@
 include "__php__.php";
 
 $db = new DB();
-$table = Hero::find("true","id",200,0);
+$table = Hero::find();
 $alerts = alerts();
 
 ?>

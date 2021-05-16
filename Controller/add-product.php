@@ -11,38 +11,39 @@ get_template("sidebar","panel");
 
 // get values from html
 if (isset($_POST['submit'])){
-    $db = new DB();
 
-    if ($_POST['p_type'] == "csgo_item"){
-        $_POST['img'] = assets("images/ak-47-bloodsport.png");
-        $params = $_POST;
-        unset($params['submit']);
-        unset($params['p_type']);
-        CSGO::add($params);
-        alerts("ایتم کانتر " . $params['name'] . " با موفقیت درج شد.","","info");
-        $alerts = alerts();
-        redirect(account("show-product-list.php"));
+    $product["name"] = $_POST["name"];
+    $product["attr_name"] = $_POST["attr_name"];
+    $product["number"] = $_POST["number"];
+    $product["img"] = assets("images/default-item.jpg");
+
+    $db = new DB();
+    $attr["product_id"] = Product::add($product);
+
+    switch ($product["attr_name"]){
+        case "attr_csgo":
+            $attr["type"] = $_POST["type"];
+            if (isset($_POST["weapon"])){
+                $attr["weapon"] = $_POST["weapon"];
+            }
+            if (isset($_POST["quality"])){
+                $attr["quality"] = $_POST["quality"];
+            }
+            if (isset($_POST["category"])){
+                $attr["category"] = $_POST["category"];
+            }
+            attr_csgo::add($attr);
+            alerts("ایتم کانتر " . $product["name"] . " با موفقیت درج شد.","","info");
+            break;
+        case "attr_dota2":
+            /* more ... */
+            attr_dota2::add($attr);
+            alerts("ایتم دوتا 2 " . $attr['name'] . " با موفقیت درج شد.","","info");
+            break;
     }
-    if ($_POST['p_type'] == "dota2_item"){
-        $_POST['img'] = assets("images/arcana-juggernaut.jpg");
-        $params = $_POST;
-        unset($params['submit']);
-        unset($params['p_type']);
-        DOTA2::add($params);
-        alerts("ایتم دوتا 2 " . $params['name'] . " با موفقیت درج شد.","","info");
-        $alerts = alerts();
-        redirect(account("show-product-list.php"));
-    }
-    if ($_POST['p_type'] == "game"){
-        alerts("بزودی افزوده میشود","","info");
-        $alerts = alerts();
-        redirect(account("show-product-list.php"));
-    }
-    if ($_POST['p_type'] == "giftcard"){
-        alerts("بزودی افزوده میشود","","info");
-        $alerts = alerts();
-        redirect(account("show-product-list.php"));
-    }
+    $alerts = alerts();
+    redirect(account("show-product-list.php"));
+
 }
 else{
     redirect(view("home.php"));

@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- rework panel design">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/images/default-item.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/View/assets/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/add-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/add-product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/get-hero.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/get-hero.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/DB/Hero.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DB/Hero.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/setup.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/assets/js/add-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/View/assets/js/add-item.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/add-item.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/View/template/add-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/add-product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/sidebar-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/sidebar-panel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/main-menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/main-menu.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,6 +163,9 @@
       <workItem from="1620743810724" duration="3001000" />
       <workItem from="1620910371851" duration="11090000" />
       <workItem from="1620978490041" duration="34866000" />
+      <workItem from="1621082991199" duration="3347000" />
+      <workItem from="1621157395318" duration="811000" />
+      <workItem from="1621179883877" duration="11023000" />
     </task>
     <task id="LOCAL-00012" summary="- add product html ok fixed css fixed">
       <created>1616532064635</created>

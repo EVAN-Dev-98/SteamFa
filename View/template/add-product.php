@@ -1,3 +1,109 @@
+<?php
+$types = array(
+    "Pistol",
+    "SMG",
+    "Rifle",
+    "Sniper Rifle",
+    "Shotgun",
+    "Machinegun",
+    "Agent",
+    "Knife",
+    "Container",
+    "Sticker",
+    "Gloves",
+    "Graffiti",
+    "Music Kit",
+    "Key",
+    "Pass"
+);
+$weapons = array(
+    "AK-47",
+    "AUG",
+    "AWP",
+    "CZ75-Auto",
+    "Desert Eagle",
+    "Dual Berettas",
+    "FAMAS",
+    "Five-Seven",
+    "G3SG1",
+    "Galil AR",
+    "Glock-18",
+    "M249",
+    "M4A1-S",
+    "M4A4",
+    "MAC-10",
+    "MAG-7",
+    "MP5-SD",
+    "MP7",
+    "MP9",
+    "Negev",
+    "Nova",
+    "P2000",
+    "P250",
+    "P90",
+    "PP-Bizon",
+    "R8 Revolver",
+    "Sawed-Off",
+    "SCAR-20",
+    "SG 553",
+    "SSG 08",
+    "Tec-9",
+    "UMP-45",
+    "USP-S",
+    "XM1014",
+    "Bayonet",
+    "Bowie Knife",
+    "Butterfly Knife",
+    "Classic Knife",
+    "Falchion Knife",
+    "Flip Knife",
+    "Gut Knife",
+    "Huntsman Knife",
+    "Karambit",
+    "M9 Bayonet",
+    "Navaja Knife",
+    "Nomad Knife",
+    "Paracord Knife",
+    "Shadow Daggers",
+    "Skeleton Knife",
+    "Stiletto Knife",
+    "Survival Knife",
+    "Talon Knife",
+    "Ursus Knife"
+);
+global $db;
+$db = new DB();
+$heroes = Hero::find();
+$rarity = array(
+    "Common",
+    "Uncommon",
+    "Rare",
+    "Mythical",
+    "Immortal",
+    "Legendary",
+    "Arcana",
+    "Ancient"
+);
+$quality = array(
+    "Standard",
+    "Inscribed",
+    "Auspicious",
+    "Heroic",
+    "Genuine",
+    "Autographed",
+    "Frozen",
+    "Cursed",
+    "Base",
+    "Corrupted",
+    "Infused",
+    "Unusual",
+    "Exalted",
+    "Elder",
+    "Legacy",
+    "Ascendant",
+    "Favored"
+);
+?>
 <section class="panel">
     <header>
     <h2>افزودن آیتم</h2>
@@ -20,83 +126,17 @@
             <!-- type for csgo -->
             <section class="input-group mb-3" id="s_csgo_type">
                 <span class="input-group-text">نوع آیتم : </span>
-                <input class="form-control" list="csgo_type_list" id="csgo_type" name="type" placeholder="نوع آیتم را انتخاب کنید...">
+                <input class="form-control" list="csgo_type_list" id="csgo_type" name="type" onchange="csgo_type_check(this.value)" placeholder="نوع آیتم را انتخاب کنید...">
                 <datalist id="csgo_type_list">
-                    <option value="Pistol">
-                    <option value="SMG">
-                    <option value="Rifle">
-                    <option value="Sniper Rifle">
-                    <option value="Shotgun">
-                    <option value="Machinegun">
-                    <option value="Agent">
-                    <option value="Knife">
-                    <option value="Container">
-                    <option value="Sticker">
-                    <option value="Gloves">
-                    <option value="Graffiti">
-                    <option value="Music Kit">
-                    <option value="Key">
-                    <option value="Pass">
+                    <?php foreach ($types as $name) echo "<option value='".$name."'>"; ?>
                 </datalist>
             </section>
             <!-- weapon for csgo -->
             <section class="input-group mb-3" id="s_csgo_weapon">
                 <span class="input-group-text">نام اسلحه : </span>
-                <input class="form-control" list="csgo_weapon_list" id="csgo_weapon" name="weapon" placeholder="نام اسلحه را انتخاب کنید...">
+                <input class="form-control" list="csgo_weapon_list" id="csgo_weapon" name="weapon" onchange="csgo_weapon_check(this.value)" placeholder="نام اسلحه را انتخاب کنید...">
                 <datalist id="csgo_weapon_list">
-                    <option value="AK-47">
-                    <option value="AUG">
-                    <option value="AWP">
-                    <option value="CZ75-Auto">
-                    <option value="Desert Eagle">
-                    <option value="Dual Berettas">
-                    <option value="FAMAS">
-                    <option value="Five-Seven">
-                    <option value="G3SG1">
-                    <option value="Galil AR">
-                    <option value="Glock-18">
-                    <option value="M249">
-                    <option value="M4A1-S">
-                    <option value="M4A4">
-                    <option value="MAC-10">
-                    <option value="MAG-7">
-                    <option value="MP5-SD">
-                    <option value="MP7">
-                    <option value="MP9">
-                    <option value="Negev">
-                    <option value="Nova">
-                    <option value="P2000">
-                    <option value="P250">
-                    <option value="P90">
-                    <option value="PP-Bizon">
-                    <option value="R8 Revolver">
-                    <option value="Sawed-Off">
-                    <option value="SCAR-20">
-                    <option value="SG 553">
-                    <option value="SSG 08">
-                    <option value="Tec-9">
-                    <option value="UMP-45">
-                    <option value="USP-S">
-                    <option value="XM1014">
-                    <option value="Bayonet">
-                    <option value="Bowie Knife">
-                    <option value="Butterfly Knife">
-                    <option value="Classic Knife">
-                    <option value="Falchion Knife">
-                    <option value="Flip Knife">
-                    <option value="Gut Knife">
-                    <option value="Huntsman Knife">
-                    <option value="Karambit">
-                    <option value="M9 Bayonet">
-                    <option value="Navaja Knife">
-                    <option value="Nomad Knife">
-                    <option value="Paracord Knife">
-                    <option value="Shadow Daggers">
-                    <option value="Skeleton Knife">
-                    <option value="Stiletto Knife">
-                    <option value="Survival Knife">
-                    <option value="Talon Knife">
-                    <option value="Ursus Knife">
+                    <?php foreach ($weapons as $name) echo "<option value='".$name."'>"; ?>
                 </datalist>
             </section>
             <!-- quality for csgo -->
@@ -125,6 +165,30 @@
             <section class="input-group mb-3" id="s_dota2_name">
                 <span class="input-group-text">نام آیتم : </span>
                 <input type="text" class="form-control" id="dota2_name" name="name" placeholder="به عنوان مثال : Maw of Eztzhok" required>
+            </section>
+            <!-- hero for dota2 -->
+            <section class="input-group mb-3" id="s_dota2_hero_list">
+                <span class="input-group-text">نام هیرو : </span>
+                <input class="form-control" list="hero_list" id="dota2_hero_list" name="hero" placeholder="نام هیرو را انتخاب کنید...">
+                <datalist id="hero_list">
+                    <?php foreach ($heroes as $name) echo "<option value='".$name["name"]."'>"; ?>
+                </datalist>
+            </section>
+            <!-- rarity for dota2 -->
+            <section class="input-group mb-3" id="s_dota2_rarity">
+                <span class="input-group-text">سطح نادر بودن : </span>
+                <input class="form-control" list="rarity" id="dota2_rarity" name="rarity" placeholder="سطح نادر بودن را انتخاب کنید...">
+                <datalist id="rarity">
+                    <?php foreach ($rarity as $name) echo "<option value='".$name."'>"; ?>
+                </datalist>
+            </section>
+            <!-- quality for dota2 -->
+            <section class="input-group mb-3" id="s_dota2_quality">
+                <span class="input-group-text">کیفیت : </span>
+                <input class="form-control" list="quality" id="dota2_quality" name="quality" placeholder="کیفیت را انتخاب کنید...">
+                <datalist id="quality">
+                    <?php foreach ($quality as $name) echo "<option value='".$name."'>"; ?>
+                </datalist>
             </section>
             <!-- number for product -->
             <section class="input-group mb-3" id="s_number">

@@ -79,7 +79,7 @@ elseif ($result == 1050){
 $Query = "CREATE TABLE attr_dota2 (
     product_id INT NOT NULL,
     hero_id INT,
-    type VARCHAR(100),
+    Rarity VARCHAR(100),
     quality VARCHAR(100),
     status VARCHAR (20) DEFAULT 'normal',
     PRIMARY KEY (product_id)
@@ -192,15 +192,15 @@ if (!$SoftSetup){
 
     $product_awp_assimow = array(
         "id" => 1,
-        "name" => "awp | asiimov",
-        "attr_name" => "csgo",
+        "name" => "AWP | Asiimov",
+        "attr_name" => "attr_csgo",
         "number" => "1",
         "img" => assets("images/awp-asiimov.jpg"),
     );
     $attr_item_1 = array(
         "product_id" => 1,
         "type" => "Sniper Rifle",
-        "weapon" => "awp",
+        "weapon" => "AWP",
         "quality" => "Field Tested",
         "category" => "Normal"
     );
