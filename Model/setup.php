@@ -79,7 +79,7 @@ elseif ($result == 1050){
 $Query = "CREATE TABLE attr_dota2 (
     product_id INT NOT NULL,
     hero_id INT,
-    Rarity VARCHAR(100),
+    rarity VARCHAR(100),
     quality VARCHAR(100),
     status VARCHAR (20) DEFAULT 'normal',
     PRIMARY KEY (product_id)
@@ -195,7 +195,7 @@ if (!$SoftSetup){
         "name" => "AWP | Asiimov",
         "attr_name" => "attr_csgo",
         "number" => "1",
-        "img" => assets("images/awp-asiimov.jpg"),
+        "img" => assets("images/awp-asiimov.jpg")
     );
     $attr_item_1 = array(
         "product_id" => 1,
@@ -204,8 +204,24 @@ if (!$SoftSetup){
         "quality" => "Field Tested",
         "category" => "Normal"
     );
+    $product_arcana_juggernaut = array(
+        "id" => "2",
+        "name" => "Bladeform Legacy",
+        "attr_name" => "attr_dota2",
+        "number" => "1",
+        "img" => assets("images/arcana-juggernaut.jpg")
+    );
+    $attr_item_2 = array(
+        "product_id" => 2,
+        "hero_id" => 44,
+        "rarity" => "Arcana",
+        "quality" => "Standard"
+    );
+
     Product::add($product_awp_assimow);
     attr_csgo::add($attr_item_1);
+    Product::add($product_arcana_juggernaut);
+    attr_dota2::add($attr_item_2);
 
     foreach ($hero as $params){
         $result = Hero::add($params);

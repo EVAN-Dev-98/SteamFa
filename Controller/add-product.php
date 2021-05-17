@@ -3,12 +3,6 @@
 
 include "__php__.php";
 
-/*
-$title = "پنل مدیریت | افزودن محصول";
-get_template("header","panel",$title);
-get_template("sidebar","panel");
-*/
-
 // get values from html
 if (isset($_POST['submit'])){
 
@@ -36,9 +30,13 @@ if (isset($_POST['submit'])){
             alerts("ایتم کانتر " . $product["name"] . " با موفقیت درج شد.","","info");
             break;
         case "attr_dota2":
-            /* more ... */
+            $table = Hero::get_id($_POST["hero"]);
+            $row = $table[0];
+            $attr["hero_id"] = $row["id"];
+            $attr["rarity"] = $_POST["rarity"];
+            $attr["quality"] = $_POST["quality"];
             attr_dota2::add($attr);
-            alerts("ایتم دوتا 2 " . $attr['name'] . " با موفقیت درج شد.","","info");
+            alerts("ایتم دوتا 2 " . $product["name"] . " با موفقیت درج شد.","","info");
             break;
     }
     $alerts = alerts();

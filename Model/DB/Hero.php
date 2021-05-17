@@ -10,6 +10,11 @@ if (!class_exists('Hero')){
                       VALUES ({$valuesString})";
             return $db -> Execute($query);
         }
+        static public function get_id($hero_name){
+            $TableName = static::class;
+            $query = "SELECT id FROM {$TableName} WHERE name = '{$hero_name}'";
+            return $GLOBALS['db'] -> Execute($query);
+        }
         static public function find($where = "true" , $order = "id" , $count = 200 , $offset = 0){
             $TableName = static::class;
             $query = "SELECT * FROM {$TableName}
