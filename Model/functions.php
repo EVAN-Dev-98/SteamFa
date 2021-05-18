@@ -49,7 +49,7 @@ if (!function_exists("get_template_part")){
 
 // for echo address assets in folder like images
 if (!function_exists("assets")){
-    function assets($name){
+    function assets( $name ){
         include "__php__.php";
         return $assets . $name;
     }
@@ -57,7 +57,7 @@ if (!function_exists("assets")){
 
 // for echo address assets in folder like images
 if (!function_exists("controller")){
-    function controller($name){
+    function controller( $name ){
         include "__php__.php";
         return $controller . $name;
     }
@@ -65,7 +65,7 @@ if (!function_exists("controller")){
 
 // for echo address dashboard or maybe sign-in.php
 if (!function_exists("account")){
-    function account($name){
+    function account( $name ){
         include "__php__.php";
         return $account . $name;
     }
@@ -73,7 +73,7 @@ if (!function_exists("account")){
 
 // for echo address view folder like catalog.php
 if (!function_exists("view")){
-    function view($name){
+    function view( $name ){
         include "__php__.php";
         return $view . $name;
     }
@@ -81,7 +81,7 @@ if (!function_exists("view")){
 
 // for extract array to variables with key name
 if (!function_exists("extract")){
-    function extract($args){
+    function extract( $args ){
         foreach ($args as $key => $value){
             $$key = htmlspecialchars($value);
         }

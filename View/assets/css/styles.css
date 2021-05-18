@@ -49,7 +49,7 @@ body {
      background: #EBEBEB;
 }
 
-input[readonly].sf-inputs{
+input[readonly].readonly{
      background-color: #ffffff;
      font-size: 1em;
 }
