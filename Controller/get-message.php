@@ -4,7 +4,7 @@ include "__php__.php";
 
 $db = new DB();
 $table = Messages::find();
-$alerts = alerts();
+$alerts = Alert::alerts();
 
 ?>
 <section class="panel">

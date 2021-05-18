@@ -4,7 +4,7 @@ include "__php__.php";
 
 $db = new DB();
 $table = Product::find();
-$alerts = alerts();
+$alerts = Alert::alerts();
 
 ?>
 <section class="container mt-5">

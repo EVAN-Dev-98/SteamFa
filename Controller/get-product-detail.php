@@ -6,7 +6,7 @@ if ( isset($_GET['id']) ){
     $db = new DB();
     $table = Product::find("ID = {$_GET['id']}");
     $row = $table[0];
-    $alerts = alerts();
+    $alerts = Alert::alerts();
 
     ?>
     <section class="container mt-5">

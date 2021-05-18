@@ -18,12 +18,12 @@ if ( isset($_GET['id']) ){
         $row = $table[0];
     }
     else{
-        alerts("شناسه کاربری وارد شده یافت نشد!","","danger");
+        Alert::alerts("شناسه کاربری وارد شده یافت نشد!","","danger");
     }
 
     unset($db);
 }
 else{
-    alerts("شناسه کاربری نامعتبر!","","danger");
+    Alert::alerts("شناسه کاربری نامعتبر!","","danger");
 }
-$alerts = alerts();
+$alerts = Alert::alerts();

@@ -49,6 +49,11 @@ body {
      background: #EBEBEB;
 }
 
+input[readonly].sf-inputs{
+     background-color: #ffffff;
+     font-size: 1em;
+}
+
 li {
      list-style: none;
 }

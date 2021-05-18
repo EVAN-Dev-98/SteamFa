@@ -1,6 +1,5 @@
 <?php
 /* Created By Evan ( Sajad Gholami ) */
-
 include "__php__.php";
 
 $title = "ثبت نام | استیم فارسی";
@@ -18,20 +17,13 @@ if (isset($_POST['submit'])){
         unset($params['submit']);
         unset($params['repassword']);
         User::add($params);
+        Alert::alerts("{$params['fname']} {$params['lname']} عزیز ، خوش آمدید!","","success");
         redirect(account("dashboard.php"));
     }
-
     else{
-        get_template("header","",$title);
-
-        $alert = alert("گذرواژه با تکرار آن برابر نیست !!!", "<a href='../View/account/sign-up.php'>بازگشت به صفحه ثبت نام</a>","danger");
+        Alert::alerts("گذرواژه با تکرار آن برابر نیست !!!");
+        redirect(account("sign-up.php"));
     }
-
 }
-else{
-    redirect(view("home.php"));
-}
-?>
-<section class="container fix-header">
-    <?php if (isset($alert)) echo $alert; ?>
-</section>
+Alert::alerts("دسترسی غیرمجاز!");
+redirect(view("home.php"));

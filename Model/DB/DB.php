@@ -1,7 +1,6 @@
 <?php
 
 include "__php__.php";
-
 // we most include all tables Class :)
 include "Table.php";
 include "Product.php";
@@ -25,14 +24,14 @@ if (!class_exists("DB")){
         private function Connect(){
             $this->dbc = new mysqli(DBHOST,DBUSER,DBPASS);
             if ($this->dbc->connect_errno) {
-                echo alert("خطا در اتصال به دیتابیس","خطا : " . $this->dbc->connect_error ,"danger");
+                echo Alert::alerts("خطا در اتصال به دیتابیس","خطا : " . $this->dbc->connect_error ,"danger");
                 exit();
             }
         }
         public function SelectDB(){
             $this->dbc->select_db(DBNAME);
             if ($this->dbc->error){
-                echo alert("خطا در انتخاب دیتابیس","خطا : " . $this->dbc->error ,"danger");
+                echo Alert::alerts("خطا در انتخاب دیتابیس","خطا : " . $this->dbc->error ,"danger");
                 exit();
             }
         }
@@ -42,7 +41,7 @@ if (!class_exists("DB")){
                 return $this -> dbc -> errno;
             }
             elseif ( $this -> dbc -> error ){
-                alerts("خطا در اجرای دستورات","خطا : " . $this->dbc->error ,"danger");
+                Alert::alerts("خطا در اجرای دستورات","خطا : " . $this->dbc->error ,"danger");
                 return false;
             }
             else{

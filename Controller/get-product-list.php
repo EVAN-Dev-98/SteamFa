@@ -2,10 +2,8 @@
 
 include "__php__.php";
 
-$db = new DB();/*
-$table = Product::find();*/
-$table = array();
-$alerts = alerts();
+$db = new DB();
+$table = Product::find();
 
 ?>
 <section class="panel">
@@ -14,6 +12,7 @@ $alerts = alerts();
     </header>
     <main>
         <?php
+        $alerts = Alert::alerts();
         if (isset($alerts))
             echo $alerts;
         ?>
@@ -24,9 +23,6 @@ $alerts = alerts();
                 <th scope="col">شناسه آیتم</th>
                 <th scope="col">نام آیتم</th>
                 <th scope="col">نام بازی</th>
-                <th scope="col">نوع</th>
-                <th scope="col">کیفیت</th>
-                <th scope="col">تعداد</th>
                 <th scope="col"></th>
                 <th scope="col"></th>
             </tr>

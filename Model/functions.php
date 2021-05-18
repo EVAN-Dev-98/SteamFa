@@ -1,35 +1,8 @@
 <?php
 /* Created By Evan ( Sajad Gholami ) */
-
+include "Alert.php";
 include "DB/DB.php";
-
-if (!function_exists("alert")) {
-    function alert($text, $des, $type)
-    {
-        $alert = "<section class=\"alert alert-{$type} alert-dismissible fade show\" role=\"alert\">
-  <strong class='me-3'>{$text}</strong> {$des}
-  <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"alert\" aria-label=\"Close\"></button>
-</section>";
-        return $alert;
-    }
-}
-
-if (!function_exists("alerts")) {
-    function alerts($text = "" , $des = "" , $type = "danger"){
-        static $alerts = "";
-        if ($text != ""){
-            $alerts .= alert($text,$des,$type);
-        }
-        elseif ($alerts != ""){
-            $result = $alerts;
-            $alerts = "";
-            return $result;
-        }
-        else
-            return false;
-    }
-}
-
+include "Security/Authentication.php";
 
 if (!function_exists("redirect")){
     function redirect ($address){
@@ -112,5 +85,11 @@ if (!function_exists("extract")){
         foreach ($args as $key => $value){
             $$key = htmlspecialchars($value);
         }
+    }
+}
+
+if (!function_exists("Session_Start")){
+    function Session_Start(){
+        session_start();
     }
 }

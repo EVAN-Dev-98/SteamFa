@@ -27,7 +27,7 @@ if (isset($_POST['submit'])){
                 $attr["category"] = $_POST["category"];
             }
             attr_csgo::add($attr);
-            alerts("ایتم کانتر " . $product["name"] . " با موفقیت درج شد.","","info");
+            Alert::alerts("ایتم کانتر " . $product["name"] . " با موفقیت درج شد.","","info");
             break;
         case "attr_dota2":
             $table = Hero::get_id($_POST["hero"]);
@@ -36,13 +36,12 @@ if (isset($_POST['submit'])){
             $attr["rarity"] = $_POST["rarity"];
             $attr["quality"] = $_POST["quality"];
             attr_dota2::add($attr);
-            alerts("ایتم دوتا 2 " . $product["name"] . " با موفقیت درج شد.","","info");
+            Alert::alerts("ایتم دوتا 2 " . $product["name"] . " با موفقیت درج شد.","","info");
             break;
     }
-    $alerts = alerts();
     redirect(account("show-product-list.php"));
-
 }
 else{
+    Alert::alerts("دسترسی غیرمجاز!");
     redirect(view("home.php"));
 }

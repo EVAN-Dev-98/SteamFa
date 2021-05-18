@@ -9,6 +9,6 @@ if ( isset($_GET['id']) ){
     unset($db);
 }
 else{
-    alerts("شناسه کاربری نامعتبر!","","danger");
+    Alert::alerts("شناسه کاربری نامعتبر!","","danger");
 }
-$alerts = alerts();
+$alerts = Alert::alerts();

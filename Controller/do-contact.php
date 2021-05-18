@@ -13,9 +13,9 @@ if (isset($_POST['submit'])){
     $params = $_POST;
     unset($params['submit']);
     Messages::add($params);
-    $alert = alertS();
+    $alerts = Alert::alerts();
     get_template("showcase");
-    if (isset($alert)) echo $alert;
+    if (isset($alerts)) echo $alerts;
     get_template("footer");
 }
 else{

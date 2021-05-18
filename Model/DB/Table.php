@@ -25,7 +25,7 @@ if (!class_exists('Table')){
                       VALUES ({$valuesString})";
             $result = $db -> Execute($query);
             if ($result){
-                alerts("{$TableName} شما با موفقیت ثبت شد!","","success");
+                Alert::alerts("{$TableName} شما با موفقیت ثبت شد!","","success");
             }
             return $result;
         }
@@ -45,7 +45,7 @@ if (!class_exists('Table')){
                       WHERE ID = {$params['id']}";
             $result = $GLOBALS['db'] -> Execute($query);
             if ($result){
-                alerts("{$TableName} شما با موفقیت ویرایش شد!","","success");
+                Alert::alerts("{$TableName} شما با موفقیت ویرایش شد!","","success");
             }
         }
         static public function delete( $id ){
@@ -55,7 +55,7 @@ if (!class_exists('Table')){
                       WHERE ID = {$id}";
             $result = $GLOBALS['db'] -> Execute($query);
             if ($result){
-                alerts("{$TableName} شما با موفقیت حذف شد!","","success");
+                Alert::alerts("{$TableName} شما با موفقیت حذف شد!","","success");
             }
         }
     }

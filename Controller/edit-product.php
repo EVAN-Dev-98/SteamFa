@@ -19,12 +19,12 @@ if ( isset($_GET['id']) ){
         $row = $table[0];
     }
     else{
-        alerts("شناسه آیتم وارد شده یافت نشد!","","danger");
+        Alert::alerts("شناسه آیتم وارد شده یافت نشد!","","danger");
     }
 
     unset($db);
 }
 else{
-    alerts("شناسه آیتم نامعتبر!","","danger");
+    Alert::alerts("شناسه آیتم نامعتبر!","","danger");
 }
-$alerts = alerts();
+$alerts = Alert::alerts();

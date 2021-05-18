@@ -10,17 +10,17 @@ if (!$SoftSetup){
     $Query = "DROP DATABASE IF EXISTS {$dbName}";
     $result = $db->Execute($Query);
     if ($result ==0){
-        alerts('دیتابیس با موفقیت حذف شد','','success');
+        Alert::alerts('دیتابیس با موفقیت حذف شد','','success');
     }
 }
 
 $Query = "CREATE DATABASE {$dbName} CHARSET {$dbCharset} COLLATE {$dbCollate}";
 $result = $db->Execute($Query);
 if ($result == 0){
-    alerts('دیتابیس با موفقیت ایجاد شد','','success');
+    Alert::alerts('دیتابیس با موفقیت ایجاد شد','','success');
 }
 elseif ($result == 1007){
-    alerts("دیتابیس از قبل ساخته شده است","","info");
+    Alert::alerts("دیتابیس از قبل ساخته شده است","","info");
 }
 
 $db -> SelectDB();
@@ -36,10 +36,10 @@ $Query = "CREATE TABLE Messages (
     )ENGINE = INNODB";
 $result = $db->Execute($Query);
 if ($result == 0){
-    alerts('جدول تماس باما با موفقیت ایجاد شد','','success');
+    Alert::alerts('جدول تماس باما با موفقیت ایجاد شد','','success');
 }
 elseif ($result == 1050){
-    alerts("جدول تماس باما در پایگاه داده وجود دارد","","info");
+    Alert::alerts("جدول تماس باما در پایگاه داده وجود دارد","","info");
 }
 
 $Query = "CREATE TABLE Product (
@@ -53,10 +53,10 @@ $Query = "CREATE TABLE Product (
     )ENGINE = INNODB";
 $result = $db->Execute($Query);
 if ($result == 0){
-    alerts('جدول محصولات با موفقیت ایجاد شد','','success');
+    Alert::alerts('جدول محصولات با موفقیت ایجاد شد','','success');
 }
 elseif ($result == 1050){
-    alerts("جدول محصولات در پایگاه داده وجود دارد","","info");
+    Alert::alerts("جدول محصولات در پایگاه داده وجود دارد","","info");
 }
 
 $Query = "CREATE TABLE attr_csgo (
@@ -70,10 +70,10 @@ $Query = "CREATE TABLE attr_csgo (
     )ENGINE = INNODB";
 $result = $db->Execute($Query);
 if ($result == 0){
-    alerts('جدول ویژگی های آیتم های کانتر با موفقیت ایجاد شد','','success');
+    Alert::alerts('جدول ویژگی های آیتم های کانتر با موفقیت ایجاد شد','','success');
 }
 elseif ($result == 1050){
-    alerts("جدول ویژگی های آیتم های کانتر در پایگاه داده وجود دارد","","info");
+    Alert::alerts("جدول ویژگی های آیتم های کانتر در پایگاه داده وجود دارد","","info");
 }
 
 $Query = "CREATE TABLE attr_dota2 (
@@ -86,10 +86,10 @@ $Query = "CREATE TABLE attr_dota2 (
     )ENGINE = INNODB";
 $result = $db->Execute($Query);
 if ($result == 0){
-    alerts('جدول ویژگی های آیتم های دوتا 2 با موفقیت ایجاد شد','','success');
+    Alert::alerts('جدول ویژگی های آیتم های دوتا 2 با موفقیت ایجاد شد','','success');
 }
 elseif ($result == 1050){
-    alerts("جدول ویژگی های آیتم های دوتا 2 در پایگاه داده وجود دارد","","info");
+    Alert::alerts("جدول ویژگی های آیتم های دوتا 2 در پایگاه داده وجود دارد","","info");
 }
 
 $Query = "CREATE TABLE Hero (
@@ -102,10 +102,10 @@ $Query = "CREATE TABLE Hero (
     )ENGINE = INNODB";
 $result = $db->Execute($Query);
 if ($result == 0){
-    alerts('جدول هیرو های دوتا 2 با موفقیت ایجاد شد','','success');
+    Alert::alerts('جدول هیرو های دوتا 2 با موفقیت ایجاد شد','','success');
 }
 elseif ($result == 1050){
-    alerts("جدول هیرو های دوتا 2 در پایگاه داده وجود دارد","","info");
+    Alert::alerts("جدول هیرو های دوتا 2 در پایگاه داده وجود دارد","","info");
 }
 
 $Query = "CREATE TABLE User (
@@ -123,10 +123,10 @@ $Query = "CREATE TABLE User (
     )ENGINE = INNODB";
 $result = $db->Execute($Query);
 if ($result == 0){
-    alerts('جدول کاربران با موفقیت ایجاد شد','','success');
+    Alert::alerts('جدول کاربران با موفقیت ایجاد شد','','success');
 }
 elseif ($result == 1050){
-    alerts("جدول کاربران در پایگاه داده وجود دارد","","info");
+    Alert::alerts("جدول کاربران در پایگاه داده وجود دارد","","info");
 }
 
 $Query = "CREATE TABLE Role (
@@ -143,10 +143,10 @@ $Query = "CREATE TABLE Role (
     )ENGINE = INNODB";
 $result = $db->Execute($Query);
 if ($result == 0){
-    alerts('جدول نقش های کاربران با موفقیت ایجاد شد','','success');
+    Alert::alerts('جدول نقش های کاربران با موفقیت ایجاد شد','','success');
 }
 elseif ($result == 1050){
-    alerts("جدول نقش های کاربران در پایگاه داده وجود دارد","","info");
+    Alert::alerts("جدول نقش های کاربران در پایگاه داده وجود دارد","","info");
 }
 
 if (!$SoftSetup){
@@ -228,10 +228,10 @@ if (!$SoftSetup){
     }
 
     if ($result == count($hero)){
-        alerts("تعداد " . $result . " هیرو ، در جدول هیرو های دوتا 2 درج شد.",null,"success");
+        Alert::alerts("تعداد " . $result . " هیرو ، در جدول هیرو های دوتا 2 درج شد.",null,"success");
     }
 }
-$alerts = alerts();
+$alerts = Alert::alerts();
 
 $title = "پنل مدیریت | نصب و راه اندازی";
 
