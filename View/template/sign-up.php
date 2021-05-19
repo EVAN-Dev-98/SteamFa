@@ -1,8 +1,7 @@
 <section class="container fix-header">
     <?php
     $alerts = Alert::alerts();
-    if (isset($alerts))
-        echo $alerts;
+    if ($alerts) echo $alerts;
     if (isset($_SESSION['ins-params'])){
         $params = $_SESSION['ins-params'];
         unset($_SESSION['ins-params']);

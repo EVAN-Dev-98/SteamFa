@@ -13,6 +13,9 @@ if (isset($_POST['submit'])){
             unset($params['submit']);
             unset($params['re-password']);
             User::add($params);
+            $table = User::find("email = '{$params['email']}'");
+            $row = $table[0];
+            Authentication::login( $row['id'] );
             Alert::alerts("{$params['fname']} {$params['lname']} عزیز ، خوش آمدید!","","success");
             redirect(account("dashboard.php"));
         }

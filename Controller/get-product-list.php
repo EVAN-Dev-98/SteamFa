@@ -13,8 +13,7 @@ $table = Product::find();
     <main>
         <?php
         $alerts = Alert::alerts();
-        if (isset($alerts))
-            echo $alerts;
+        if ($alerts) echo $alerts;
         ?>
         <table class="table table-dark table-hover">
             <thead>

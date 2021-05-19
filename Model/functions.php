@@ -25,10 +25,11 @@ if (!function_exists("get_view")){
 
 // for include maybe header.php in View/template folder
 if (!function_exists("get_template")){
-    function get_template($name , $addition = "" , $title = "استیم فارسی | عنوان ندارد"){
+    function get_template($name , $addition = "" , $title = "استیم فارسی | عنوان ندارد" , $args = array()){
         if (!$addition == ""){
             $addition = "-{$addition}";
         }
+        extract($args);
         include "__php__.php";
         include "{$Template}{$name}{$addition}.php";
     }

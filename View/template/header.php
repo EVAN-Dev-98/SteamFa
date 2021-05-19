@@ -7,21 +7,19 @@ get_template("head","",$title);
  <section class="top-header">
     <nav class="right">
        <ul>
-          <li><a href="">تبلیغات</a></li>
-          <li><a href="">استخدام</a></li>
+          <li><a href="#" target="_steamfa">آموزش های استیم</a></li>
        </ul>
     </nav>
     <nav class="left">
        <ul>
-          <li><a href="<?php echo view("about.php"); ?>">درباره ما</a></li>
-          <li><a href="<?php echo view("contact.php"); ?>">تماس با ما</a></li>
+          <li><a href="<?php echo view("about.php"); ?>" target="_steamfa">درباره ما</a></li>
+          <li><a href="<?php echo view("contact.php"); ?>" target="_steamfa">تماس با ما</a></li>
        </ul>
     </nav>
  </section>
  <section class="main-header">
     <section class="hamburger-menu" id="hamburger-menu">
-        <li class="account"><a href="<?php echo account("sign-in.php"); ?>" target="_steamfapanel">ورود</a> | <a href="<?php echo account("sign-up.php"); ?>" target="_steamfapanel">ثبت نام</a></li>
-        <li class="account"><a href="<?php echo account("dashboard.php"); ?>" target="_steamfapanel">پنل کاربری</a></li>
+        <?php get_template("header","user"); ?>
         <?php get_template("main","menu"); ?>
     </section>
     <section class="hamburger-menu-icon" id="hamburger-menu-icon"></section>
@@ -45,9 +43,7 @@ get_template("head","",$title);
     </nav>
     <nav class="left">
        <ul>
-          <li class="account"><a href="<?php echo account("sign-in.php"); ?>" target="_steamfapanel">ورود</a></li>
-          <li class="account"><a href="<?php echo account("sign-up.php"); ?>" target="_steamfapanel">ثبت نام</a></li>
-          <li class="account"><a href="<?php echo account("dashboard.php"); ?>" target="_steamfapanel">پنل کاربری</a></li>
+           <?php get_template("header","user"); ?>
           <li class="search"><input class="search-input" type="text" name="search" value="" placeholder="دنبال چی میگردی ؟" onfocus="this.placeholder=''" onblur="this.placeholder='دنبال چی میگردی ؟'"></li>
           <li class="search-icon"><a href="#footer_search"></a></li>
        </ul>

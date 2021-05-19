@@ -147,6 +147,15 @@ ul,p{
      background: #2f3542;
 }
 
+#header .main-header a i{
+     width: 25px;
+     font-size: 1.3rem;
+     margin-left: .6rem;
+     font-weight: 900;
+     position: relative;
+     top: 3px;
+}
+
 #header .main-header .site-name {
      display: none;
      margin: 2em 1em 1.5em;
@@ -281,9 +290,29 @@ ul,p{
      margin: 1em 2%;
 }
 
-#header .main-header nav a i {
-     display: inline-block;
-     padding-right: 8px;
+#header .panel-header {
+     width: 100%;
+     height: 5em;
+     background: #2f3542;
+}
+
+#header .panel-header .left {
+     float: left;
+     margin: .2rem 2%;
+     cursor: pointer;
+}
+
+#header .panel-header a{
+     font-size: 1rem;
+}
+
+#header .panel-header a i{
+     width: 25px;
+     font-size: 1.3rem;
+     margin-left: .5rem;
+     font-weight: 900;
+     position: relative;
+     top: 3px;
 }
 
 #header .selected a {
@@ -489,6 +518,12 @@ ul,p{
 .showcase .col .items .detail h2 {
      font-size: 14px;
      color: #FDFDFD;
+}
+
+.home-alerts{
+     display: block;
+     width: 80%;
+     margin: 20px auto;
 }
 
 .selected-posts {
@@ -994,6 +1029,10 @@ footer .main-footer .info p {
      background-color: #4D6278;
      color: #F7DC6F;
      transition: 0.5s;
+}
+.panel-sidebar nav ul li.close a:hover,
+#header .panel-header nav ul li.close a:hover{
+     color: #F1948A;
 }
 .panel-sidebar nav ul li.active a:hover{
      background: #0A58CA;

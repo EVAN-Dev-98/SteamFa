@@ -5,7 +5,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
     <a href="<?php ?>" class="brand-link"><img src="<?php echo assets("images/steam-icon.png") ?>" alt="steamfa" class="brand-img">استیم فارسی</a>
     <section class="user-panel">
         <img src="<?php echo assets("images/icons/user-1.png") ?>" alt="user-image" class="user-img">
-        <a href="<?php ?>" class="user-info">سجاد غلامی</a>
+        <a href="<?php ?>" class="user-info"><?php if (isset($fname)) echo $fname; if (isset($lname)) echo " " . $lname; ?></a>
     </section>
     <nav>
         <ul>
@@ -21,6 +21,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                 </ul>
             </li>
             <li class="items<?php if ($activePage == "show-messages") echo " active"; ?>"><a href="<?php echo account("show-messages.php"); ?>"><i class="far fa-envelope"></i><p>پیام های تماس با ما</p></a></li>
+            <li class="items close"><a href="<?php echo controller("do-logout.php"); ?>"><i class="fad fa-times-hexagon"></i><p>خروج</p></a></li>
         </ul>
     </nav>
 </aside>

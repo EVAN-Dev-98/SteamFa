@@ -1,6 +1,5 @@
 <?php
 global $row;
-global $alerts;
 ?>
 <section class="panel">
     <header>
@@ -8,8 +7,8 @@ global $alerts;
     </header>
     <main>
         <?php
-        if (isset($alerts))
-            echo $alerts;
+        $alerts = Alert::alerts();
+        if ($alerts) echo $alerts;
         ?>
         <form action="<?php echo controller("edit-user.php"); ?>?id=<?php if (isset($_GET['id'])) echo $_GET['id']; ?>" method="post">
             <section class="input-group mb-3">

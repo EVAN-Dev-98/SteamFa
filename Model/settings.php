@@ -18,7 +18,7 @@ $dbName = DBNAME;
 $dbCharset = CHARSET;
 $dbCollate = COLLATE;
 
-$SiteVersion = 8.1;
+$SiteVersion = 9;
 
 $SoftSetup = true;
 $FirstTime = false;

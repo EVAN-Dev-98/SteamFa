@@ -1,14 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- add alert class&#10;- All Notifications Done :)">
-      <change afterPath="$PROJECT_DIR$/View/assets/js/readonly.js" afterDir="false" />
+    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- login complete&#10;- autocomplete form after error&#10;- sign up email duplicate control">
+      <change afterPath="$PROJECT_DIR$/Controller/do-logout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/template/header-user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/do-sign-in.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-sign-in.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/add-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/add-product.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/do-sign-up.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-sign-up.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/get-product-list.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/get-product-list.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/account/add-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/add-product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/account/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/dashboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/account/edit-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/edit-product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/account/profile-user.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/profile-user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/account/show-messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/show-messages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/account/show-product-list.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/show-product-list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/account/show-users.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/show-users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/account/sign-in.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/sign-in.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/account/sign-up.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/sign-up.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/View/assets/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/edit-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/edit-product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/header-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/header-panel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/profile-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/profile-panel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/sidebar-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/sidebar-panel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/template/sign-in.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/sign-in.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/template/sign-up.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/sign-up.php" afterDir="false" />
     </list>
@@ -166,14 +184,8 @@
       <workItem from="1621157395318" duration="811000" />
       <workItem from="1621179883877" duration="11065000" />
       <workItem from="1621257602176" duration="7188000" />
-      <workItem from="1621317382084" duration="31336000" />
-    </task>
-    <task id="LOCAL-00015" summary="rename files">
-      <created>1616704157150</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1616704157150</updated>
+      <workItem from="1621317382084" duration="31619000" />
+      <workItem from="1621412736728" duration="10571000" />
     </task>
     <task id="LOCAL-00016" summary="- add setup">
       <created>1617886271715</created>
@@ -511,7 +523,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621367726524</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="- login complete&#10;- autocomplete form after error&#10;- sign up email duplicate control">
+      <created>1621379845824</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1621379845824</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -531,7 +550,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="- edit functions&#10;- edit home page" />
     <MESSAGE value="- add __php__" />
     <MESSAGE value="- Fixed Error : __php__.php include&#10;- More features coming soon :)" />
     <MESSAGE value="- site version == 6 :)" />
@@ -556,7 +574,8 @@
     <MESSAGE value="- add csgo item done&#10;dota2 items as sooon" />
     <MESSAGE value="- add csgo item done&#10;- add dota2 items done&#10;- basic view catalog" />
     <MESSAGE value="- add alert class&#10;- All Notifications Done :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="- add alert class&#10;- All Notifications Done :)" />
+    <MESSAGE value="- login complete&#10;- autocomplete form after error&#10;- sign up email duplicate control" />
+    <option name="LAST_COMMIT_MESSAGE" value="- login complete&#10;- autocomplete form after error&#10;- sign up email duplicate control" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
