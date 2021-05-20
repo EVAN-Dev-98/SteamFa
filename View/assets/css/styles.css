@@ -263,6 +263,14 @@ ul,p{
      transition: 0.4s;
 }
 
+#header .main-header .hamburger-menu .search-input::placeholder {
+     color: #F4D03F;
+}
+
+#header .main-header .hamburger-menu .search-input:focus {
+     border: 2px solid #27AE60;
+}
+
 #header .main-header .logo {
      display: inline-flex;
      width: 4em;
@@ -364,26 +372,6 @@ ul,p{
 
 #header .main-header .left .search-input:focus {
      border: 2px solid #27AE60;
-}
-
-#header .main-header .left .search-icon {
-     display: none;
-}
-
-#header .main-header .left .search-icon a {
-     display: block;
-     padding: 22px;
-     background-color: #252B37;
-     background-image: url('../images/search.png');
-     background-repeat: no-repeat;
-     background-size: 50%;
-     background-position: center;
-     border-radius: 5px;
-     border: 2px solid #252B37;
-}
-
-#header .main-header .left .search-icon a:hover {
-     border-color: #27AE60;
 }
 
 .clear {
