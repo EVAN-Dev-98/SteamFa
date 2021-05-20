@@ -18,21 +18,7 @@ get_template("head","",$title);
     </nav>
  </section>
  <section class="main-header">
-    <section class="hamburger-menu" id="hamburger-menu">
-        <ul>
-            <?php get_template("header","user"); ?>
-            <li class="search"><input class="search-input" type="text" name="search" value="" placeholder="دنبال چی میگردی ؟" onfocus="this.placeholder=''" onblur="this.placeholder='دنبال چی میگردی ؟'"></li>
-        </ul>
-        <?php get_template("main","menu"); ?>
-    </section>
-    <section class="hamburger-menu-icon" id="hamburger-menu-icon"></section>
-    <script>
-       var icon = document.getElementById('hamburger-menu-icon');
-       var menu = document.getElementById('hamburger-menu');
-       icon.addEventListener('click',()=>{
-          menu.classList.toggle('active');
-       });
-    </script>
+     <section class="hamburger-menu-icon" id="hamburger-menu-icon"></section>
     <section class="logo">
        <a href="<?php echo view("home.php"); ?>"><img src="<?php echo assets("images/steam-icon.png"); ?>" alt="steamfarsi"></a>
     </section>
@@ -50,5 +36,19 @@ get_template("head","",$title);
           <li class="search"><input class="search-input" type="text" name="search" value="" placeholder="دنبال چی میگردی ؟" onfocus="this.placeholder=''" onblur="this.placeholder='دنبال چی میگردی ؟'"></li>
        </ul>
     </nav>
+     <section class="hamburger-menu" id="hamburger-menu">
+         <ul>
+             <?php get_template("header","user"); ?>
+             <li class="search"><input class="search-input" type="text" name="search" value="" placeholder="دنبال چی میگردی ؟" onfocus="this.placeholder=''" onblur="this.placeholder='دنبال چی میگردی ؟'"></li>
+         </ul>
+         <?php get_template("main","menu"); ?>
+     </section>
+     <script>
+         var icon = document.getElementById('hamburger-menu-icon');
+         var menu = document.getElementById('hamburger-menu');
+         icon.addEventListener('click',()=>{
+             menu.classList.toggle('active');
+         });
+     </script>
  </section>
 </header>

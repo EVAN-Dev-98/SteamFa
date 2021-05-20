@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/assets/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/View/assets/css/responsive.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/View/assets/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/header.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,14 +166,7 @@
       <workItem from="1621457852570" duration="224000" />
       <workItem from="1621458862821" duration="528000" />
       <workItem from="1621505097069" duration="20000" />
-      <workItem from="1621511841683" duration="7255000" />
-    </task>
-    <task id="LOCAL-00018" summary="- directory changes">
-      <created>1617971214711</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1617971214711</updated>
+      <workItem from="1621511841683" duration="8053000" />
     </task>
     <task id="LOCAL-00019" summary="- directory changes">
       <created>1617972691121</created>
@@ -510,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621526251098</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="- show immortals item page&#10;- perform header">
+      <created>1621526832477</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1621526832477</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
