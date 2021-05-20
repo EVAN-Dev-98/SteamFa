@@ -4,7 +4,6 @@ include "__php__.php";
 
 $db = new DB();
 $table = Hero::find();
-$alerts = Alert::alerts();
 
 ?>
 <section class="container mt-5">

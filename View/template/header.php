@@ -19,7 +19,10 @@ get_template("head","",$title);
  </section>
  <section class="main-header">
     <section class="hamburger-menu" id="hamburger-menu">
-        <?php get_template("header","user"); ?>
+        <ul>
+            <?php get_template("header","user"); ?>
+            <li class="search"><input class="search-input" type="text" name="search" value="" placeholder="دنبال چی میگردی ؟" onfocus="this.placeholder=''" onblur="this.placeholder='دنبال چی میگردی ؟'"></li>
+        </ul>
         <?php get_template("main","menu"); ?>
     </section>
     <section class="hamburger-menu-icon" id="hamburger-menu-icon"></section>
@@ -45,7 +48,6 @@ get_template("head","",$title);
        <ul>
            <?php get_template("header","user"); ?>
           <li class="search"><input class="search-input" type="text" name="search" value="" placeholder="دنبال چی میگردی ؟" onfocus="this.placeholder=''" onblur="this.placeholder='دنبال چی میگردی ؟'"></li>
-          <li class="search-icon"><a href="#footer_search"></a></li>
        </ul>
     </nav>
  </section>

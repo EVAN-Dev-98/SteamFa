@@ -1,7 +1,7 @@
 <?php
 if ($attr_name == "attr_dota2"){
     ?>
-    <section class="col-3 my-3">
+    <section class="col-lg-3 col-md-4 col-sm-6 my-3">
         <article class="card shadow-sm">
             <img src="<?php echo $img; ?>" class="card-img-top">
             <section class="card-body">
@@ -24,7 +24,7 @@ if ($attr_name == "attr_dota2"){
 }
 if ($attr_name == "attr_csgo"){
     ?>
-    <section class="col-3 my-3">
+    <section class="col-lg-3 col-md-4 col-sm-6 my-3">
         <article class="card shadow-sm">
             <img src="<?php echo $img; ?>" class="card-img-top">
             <section class="card-body">

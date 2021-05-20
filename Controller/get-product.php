@@ -1,13 +1,15 @@
 <?php
-
+/* Created By Evan ( Sajad Gholami ) */
 include "__php__.php";
 
 $db = new DB();
 $table = Product::find();
 $alerts = Alert::alerts();
-
 ?>
 <section class="container mt-5">
+    <?php if ($alerts) { ?>
+        <section> <?php echo $alerts; ?> </section>
+    <?php } ?>
     <section class="row">
 <?php
 $count = 0;

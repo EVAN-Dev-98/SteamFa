@@ -1,7 +1,4 @@
 @media screen and (max-width: 1400px) {
-     #header .main-header .logo {
-          margin-right: 5%;
-     }
      .showcase {
           width: 90%;
           margin-top: 180px;
@@ -18,9 +15,6 @@
 }
 
 @media screen and (max-width: 1300px) {
-     #header .main-header .logo {
-          margin-right: 2%;
-     }
      .showcase {
           width: 95%;
      }
@@ -82,7 +76,7 @@
      #header .main-header .right {
           display: none;
      }
-     #header .main-header .left .account {
+     #header .main-header .left {
           display: none;
      }
      #header .main-header .hamburger-menu-icon {
@@ -142,12 +136,6 @@
 @media screen and (max-width: 860px) {
      .showcase {
           height: 50vh;
-     }
-     #header .main-header .left .search {
-          display: none;
-     }
-     #header .main-header .left .search-icon {
-          display: block;
      }
      footer .main-footer .col {
           display: block;
