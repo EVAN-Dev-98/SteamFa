@@ -42,7 +42,7 @@ if (!class_exists('Table')){
             $columnsValueList = self::columnsValueList( $params );
             $query = "UPDATE {$TableName}
                       SET {$columnsValueList}
-                      WHERE ID = {$params['id']}";
+                      WHERE id = {$params['id']}";
             $result = $GLOBALS['db'] -> Execute($query);
             if ($result){
                 Alert::alerts("{$TableName} شما با موفقیت ویرایش شد!","","success");
@@ -52,7 +52,7 @@ if (!class_exists('Table')){
             $TableName = static::class;
             $query = "UPDATE {$TableName}
                       SET status = 'deleted'
-                      WHERE ID = {$id}";
+                      WHERE id = {$id}";
             $result = $GLOBALS['db'] -> Execute($query);
             if ($result){
                 Alert::alerts("{$TableName} شما با موفقیت حذف شد!","","success");

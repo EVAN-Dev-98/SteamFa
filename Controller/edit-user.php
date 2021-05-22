@@ -1,29 +1,29 @@
 <?php
-
+/* Created By Evan ( Sajad Gholami ) */
 include "__php__.php";
 
-if ( isset($_GET['id']) ){
+if ( isset($_POST['submit']) ){
     $db = new DB();
-
-    if ( isset($_POST['submit']) ){
-        $parameters = $_POST;
-        $parameters['id'] = $_GET['id'];
-        unset($parameters['submit']);
-        User::update( $parameters );
-        redirect(account("show-users.php"));
-    }
-
-    $table = User::find("ID = {$_GET['id']}");
+    $params = $_POST;
+    unset($params['submit']);
+    $params['id'] = $_SESSION['uid'];
+    $table = User::find("id = {$params['id']}");
     if (isset($table[0])){
         $row = $table[0];
+        if (password_verify($params['password'],$row['password'])){
+            unset($params['password']);
+            User::update( $params );
+            Alert::alerts("پروفایل شما با موفقیت ویرایش شد.",null,"success");
+            redirect(account("show-users.php"));
+        }
+        else{
+            Alert::alerts("گذرواژه وارد شده اشتباه است!!!","لطفا از صحت گذرواژه خود اطمینان حاصل بفرمایید.");
+        }
     }
-    else{
-        Alert::alerts("شناسه کاربری وارد شده یافت نشد!","","danger");
-    }
-
-    unset($db);
+    $_SESSION['ins-params'] = $params;
+    redirect(account("profile-user.php"));
 }
 else{
-    Alert::alerts("شناسه کاربری نامعتبر!","","danger");
+    Alert::alerts("دسترسی غیرمجاز!");
+    redirect(view("home.php"));
 }
-$alerts = Alert::alerts();

@@ -4,7 +4,6 @@ include "__php__.php";
 
 $db = new DB();
 $table = Product::find();
-
 ?>
 <section class="panel">
     <header>

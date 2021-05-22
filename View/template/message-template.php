@@ -4,7 +4,7 @@
         <h5 class="card-title"><?php echo $subject; ?></h5>
         <p class="card-text"><?php echo $message; ?></p>
         <section class="mt-2">
-            <a href="<?php echo controller("delete-message.php?id={$ID}"); ?>" class="btn btn-outline-danger">حذف</a>
+            <a href="<?php echo controller("delete-message.php?id={$id}"); ?>" class="btn btn-outline-danger">حذف</a>
         </section>
     </section>
     <section class="card-footer">

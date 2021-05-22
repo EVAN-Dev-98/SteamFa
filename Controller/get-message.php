@@ -4,8 +4,6 @@ include "__php__.php";
 
 $db = new DB();
 $table = Messages::find();
-$alerts = Alert::alerts();
-
 ?>
 <section class="panel">
     <header>
@@ -13,6 +11,8 @@ $alerts = Alert::alerts();
     </header>
     <main>
         <?php
+        $alerts = Alert::alerts();
+        if ($alerts) echo $alerts;
         foreach ($table as $row){
             get_template_part("message","template",$row);
         }

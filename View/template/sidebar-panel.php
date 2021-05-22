@@ -1,11 +1,15 @@
 <?php
 $activePage = basename($_SERVER['PHP_SELF'], ".php");
+$table = User::find("id = {$_SESSION['uid']}");
+$row = $table[0];
+extract($row);
 ?>
 <aside class="panel-sidebar" id="aside">
     <a href="<?php ?>" class="brand-link"><img src="<?php echo assets("images/steam-icon.png") ?>" alt="steamfa" class="brand-img">استیم فارسی</a>
     <section class="user-panel">
         <img src="<?php echo assets("images/icons/user-1.png") ?>" alt="user-image" class="user-img">
         <a href="<?php ?>" class="user-info"><?php if (isset($fname)) echo $fname; if (isset($lname)) echo " " . $lname; ?></a>
+        <p class="user-info">سطح کاربری : <?php if ($role_id == 1) echo " مدیریت"; if ($role_id == 2) echo " عادی"?></p>
     </section>
     <nav>
         <ul>

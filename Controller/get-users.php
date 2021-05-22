@@ -1,5 +1,5 @@
 <?php
-
+/* Created By Evan ( Sajad Gholami ) */
 include "__php__.php";
 
 $db = new DB();
@@ -12,8 +12,8 @@ $table = User::find();
     </header>
     <main>
         <?php
-        if (isset($alerts))
-            echo $alerts;
+        $alerts = Alert::alerts();
+        if ($alerts) echo $alerts;
         ?>
         <table class="table table-dark table-hover">
             <thead>

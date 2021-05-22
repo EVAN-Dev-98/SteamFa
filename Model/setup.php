@@ -6,6 +6,8 @@ include "functions.php";
 
 $db = new DB(false);
 
+session_destroy();
+
 if (!$SoftSetup){
     $Query = "DROP DATABASE IF EXISTS {$dbName}";
     $result = $db->Execute($Query);
@@ -235,7 +237,7 @@ $alerts = Alert::alerts();
 
 $title = "پنل مدیریت | نصب و راه اندازی";
 
-get_template("header","panel",$title);
+get_template("header",null,$title);
 ?>
 <section class="container fix-header">
     <?php if (isset($alerts)) echo $alerts; ?>

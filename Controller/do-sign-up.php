@@ -9,7 +9,7 @@ if (isset($_POST['submit'])){
     $table = User::find("email = '{$params['email']}'");
     if ( !isset($table[0]) ){ // if not find inserted email
         if ($params['password'] === $params['re-password']){ // password and re-password is true
-            $params['password'] = md5($params['password']);
+            $params['password'] = password_hash($params['password'],PASSWORD_DEFAULT);
             unset($params['submit']);
             unset($params['re-password']);
             User::add($params);
@@ -30,6 +30,9 @@ if (isset($_POST['submit'])){
         $_SESSION['ins-params'] = $params;
         redirect(account("sign-up.php"));
     }
+    unset($db);
 }
-Alert::alerts("دسترسی غیرمجاز!");
-redirect(view("home.php"));
+else{
+    Alert::alerts("دسترسی غیرمجاز!");
+    redirect(view("home.php"));
+}
