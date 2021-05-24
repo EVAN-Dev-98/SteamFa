@@ -8,3 +8,4 @@ $title = "پنل مدیریت | پیام ها";
 get_template("header","panel",$title,$row);
 get_template("sidebar","panel",null,$row);
 include $Controller . "get-message.php";
+get_template("footer", "panel");

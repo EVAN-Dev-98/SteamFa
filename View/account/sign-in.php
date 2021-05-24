@@ -8,5 +8,4 @@ if ( Authentication::check() ){
 }
 
 $title = "ورود | استیم فارسی";
-get_template("header","",$title);
-get_template("sign","in");
+get_template("sign","in",$title);

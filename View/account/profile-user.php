@@ -8,3 +8,4 @@ $title = "پنل مدیریت | ویرایش اطلاعات";
 get_template("header","panel",$title,$row);
 get_template("sidebar","panel",null,$row);
 get_template("profile","panel",null,$row);
+get_template("footer", "panel");

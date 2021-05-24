@@ -9,3 +9,4 @@ get_template("header","panel",$title,$row);
 get_template("sidebar","panel",null,$row);
 include $Controller . "edit-product.php";
 get_template("edit","product");
+get_template("footer", "panel");

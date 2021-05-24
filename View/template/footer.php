@@ -45,5 +45,6 @@
       </section>
    </section>
 </footer>
+<?php get_template("bootstrap"); ?>
 </body>
 </html>

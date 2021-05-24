@@ -8,3 +8,4 @@ $title = "پنل مدیریت | مشاهده کاربران";
 get_template("header","panel",$title,$row);
 get_template("sidebar","panel",null,$row);
 include $Controller . "get-users.php";
+get_template("footer", "panel");

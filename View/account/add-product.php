@@ -8,3 +8,4 @@ $title = "پنل مدیریت | افزودن آیتم";
 get_template("header","panel",$title,$row);
 get_template("sidebar","panel",null,$row);
 get_template("add","product");
+get_template("footer", "panel");

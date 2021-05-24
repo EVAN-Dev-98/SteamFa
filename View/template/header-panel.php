@@ -4,13 +4,11 @@ get_template("head","",$title);
 <body>
 <!-- Header -->
 <header id="header">
-    <section class="panel-header">
-        <nav class="left">
-            <ul>
-                <li class="close"><a href="<?php echo controller("do-logout.php"); ?>"><i class="fad fa-times-hexagon"></i>خروج</a></li>
-                <li><a href="<?php echo account("dashboard.php"); ?>"><i class="fad fa-user-tie"></i><?php if (isset($fname)) echo $fname; if (isset($lname)) echo " " . $lname; ?></a></li>
-                <li><a href="<?php echo view("home.php"); ?>" target="_steamfa"><i class="fad fa-eye"></i>مشاهده سایت</a></li>
-            </ul>
-        </nav>
-    </section>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-steamfa-1 py-2">
+        <ul class="navbar-nav ms-auto me-4">
+            <li class="nav-item close mx-2"><a class="nav-link" href="<?php echo controller("do-logout.php"); ?>"><span class="fad fa-times-hexagon"></span>خروج</a></li>
+            <li class="nav-item mx-2"><a class="nav-link" href="<?php echo account("dashboard.php"); ?>"><span class="fad fa-user-tie"></span><?php if (isset($fname)) echo $fname; if (isset($lname)) echo " " . $lname; ?></a></li>
+            <li class="nav-item mx-2"><a class="nav-link" href="<?php echo view("home.php"); ?>" target="_steamfa"><span class="fad fa-eye"></span>مشاهده سایت</a></li>
+        </ul>
+    </nav>
 </header>

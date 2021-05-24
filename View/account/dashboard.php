@@ -18,3 +18,6 @@ get_template("sidebar","panel",null,$row);
         <?php if ($alerts) echo $alerts; ?>
     </main>
 </section>
+<?php
+get_template("footer","panel");
+?>

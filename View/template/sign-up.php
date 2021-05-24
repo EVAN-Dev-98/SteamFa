@@ -1,16 +1,18 @@
-<section class="container fix-header">
-    <?php
-    $alerts = Alert::alerts();
-    if ($alerts) echo $alerts;
-    if (isset($_SESSION['ins-params'])){
-        $params = $_SESSION['ins-params'];
-        unset($_SESSION['ins-params']);
-        extract($params);
-    }
-    ?>
-    <form action="<?php echo controller("do-sign-up.php"); ?>" method="post">
+<?php
+get_template("head","",$title);
+$alerts = Alert::alerts();
+if ($alerts) echo $alerts;
+if (isset($_SESSION['ins-params'])){
+    $params = $_SESSION['ins-params'];
+    unset($_SESSION['ins-params']);
+    extract($params);
+}
+?>
+<body class="text-center sign">
+    <form class="form-sign-up" action="<?php echo controller("do-sign-up.php"); ?>" method="post">
+        <a class="d-block mb-4" href="<?php echo view("home.php"); ?>"><img src="<?php echo assets("images/steam-icon.png"); ?>" width="80" height="80" alt="steamfarsi"></a>
         <h2>ثبت نام</h2>
-        <section class="row g-2 mt-5 mb-3">
+        <section class="row g-2 mt-4 mb-3">
             <section class="col-md-5">
                 <section class="form-floating">
                     <input type="text" class="form-control readonly" name="fname" id="floatingInputName" value="<?php if (isset($fname)) echo $fname; ?>" placeholder="نام" required>
@@ -28,7 +30,7 @@
             <input type="email" class="form-control readonly" name="email" id="floatingInputEmail" value="<?php if (isset($email)) echo $email; ?>" placeholder="ایمیل" required>
             <label for="floatingInputEmail">ایمیل</label>
         </section>
-        <section class="row g-2 mb-5">
+        <section class="row g-2 mb-3">
             <section class="col-md">
                 <section class="form-floating">
                     <input type="password" class="form-control readonly" name="password" id="floatingPassword" placeholder="گذرواژه" required>
@@ -42,8 +44,9 @@
                 </section>
             </section>
         </section>
-        <input type="submit" name="submit" value="ثبت نام" class="btn btn-primary">
+        <input type="submit" name="submit" value="ثبت نام" class="w-100 btn-lg btn btn-primary mb-3">
         <label for="sign-in" class="ms-5 me-2">حساب کاربری دارید ؟</label>
         <a href="<?php echo account("sign-in.php"); ?>" id="sign-in" class="btn btn-outline-info">وارد شوید</a>
     </form>
-</section>
+<?php get_template("bootstrap"); ?>
+</body>
