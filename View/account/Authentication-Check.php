@@ -10,6 +10,7 @@ if ( Authentication::check() ){
     $row = $table[0];
 }
 else{
-    Alert::alerts("دسترسی غیرمجاز!");
-    redirect(view("home.php"));
+    Alert::alerts("ابتدا وارد سیستم شوید!");
+    $_SESSION['redirect'] = $_SERVER['REQUEST_URI'];
+    redirect(account("sign-in.php"));
 }

@@ -1,28 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- fix profile panel&#10;- add authentication-check file for easy way to check user&#10;fix all bugs as soon :)">
-      <change afterPath="$PROJECT_DIR$/View/template/bootstrap.php" afterDir="false" />
+    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- rework header with bootstrap&#10;- rework header panel with bootstrap&#10;- rework sign-up page with bootstrap&#10;- rework sign-in page with bootstrap">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/settings.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/account/add-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/add-product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/account/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/dashboard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/account/edit-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/edit-product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/account/profile-user.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/profile-user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/account/show-messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/show-messages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/account/show-product-list.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/show-product-list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/account/show-users.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/show-users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/do-sign-in.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-sign-in.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/do-sign-up.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-sign-up.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Alert.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Alert.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Security/Authentication.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Security/Authentication.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/account/Authentication-Check.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/Authentication-Check.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/account/sign-in.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/sign-in.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/account/sign-up.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/sign-up.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/View/assets/css/responsive.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/View/assets/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/footer-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/footer-panel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/header-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/header-panel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/header-user.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/header-user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/sign-in.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/sign-in.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/sign-up.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/sign-up.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,14 +174,10 @@
       <workItem from="1621682474762" duration="9883000" />
       <workItem from="1621756733509" duration="213000" />
       <workItem from="1621762725591" duration="321000" />
-      <workItem from="1621861943950" duration="7637000" />
-    </task>
-    <task id="LOCAL-00021" summary="- change name contact in db to messages&#10;- add Messages and Users Class">
-      <created>1617986539764</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1617986539764</updated>
+      <workItem from="1621861943950" duration="8111000" />
+      <workItem from="1621929351448" duration="489000" />
+      <workItem from="1621975067483" duration="1076000" />
+      <workItem from="1622015151434" duration="1792000" />
     </task>
     <task id="LOCAL-00022" summary="- change directory&#10;- change all address system from static to dynamic with __php__.php&#10;- fix bug from register - addproduct - contact&#10;- catalog az soon">
       <created>1618520893293</created>
@@ -533,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621696187973</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="- rework header with bootstrap&#10;- rework header panel with bootstrap&#10;- rework sign-up page with bootstrap&#10;- rework sign-in page with bootstrap">
+      <created>1621869999902</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1621869999903</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -553,7 +542,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="- ReWork Sign-Up Form&#10;- Remove username field from sign-up form and use email for sign-in and users unique parameter" />
     <MESSAGE value="- edit user profile in panel" />
     <MESSAGE value="- Optimization panel" />
     <MESSAGE value="- add edit product&#10;- add edit user&#10;- Optimization panel" />
@@ -578,7 +566,8 @@
     <MESSAGE value="- show immortals item page&#10;- perform header" />
     <MESSAGE value="- perform header" />
     <MESSAGE value="- fix profile panel&#10;- add authentication-check file for easy way to check user&#10;fix all bugs as soon :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="- fix profile panel&#10;- add authentication-check file for easy way to check user&#10;fix all bugs as soon :)" />
+    <MESSAGE value="- rework header with bootstrap&#10;- rework header panel with bootstrap&#10;- rework sign-up page with bootstrap&#10;- rework sign-in page with bootstrap" />
+    <option name="LAST_COMMIT_MESSAGE" value="- rework header with bootstrap&#10;- rework header panel with bootstrap&#10;- rework sign-up page with bootstrap&#10;- rework sign-in page with bootstrap" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

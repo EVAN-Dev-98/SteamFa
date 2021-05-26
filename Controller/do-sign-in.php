@@ -13,17 +13,25 @@ if (isset($_POST['submit'])){
         if ( password_verify($params['password'],$row['password'])){
             Authentication::login( $row["id"] );
             Alert::alerts("{$row['fname']} {$row['lname']} عزیز ، خوش آمدید!","","success");
-            redirect(account("dashboard.php"));
+            if (isset($_SESSION['redirect'])){
+                $redirect = $_SESSION['redirect'];
+                unset($_SESSION['redirect']);
+                redirect($redirect);
+            }
+            else
+                redirect(account("dashboard.php"));
         }
-        else{
-            Alert::alerts("نام کاربری یا کلمه عبور صحیح نمی باشد !!!");
-        }
+        else
+            Alert::alerts("نام کاربری یا کلمه عبور صحیح نمی باشد !");
     }
-    else{
-        Alert::alerts("ایمیل وارد شده در سیستم وجود ندارد!!!","<a href='".account("sign-up.php")."'>ثبت نام کنید</a>","info");
-    }
+    else
+        Alert::alerts("ایمیل وارد شده در سیستم وجود ندارد!","<a href='".account("sign-up.php")."'>ثبت نام کنید</a>","info");
+
+    unset($db);
     $_SESSION['ins-email'] = $params["email"];
     redirect(account("sign-in.php"));
 }
-Alert::alerts("دسترسی غیرمجاز!");
-redirect(view("home.php"));
+else{
+    Alert::alerts("دسترسی غیرمجاز!");
+    redirect(account("sign-in.php"));
+}

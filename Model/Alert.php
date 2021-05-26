@@ -9,7 +9,7 @@ if (!class_exists("Alert")) {
                 case 'success': break;
                 case 'error':	$type = 'danger';
             }
-            return "<section class='alert alert-{$type} alert-dismissible fade show' role='alert'>
+            return "<section class='alert alert-{$type} text-start alert-dismissible fade show' role='alert'>
                         <strong class='me-3'>{$text}</strong>{$des}
                         <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
                     </section>";

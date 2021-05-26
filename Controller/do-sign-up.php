@@ -17,16 +17,22 @@ if (isset($_POST['submit'])){
             $row = $table[0];
             Authentication::login( $row['id'] );
             Alert::alerts("{$params['fname']} {$params['lname']} عزیز ، خوش آمدید!","","success");
-            redirect(account("dashboard.php"));
+            if (isset($_SESSION['redirect'])){
+                $redirect = $_SESSION['redirect'];
+                unset($_SESSION['redirect']);
+                redirect($redirect);
+            }
+            else
+                redirect(account("dashboard.php"));
         }
         else{
-            Alert::alerts("گذرواژه با تکرار آن برابر نیست !!!");
+            Alert::alerts("گذرواژه با تکرار آن برابر نیست !");
             $_SESSION['ins-params'] = $params;
             redirect(account("sign-up.php"));
         }
     }
     else{
-        Alert::alerts("ایمیل وارد شده در سیستم وجود دارد!!!","<a href='".account("sign-in.php")."'>وارد شوید</a>","info");
+        Alert::alerts("ایمیل وارد شده در سیستم وجود دارد!","<a href='".account("sign-in.php")."'>وارد شوید</a>","info");
         $_SESSION['ins-params'] = $params;
         redirect(account("sign-up.php"));
     }
@@ -34,5 +40,5 @@ if (isset($_POST['submit'])){
 }
 else{
     Alert::alerts("دسترسی غیرمجاز!");
-    redirect(view("home.php"));
+    redirect(account("sign-up.php"));
 }
