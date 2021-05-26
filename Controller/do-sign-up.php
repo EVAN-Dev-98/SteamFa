@@ -23,7 +23,7 @@ if (isset($_POST['submit'])){
                 redirect($redirect);
             }
             else
-                redirect(account("dashboard.php"));
+                redirect(account("dashboard-panel.php"));
         }
         else{
             Alert::alerts("گذرواژه با تکرار آن برابر نیست !");
