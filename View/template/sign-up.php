@@ -1,7 +1,5 @@
 <?php
 get_template("head","",$title);
-$alerts = Alert::alerts();
-if ($alerts) echo $alerts;
 if (isset($_SESSION['ins-params'])){
     $params = $_SESSION['ins-params'];
     unset($_SESSION['ins-params']);
@@ -47,6 +45,13 @@ if (isset($_SESSION['ins-params'])){
         <input type="submit" name="submit" value="ثبت نام" class="w-100 btn-lg btn btn-primary mb-3">
         <label for="sign-in" class="ms-5 me-2">حساب کاربری دارید ؟</label>
         <a href="<?php echo account("sign-in.php"); ?>" id="sign-in" class="btn btn-outline-info">وارد شوید</a>
+        <?php
+        $alerts = Alert::alerts();
+        if ($alerts) { ?>
+            <section class="mt-3">
+                <?php echo $alerts; ?>
+            </section>
+        <?php } ?>
     </form>
 <?php get_template("bootstrap"); ?>
 </body>

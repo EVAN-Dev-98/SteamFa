@@ -89,8 +89,13 @@ if (!function_exists("extract")){
     }
 }
 
-if (!function_exists("Session_Start")){
-    function Session_Start(){
+if (!function_exists("Session_Starter")){
+    function Session_Starter(){
+        $LifeTime = 30 * 24 * 60 * 60 ;
+        $path = '/';
+        $secure = false;
+        $httponly = true;
+        session_set_cookie_params( $LifeTime , $path , DOMAIN , $secure , $httponly );
         session_start();
     }
 }

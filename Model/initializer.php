@@ -3,6 +3,6 @@
 include_once "functions.php";
 include_once "settings.php";
 
-if (!isset($_SESSION)){
-    Session_Start();
-}
+
+Session_Starter();
+Authentication::auto_logout();

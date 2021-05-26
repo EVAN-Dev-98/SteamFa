@@ -19,7 +19,7 @@ if (isset($_POST['submit'])){
                 redirect($redirect);
             }
             else
-                redirect(account("dashboard-panel.php"));
+                redirect(account("dashboard.php"));
         }
         else
             Alert::alerts("نام کاربری یا کلمه عبور صحیح نمی باشد !");

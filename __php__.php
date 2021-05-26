@@ -8,7 +8,7 @@ $View = $root . "View/";
 $Controller = $root . "Controller/";
 $Template = $View . "template/";
 
-include $Model . "initializer.php";
+include_once $Model . "initializer.php";
 
 global $SiteDir;
 global $FirstTime;

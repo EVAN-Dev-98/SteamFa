@@ -9,5 +9,15 @@ if (!class_exists('attr_csgo')){
                       LIMIT {$offset} , {$count}";
             return $GLOBALS['db'] -> Execute($query);
         }
+        static public function delete( $id ){
+            $TableName = static::class;
+            $query = "UPDATE {$TableName}
+                      SET status = 'deleted'
+                      WHERE product_id = {$id}";
+            $result = $GLOBALS['db'] -> Execute($query);
+            if ($result){
+                Alert::alerts("{$TableName} شما با موفقیت حذف شد!","","success");
+            }
+        }
     }
 }

@@ -24,8 +24,9 @@ if (isset($_SESSION['ins-email'])){
         $alerts = Alert::alerts();
         if ($alerts) { ?>
         <section class="mt-3">
-            <?php echo $alerts; } ?>
+            <?php echo $alerts; ?>
         </section>
+        <?php } ?>
     </form>
     <?php get_template("bootstrap"); ?>
 </body>

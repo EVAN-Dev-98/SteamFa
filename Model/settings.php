@@ -11,6 +11,9 @@ if (! defined('DBPASS') ) define('DBPASS','');
 if (! defined('DBNAME') ) define('DBNAME','steamfa');
 if (! defined('CHARSET')) define('CHARSET','utf8mb4');
 if (! defined('COLLATE')) define('COLLATE','utf8mb4_unicode_ci');
+if (! defined('LoginDeadline')) define('LoginDeadline',15); // days
+if (! defined('ActivityDeadline')) define('ActivityDeadline',10); // minutes
+if (! defined('DOMAIN')) define('DOMAIN',$_SERVER['HTTP_HOST']);
 
 $dbHost = DBHOST;
 $dbUser = DBUSER;

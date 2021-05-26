@@ -12,10 +12,8 @@ if (isset($_POST['submit'])){
             $params['password'] = password_hash($params['password'],PASSWORD_DEFAULT);
             unset($params['submit']);
             unset($params['re-password']);
-            User::add($params);
-            $table = User::find("email = '{$params['email']}'");
-            $row = $table[0];
-            Authentication::login( $row['id'] );
+            $uid = User::add($params);
+            Authentication::login( $uid );
             Alert::alerts("{$params['fname']} {$params['lname']} عزیز ، خوش آمدید!","","success");
             if (isset($_SESSION['redirect'])){
                 $redirect = $_SESSION['redirect'];
@@ -23,7 +21,7 @@ if (isset($_POST['submit'])){
                 redirect($redirect);
             }
             else
-                redirect(account("dashboard-panel.php"));
+                redirect(account("dashboard.php"));
         }
         else{
             Alert::alerts("گذرواژه با تکرار آن برابر نیست !");
