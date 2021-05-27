@@ -29,8 +29,8 @@ if (!function_exists("get_template")){
         if (!$addition == ""){
             $addition = "-{$addition}";
         }
-        extract($args);
         include "__php__.php";
+        extract($args);
         include "{$Template}{$name}{$addition}.php";
     }
 }
@@ -45,6 +45,17 @@ if (!function_exists("get_template_part")){
         $include_path = "{$Template}{$name}{$addition}.php";
         extract($args);
         include ($include_path);
+    }
+}
+
+// for include controller
+if (!function_exists("get_controller")){
+    function get_controller($name , $addition = ""){
+        if (!$addition == ""){
+            $addition = "-{$addition}";
+        }
+        include "__php__.php";
+        include "{$Controller}{$name}{$addition}.php";
     }
 }
 

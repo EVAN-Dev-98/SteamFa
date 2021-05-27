@@ -4,6 +4,7 @@ if (!class_exists("Authentication")) {
         static public function login( $uid ){
             $_SESSION['uid'] = $uid;
             $_SESSION['last_login'] = time();
+            $_SESSION['last_activity'] = time();
         }
         static public function check(){
             return isset( $_SESSION['uid'] );
@@ -23,10 +24,12 @@ if (!class_exists("Authentication")) {
             if ( self::check() ){
                 if ( time() - $_SESSION['last_login'] > LoginDeadline * 24 * 60 * 60 ) { // 30 day
                     Alert::alerts("تاریخ انقضا ورود شما به اتمام رسیده است",null,"warning");
+                    $_SESSION['redirect'] = $_SERVER['REQUEST_URI'];
                     self::logout();
                 }
-                if ( time() - $_SESSION['last_activity'] > ActivityDeadline * 60 ) { // 10 min
-                    Alert::alerts("مدتی در سایت فعالیتی نداشتید",null,"warning");
+                elseif ( time() - $_SESSION['last_activity'] > ActivityDeadline * 60 ) { // 10 min
+                    Alert::alerts("مدتی در سایت فعالیتی نداشتید","لطفا مجددا وارد شوید!","warning");
+                    $_SESSION['redirect'] = $_SERVER['REQUEST_URI'];
                     self::logout();
                 }
                 $_SESSION['last_activity'] = time();

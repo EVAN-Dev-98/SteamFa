@@ -134,12 +134,27 @@ elseif ($result == 1050){
 $Query = "CREATE TABLE Role (
     id INT NOT NULL AUTO_INCREMENT,
     name VARCHAR (20),
-    UserAdd BOOLEAN DEFAULT 0,
-    UserEdit BOOLEAN DEFAULT 0,
-    UserOtherEdit BOOLEAN DEFAULT 0,
     ProductAdd BOOLEAN DEFAULT 0,
     ProductEdit BOOLEAN DEFAULT 0,
-    ProductOtherEdit BOOLEAN DEFAULT 0,
+    ProductDelete BOOLEAN DEFAULT 0,
+    ProductDetails BOOLEAN DEFAULT 0,
+    ProductEditOther BOOLEAN DEFAULT 0,
+    ProductDeleteOther BOOLEAN DEFAULT 0,
+    ProductDetailsOther BOOLEAN DEFAULT 0,
+    UserAdd BOOLEAN DEFAULT 0,
+    UserEdit BOOLEAN DEFAULT 0,
+    UserDelete BOOLEAN DEFAULT 0,
+    UserDetails BOOLEAN DEFAULT 0,
+    UserEditOther BOOLEAN DEFAULT 0,
+    UserDeleteOther BOOLEAN DEFAULT 0,
+    UserDetailsOther BOOLEAN DEFAULT 0,
+    MessageAdd BOOLEAN DEFAULT 0,
+    MessageEdit BOOLEAN DEFAULT 0,
+    MessageDelete BOOLEAN DEFAULT 0,
+    MessageDetails BOOLEAN DEFAULT 0,
+    MessageEditOther BOOLEAN DEFAULT 0,
+    MessageDeleteOther BOOLEAN DEFAULT 0,
+    MessageDetailsOther BOOLEAN DEFAULT 0,
     status VARCHAR (20) DEFAULT 'normal',
     PRIMARY KEY (id)
     )ENGINE = INNODB";
@@ -167,23 +182,79 @@ if (!$SoftSetup){
     $Administrator = array(
         "id" => 1,
         "name" => "Administrator",
-        "UserAdd" => 1,
-        "UserEdit" => 1,
-        "UserOtherEdit" => 1,
         "ProductAdd" => 1,
         "ProductEdit" => 1,
-        "ProductOtherEdit" => 1,
+        "ProductDelete" => 1,
+        "ProductDetails" => 1,
+        "ProductEditOther" => 1,
+        "ProductDeleteOther" => 1,
+        "ProductDetailsOther" => 1,
+        "UserAdd" => 1,
+        "UserEdit" => 1,
+        "UserDelete" => 1,
+        "UserDetails" => 1,
+        "UserEditOther" => 1,
+        "UserDeleteOther" => 1,
+        "UserDetailsOther" => 1,
+        "MessageAdd" => 1,
+        "MessageEdit" => 1,
+        "MessageDelete" => 1,
+        "MessageDetails" => 1,
+        "MessageEditOther" => 1,
+        "MessageDeleteOther" => 1,
+        "MessageDetailsOther" => 1
     );
 
     $Normal = array(
         "id" => 2,
         "name" => "Normal",
-        "UserAdd" => 1,
+        "ProductAdd" => 1,
+        "ProductEdit" => 1,
+        "ProductDelete" => 1,
+        "ProductDetails" => 1,
+        "ProductEditOther" => 0,
+        "ProductDeleteOther" => 0,
+        "ProductDetailsOther" => 0,
+        "UserAdd" => 0,
         "UserEdit" => 1,
-        "UserOtherEdit" => 0,
-        "ProductAdd" => 0,
-        "ProductEdit" => 0,
-        "ProductOtherEdit" => 0,
+        "UserDelete" => 1,
+        "UserDetails" => 1,
+        "UserEditOther" => 0,
+        "UserDeleteOther" => 0,
+        "UserDetailsOther" => 0,
+        "MessageAdd" => 1,
+        "MessageEdit" => 1,
+        "MessageDelete" => 1,
+        "MessageDetails" => 1,
+        "MessageEditOther" => 0,
+        "MessageDeleteOther" => 0,
+        "MessageDetailsOther" => 0
+    );
+
+    $AdminHelper = array(
+        "id" => 3,
+        "name" => "AdminHelper",
+        "ProductAdd" => 1,
+        "ProductEdit" => 1,
+        "ProductDelete" => 1,
+        "ProductDetails" => 1,
+        "ProductEditOther" => 0,
+        "ProductDeleteOther" => 1,
+        "ProductDetailsOther" => 0,
+        "UserAdd" => 0,
+        "UserEdit" => 1,
+        "UserDelete" => 1,
+        "UserDetails" => 1,
+        "UserEditOther" => 0,
+        "UserDeleteOther" => 1,
+        "UserDetailsOther" => 0,
+        "MessageAdd" => 1,
+        "MessageEdit" => 1,
+        "MessageDelete" => 1,
+        "MessageDetails" => 1,
+        "MessageEditOther" => 0,
+        "MessageDeleteOther" => 1,
+        "MessageDetailsOther" => 0
     );
 
     include "DB/Hero-List.php";
@@ -191,6 +262,7 @@ if (!$SoftSetup){
     User::add($AdminUser);
     Role::add($Administrator);
     Role::add($Normal);
+    Role::add($AdminHelper);
 
     $product_awp_assimow = array(
         "id" => 1,

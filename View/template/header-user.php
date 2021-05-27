@@ -5,7 +5,7 @@ if ( Authentication::check() ) {
     $table = User::find("id = {$_SESSION['uid']}");
     $row = $table[0];
     ?>
-    <li class="nav-item"><a class="nav-link" href="<?php echo account("dashboard.php"); ?>" target="_steamfapanel"><span class="fad fa-user-plus"></span><?php echo "{$row['fname']} {$row['lname']}"; ?></a></li>
+    <li class="nav-item"><a class="nav-link" href="<?php echo account("dashboard.php"); ?>" target="_steamfapanel"><span class="fad fa-user-tie"></span><?php echo "{$row['fname']} {$row['lname']}"; ?></a></li>
     <?php
 }
 else{

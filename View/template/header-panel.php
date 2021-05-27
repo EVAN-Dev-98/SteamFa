@@ -1,8 +1,3 @@
-<?php
-get_template("head","",$title);
-?>
-<body>
-<!-- Header -->
 <header id="header">
     <nav class="navbar navbar-expand-sm navbar-dark bg-steamfa-1 py-2">
         <ul class="navbar-nav ms-auto me-4">

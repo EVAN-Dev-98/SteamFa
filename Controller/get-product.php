@@ -31,11 +31,5 @@ foreach ($table as $row){
 }
 ?>
     </section>
-<?php
-if ($count == 0 ){
-    ?>
-        <h3 class="text-center">متاسفانه محصولی برای نمایش وجود ندارد</h3>
-    <?php
-}
-?>
+<?php if ($count == 0 ){ ?> <h3 class="text-center">متاسفانه محصولی برای نمایش وجود ندارد</h3> <?php } ?>
 </section>

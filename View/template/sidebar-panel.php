@@ -1,8 +1,5 @@
 <?php
 $activePage = basename($_SERVER['PHP_SELF'], ".php");
-$table = User::find("id = {$_SESSION['uid']}");
-$row = $table[0];
-extract($row);
 ?>
 <aside class="panel-sidebar" id="aside">
     <a href="<?php ?>" class="brand-link"><img src="<?php echo assets("images/steam-icon.png") ?>" alt="steamfa" class="brand-img">استیم فارسی</a>

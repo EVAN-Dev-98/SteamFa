@@ -1,11 +1,8 @@
 <?php
 /* Created By Evan ( Sajad Gholami ) */
 include "__php__.php";
-require "Authentication-Check.php";
-
 $title = "پنل مدیریت | پیام ها";
-
-get_template("header","panel",$title,$row);
-get_template("sidebar","panel",null,$row);
-include $Controller . "get-message.php";
-get_template("footer", "panel");
+get_template("master", "panel", $title);
+function main(){
+    get_controller("get","message");
+}
