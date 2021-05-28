@@ -3,6 +3,7 @@
 include "Alert.php";
 include "DB/DB.php";
 include "Security/Authentication.php";
+include "Security/Authorization.php";
 
 if (!function_exists("redirect")){
     function redirect ($address){

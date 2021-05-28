@@ -3,7 +3,9 @@
 include "__php__.php";
 
 $db = new DB();
-$table = Product::find();
+$p_csgo = Product::find_join("attr_csgo");
+$p_dota2 = Product::find_join("attr_dota2");
+$p_all = array_merge($p_csgo,$p_dota2);
 $alerts = Alert::alerts();
 ?>
 <section class="container mt-5">
@@ -13,19 +15,7 @@ $alerts = Alert::alerts();
     <section class="row">
 <?php
 $count = 0;
-foreach ($table as $row){
-    if ($row["attr_name"] == "attr_dota2"){
-        $attr = attr_dota2::find("product_id = {$row["id"]}");
-        $row2 = $attr[0];
-        unset($row2["product_id"]);
-        $row = array_merge($row,$row2);
-    }
-    if ($row["attr_name"] == "attr_csgo"){
-        $attr = attr_csgo::find("product_id = {$row["id"]}");
-        $row2 = $attr[0];
-        unset($row2["product_id"]);
-        $row = array_merge($row,$row2);
-    }
+foreach ($p_all as $row){
     get_template_part("product","template",$row);
     $count++;
 }

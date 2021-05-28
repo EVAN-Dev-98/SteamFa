@@ -2,6 +2,13 @@
 /* Created By Evan ( Sajad Gholami ) */
 include "__php__.php";
 
+$db = new DB();
+
+if (!Authorization::check("ProductAdd")){
+    Alert::alerts("متاسفانه شما مجوز افزودن محصول را ندارید!");
+    redirect(account("dashboard.php"));
+}
+
 // get values from html
 if (isset($_POST['submit'])){
 
@@ -10,7 +17,6 @@ if (isset($_POST['submit'])){
     $product["number"] = $_POST["number"];
     $product["img"] = assets("images/default-item.jpg");
 
-    $db = new DB();
     $attr["product_id"] = Product::add($product);
 
     switch ($product["attr_name"]){
@@ -38,6 +44,7 @@ if (isset($_POST['submit'])){
             Alert::alerts("ایتم دوتا 2 " . $product["name"] . " با موفقیت درج شد.","","info");
             break;
     }
+    unset($db);
     redirect(account("show-product-list.php"));
 }
 else{

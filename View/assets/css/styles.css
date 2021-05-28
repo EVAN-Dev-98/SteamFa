@@ -590,7 +590,7 @@ footer .main-footer .info p {
      display: block;
      border-radius: .25rem;
      font-size: 1rem;
-     padding: 10px 15px;
+     padding: .6rem .8rem;
      cursor: pointer;
      color: #fff;
 }
@@ -628,7 +628,7 @@ footer .main-footer .info p {
      color: #F7DC6F;
      transition: 0.5s;
 }
-.panel-sidebar nav ul li.items a i{
+.panel-sidebar nav ul li.items a span{
      width: 30px;
      font-size: 1.3rem;
      margin-left: .6rem;
@@ -637,24 +637,29 @@ footer .main-footer .info p {
      position: relative;
      top: 3px;
 }
-.panel-sidebar nav ul li.items a i.icon-more{
+.panel-sidebar nav ul li.items a span.icon-more{
      float: left;
      width: auto;
      margin: .5rem;
      top: 0;
      transition: .5s;
 }
-.panel-sidebar nav ul li.items a i.down{
+.panel-sidebar nav ul li.items a span.down{
      transform: rotate(+90deg);
+}
+.panel-sidebar nav ul li.items a span.sec{
+     font-weight: 400;
 }
 .panel-sidebar nav ul li.items ul.more{
      display: none;
+     opacity: 0;
 }
 .panel-sidebar nav ul li.items ul.show{
      display: flex;
      padding-left: 0;
      padding-right: 0;
      margin-top: .2rem;
+     opacity: 1;
 }
 .panel-sidebar nav ul li.items ul li{
      margin-bottom: .2rem;
@@ -720,11 +725,19 @@ footer .main-footer .info p {
 .panel-sidebar .user-panel .user-info{
      display: block;
      text-align: center;
-     color: #c2c7d0;
-     font-size: 20px;
-}
-.panel-sidebar .user-panel .user-info:hover{
      color: #ffffff;
+     font-size: 1.2rem;
+}
+.panel-sidebar .user-panel .user-role{
+     text-align: right;
+     padding: .6rem .8rem;
+     cursor: pointer;
+     color: #ffffff;
+     font-size: 1rem;
+}
+.panel-sidebar .user-panel .user-info:hover,
+.panel-sidebar .user-panel .user-role:hover{
+     color: #c2c7d0;
 }
 
 body.sign{

@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- add auto logout&#10;- session cookie edit parameters&#10;- perform sign up&#10;- perform delete message and delete product">
-      <change afterPath="$PROJECT_DIR$/View/template/master-panel.php" afterDir="false" />
+    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- add master-panel :)&#10;- rework panel with master-panel&#10;- edit roles&#10;- remove duplicate codes">
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Security/Authorization.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Security/Authentication.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Security/Authentication.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/add-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/add-product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/get-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/get-product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/DB/Table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DB/Table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/settings.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/setup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/account/Authentication-Check.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Panel-Authentication-Check.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/account/add-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/add-product.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/account/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/dashboard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/account/edit-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/edit-product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/account/profile-user.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/profile-user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/account/show-messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/show-messages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/account/show-product-list.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/show-product-list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/account/show-users.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/show-users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/header-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/header-panel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/header-user.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/header-user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/View/assets/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/assets/js/sidebar-panel.js" beforeDir="false" afterPath="$PROJECT_DIR$/View/assets/js/sidebar-panel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/template/sidebar-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/sidebar-panel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/__php__.php" beforeDir="false" afterPath="$PROJECT_DIR$/__php__.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,14 +186,8 @@
       <workItem from="1621975067483" duration="1076000" />
       <workItem from="1622015151434" duration="8303000" />
       <workItem from="1622027658538" duration="1000" />
-      <workItem from="1622141584397" duration="8805000" />
-    </task>
-    <task id="LOCAL-00025" summary="- add show messages in panel">
-      <created>1618872229146</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1618872229146</updated>
+      <workItem from="1622141584397" duration="10414000" />
+      <workItem from="1622205409666" duration="14365000" />
     </task>
     <task id="LOCAL-00026" summary="- class rework">
       <created>1619098960007</created>
@@ -535,7 +525,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622026437170</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="- add master-panel :)&#10;- rework panel with master-panel&#10;- edit roles&#10;- remove duplicate codes">
+      <created>1622151152211</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1622151152211</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -555,7 +552,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="- Database Table Classes Use inheritance :)&#10;- Improvement setup Like Handle Some Errors&#10;- The panel became more beautiful" />
     <MESSAGE value="- add delete-product&#10;- add delete-user&#10;- add delete-message&#10;- add status field to all tables" />
     <MESSAGE value="- Access Modifier Changed :)" />
     <MESSAGE value="- SiteVersion = 6.7" />
@@ -580,7 +576,8 @@
     <MESSAGE value="- perform redirect" />
     <MESSAGE value="- perform dashboard" />
     <MESSAGE value="- add auto logout&#10;- session cookie edit parameters&#10;- perform sign up&#10;- perform delete message and delete product" />
-    <option name="LAST_COMMIT_MESSAGE" value="- add auto logout&#10;- session cookie edit parameters&#10;- perform sign up&#10;- perform delete message and delete product" />
+    <MESSAGE value="- add master-panel :)&#10;- rework panel with master-panel&#10;- edit roles&#10;- remove duplicate codes" />
+    <option name="LAST_COMMIT_MESSAGE" value="- add master-panel :)&#10;- rework panel with master-panel&#10;- edit roles&#10;- remove duplicate codes" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
