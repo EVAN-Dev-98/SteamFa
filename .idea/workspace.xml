@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- add master-panel :)&#10;- rework panel with master-panel&#10;- edit roles&#10;- remove duplicate codes">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Model/Security/Authorization.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- add Authorization class for Check Permissions&#10;- add-product checked&#10;- add find_join function&#10;- add more Roles&#10;- add more Permissions&#10;- panel sidebar menu click toggle show or hide handle with javascript&#10;----&#10;more controller Authorization check as soon :)">
+      <change afterPath="$PROJECT_DIR$/View/dota2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/template/master.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/add-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/add-product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/get-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/get-product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/DB/Table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DB/Table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/get-hero.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/get-hero.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/settings.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/setup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/account/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/dashboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/about.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/all-heroes.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/View/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/View/assets/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/js/sidebar-panel.js" beforeDir="false" afterPath="$PROJECT_DIR$/View/assets/js/sidebar-panel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/sidebar-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/sidebar-panel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/catalog.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/catalog.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/immortals.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/hero-template.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/hero-template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/main-menu.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +59,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Controller" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/View/template" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -67,9 +68,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\SteamFa\View\template" />
       <recent name="C:\wamp64\www\SteamFa\Controller" />
       <recent name="C:\wamp64\www\SteamFa\Model\DB" />
-      <recent name="C:\wamp64\www\SteamFa\View\template" />
       <recent name="C:\wamp64\www\SteamFa\View" />
       <recent name="C:\wamp64\www\SteamFa" />
     </key>
@@ -187,14 +188,9 @@
       <workItem from="1622015151434" duration="8303000" />
       <workItem from="1622027658538" duration="1000" />
       <workItem from="1622141584397" duration="10414000" />
-      <workItem from="1622205409666" duration="14365000" />
-    </task>
-    <task id="LOCAL-00026" summary="- class rework">
-      <created>1619098960007</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1619098960007</updated>
+      <workItem from="1622205409666" duration="14901000" />
+      <workItem from="1622308424823" duration="1160000" />
+      <workItem from="1622375716821" duration="14429000" />
     </task>
     <task id="LOCAL-00027" summary="- class rework">
       <created>1619099093445</created>
@@ -532,7 +528,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622151152211</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="- add Authorization class for Check Permissions&#10;- add-product checked&#10;- add find_join function&#10;- add more Roles&#10;- add more Permissions&#10;- panel sidebar menu click toggle show or hide handle with javascript&#10;----&#10;more controller Authorization check as soon :)">
+      <created>1622244795758</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1622244795759</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -552,7 +555,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="- add delete-product&#10;- add delete-user&#10;- add delete-message&#10;- add status field to all tables" />
     <MESSAGE value="- Access Modifier Changed :)" />
     <MESSAGE value="- SiteVersion = 6.7" />
     <MESSAGE value="- improvement include All Files :)" />
@@ -577,7 +579,8 @@
     <MESSAGE value="- perform dashboard" />
     <MESSAGE value="- add auto logout&#10;- session cookie edit parameters&#10;- perform sign up&#10;- perform delete message and delete product" />
     <MESSAGE value="- add master-panel :)&#10;- rework panel with master-panel&#10;- edit roles&#10;- remove duplicate codes" />
-    <option name="LAST_COMMIT_MESSAGE" value="- add master-panel :)&#10;- rework panel with master-panel&#10;- edit roles&#10;- remove duplicate codes" />
+    <MESSAGE value="- add Authorization class for Check Permissions&#10;- add-product checked&#10;- add find_join function&#10;- add more Roles&#10;- add more Permissions&#10;- panel sidebar menu click toggle show or hide handle with javascript&#10;----&#10;more controller Authorization check as soon :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="- add Authorization class for Check Permissions&#10;- add-product checked&#10;- add find_join function&#10;- add more Roles&#10;- add more Permissions&#10;- panel sidebar menu click toggle show or hide handle with javascript&#10;----&#10;more controller Authorization check as soon :)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

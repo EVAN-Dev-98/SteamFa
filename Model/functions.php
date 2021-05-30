@@ -56,6 +56,7 @@ if (!function_exists("get_controller")){
             $addition = "-{$addition}";
         }
         include "__php__.php";
+        global $db;
         include "{$Controller}{$name}{$addition}.php";
     }
 }
