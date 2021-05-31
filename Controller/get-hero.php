@@ -18,7 +18,7 @@ $Intelligence = Hero::find("category = 'Intelligence'");
             </h2>
             <section id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
                 <section class="accordion-body">
-                    <section class="row">
+                    <section class="row dir-ltr">
                         <?php
                         foreach ($Strength as $row){
                             get_template_part("hero","template",$row);
@@ -36,7 +36,7 @@ $Intelligence = Hero::find("category = 'Intelligence'");
             </h2>
             <section id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
                 <section class="accordion-body">
-                    <section class="row">
+                    <section class="row dir-ltr">
                         <?php
                         foreach ($Agility as $row){
                             get_template_part("hero","template",$row);
@@ -54,7 +54,7 @@ $Intelligence = Hero::find("category = 'Intelligence'");
             </h2>
             <section id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
                 <section class="accordion-body">
-                    <section class="row">
+                    <section class="row dir-ltr">
                         <?php
                         foreach ($Intelligence as $row){
                             get_template_part("hero","template",$row);

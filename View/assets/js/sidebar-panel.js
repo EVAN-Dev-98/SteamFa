@@ -12,6 +12,7 @@ function event(item){
 
 function show(item){
     var li = item.childNodes;
+    item.classList.toggle("show");
     li[0].childNodes[2].classList.toggle("down");
     li[2].classList.toggle("show");
 }
