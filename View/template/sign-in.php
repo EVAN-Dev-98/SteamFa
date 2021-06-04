@@ -29,4 +29,4 @@ if (isset($_SESSION['ins-email'])){
         <?php } ?>
     </form>
     <?php get_template("bootstrap"); ?>
-</body>
+</body> 

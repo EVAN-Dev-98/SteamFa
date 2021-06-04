@@ -5,7 +5,7 @@ include "__php__.php";
 // get values from html
 if (isset($_POST['submit'])){
     $db = new DB();
-    $params = $_POST;
+    $params = SafeScript($_POST);
     $table = User::find("email = '{$params['email']}'");
     unset($db);
     if (isset($table[0])){ // email and password is true

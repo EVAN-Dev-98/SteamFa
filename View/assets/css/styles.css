@@ -590,12 +590,12 @@ footer .main-footer .info p {
      padding: .6rem .8rem;
      cursor: pointer;
      color: #fff;
-     transition: ease-in-out .5s;
+     transition: ease-in-out .4s;
 }
 .panel-sidebar nav ul li.items a:hover{
      background-color: #4D6278;
      color: #F7DC6F;
-     transition: 0.5s;
+     transition: .4s;
 }
 .panel-sidebar nav ul li.close a:hover,
 #header nav ul li.close a:hover{
@@ -604,7 +604,7 @@ footer .main-footer .info p {
 .panel-sidebar nav ul li.active a:hover{
      background: #0A58CA;
      color: #ffffff;
-     transition: 0.5s;
+     transition: .4s;
 }
 .panel-sidebar nav ul li.active a{
      background: #0d6efd;
@@ -623,7 +623,7 @@ footer .main-footer .info p {
      width: auto;
      margin: .5rem;
      top: 0;
-     transition: .5s;
+     transition: .4s;
 }
 .panel-sidebar nav ul li.items a span.down{
      transform: rotate(+90deg);
@@ -656,7 +656,7 @@ footer .main-footer .info p {
 }
 .panel-sidebar nav ul li.menu-active ul li.items:hover a{
      background-color: #F8F9F9;
-     transition: 0.5s;
+     transition: .4s;
 }
 .panel-sidebar nav ul li.items ul.more{
      display: none;
@@ -700,7 +700,7 @@ footer .main-footer .info p {
      font-size: 1.25rem;
      line-height: 1.5;
      padding: .8rem .5rem;
-     transition: width .3s ease-in-out;
+     transition: width .4s ease-in-out;
      white-space: nowrap;
      border-bottom: 1px solid #4b545c;
 }
@@ -779,11 +779,11 @@ body.sign{
      transform: scale(1);
 }
 .hero-img:hover{
-     transition: transform .5s ease-in-out;
+     transition: transform .4s ease-in-out;
      transform: scale(1.1);
      /*filter: blur(1px);*/
 }
 .hero-img:hover + .hero-cat{
-     transition: transform .5s ease-in-out;
+     transition: transform .4s ease-in-out;
      transform: scale(1.1);
 }

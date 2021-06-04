@@ -11,7 +11,7 @@ if (!Authorization::check("ProductAdd")){
 
 // get values from html
 if (isset($_POST['submit'])){
-
+    $_POST = SafeScript($_POST);
     $product["name"] = $_POST["name"];
     $product["attr_name"] = $_POST["attr_name"];
     $product["number"] = $_POST["number"];

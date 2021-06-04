@@ -12,6 +12,15 @@ if (!function_exists("redirect")){
     }
 }
 
+function SafeScript($arg){  // against script injection
+    if( is_array($arg) )
+        foreach($arg as $key => $value)
+            $arg[$key] = safeScript($value);
+    else
+        $arg = htmlspecialchars($arg);
+    return $arg;
+}
+
 // for include maybe catalog.php in View folder
 if (!function_exists("get_view")){
     function get_view($name , $addition = ""){
