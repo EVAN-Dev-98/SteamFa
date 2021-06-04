@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- add function SafeScript&#10;- SafeScript on all inputs&#10;- all delete process validate">
+    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- prevent sql injection attack :)">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SteamFa.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SteamFa.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/get-message.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/get-message.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/get-product-list.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/get-product-list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/get-users.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/get-users.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/DB/Table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DB/Table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/View/assets/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/add-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/add-product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/dashboard-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/dashboard-panel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/edit-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/edit-product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/header-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/header-panel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/master-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/master-panel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/product-template.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/product-template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/profile-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/profile-panel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/sidebar-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/sidebar-panel.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,14 +199,7 @@
       <workItem from="1622794023629" duration="3410000" />
       <workItem from="1622806662144" duration="90000" />
       <workItem from="1622806764177" duration="799000" />
-      <workItem from="1622807583215" duration="5914000" />
-    </task>
-    <task id="LOCAL-00030" summary="- All Directory Changes with MVC Standard&#10;- Need Edit All Files&#10;this commit just changes directory and need edit all files to work&#10;edit az SOON :)">
-      <created>1619435759644</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1619435759644</updated>
+      <workItem from="1622807583215" duration="14643000" />
     </task>
     <task id="LOCAL-00031" summary="- edit functions&#10;- edit home page">
       <created>1619472318001</created>
@@ -529,7 +537,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622808385352</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="- prevent sql injection attack :)">
+      <created>1622833572487</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1622833572487</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -549,7 +564,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="- bug fixed" />
     <MESSAGE value="- use dynamic variables in extract function :)" />
     <MESSAGE value="- use php -&gt; htmlspecialchars() function" />
     <MESSAGE value="- add product-detail" />
@@ -574,7 +588,8 @@
     <MESSAGE value="- add master for views&#10;- add dota2 products page&#10;- rework all views with master" />
     <MESSAGE value="- redirect bug fixed&#10;- perform design panel need a little more ... :)" />
     <MESSAGE value="- add function SafeScript&#10;- SafeScript on all inputs&#10;- all delete process validate" />
-    <option name="LAST_COMMIT_MESSAGE" value="- add function SafeScript&#10;- SafeScript on all inputs&#10;- all delete process validate" />
+    <MESSAGE value="- prevent sql injection attack :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="- prevent sql injection attack :)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

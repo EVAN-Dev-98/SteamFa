@@ -15,8 +15,6 @@ if (!class_exists('Table')){
         static protected function columnsValueList( $params, $sep = ", "): string{
             unset($params['id']);
             $dbc = new mysqli(DBHOST,DBUSER,DBPASS);
-            $varPairs = array();
-            $query = '';
             foreach ( $params as $k => $v)
                 $varPairs[$k] = mysqli_real_escape_string($dbc,$v);
             foreach ($varPairs as $key => $value){

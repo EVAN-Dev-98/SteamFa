@@ -3,7 +3,7 @@ if ($attr_name == "attr_dota2"){
     ?>
     <section class="col-lg-3 col-md-4 col-sm-6 my-3">
         <article class="card shadow-sm">
-            <img src="<?php echo $img; ?>" class="card-img-top">
+            <img src="<?php echo $img; ?>" class="card-img-top" alt="">
             <section class="card-body">
                 <h4 class="card-title text-center"><a href="<?php echo view("product-detail.php?id={$id}"); ?>" target="_steamfa_product"><?php echo $name; ?></a></h4>
                 <p class="card-text">بازی : دوتا 2</p>
@@ -26,7 +26,7 @@ if ($attr_name == "attr_csgo"){
     ?>
     <section class="col-lg-3 col-md-4 col-sm-6 my-3">
         <article class="card shadow-sm">
-            <img src="<?php echo $img; ?>" class="card-img-top">
+            <img src="<?php echo $img; ?>" class="card-img-top" alt="">
             <section class="card-body">
                 <h4 class="card-title text-center"><a href="<?php echo view("product-detail.php?id={$id}"); ?>" target="_steamfa_product"><?php echo $name; ?></a></h4>
                 <p class="card-text">بازی : کانتر</p>

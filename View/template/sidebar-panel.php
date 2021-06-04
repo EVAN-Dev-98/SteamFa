@@ -18,8 +18,7 @@ switch ($role_id){
         break;
 }
 ?>
-<aside class="panel-sidebar" id="aside">
-    <a href="<?php ?>" class="brand-link"><img src="<?php echo assets("images/steam-icon.png") ?>" alt="steamfa" class="brand-img">استیم فارسی</a>
+<aside class="col-auto col-sm-4 col-md-3 col-xl-3 col-xxl-2 p-0 panel-sidebar" id="aside">
     <section class="user-panel">
         <img src="<?php echo assets("images/icons/user-1.png") ?>" alt="user-image" class="user-img">
         <a href="<?php ?>" class="user-info"><?php if (isset($fname)) echo $fname; if (isset($lname)) echo " " . $lname; ?></a>
