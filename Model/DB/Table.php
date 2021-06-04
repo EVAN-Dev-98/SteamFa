@@ -1,20 +1,28 @@
 <?php
 if (!class_exists('Table')){
     class Table{
-        static protected function columnsList( $vars , $sep = ", "){
+        static protected function columnsList( $vars , $sep = ", "): string{
             $keys = array_keys($vars);
             return join($sep , $keys);
         }
-        static protected function valuesList( $vars , $sep = "', '"){
+        static protected function valuesList( $vars , $sep = "', '"): string{
+            $dbc = new mysqli(DBHOST,DBUSER,DBPASS);
+            foreach($vars as $k => $v)
+                $vars[$k] = mysqli_real_escape_string($dbc,$v);
             $values = array_values($vars);
             return "'" . join($sep , $values) . "'";
         }
-        static protected function columnsValueList( $params, $sep = ", "){
+        static protected function columnsValueList( $params, $sep = ", "): string{
             unset($params['id']);
-            foreach ( $params as $key => $value){
-                $varPairs[] = "{$key} = '{$value}'";
+            $dbc = new mysqli(DBHOST,DBUSER,DBPASS);
+            $varPairs = array();
+            $query = '';
+            foreach ( $params as $k => $v)
+                $varPairs[$k] = mysqli_real_escape_string($dbc,$v);
+            foreach ($varPairs as $key => $value){
+                $query[] = "{$key} = '{$value}'";
             }
-            return join($sep, $varPairs);
+            return join($sep, $query);
         }
         static public function add( $params ){
             global $db;
