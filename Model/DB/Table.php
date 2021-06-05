@@ -6,17 +6,13 @@ if (!class_exists('Table')){
             return join($sep , $keys);
         }
         static protected function valuesList( $vars , $sep = "', '"): string{
-            $dbc = new mysqli(DBHOST,DBUSER,DBPASS);
-            foreach($vars as $k => $v)
-                $vars[$k] = mysqli_real_escape_string($dbc,$v);
+            $vars = BlockSqlInjection($vars);
             $values = array_values($vars);
             return "'" . join($sep , $values) . "'";
         }
         static protected function columnsValueList( $params, $sep = ", "): string{
             unset($params['id']);
-            $dbc = new mysqli(DBHOST,DBUSER,DBPASS);
-            foreach ( $params as $k => $v)
-                $varPairs[$k] = mysqli_real_escape_string($dbc,$v);
+            $varPairs = BlockSqlInjection($params);
             foreach ($varPairs as $key => $value){
                 $query[] = "{$key} = '{$value}'";
             }

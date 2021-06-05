@@ -6,6 +6,7 @@ include "__php__.php";
 if (isset($_POST['submit'])){
     $db = new DB();
     $params = SafeScript($_POST);
+    $params = BlockSqlInjection($params);
     $table = User::find("email = '{$params['email']}'");
     unset($db);
     if (isset($table[0])){ // email and password is true

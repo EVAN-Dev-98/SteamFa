@@ -6,6 +6,7 @@ include "__php__.php";
 if (isset($_POST['submit'])){
     $db = new DB();
     $params = SafeScript($_POST);
+    $params = BlockSqlInjection($params);
     $table = User::find("email = '{$params['email']}'");
     if ( !isset($table[0]) ){ // if not find inserted email
         if ($params['password'] === $params['re-password']){ // password and re-password is true

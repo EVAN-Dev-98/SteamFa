@@ -12,12 +12,22 @@ if (!function_exists("redirect")){
     }
 }
 
-function SafeScript($arg){  // against script injection
+function SafeScript($arg){
     if( is_array($arg) )
         foreach($arg as $key => $value)
             $arg[$key] = safeScript($value);
     else
         $arg = htmlspecialchars($arg);
+    return $arg;
+}
+
+function BlockSqlInjection($arg){
+    $dbc = new mysqli(DBHOST,DBUSER,DBPASS);
+    if ( is_array($arg) )
+        foreach ($arg as $key => $value)
+            $arg[$key] = mysqli_real_escape_string($dbc,$value);
+    else
+        $arg = mysqli_real_escape_string($dbc,$arg);
     return $arg;
 }
 
