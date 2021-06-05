@@ -4,7 +4,8 @@ include "__php__.php";
 
 if ( isset($_POST['submit']) ){
     $db = new DB();
-    $params = $_POST;
+    $params = SafeScript($_POST);
+    $params = BlockSqlInjection($params);
     unset($params['submit']);
     $params['id'] = $_SESSION['uid'];
     $table = User::find("id = {$params['id']}");

@@ -1,30 +1,5 @@
 <?php
-
+/* Created By Evan ( Sajad Gholami ) */
 include "__php__.php";
 
-if ( isset($_GET['id']) ){
-    $db = new DB();
-
-    if ( isset($_POST['submit']) ){
-        $parameters = $_POST;
-        $parameters['id'] = $_GET['id'];
-        unset($parameters['submit']);
-        $parameters['img'] = assets("images/ak-47-bloodsport.png");;
-        /*Product::update( $parameters );*/
-        redirect(account("show-product-list.php"));
-    }
-
-    /*$table = Product::find("ID = {$_GET['id']}");*/
-    if (isset($table[0])){
-        $row = $table[0];
-    }
-    else{
-        Alert::alerts("شناسه آیتم وارد شده یافت نشد!","","danger");
-    }
-
-    unset($db);
-}
-else{
-    Alert::alerts("شناسه آیتم نامعتبر!","","danger");
-}
-$alerts = Alert::alerts();
+Alert::alerts("متاسفانه این بخش درحال بروزرسانی میباشد!");
