@@ -99,6 +99,7 @@ $Query = "CREATE TABLE Hero (
     id INT NOT NULL AUTO_INCREMENT,
     name VARCHAR(100),
     category VARCHAR(100),
+    complexity INT,
     img VARCHAR(255),
     status VARCHAR (20) DEFAULT 'normal',
     PRIMARY KEY (id)

@@ -762,20 +762,71 @@ body.sign{
      padding: 15px;
      margin: auto;
 }
-.hero-cat{
-     position:relative;
-     top: -32px;
-     margin-bottom: -32px!important;
-}
 .hero-img{
-     transform: scale(1);
+     width: 200px;
+     height: 112px;
+     margin: 4px;
+     box-shadow: 1px 1px 4px #000000;
+     border-radius: 5px;
+     background-position: center center;
+     background-size: 110%;
+     background-repeat: no-repeat;
+     filter: saturate(0.8);
+     transition-property: transform, box-shadow, background-size, opacity, top, left;
+     transition-timing-function: ease-out;
+     transition-duration: .3s;
+}
+.hero-name{
+     width: 100%;
+     height: 50px;
+     position: absolute;
+     bottom: -40px;
+     left: 0;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     transition-property: opacity, bottom;
+     transition-timing-function: ease-in-out;
+     transition-duration: .2s;
+     z-index: 3;
+     opacity: 0;
 }
 .hero-img:hover{
-     transition: transform .4s ease-in-out;
-     transform: scale(1.1);
-     /*filter: blur(1px);*/
+     transform:scale(1.3);
+     box-shadow:3px 3px 8px black;
+     background-size:100%;
+     filter:saturate(1);
+     z-index:4;
 }
-.hero-img:hover + .hero-cat{
-     transition: transform .4s ease-in-out;
-     transform: scale(1.1);
+.hero-img:hover .hero-name{
+     opacity:1;
+     bottom: 0;
+}
+
+.hero-name img{
+     width: 42px;
+     height: 42px;
+     padding: 8px;
+     filter: drop-shadow(0px 0px 4px #000000);
+}
+.hero-name p{
+     font-size: 18px;
+     line-height: 20px;
+     font-weight: 600;
+     font-family: Primus, serif;
+     color: #ffffff;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     text-shadow: 0 0 4px #000000;
+}
+.hero-cat{
+     padding: 1rem;
+}
+.hero-cat img{
+     padding-right: 8px;
+}
+.hero-cat h2{
+     display: inline-block;
+     margin-bottom: 0;
+     vertical-align: text-top;
 }

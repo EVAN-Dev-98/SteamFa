@@ -4,500 +4,619 @@ include "__php__.php";
 $hero_no_img = array(
     0 => [
         "name" => "Abaddon",
-        "category" => "Strength"
+        "category" => "Strength",
+        "complexity" => "1"
     ],
     1 => [
         "name" => "Alchemist",
-        "category" => "Strength"
+        "category" => "Strength",
+        "complexity" => "1"
     ],
     2 => [
         "name" => "Ancient Apparition",
-        "category" => "Intelligence"
+        "category" => "Intelligence",
+        "complexity" => "2"
     ],
     3 => [
         "name" => "Anti-Mage",
-        "category" => "Agility"
+        "category" => "Agility",
+        "complexity" => "1"
     ],
     4 => [
         "name" => "Arc Warden",
-        "category" => "Agility"
+        "category" => "Agility",
+        "complexity" => "3"
     ],
     5 => [
         "name" => "Axe",
-        "category" => "Strength"
+        "category" => "Strength",
+        "complexity" => "1"
     ],
     6 => [
         "name" => "Bane",
-        "category" => "Intelligence"
+        "category" => "Intelligence",
+        "complexity" => "2"
     ],
     7 => [
         "name" => "Batrider",
-        "category" => "Intelligence"
+        "category" => "Intelligence",
+        "complexity" => "2"
     ],
     8 => [
         "name" => "Beastmaster",
-        "category" => "Strength"
+        "category" => "Strength",
+        "complexity" => "2"
     ],
     9 => [
         "name" => "Bloodseeker",
-        "category" => "Agility"
+        "category" => "Agility",
+        "complexity" => "1"
     ],
     10 => [
         "name" => "Bounty Hunter",
-        "category" => "Agility"
+        "category" => "Agility",
+        "complexity" => "1"
     ],
     11 => [
         "name" => "Brewmaster",
-        "category" => "Strength"
+        "category" => "Strength",
+        "complexity" => "3"
     ],
     12 => [
         "name" => "Bristleback",
-        "category" => "Strength"
+        "category" => "Strength",
+        "complexity" => "1"
     ],
     13 => [
         "name" => "Broodmother",
-        "category" => "Agility"
+        "category" => "Agility",
+        "complexity" => "2"
     ],
     14 => [
         "name" => "Centaur Warrunner",
-        "category" => "Strength"
+        "category" => "Strength",
+        "complexity" => "1"
     ],
     15 => [
         "name" => "Chaos Knight",
-        "category" => "Strength"
+        "category" => "Strength",
+        "complexity" => "1"
     ],
     16 => [
         "name" => "Chen",
-        "category" => "Intelligence"
+        "category" => "Intelligence",
+        "complexity" => "3"
     ],
     17 => [
         "name" => "Clinkz",
-        "category" => "Agility"
+        "category" => "Agility",
+        "complexity" => "2"
     ],
     18 => [
         "name" => "Clockwerk",
-        "category" => "Strength"
+        "category" => "Strength",
+        "complexity" => "2"
     ],
     19 => [
         "name" => "Crystal Maiden",
-        "category" => "Intelligence"
+        "category" => "Intelligence",
+        "complexity" => "1"
     ],
     20 => [
         "name" => "Dark Seer",
-        "category" => "Intelligence"
+        "category" => "Intelligence",
+        "complexity" => "1"
     ],
     21 => [
         "name" => "Dark Willow",
-        "category" => "Intelligence"
+        "category" => "Intelligence",
+        "complexity" => "2"
     ],
     22 => [
         "name" => "Dawnbreaker",
-        "category" => "Strength"
+        "category" => "Strength",
+        "complexity" => "1"
     ],
     23 => [
         "name" => "Dazzle",
-        "category" => "Intelligence"
+        "category" => "Intelligence",
+        "complexity" => "1"
     ],
     24 => [
         "name" => "Death Prophet",
-        "category" => "Intelligence"
+        "category" => "Intelligence",
+        "complexity" => "1"
     ],
     25 => [
         "name" => "Disruptor",
-        "category" => "Intelligence"
+        "category" => "Intelligence",
+        "complexity" => "2"
     ],
     26 => [
         "name" => "Doom",
-        "category" => "Strength"
+        "category" => "Strength",
+        "complexity" => "2"
     ],
     27 => [
         "name" => "Dragon Knight",
-        "category" => "Strength"
+        "category" => "Strength",
+        "complexity" => "1"
     ],
     28 => [
         "name" => "Drow Ranger",
-        "category" => "Agility"
+        "category" => "Agility",
+        "complexity" => "1"
     ],
     29 => [
         "name" => "Earth Spirit",
-        "category" => "Strength"
+        "category" => "Strength",
+        "complexity" => "3"
     ],
     30 => [
         "name" => "Earthshaker",
-        "category" => "Strength"
+        "category" => "Strength",
+        "complexity" => "2"
     ],
     31 => [
         "name" => "Elder Titan",
-        "category" => "Strength"
+        "category" => "Strength",
+        "complexity" => "2"
     ],
     32 => [
         "name" => "Ember Spirit",
-        "category" => "Agility"
+        "category" => "Agility",
+        "complexity" => "2"
     ],
     33 => [
         "name" => "Enchantress",
-        "category" => "Intelligence"
+        "category" => "Intelligence",
+        "complexity" => "2"
     ],
     34 => [
         "name" => "Enigma",
-        "category" => "Intelligence"
+        "category" => "Intelligence",
+        "complexity" => "2"
     ],
     35 => [
         "name" => "Faceless Void",
-        "category" => "Agility"
+        "category" => "Agility",
+        "complexity" => "2"
     ],
     36 => [
         "name" => "Grimstroke",
-        "category" => "Intelligence"
+        "category" => "Intelligence",
+        "complexity" => "2"
     ],
     37 => [
         "name" => "Gyrocopter",
-        "category" => "Agility"
+        "category" => "Agility",
+        "complexity" => "1"
     ],
     38 => [
         "name" => "Hoodwink",
-        "category" => "Agility"
+        "category" => "Agility",
+        "complexity" => "2"
     ],
     39 => [
         "name" => "Huskar",
-        "category" => "Strength"
+        "category" => "Strength",
+        "complexity" => "1"
     ],
     40 => [
         "name" => "Invoker",
-        "category" => "Intelligence"
+        "category" => "Intelligence",
+        "complexity" => "3"
     ],
     41 => [
         "name" => "Io",
-        "category" => "Strength"
+        "category" => "Strength",
+        "complexity" => "3"
     ],
     42 => [
         "name" => "Jakiro",
-        "category" => "Intelligence"
+        "category" => "Intelligence",
+        "complexity" => "1"
     ],
     43 => [
         "name" => "Juggernaut",
-        "category" => "Agility"
+        "category" => "Agility",
+        "complexity" => "1"
     ],
     44 => [
         "name" => "Keeper of the Light",
-        "category" => "Intelligence"
+        "category" => "Intelligence",
+        "complexity" => "2"
     ],
     45 => [
         "name" => "Kunkka",
-        "category" => "Strength"
+        "category" => "Strength",
+        "complexity" => "2"
     ],
     46 => [
         "name" => "Legion Commander",
-        "category" => "Strength"
+        "category" => "Strength",
+        "complexity" => "1"
     ],
     47 => [
         "name" => "Leshrac",
-        "category" => "Intelligence"
+        "category" => "Intelligence",
+        "complexity" => "1"
     ],
     48 => [
         "name" => "Lich",
-        "category" => "Intelligence"
+        "category" => "Intelligence",
+        "complexity" => "1"
     ],
     49 => [
         "name" => "Lifestealer",
-        "category" => "Strength"
+        "category" => "Strength",
+        "complexity" => "2"
     ],
     50 => [
         "name" => "Lina",
-        "category" => "Intelligence"
+        "category" => "Intelligence",
+        "complexity" => "1"
     ],
     51 => [
         "name" => "Lion",
-        "category" => "Intelligence"
+        "category" => "Intelligence",
+        "complexity" => "1"
     ],
     52 => [
         "name" => "Lone Druid",
-        "category" => "Agility"
+        "category" => "Agility",
+        "complexity" => "3"
     ],
     53 => [
         "name" => "Luna",
-        "category" => "Agility"
+        "category" => "Agility",
+        "complexity" => "1"
     ],
     54 => [
         "name" => "Lycan",
-        "category" => "Strength"
+        "category" => "Strength",
+        "complexity" => "2"
     ],
     55 => [
         "name" => "Magnus",
-        "category" => "Strength"
+        "category" => "Strength",
+        "complexity" => "2"
     ],
     56 => [
         "name" => "Mars",
-        "category" => "Strength"
+        "category" => "Strength",
+        "complexity" => "1"
     ],
     57 => [
         "name" => "Medusa",
-        "category" => "Agility"
+        "category" => "Agility",
+        "complexity" => "1"
     ],
     58 => [
         "name" => "Meepo",
-        "category" => "Agility"
+        "category" => "Agility",
+        "complexity" => "3"
     ],
     59 => [
         "name" => "Mirana",
-        "category" => "Agility"
+        "category" => "Agility",
+        "complexity" => "2"
     ],
     60 => [
         "name" => "Monkey King",
-        "category" => "Agility"
+        "category" => "Agility",
+        "complexity" => "2"
     ],
     61 => [
         "name" => "Morphling",
-        "category" => "Agility"
+        "category" => "Agility",
+        "complexity" => "3"
     ],
     62 => [
         "name" => "Naga Siren",
-        "category" => "Agility"
+        "category" => "Agility",
+        "complexity" => "2"
     ],
     63 => [
-        "name" => "Nature''s Prophet",
-        "category" => "Intelligence"
+        "name" => "Nature's Prophet",
+        "category" => "Intelligence",
+        "complexity" => "2"
     ],
     64 => [
         "name" => "Necrophos",
-        "category" => "Intelligence"
+        "category" => "Intelligence",
+        "complexity" => "1"
     ],
     65 => [
         "name" => "Night Stalker",
-        "category" => "Strength"
+        "category" => "Strength",
+        "complexity" => "1"
     ],
     66 => [
         "name" => "Nyx Assassin",
-        "category" => "Agility"
+        "category" => "Agility",
+        "complexity" => "2"
     ],
     67 => [
         "name" => "Ogre Magi",
-        "category" => "Intelligence"
+        "category" => "Intelligence",
+        "complexity" => "1"
     ],
     68 => [
         "name" => "Omniknight",
-        "category" => "Strength"
+        "category" => "Strength",
+        "complexity" => "1"
     ],
     69 => [
         "name" => "Oracle",
-        "category" => "Intelligence"
+        "category" => "Intelligence",
+        "complexity" => "3"
     ],
     70 => [
-        "name" => "Earth Spirit",
-        "category" => "Strength"
+        "name" => "Outworld Destroyer",
+        "category" => "Intelligence",
+        "complexity" => "2"
     ],
     71 => [
-        "name" => "Outworld Destroyer",
-        "category" => "Intelligence"
+        "name" => "Pangolier",
+        "category" => "Agility",
+        "complexity" => "2"
     ],
     72 => [
-        "name" => "Pangolier",
-        "category" => "Agility"
+        "name" => "Phantom Assassin",
+        "category" => "Agility",
+        "complexity" => "1"
     ],
     73 => [
-        "name" => "Phantom Assassin",
-        "category" => "Agility"
+        "name" => "Phantom Lancer",
+        "category" => "Agility",
+        "complexity" => "2"
     ],
     74 => [
-        "name" => "Phantom Lancer",
-        "category" => "Agility"
+        "name" => "Phoenix",
+        "category" => "Strength",
+        "complexity" => "2"
     ],
     75 => [
-        "name" => "Phoenix",
-        "category" => "Strength"
+        "name" => "Puck",
+        "category" => "Intelligence",
+        "complexity" => "2"
     ],
     76 => [
-        "name" => "Puck",
-        "category" => "Intelligence"
+        "name" => "Pudge",
+        "category" => "Strength",
+        "complexity" => "2"
     ],
     77 => [
-        "name" => "Pudge",
-        "category" => "Strength"
+        "name" => "Pugna",
+        "category" => "Intelligence",
+        "complexity" => "2"
     ],
     78 => [
-        "name" => "Pugna",
-        "category" => "Intelligence"
+        "name" => "Queen of Pain",
+        "category" => "Intelligence",
+        "complexity" => "2"
     ],
     79 => [
-        "name" => "Queen of Pain",
-        "category" => "Intelligence"
+        "name" => "Razor",
+        "category" => "Agility",
+        "complexity" => "1"
     ],
     80 => [
-        "name" => "Razor",
-        "category" => "Agility"
+        "name" => "Riki",
+        "category" => "Agility",
+        "complexity" => "1"
     ],
     81 => [
-        "name" => "Riki",
-        "category" => "Agility"
+        "name" => "Rubick",
+        "category" => "Intelligence",
+        "complexity" => "3"
     ],
     82 => [
-        "name" => "Rubick",
-        "category" => "Intelligence"
+        "name" => "Sand King",
+        "category" => "Strength",
+        "complexity" => "2"
     ],
     83 => [
-        "name" => "Sand King",
-        "category" => "Strength"
+        "name" => "Shadow Demon",
+        "category" => "Intelligence",
+        "complexity" => "2"
     ],
     84 => [
-        "name" => "Shadow Demon",
-        "category" => "Intelligence"
+        "name" => "Shadow Fiend",
+        "category" => "Agility",
+        "complexity" => "2"
     ],
     85 => [
-        "name" => "Shadow Fiend",
-        "category" => "Agility"
+        "name" => "Shadow Shaman",
+        "category" => "Intelligence",
+        "complexity" => "1"
     ],
     86 => [
-        "name" => "Shadow Shaman",
-        "category" => "Intelligence"
+        "name" => "Silencer",
+        "category" => "Intelligence",
+        "complexity" => "2"
     ],
     87 => [
-        "name" => "Silencer",
-        "category" => "Intelligence"
+        "name" => "Skywrath Mage",
+        "category" => "Intelligence",
+        "complexity" => "1"
     ],
     88 => [
-        "name" => "Skywrath Mage",
-        "category" => "Intelligence"
+        "name" => "Slardar",
+        "category" => "Strength",
+        "complexity" => "1"
     ],
     89 => [
-        "name" => "Slardar",
-        "category" => "Strength"
+        "name" => "Slark",
+        "category" => "Agility",
+        "complexity" => "2"
     ],
     90 => [
-        "name" => "Slark",
-        "category" => "Agility"
+        "name" => "Snapfire",
+        "category" => "Strength",
+        "complexity" => "1"
     ],
     91 => [
-        "name" => "Snapfire",
-        "category" => "Strength"
+        "name" => "Sniper",
+        "category" => "Agility",
+        "complexity" => "1"
     ],
     92 => [
-        "name" => "Sniper",
-        "category" => "Agility"
+        "name" => "Spectre",
+        "category" => "Agility",
+        "complexity" => "2"
     ],
     93 => [
-        "name" => "Spectre",
-        "category" => "Agility"
+        "name" => "Spirit Breaker",
+        "category" => "Strength",
+        "complexity" => "1"
     ],
     94 => [
-        "name" => "Spirit Breaker",
-        "category" => "Strength"
+        "name" => "Storm Spirit",
+        "category" => "Intelligence",
+        "complexity" => "2"
     ],
     95 => [
-        "name" => "Storm Spirit",
-        "category" => "Intelligence"
+        "name" => "Sven",
+        "category" => "Strength",
+        "complexity" => "1"
     ],
     96 => [
-        "name" => "Sven",
-        "category" => "Strength"
+        "name" => "Techies",
+        "category" => "Intelligence",
+        "complexity" => "2"
     ],
     97 => [
-        "name" => "Techies",
-        "category" => "Intelligence"
+        "name" => "Templar Assassin",
+        "category" => "Agility",
+        "complexity" => "2"
     ],
     98 => [
-        "name" => "Templar Assassin",
-        "category" => "Agility"
+        "name" => "Terrorblade",
+        "category" => "Agility",
+        "complexity" => "2"
     ],
     99 => [
-        "name" => "Terrorblade",
-        "category" => "Agility"
+        "name" => "Tidehunter",
+        "category" => "Strength",
+        "complexity" => "1"
     ],
     100 => [
-        "name" => "Tidehunter",
-        "category" => "Strength"
+        "name" => "Timbersaw",
+        "category" => "Strength",
+        "complexity" => "2"
     ],
     101 => [
-        "name" => "Timbersaw",
-        "category" => "Strength"
+        "name" => "Tinker",
+        "category" => "Intelligence",
+        "complexity" => "2"
     ],
     102 => [
-        "name" => "Tinker",
-        "category" => "Intelligence"
+        "name" => "Tiny",
+        "category" => "Strength",
+        "complexity" => "2"
     ],
     103 => [
-        "name" => "Tiny",
-        "category" => "Strength"
+        "name" => "Treant Protector",
+        "category" => "Strength",
+        "complexity" => "2"
     ],
     104 => [
-        "name" => "Treant Protector",
-        "category" => "Strength"
+        "name" => "Troll Warlord",
+        "category" => "Agility",
+        "complexity" => "2"
     ],
     105 => [
-        "name" => "Troll Warlord",
-        "category" => "Agility"
+        "name" => "Tusk",
+        "category" => "Strength",
+        "complexity" => "1"
     ],
     106 => [
-        "name" => "Tusk",
-        "category" => "Strength"
+        "name" => "Underlord",
+        "category" => "Strength",
+        "complexity" => "2"
     ],
     107 => [
-        "name" => "Underlord",
-        "category" => "Strength"
+        "name" => "Undying",
+        "category" => "Strength",
+        "complexity" => "1"
     ],
     108 => [
-        "name" => "Undying",
-        "category" => "Strength"
+        "name" => "Ursa",
+        "category" => "Agility",
+        "complexity" => "1"
     ],
     109 => [
-        "name" => "Ursa",
-        "category" => "Agility"
+        "name" => "Vengeful Spirit",
+        "category" => "Agility",
+        "complexity" => "1"
     ],
     110 => [
-        "name" => "Vengeful Spirit",
-        "category" => "Agility"
+        "name" => "Venomancer",
+        "category" => "Agility",
+        "complexity" => "1"
     ],
     111 => [
-        "name" => "Venomancer",
-        "category" => "Agility"
+        "name" => "Viper",
+        "category" => "Agility",
+        "complexity" => "1"
     ],
     112 => [
-        "name" => "Viper",
-        "category" => "Agility"
+        "name" => "Visage",
+        "category" => "Intelligence",
+        "complexity" => "3"
     ],
     113 => [
-        "name" => "Visage",
-        "category" => "Intelligence"
+        "name" => "Void Spirit",
+        "category" => "Intelligence",
+        "complexity" => "2"
     ],
     114 => [
-        "name" => "Void Spirit",
-        "category" => "Intelligence"
+        "name" => "Warlock",
+        "category" => "Intelligence",
+        "complexity" => "1"
     ],
     115 => [
-        "name" => "Warlock",
-        "category" => "Intelligence"
+        "name" => "Weaver",
+        "category" => "Agility",
+        "complexity" => "2"
     ],
     116 => [
-        "name" => "Weaver",
-        "category" => "Agility"
+        "name" => "Windranger",
+        "category" => "Intelligence",
+        "complexity" => "2"
     ],
     117 => [
-        "name" => "Windranger",
-        "category" => "Intelligence"
+        "name" => "Winter Wyvern",
+        "category" => "Intelligence",
+        "complexity" => "2"
     ],
     118 => [
-        "name" => "Winter Wyvern",
-        "category" => "Intelligence"
+        "name" => "Witch Doctor",
+        "category" => "Intelligence",
+        "complexity" => "1"
     ],
     119 => [
-        "name" => "Witch Doctor",
-        "category" => "Intelligence"
+        "name" => "Wraith King",
+        "category" => "Strength",
+        "complexity" => "1"
     ],
     120 => [
-        "name" => "Wraith King",
-        "category" => "Strength"
-    ],
-    121 => [
         "name" => "Zeus",
-        "category" => "Intelligence"
+        "category" => "Intelligence",
+        "complexity" => "1"
     ],
 );
 $hero = array();
 foreach ($hero_no_img as $key => $value) {
-
     $value["img"] = assets("images/heroes/".strtolower($value["name"]).".png");
+    $value["img"] = str_replace(" ","-",$value["img"]);
+    $value["img"] = str_replace("'","-",$value["img"]);
     $hero += array( $key => [
         "name" => $value["name"],
         "category" => $value["category"],
+        "complexity" => $value["complexity"],
         "img" => $value["img"]
     ] );
 }
