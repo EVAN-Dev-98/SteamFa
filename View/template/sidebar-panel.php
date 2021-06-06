@@ -37,9 +37,9 @@ switch ($role_id){
                     <li class="items<?php if ($activePage == "show-product-list") echo " active"; ?>"><a href="<?php echo account("show-product-list.php"); ?>"><span class="fas fa-table"></span><p>مشاهده محصولات</p></a></li>
                 </ul>
             </li>
-            <li class="items menu<?php if ($activePage == "") echo " menu-active"; ?>"><a href="javascript:void(0)"><span class="far fa-shield-alt sec"></span><p>امنیت</p><span class="fas fa-angle-right icon-more"></span></a>
-                <ul class="more">
-                    <li class="items<?php if ($activePage == "") echo " active"; ?>"><a href="#"><span class="fad fa-key"></span><p>تغییر گذرواژه</p></a></li>
+            <li class="items menu<?php if ($activePage == "change-password" || $activePage == "") echo " menu-active"; ?>"><a href="javascript:void(0)"><span class="far fa-shield-alt sec"></span><p>امنیت</p><span class="fas fa-angle-right icon-more"></span></a>
+                <ul class="more<?php if ($activePage == "change-password" || $activePage == "") echo " show"; ?>">
+                    <li class="items<?php if ($activePage == "change-password") echo " active"; ?>"><a href="<?php echo account("change-password.php"); ?>"><span class="fad fa-key"></span><p>تغییر گذرواژه</p></a></li>
                     <li class="items<?php if ($activePage == "") echo " active"; ?>"><a href="#"><span class="fad fa-eye"></span><p>مجوز ها</p></a></li>
                 </ul>
             </li>

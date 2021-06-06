@@ -19,7 +19,7 @@ if (isset($_POST['submit'])){
             if (isset($_SESSION['redirect'])){
                 $redirect = $_SESSION['redirect'];
                 unset($_SESSION['redirect']);
-                if ($redirect == view("home")){
+                if ($redirect == view("home") || $redirect == view("../")){
                     redirect(account("dashboard.php"));
                 }
                 else

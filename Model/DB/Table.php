@@ -11,7 +11,7 @@ if (!class_exists('Table')){
             return "'" . join($sep , $values) . "'";
         }
         static protected function columnsValueList( $params, $sep = ", "): string{
-            unset($params['id']);
+            if (isset($params['id'])){ unset($params['id']); }
             $varPairs = BlockSqlInjection($params);
             foreach ($varPairs as $key => $value){
                 $query[] = "{$key} = '{$value}'";

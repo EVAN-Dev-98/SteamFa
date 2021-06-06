@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- add function BlockSqlInjection and we can easy use that&#10;- prevent sql and script injection on product-detail , sign-up and sign-in pages">
+    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- edit product as soon&#10;- prevent sql and script injection on edit user page">
+      <change afterPath="$PROJECT_DIR$/Controller/do-change-password.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/account/change-password.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/template/change-password-panel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/edit-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/edit-product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/edit-user.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/edit-user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/account/edit-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/edit-product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/do-sign-in.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-sign-in.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/do-sign-up.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-sign-up.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/DB/Table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DB/Table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/sidebar-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/sidebar-panel.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,14 +193,8 @@
       <workItem from="1622807583215" duration="14761000" />
       <workItem from="1622843800835" duration="14000" />
       <workItem from="1622887471948" duration="6074000" />
-      <workItem from="1622913696731" duration="555000" />
-    </task>
-    <task id="LOCAL-00033" summary="- add __php__">
-      <created>1619699810952</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1619699810953</updated>
+      <workItem from="1622913696731" duration="775000" />
+      <workItem from="1622953996590" duration="4340000" />
     </task>
     <task id="LOCAL-00034" summary="- Fixed Error : __php__.php include&#10;- More features coming soon :)">
       <created>1619703587760</created>
@@ -534,7 +532,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622894671541</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="- edit product as soon&#10;- prevent sql and script injection on edit user page">
+      <created>1622914421976</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1622914421977</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -554,7 +559,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="- add product-detail" />
     <MESSAGE value="- remove product&#10;edit soon :)&#10;- add dota2 table&#10;- add csgo table&#10;- add hero table&#10;- add all heroes of dota2 in table&#10;- automatic insert hero image into database" />
     <MESSAGE value="- edit some html" />
     <MESSAGE value="- database edit&#10;- Product table for all Products&#10;- attr_{name} for some specific category Products for now used 2 tables like attr_csgo and attr_dota2&#10;- edit setup and perform handle errors and alerts" />
@@ -579,7 +583,8 @@
     <MESSAGE value="- prevent sql injection attack :)" />
     <MESSAGE value="- prevent sql injection attack :)&#10;- rework master-panel&#10;- rework panel and sidebar" />
     <MESSAGE value="- add function BlockSqlInjection and we can easy use that&#10;- prevent sql and script injection on product-detail , sign-up and sign-in pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="- add function BlockSqlInjection and we can easy use that&#10;- prevent sql and script injection on product-detail , sign-up and sign-in pages" />
+    <MESSAGE value="- edit product as soon&#10;- prevent sql and script injection on edit user page" />
+    <option name="LAST_COMMIT_MESSAGE" value="- edit product as soon&#10;- prevent sql and script injection on edit user page" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

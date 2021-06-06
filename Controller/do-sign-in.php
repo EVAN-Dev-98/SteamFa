@@ -17,7 +17,7 @@ if (isset($_POST['submit'])){
             if (isset($_SESSION['redirect'])){
                 $redirect = $_SESSION['redirect'];
                 unset($_SESSION['redirect']);
-                if ($redirect == view("home")){
+                if ($redirect == view("home") || $redirect == view("../")){
                     redirect(account("dashboard.php"));
                 }
                 else
@@ -31,12 +31,9 @@ if (isset($_POST['submit'])){
     }
     else
         Alert::alerts("ایمیل وارد شده در سیستم وجود ندارد!","<a href='".account("sign-up.php")."'>ثبت نام کنید</a>","info");
-
     unset($db);
     $_SESSION['ins-email'] = $params["email"];
-    redirect(account("sign-in.php"));
 }
-else{
+else
     Alert::alerts("دسترسی غیرمجاز!");
-    redirect(account("sign-in.php"));
-}
+redirect(account("sign-in.php"));
