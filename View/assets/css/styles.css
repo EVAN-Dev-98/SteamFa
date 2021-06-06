@@ -793,7 +793,7 @@ body.sign{
 }
 .hero-img:hover{
      transform:scale(1.3);
-     box-shadow:3px 3px 8px black;
+     box-shadow:3px 3px 8px #000000;
      background-size:100%;
      filter:saturate(1);
      z-index:4;
@@ -821,6 +821,7 @@ body.sign{
 }
 .hero-cat{
      padding: 1rem;
+     margin-bottom: 1rem;
 }
 .hero-cat img{
      padding-right: 8px;
@@ -828,5 +829,21 @@ body.sign{
 .hero-cat h2{
      display: inline-block;
      margin-bottom: 0;
+     font-family: Primus, serif;
      vertical-align: text-top;
+     color: #ffffff;
+     text-shadow: 0 0 8px #F9E79F;
+}
+body.wallpaper{
+     user-select: none;
+     background-size: cover;
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+}
+.hero-title{
+     color: #ffffff;
+     font-size: 2rem;
+     text-align: center;
+     text-shadow: 0 0 8px #F9E79F;
 }

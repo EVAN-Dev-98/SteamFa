@@ -10,6 +10,7 @@ $Intelligence = Hero::find("category = 'Intelligence'");
 
 ?>
 <section class="container mt-5 dir-ltr">
+    <p class="hero-title">هیرو مورد نظر خود را انتخاب کنید</p>
     <section class="hero-cat">
         <img src="<?php echo assets("images/hero_strength.png"); ?>" alt="hero_category"><h2>Strength</h2>
     </section>

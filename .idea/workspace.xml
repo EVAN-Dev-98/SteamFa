@@ -1,100 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- setup bug fixed">
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/ancient-apparition.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/arc-warden.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/bounty-hunter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/centaur-warrunner.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/chaos-knight.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/crystal-maiden.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/dark-seer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/dark-willow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/death-prophet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/dragon-knight.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/drow-ranger.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/earth-spirit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/elder-titan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/ember-spirit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/faceless-void.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/keeper-of-the-light.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/legion-commander.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/lone-druid.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/monkey-king.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/naga-siren.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/nature-s-prophet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/night-stalker.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/nyx-assassin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/ogre-magi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/outworld-destroyer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/phantom-assassin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/phantom-lancer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/queen-of-pain.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/sand-king.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/shadow-demon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/shadow-fiend.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/shadow-shaman.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/skywrath-mage.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/spirit-breaker.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/storm-spirit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/templar-assassin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/treant-protector.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/troll-warlord.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/vengeful-spirit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/void-spirit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/winter-wyvern.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/witch-doctor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/images/Heroes/wraith-king.png" afterDir="false" />
+    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- perform dota2 heroes">
+      <change afterPath="$PROJECT_DIR$/View/assets/images/wallpaper/dota2/1.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/get-hero.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/get-hero.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/DB/Hero-List.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DB/Hero-List.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/setup.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/View/assets/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/ancient apparition.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/arc warden.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/bounty hunter.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/centaur warrunner.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/chaos knight.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/crystal maiden.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/dark seer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/dark willow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/death prophet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/dragon knight.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/drow ranger.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/earth spirit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/elder titan.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/ember spirit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/faceless void.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/keeper of the light.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/legion commander.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/lone druid.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/monkey king.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/naga siren.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/nature's prophet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/night stalker.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/nyx assassin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/ogre magi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/outworld destroyer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/phantom assassin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/phantom lancer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/queen of pain.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/sand king.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/shadow demon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/shadow fiend.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/shadow shaman.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/skywrath mage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/spirit breaker.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/storm spirit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/templar assassin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/treant protector.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/troll warlord.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/vengeful spirit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/void spirit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/winter wyvern.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/witch doctor.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/images/Heroes/wraith king.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/View/dota2.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/dota2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/hero-template.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/hero-template.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -282,14 +194,9 @@
       <workItem from="1622953996590" duration="4832000" />
       <workItem from="1622959401464" duration="572000" />
       <workItem from="1622975557992" duration="4753000" />
-      <workItem from="1622985773264" duration="7021000" />
-    </task>
-    <task id="LOCAL-00036" summary="- rename file do-register to do-sign-up">
-      <created>1619705355849</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1619705355849</updated>
+      <workItem from="1622985773264" duration="7234000" />
+      <workItem from="1623005276334" duration="1041000" />
+      <workItem from="1623007898618" duration="655000" />
     </task>
     <task id="LOCAL-00037" summary="- rename file do-register to do-sign-up">
       <created>1619706431046</created>
@@ -627,7 +534,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622959696392</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="- perform dota2 heroes">
+      <created>1622992984248</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1622992984248</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -647,7 +561,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="- database edit&#10;- Product table for all Products&#10;- attr_{name} for some specific category Products for now used 2 tables like attr_csgo and attr_dota2&#10;- edit setup and perform handle errors and alerts" />
     <MESSAGE value="- rework panel design" />
     <MESSAGE value="- add csgo item done&#10;dota2 items as sooon" />
     <MESSAGE value="- add csgo item done&#10;- add dota2 items done&#10;- basic view catalog" />
@@ -672,7 +585,8 @@
     <MESSAGE value="- edit product as soon&#10;- prevent sql and script injection on edit user page" />
     <MESSAGE value="- add change password" />
     <MESSAGE value="- setup bug fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="- setup bug fixed" />
+    <MESSAGE value="- perform dota2 heroes" />
+    <option name="LAST_COMMIT_MESSAGE" value="- perform dota2 heroes" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
