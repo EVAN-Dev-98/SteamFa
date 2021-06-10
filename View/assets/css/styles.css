@@ -54,6 +54,10 @@ input[readonly].readonly{
      font-size: 1em;
 }
 
+table{
+     border: 2px solid #000000;
+}
+
 li {
      list-style: none;
 }

@@ -12,10 +12,16 @@ if ($attr_name == "attr_dota2"){
                 <p class="card-text">کیفیت : <?php echo $quality; ?></p>
             </section>
             <section class="card-footer">
-                <?php // if admin ?>
-                <a href="" class="mx-1 btn btn-outline-danger ">حذف</a>
-                <a href="<?php echo account("edit-product.php?id={$id}"); ?>" class="mx-1 btn btn-outline-warning">ویرایش</a>
-                <?php // if user ?>
+                <?php
+                if ( $owner_id == Authentication::uid() ) {
+                    if ( Authorization::check("ItemDelete") ) { ?><a href="<?php echo controller("do-delete-item.php?self={$id}"); ?>" class="mx-1 btn btn-outline-danger">حذف</a><?php }
+                    if ( Authorization::check("ItemEdit") ) { ?><a href="<?php echo account("edit-item.php?self={$id}"); ?>" class="mx-1 btn btn-outline-warning">ویرایش</a><?php }
+                }
+                else {
+                    if ( Authorization::check("ItemDeleteOther") ) { ?><a href="<?php echo controller("do-delete-item.php?id={$id}"); ?>" class="mx-1 btn btn-outline-danger">حذف</a><?php }
+                    if ( Authorization::check("ItemEditOther") ) { ?><a href="<?php echo account("edit-item.php?id={$id}"); ?>" class="mx-1 btn btn-outline-warning">ویرایش</a><?php }
+                }
+                ?>
                 <!--a href="" class="btn btn-primary">افزودن به سبد خرید</a-->
             </section>
         </article>
@@ -36,10 +42,16 @@ if ($attr_name == "attr_csgo"){
                 <p class="card-text">دسته : <?php echo $category; ?></p>
             </section>
             <section class="card-footer">
-                <?php // if admin ?>
-                <a href="" class="mx-1 btn btn-outline-danger ">حذف</a>
-                <a href="<?php echo account("edit-product.php?id={$id}"); ?>" class="mx-1 btn btn-outline-warning">ویرایش</a>
-                <?php // if user ?>
+                <?php
+                if ( $owner_id == Authentication::uid() ) {
+                    if ( Authorization::check("ItemDelete") ) { ?><a href="<?php echo controller("do-delete-item.php?self={$id}"); ?>" class="mx-1 btn btn-outline-danger">حذف</a><?php }
+                    if ( Authorization::check("ItemEdit") ) { ?><a href="<?php echo account("edit-item.php?self={$id}"); ?>" class="mx-1 btn btn-outline-warning">ویرایش</a><?php }
+                }
+                else {
+                    if ( Authorization::check("ItemDeleteOther") ) { ?><a href="<?php echo controller("do-delete-item.php?id={$id}"); ?>" class="mx-1 btn btn-outline-danger">حذف</a><?php }
+                    if ( Authorization::check("ItemEditOther") ) { ?><a href="<?php echo account("edit-item.php?id={$id}"); ?>" class="mx-1 btn btn-outline-warning">ویرایش</a><?php }
+                }
+                ?>
                 <!--a href="" class="btn btn-primary">افزودن به سبد خرید</a-->
             </section>
         </article>

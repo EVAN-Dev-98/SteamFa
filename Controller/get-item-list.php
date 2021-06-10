@@ -1,11 +1,17 @@
 <?php
 include "__php__.php";
 
+if (!Authorization::check("ItemEdit")){
+    Alert::alerts("متاسفانه شما مجوز مشاهده آیتم های خود را ندارید!");
+    redirect(account("dashboard.php"));
+}
+
 $db = new DB();
-$table = Product::find();
+$id = Authentication::uid();
+$table = Product::find("owner_id = {$id}");
 ?>
 <header>
-    <h2>مشاهده آیتم ها</h2>
+    <h2>مشاهده آیتم های شما</h2>
 </header>
 <main>
     <?php
@@ -30,6 +36,7 @@ $table = Product::find();
             $count++;
             get_template_part("product-list","template",$row);
         }
+        if ($count == 0 ){ ?> <h3 class="text-center">متاسفانه آیتمی برای نمایش وجود ندارد</h3> <?php }
         ?>
         </tbody>
     </table>

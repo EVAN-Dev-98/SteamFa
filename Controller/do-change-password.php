@@ -1,13 +1,18 @@
 <?php
 /* Created By Evan ( Sajad Gholami ) */
 include "__php__.php";
-require "Panel-Authentication-Check.php";
+
+if (!Authorization::check("UserEdit")){
+    Alert::alerts("متاسفانه شما مجوز ویرایش حساب خود را ندارید!");
+    redirect(account("dashboard.php"));
+}
 
 if (isset($_POST['submit'])){
     $db = new DB();
     $params = SafeScript($_POST);
     $params = BlockSqlInjection($params);
-
+    $table = User::find("id = {$_SESSION['uid']}");
+    $row = $table[0];
     if (password_verify($params['password-now'],$row['password'])){
         if ($params['password-new'] === $params['re-password-new']){
             $p['id'] = $row['id'];

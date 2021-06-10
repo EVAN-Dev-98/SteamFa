@@ -131,3 +131,20 @@ if (!function_exists("Session_Starter")){
         session_start();
     }
 }
+
+if (!function_exists("role_name")){
+    function role_name( $id ){
+        switch ($id){
+            case 1:
+                return "مدیریت";
+            case 2:
+                return "ادمین";
+            case 3:
+                return "کاربر ویژه";
+            case 4:
+                return "کاربر عادی";
+            default:
+                return "تعیین نشده";
+        }
+    }
+}

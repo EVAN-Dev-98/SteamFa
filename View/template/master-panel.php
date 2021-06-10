@@ -1,6 +1,19 @@
 <?php
 /* Created By Evan ( Sajad Gholami ) */
-require $Controller . "Panel-Authentication-Check.php";
+/* Authentication Check */
+$row = array();
+if ( Authentication::check() ){
+    global $db;
+    $db = new DB();
+    $table = User::find("id = {$_SESSION['uid']}");
+    $row = $table[0];
+}
+else{
+    Alert::alerts("ابتدا وارد سیستم شوید!");
+    $_SESSION['redirect'] = $_SERVER['REQUEST_URI'];
+    redirect(account("sign-in.php"));
+}
+/* End Check */
 get_template("head","",$title);
 ?>
 <body>

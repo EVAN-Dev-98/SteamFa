@@ -2,6 +2,8 @@
 if (!class_exists("Authorization")) {
     class Authorization{
         static public function check( $Permission ){
+            global $db;
+            $db = new DB();
             if ( Authentication::check() ){
                 $uid = Authentication::uid();
                 $table = Role::find_join("User","User.id = {$uid}");

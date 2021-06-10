@@ -11,7 +11,7 @@
         <section class="card-footer">
             <?php // if admin ?>
             <a href="" class="mx-1 btn btn-outline-danger ">حذف</a>
-            <a href="<?php echo account("edit-product.php?id={$id}"); ?>" class="mx-1 btn btn-outline-warning">ویرایش</a>
+            <a href="<?php echo account("edit-item.php?id={$id}"); ?>" class="mx-1 btn btn-outline-warning">ویرایش</a>
             <?php // if user ?>
             <!--a href="" class="btn btn-primary">افزودن به سبد خرید</a-->
         </section>

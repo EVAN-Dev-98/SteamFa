@@ -4,7 +4,7 @@ include "__php__.php";
 
 if ( Authentication::check() ){
     Alert::alerts("برای ورود با یک اکانت دیگر ابتدا از حساب کاربری خود خارج شوید",null,"warning");
-    redirect(view("dashboard-panel.php"));
+    redirect(account("dashboard.php"));
 }
 
 $title = "ورود | استیم فارسی";

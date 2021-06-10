@@ -2,10 +2,8 @@
 /* Created By Evan ( Sajad Gholami ) */
 include "__php__.php";
 
-$db = new DB();
-
-if (!Authorization::check("ProductAdd")){
-    Alert::alerts("متاسفانه شما مجوز افزودن محصول را ندارید!");
+if (!Authorization::check("ItemAdd")){
+    Alert::alerts("متاسفانه شما مجوز افزودن آیتم را ندارید!","میتوانید با اضافه کردن لینک پروفایل استیم خود در قسمت پروفایل پنل کاربری مجوز افزودن آیتم را بصورت رایگان دریافت کنید","info");
     redirect(account("dashboard.php"));
 }
 
@@ -16,7 +14,7 @@ if (isset($_POST['submit'])){
     $product["attr_name"] = $_POST["attr_name"];
     $product["number"] = $_POST["number"];
     $product["img"] = assets("images/default-item.jpg");
-
+    $product["owner_id"] = Authentication::uid();
     $attr["product_id"] = Product::add($product);
 
     switch ($product["attr_name"]){
@@ -45,7 +43,7 @@ if (isset($_POST['submit'])){
             break;
     }
     unset($db);
-    redirect(account("show-product-list.php"));
+    redirect(account("dashboard.php"));
 }
 else{
     Alert::alerts("دسترسی غیرمجاز!");

@@ -108,7 +108,7 @@ $quality = array(
 <h2>افزودن آیتم</h2>
 </header>
 <main>
-    <form action="<?php echo controller("add-product.php"); ?>" method="post">
+    <form action="<?php echo controller("do-add-item.php"); ?>" method="post">
         <!-- attr_name for product -->
         <section class="input-group mb-3" id="s_attr_name">
             <span class="input-group-text">نام بازی : </span>

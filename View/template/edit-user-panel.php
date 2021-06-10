@@ -1,5 +1,5 @@
 <header>
-    <h2>ویرایش اطلاعات</h2>
+    <h2>ویرایش اطلاعات کاربر <?php echo $fname . " " . $lname; ?></h2>
 </header>
 <main>
     <?php
@@ -11,7 +11,11 @@
         extract($params);
     }
     ?>
-    <form action="<?php echo controller("do-edit-profile.php"); ?>" method="post">
+    <form action="<?php echo controller("do-edit-user.php"); ?>" method="post">
+        <section class="input-group mb-3">
+            <span class="input-group-text" id="id">شناسه کاربری</span>
+            <input type="number" name="id" value="<?php echo $id; ?>" class="form-control text-start" aria-label="id" aria-describedby="id" readonly>
+        </section>
         <section class="input-group mb-3">
             <span class="input-group-text">نام و نام خانوادگی</span>
             <input type="text" name="fname" value="<?php echo $fname; ?>" aria-label="name" class="form-control">
@@ -22,7 +26,7 @@
             <span class="input-group-text" id="email">ایمیل</span>
         </section>
         <section class="input-group mb-3">
-            <span class="input-group-text" id="password">گذرواژه</span>
+            <span class="input-group-text" id="password">گذرواژه شما</span>
             <input type="password" name="password" class="form-control" aria-label="password" aria-describedby="password" required>
         </section>
         <section class="input-group mb-3">

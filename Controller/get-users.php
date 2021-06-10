@@ -2,9 +2,13 @@
 /* Created By Evan ( Sajad Gholami ) */
 include "__php__.php";
 
+if (!Authorization::check("UserViewOther")){
+    Alert::alerts("متاسفانه شما مجوز مشاهده کاربران را ندارید!");
+    redirect(account("dashboard.php"));
+}
+
 $db = new DB();
 $table = User::find();
-
 ?>
 <header>
     <h2>مشاهده کاربران</h2>
