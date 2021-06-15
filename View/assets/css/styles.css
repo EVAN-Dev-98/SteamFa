@@ -851,3 +851,24 @@ body.wallpaper{
      text-align: center;
      text-shadow: 0 0 8px #F9E79F;
 }
+.p-img{
+     width: 100%;
+     height: 200px;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     border-top-right-radius: .5em;
+     border-top-left-radius: .5em;
+}
+.p-price{
+     width: 100%;
+     font-size: 20px;
+     text-align: center;
+}
+.p-price-n{
+     font-family: Primus, serif;
+     font-weight: bold;
+}
+.p-card{
+     border-radius: .5em;
+}
