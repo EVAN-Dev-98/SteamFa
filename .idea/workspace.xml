@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- add role&#10;- add column_name function">
-      <change afterPath="$PROJECT_DIR$/Controller/do-edit-role.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/account/edit-role.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/template/edit-role-panel.php" afterDir="false" />
+    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- add delete-role">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/do-add-role.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-add-role.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/account/edit-user.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/edit-user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/add-role.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/add-role.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/sidebar-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/sidebar-panel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/settings.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,21 +216,7 @@
       <workItem from="1623833979477" duration="445000" />
       <workItem from="1624134302283" duration="695000" />
       <workItem from="1624177440738" duration="2701000" />
-      <workItem from="1624196496388" duration="15564000" />
-    </task>
-    <task id="LOCAL-00043" summary="- add edit product&#10;- add edit user&#10;- Optimization panel">
-      <created>1619860475935</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1619860475935</updated>
-    </task>
-    <task id="LOCAL-00044" summary="- add edit product&#10;- add edit user&#10;- Optimization panel">
-      <created>1619861389042</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1619861389042</updated>
+      <workItem from="1624196496388" duration="15967000" />
     </task>
     <task id="LOCAL-00045" summary="- add edit product&#10;- add edit user&#10;- Optimization panel">
       <created>1619861589894</created>
@@ -568,7 +547,21 @@
       <option name="project" value="LOCAL" />
       <updated>1624219268179</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="- add edit-role">
+      <created>1624224018118</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1624224018118</updated>
+    </task>
+    <task id="LOCAL-00093" summary="- add delete-role">
+      <created>1624224275003</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1624224275003</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -588,8 +581,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="- sign-up and sign-in controlled by Authentication check class&#10;- login user done&#10;- perform design&#10;---&#10;stable version 9 :)" />
-    <MESSAGE value="- show immortals item page&#10;- perform header" />
     <MESSAGE value="- perform header" />
     <MESSAGE value="- fix profile panel&#10;- add authentication-check file for easy way to check user&#10;fix all bugs as soon :)" />
     <MESSAGE value="- rework header with bootstrap&#10;- rework header panel with bootstrap&#10;- rework sign-up page with bootstrap&#10;- rework sign-in page with bootstrap" />
@@ -613,7 +604,9 @@
     <MESSAGE value="- some bug fixed" />
     <MESSAGE value="- add view role page&#10;- add count function to table" />
     <MESSAGE value="- add role&#10;- add column_name function" />
-    <option name="LAST_COMMIT_MESSAGE" value="- add role&#10;- add column_name function" />
+    <MESSAGE value="- add edit-role" />
+    <MESSAGE value="- add delete-role" />
+    <option name="LAST_COMMIT_MESSAGE" value="- add delete-role" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
