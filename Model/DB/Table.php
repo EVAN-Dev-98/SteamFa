@@ -71,5 +71,11 @@ if (!class_exists('Table')){
                       LIMIT {$offset} , {$count}";
             return $GLOBALS['db'] -> Execute($query);
         }
+        static public function count( $column_name , $where = "true" ){
+            $TableName = static::class;
+            $query = "SELECT COUNT({$column_name}) as 'Count' FROM {$TableName}
+                      WHERE {$where} AND status != 'deleted'";
+            return $GLOBALS['db'] -> Execute($query);
+        }
     }
 }

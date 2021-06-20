@@ -27,8 +27,8 @@ $table = User::find();
             <th scope="col">نام خانوادگی</th>
             <th scope="col">ایمیل</th>
             <th scope="col">نوع حساب</th>
-            <th scope="col"></th>
-            <th scope="col"></th>
+            <th scope="col">حذف</th>
+            <th scope="col">ویرایش</th>
         </tr>
         </thead>
         <tbody>

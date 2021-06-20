@@ -28,12 +28,12 @@ $role_name = role_name( $role_id );
                     </ul>
                 </li>
                 <?php } ?>
-            <li class="items menu<?php if ($activePage == "change-password" || $activePage == "") echo " menu-active"; ?>"><a href="javascript:void(0)"><span class="far fa-shield-alt sec"></span><p>امنیت</p><span class="fas fa-angle-right icon-more"></span></a>
-                <ul class="more<?php if ($activePage == "change-password" || $activePage == "") echo " show"; ?>">
+            <li class="items menu<?php if ($activePage == "change-password" || $activePage == "role-manager") echo " menu-active"; ?>"><a href="javascript:void(0)"><span class="far fa-shield-alt sec"></span><p>امنیت</p><span class="fas fa-angle-right icon-more"></span></a>
+                <ul class="more<?php if ($activePage == "change-password" || $activePage == "role-manager") echo " show"; ?>">
                     <li class="items<?php if ($activePage == "change-password") echo " active"; ?>"><a href="<?php echo account("change-password.php"); ?>"><span class="fad fa-key"></span><p>تغییر گذرواژه</p></a></li>
                     <?php
                     if ( Authorization::check( "RoleMaster" ) ) { ?>
-                        <li class="items<?php if ($activePage == "") echo " active"; ?>"><a href="#"><span class="fad fa-eye"></span><p>مجوز ها</p></a></li>
+                        <li class="items<?php if ($activePage == "role-manager") echo " active"; ?>"><a href="<?php echo account("role-manager.php"); ?>"><span class="fad fa-eye"></span><p>مجوز ها</p></a></li>
                         <?php } ?>
                 </ul>
             </li>

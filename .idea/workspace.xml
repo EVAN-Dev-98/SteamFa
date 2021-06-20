@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- catalog products bug fixed and improve design">
+    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- some bug fixed">
+      <change afterPath="$PROJECT_DIR$/Controller/get-role.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/account/role-manager.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/template/roles-template.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/do-edit-profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-edit-profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/do-edit-user.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-edit-user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/do-sign-in.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-sign-in.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/do-sign-up.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-sign-up.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/get-users.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/get-users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/DB/Table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DB/Table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/sidebar-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/sidebar-panel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/users-template.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/users-template.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +52,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/View/template" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -62,9 +65,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\SteamFa\View\template" />
       <recent name="C:\wamp64\www\SteamFa\View\account" />
       <recent name="C:\wamp64\www\SteamFa\Controller" />
-      <recent name="C:\wamp64\www\SteamFa\View\template" />
       <recent name="C:\wamp64\www\SteamFa\Model\DB" />
       <recent name="C:\wamp64\www\SteamFa\View" />
     </key>
@@ -218,14 +221,8 @@
       <workItem from="1623833698953" duration="254000" />
       <workItem from="1623833979477" duration="445000" />
       <workItem from="1624134302283" duration="695000" />
-      <workItem from="1624177440738" duration="1452000" />
-    </task>
-    <task id="LOCAL-00040" summary="- edit user profile in panel">
-      <created>1619805596694</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1619805596694</updated>
+      <workItem from="1624177440738" duration="2701000" />
+      <workItem from="1624196496388" duration="4625000" />
     </task>
     <task id="LOCAL-00041" summary="- Optimization panel">
       <created>1619819279171</created>
@@ -563,7 +560,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623765023734</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="- some bug fixed">
+      <created>1624179162904</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1624179162904</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -583,7 +587,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="- add csgo item done&#10;- add dota2 items done&#10;- basic view catalog" />
     <MESSAGE value="- add alert class&#10;- All Notifications Done :)" />
     <MESSAGE value="- login complete&#10;- autocomplete form after error&#10;- sign up email duplicate control" />
     <MESSAGE value="- sign-up and sign-in controlled by Authentication check class&#10;- login user done&#10;- perform design&#10;---&#10;stable version 9 :)" />
@@ -608,7 +611,8 @@
     <MESSAGE value="- perform dota2 heroes" />
     <MESSAGE value="--- biggest CHANGE ---&#10;- Authorize everything (sidebar,account,controller,...)&#10;- Spilt product AND item&#10;- Split user items AND all-items&#10;- add change password&#10;- add function for return user role_name&#10;- perform a lot of bugs&#10;--- other facilities as soon :) ---" />
     <MESSAGE value="- catalog products bug fixed and improve design" />
-    <option name="LAST_COMMIT_MESSAGE" value="- catalog products bug fixed and improve design" />
+    <MESSAGE value="- some bug fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="- some bug fixed" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
