@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- add view role page&#10;- add count function to table">
-      <change afterPath="$PROJECT_DIR$/Controller/do-add-role.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/account/add-role.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/template/add-role.php" afterDir="false" />
+    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- add role&#10;- add column_name function">
+      <change afterPath="$PROJECT_DIR$/Controller/do-edit-role.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/account/edit-role.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/template/edit-role-panel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/DB/Table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DB/Table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/setup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/View/assets/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/do-add-role.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-add-role.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/account/edit-user.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/account/edit-user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/add-role.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/add-role.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/sidebar-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/sidebar-panel.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +53,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/View/template" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Controller" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -64,9 +66,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\SteamFa\View\template" />
-      <recent name="C:\wamp64\www\SteamFa\View\account" />
       <recent name="C:\wamp64\www\SteamFa\Controller" />
+      <recent name="C:\wamp64\www\SteamFa\View\account" />
+      <recent name="C:\wamp64\www\SteamFa\View\template" />
       <recent name="C:\wamp64\www\SteamFa\Model\DB" />
       <recent name="C:\wamp64\www\SteamFa\View" />
     </key>
@@ -221,14 +223,7 @@
       <workItem from="1623833979477" duration="445000" />
       <workItem from="1624134302283" duration="695000" />
       <workItem from="1624177440738" duration="2701000" />
-      <workItem from="1624196496388" duration="10750000" />
-    </task>
-    <task id="LOCAL-00042" summary="- add edit product&#10;- add edit user&#10;- Optimization panel">
-      <created>1619821577836</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1619821577836</updated>
+      <workItem from="1624196496388" duration="15564000" />
     </task>
     <task id="LOCAL-00043" summary="- add edit product&#10;- add edit user&#10;- Optimization panel">
       <created>1619860475935</created>
@@ -566,7 +561,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624201322430</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="- add role&#10;- add column_name function">
+      <created>1624219268179</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1624219268179</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -586,7 +588,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="- login complete&#10;- autocomplete form after error&#10;- sign up email duplicate control" />
     <MESSAGE value="- sign-up and sign-in controlled by Authentication check class&#10;- login user done&#10;- perform design&#10;---&#10;stable version 9 :)" />
     <MESSAGE value="- show immortals item page&#10;- perform header" />
     <MESSAGE value="- perform header" />
@@ -611,7 +612,8 @@
     <MESSAGE value="- catalog products bug fixed and improve design" />
     <MESSAGE value="- some bug fixed" />
     <MESSAGE value="- add view role page&#10;- add count function to table" />
-    <option name="LAST_COMMIT_MESSAGE" value="- add view role page&#10;- add count function to table" />
+    <MESSAGE value="- add role&#10;- add column_name function" />
+    <option name="LAST_COMMIT_MESSAGE" value="- add role&#10;- add column_name function" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

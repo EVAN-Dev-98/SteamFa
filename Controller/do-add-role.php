@@ -13,9 +13,8 @@ if (isset($_POST['submit'])){
     $params = $_POST;
     unset($params['submit']);
     foreach ($params as $key => $value){
-        if ($value === 'on'){
+        if ($value === 'on')
             $params[$key] = 1;
-        }
     }
     Role::add($params);
     Alert::alerts("مجوز " . $params['name'] . " با موفقیت درج شد.","","info");

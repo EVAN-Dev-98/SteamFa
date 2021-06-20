@@ -45,13 +45,13 @@ if (!function_exists("get_view")){
 
 // for include maybe header.php in View/template folder
 if (!function_exists("get_template")){
-    function get_template($name , $addition = "" , $title = "استیم فارسی | عنوان ندارد" , $args = array()){
+    function get_template($tname , $addition = "" , $title = "استیم فارسی | عنوان ندارد" , $args = array()){
         if (!$addition == ""){
             $addition = "-{$addition}";
         }
         include "__php__.php";
         extract($args);
-        include "{$Template}{$name}{$addition}.php";
+        include "{$Template}{$tname}{$addition}.php";
     }
 }
 
