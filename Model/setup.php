@@ -158,6 +158,7 @@ $Query = "CREATE TABLE Role (
     MessageAdd BOOLEAN DEFAULT 0,
     MessageEdit BOOLEAN DEFAULT 0,
     MessageDelete BOOLEAN DEFAULT 0,
+    MessageViewOther BOOLEAN DEFAULT 0,
     MessageEditOther BOOLEAN DEFAULT 0,
     MessageDeleteOther BOOLEAN DEFAULT 0,
     status VARCHAR (20) DEFAULT 'normal',
@@ -209,6 +210,7 @@ if (!$SoftSetup){
         "MessageAdd" => 1,
         "MessageEdit" => 1,
         "MessageDelete" => 1,
+        "MessageViewOther" => 1,
         "MessageEditOther" => 1,
         "MessageDeleteOther" => 1
     );
@@ -238,6 +240,7 @@ if (!$SoftSetup){
         "MessageAdd" => 1,
         "MessageEdit" => 1,
         "MessageDelete" => 1,
+        "MessageViewOther" => 1,
         "MessageEditOther" => 0,
         "MessageDeleteOther" => 1
     );
@@ -267,6 +270,7 @@ if (!$SoftSetup){
         "MessageAdd" => 1,
         "MessageEdit" => 1,
         "MessageDelete" => 1,
+        "MessageViewOther" => 0,
         "MessageEditOther" => 0,
         "MessageDeleteOther" => 0
     );
@@ -296,6 +300,7 @@ if (!$SoftSetup){
         "MessageAdd" => 1,
         "MessageEdit" => 1,
         "MessageDelete" => 1,
+        "MessageViewOther" => 0,
         "MessageEditOther" => 0,
         "MessageDeleteOther" => 0
     );

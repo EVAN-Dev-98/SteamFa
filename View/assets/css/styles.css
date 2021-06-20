@@ -87,6 +87,14 @@ a:active {
      clear: both;
 }
 
+.cursor_p{
+     cursor: pointer;
+}
+
+.user_select_n{
+     user-select: none;
+}
+
 nav ul li {
      display: inline-block;
 }

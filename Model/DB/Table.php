@@ -77,5 +77,11 @@ if (!class_exists('Table')){
                       WHERE {$where} AND status != 'deleted'";
             return $GLOBALS['db'] -> Execute($query);
         }
+        static public function column_name( $where = "true" ){
+            $TableName = static::class;
+            $query = "SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS
+            WHERE TABLE_NAME = '{$TableName}'";
+            return $GLOBALS['db'] -> Execute($query);
+        }
     }
 }
