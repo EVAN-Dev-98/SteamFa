@@ -6,7 +6,6 @@ include "__php__.php";
 if (isset($_POST['submit'])){
     $db = new DB();
     $params = SafeScript($_POST);
-    $params = BlockSqlInjection($params);
     $table = User::find("email = '{$params['email']}'");
     if ( !isset($table[0]) ){ // if not find inserted email
         if ($params['password'] === $params['re-password']){ // password and re-password is true
@@ -19,7 +18,7 @@ if (isset($_POST['submit'])){
             if (isset($_SESSION['redirect'])){
                 $redirect = $_SESSION['redirect'];
                 unset($_SESSION['redirect']);
-                if ($redirect == view("home") || $redirect == view("../")){
+                if ($redirect == view("home") || $redirect == view("../index")){
                     redirect(account("dashboard.php"));
                 }
                 else

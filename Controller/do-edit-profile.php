@@ -10,7 +10,6 @@ if (!Authorization::check("UserEdit")){
 if ( isset($_POST['submit']) ){
     $db = new DB();
     $params = SafeScript($_POST);
-    $params = BlockSqlInjection($params);
     unset($params['submit']);
     $params['id'] = $_SESSION['uid'];
     $table = User::find("id = {$params['id']}");

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="--- biggest CHANGE ---&#10;- Authorize everything (sidebar,account,controller,...)&#10;- Spilt product AND item&#10;- Split user items AND all-items&#10;- add change password&#10;- add function for return user role_name&#10;- perform a lot of bugs&#10;--- other facilities as soon :) ---">
+    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- catalog products bug fixed and improve design">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/get-item.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/get-item.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/View/assets/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/product-template.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/product-template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/do-edit-profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-edit-profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/do-edit-user.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-edit-user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/do-sign-in.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-sign-in.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/do-sign-up.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-sign-up.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +54,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="ReaderModeSettings">
@@ -211,14 +212,13 @@
       <workItem from="1623347929619" duration="7270000" />
       <workItem from="1623575639491" duration="21000" />
       <workItem from="1623748793333" duration="247000" />
-      <workItem from="1623757753910" duration="6261000" />
-    </task>
-    <task id="LOCAL-00039" summary="- edit user profile in panel">
-      <created>1619793417438</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1619793417439</updated>
+      <workItem from="1623757753910" duration="6557000" />
+      <workItem from="1623833512351" duration="106000" />
+      <workItem from="1623833637400" duration="51000" />
+      <workItem from="1623833698953" duration="254000" />
+      <workItem from="1623833979477" duration="445000" />
+      <workItem from="1624134302283" duration="695000" />
+      <workItem from="1624177440738" duration="1452000" />
     </task>
     <task id="LOCAL-00040" summary="- edit user profile in panel">
       <created>1619805596694</created>
@@ -556,7 +556,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623355113396</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="- catalog products bug fixed and improve design">
+      <created>1623765023734</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1623765023734</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -576,7 +583,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="- add csgo item done&#10;dota2 items as sooon" />
     <MESSAGE value="- add csgo item done&#10;- add dota2 items done&#10;- basic view catalog" />
     <MESSAGE value="- add alert class&#10;- All Notifications Done :)" />
     <MESSAGE value="- login complete&#10;- autocomplete form after error&#10;- sign up email duplicate control" />
@@ -601,7 +607,8 @@
     <MESSAGE value="- setup bug fixed" />
     <MESSAGE value="- perform dota2 heroes" />
     <MESSAGE value="--- biggest CHANGE ---&#10;- Authorize everything (sidebar,account,controller,...)&#10;- Spilt product AND item&#10;- Split user items AND all-items&#10;- add change password&#10;- add function for return user role_name&#10;- perform a lot of bugs&#10;--- other facilities as soon :) ---" />
-    <option name="LAST_COMMIT_MESSAGE" value="--- biggest CHANGE ---&#10;- Authorize everything (sidebar,account,controller,...)&#10;- Spilt product AND item&#10;- Split user items AND all-items&#10;- add change password&#10;- add function for return user role_name&#10;- perform a lot of bugs&#10;--- other facilities as soon :) ---" />
+    <MESSAGE value="- catalog products bug fixed and improve design" />
+    <option name="LAST_COMMIT_MESSAGE" value="- catalog products bug fixed and improve design" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
