@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- add delete-role">
+    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- version 10.5">
+      <change afterPath="$PROJECT_DIR$/Model/Form.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/do-delete-item.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-delete-item.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/do-delete-message.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-delete-message.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/do-delete-role.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-delete-role.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/do-delete-user.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-delete-user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/View/assets/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/about.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/profile-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/profile-panel.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +60,8 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="AtomConfig" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="ReaderModeSettings">
@@ -216,14 +226,24 @@
       <workItem from="1623833979477" duration="445000" />
       <workItem from="1624134302283" duration="695000" />
       <workItem from="1624177440738" duration="2701000" />
-      <workItem from="1624196496388" duration="15967000" />
-    </task>
-    <task id="LOCAL-00045" summary="- add edit product&#10;- add edit user&#10;- Optimization panel">
-      <created>1619861589894</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1619861589894</updated>
+      <workItem from="1624196496388" duration="16360000" />
+      <workItem from="1624301934983" duration="966000" />
+      <workItem from="1624303010911" duration="81000" />
+      <workItem from="1624303104515" duration="71000" />
+      <workItem from="1624303189260" duration="938000" />
+      <workItem from="1624308967869" duration="920000" />
+      <workItem from="1624389021725" duration="6940000" />
+      <workItem from="1624433535685" duration="4656000" />
+      <workItem from="1624446362574" duration="8347000" />
+      <workItem from="1624475565295" duration="2542000" />
+      <workItem from="1624484826726" duration="287000" />
+      <workItem from="1624518121105" duration="4387000" />
+      <workItem from="1624541859674" duration="594000" />
+      <workItem from="1624628287815" duration="3136000" />
+      <workItem from="1624650367781" duration="594000" />
+      <workItem from="1624705904344" duration="605000" />
+      <workItem from="1624710937794" duration="1832000" />
+      <workItem from="1624729528604" duration="5570000" />
     </task>
     <task id="LOCAL-00046" summary="- Database Table Classes Use inheritance :)&#10;- Improvement setup Like Handle Some Errors&#10;- The panel became more beautiful">
       <created>1619992032980</created>
@@ -561,7 +581,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624224275003</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="- version 10.5">
+      <created>1624224410886</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1624224410886</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -581,7 +608,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="- perform header" />
     <MESSAGE value="- fix profile panel&#10;- add authentication-check file for easy way to check user&#10;fix all bugs as soon :)" />
     <MESSAGE value="- rework header with bootstrap&#10;- rework header panel with bootstrap&#10;- rework sign-up page with bootstrap&#10;- rework sign-in page with bootstrap" />
     <MESSAGE value="- perform redirect" />
@@ -606,7 +632,8 @@
     <MESSAGE value="- add role&#10;- add column_name function" />
     <MESSAGE value="- add edit-role" />
     <MESSAGE value="- add delete-role" />
-    <option name="LAST_COMMIT_MESSAGE" value="- add delete-role" />
+    <MESSAGE value="- version 10.5" />
+    <option name="LAST_COMMIT_MESSAGE" value="- version 10.5" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

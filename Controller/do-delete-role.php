@@ -9,7 +9,7 @@ if (!Authorization::check("RoleMaster")){
 
 if (isset($_GET['id'])){
     $id = $_GET['id'];
-    if (is_numeric($id) && $id > 0){
+    if (real_number($id)){
         $db = new DB();
         $table = Role::find("id = {$id}");
         if (isset($table[0])){

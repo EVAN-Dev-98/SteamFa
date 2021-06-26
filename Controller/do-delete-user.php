@@ -22,7 +22,7 @@ if ( isset( $_GET['self'] ) ) {
 elseif ( isset( $_GET['id'] ) ) {
     if ( Authorization::check("UserDeleteOther") ) {
         $id = $_GET['id'];
-        if (is_numeric($id) && $id > 0) {
+        if (real_number($id)) {
             $db = new DB();
             $table = User::find("id = {$id}");
             if (isset($table[0])) {

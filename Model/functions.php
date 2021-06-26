@@ -4,6 +4,7 @@ include "Alert.php";
 include "DB/DB.php";
 include "Security/Authentication.php";
 include "Security/Authorization.php";
+include "Form.php";
 
 if (!function_exists("redirect")){
     function redirect ($address){
@@ -146,5 +147,11 @@ if (!function_exists("role_name")){
             default:
                 return "تعیین نشده";
         }
+    }
+}
+
+if (!function_exists("real_number")){
+    function real_number( $x ): bool{
+        return ( is_numeric($x) && is_float($x) );
     }
 }

@@ -2,15 +2,15 @@
     <h2>ویرایش اطلاعات</h2>
 </header>
 <main>
-    <?php
-    $alerts = Alert::alerts();
-    if ($alerts) echo $alerts;
-    if (isset($_SESSION['ins-params'])){
-        $params = $_SESSION['ins-params'];
-        unset($_SESSION['ins-params']);
-        extract($params);
-    }
-    ?>
+<?php
+$alerts = Alert::alerts();
+if ($alerts) echo $alerts;
+if (isset($_SESSION['ins-params'])){
+    $params = $_SESSION['ins-params'];
+    unset($_SESSION['ins-params']);
+    extract($params);
+}
+?>
     <form action="<?php echo controller("do-edit-profile.php"); ?>" method="post">
         <section class="input-group mb-3">
             <span class="input-group-text">نام و نام خانوادگی</span>

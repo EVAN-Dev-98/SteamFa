@@ -5,7 +5,7 @@ include "__php__.php";
 if ( isset( $_GET['self'] ) ) {
     if ( Authorization::check("ItemDelete") ) {
         $id = $_GET['self'];
-        if (is_numeric($id) && $id > 0) {
+        if (real_number($id)) {
             $db = new DB();
             $table = Product::find("id = {$id}");
             if (isset($table[0])) {
@@ -26,7 +26,7 @@ if ( isset( $_GET['self'] ) ) {
 elseif ( isset( $_GET['id'] ) ) {
     if ( Authorization::check("ItemDeleteOther") ) {
         $id = $_GET['id'];
-        if (is_numeric($id) && $id > 0) {
+        if (real_number($id)) {
             $db = new DB();
             $table = Product::find("id = {$id}");
             if (isset($table[0])) {
