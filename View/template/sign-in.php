@@ -9,6 +9,8 @@ if (isset($_SESSION['ins-email'])){
     <form class="form-sign-in" action="<?php echo controller("do-sign-in.php"); ?>" method="post">
         <a class="d-block mb-4" href="<?php echo view("home.php"); ?>"><img src="<?php echo assets("images/steam-icon.png"); ?>" width="80" height="80" alt="steamfarsi"></a>
         <h2>ورود</h2>
+        <?php echo Form::CSRF_Token(); ?>
+
         <section class="form-floating mt-4 mb-3">
             <input type="email" class="form-control" name="email" id="floatingInputEmail" placeholder="ایمیل" value="<?php if (isset($email)) echo $email; ?>" required>
             <label for="floatingInputEmail">ایمیل</label>

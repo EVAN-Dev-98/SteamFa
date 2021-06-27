@@ -109,6 +109,8 @@ $quality = array(
 </header>
 <main>
     <form action="<?php echo controller("do-add-item.php"); ?>" method="post">
+        <?php echo Form::CSRF_Token(); ?>
+
         <!-- attr_name for product -->
         <section class="input-group mb-3" id="s_attr_name">
             <span class="input-group-text">نام بازی : </span>

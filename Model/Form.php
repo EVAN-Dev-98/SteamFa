@@ -147,6 +147,14 @@ EOT;
             $this -> input_text("password" , $name , $label , "input-group" , $id , $value , $helper , $placeholder , $options);
         }
         // -----------------------------------------------------------------------------------------
+        static public function CSRF_Token(): string{
+            $token = Validation::Token_Generator();
+            $_SESSION['CSRF_Token'] = $token;
+            return <<<EOT
+<input type='hidden' name="csrf_token" value="{$token}">
+EOT;
+        }
+        // -----------------------------------------------------------------------------------------
         public function __toString(){
             $action = $this->action;
             $submit = $this->submit;
@@ -156,6 +164,7 @@ EOT;
 
 <form action = "{$action}" method = "post" enctype = "multipart/form-data" class="container {$form_class}">
 EOT;
+            $result .= self::CSRF_Token();
             foreach($this -> InputArray as $inputString)
                 $result .= $inputString;
             $result .= <<< EOT

@@ -10,6 +10,8 @@ if (isset($_SESSION['ins-params'])){
     <form class="form-sign-up" action="<?php echo controller("do-sign-up.php"); ?>" method="post">
         <a class="d-block mb-4" href="<?php echo view("home.php"); ?>"><img src="<?php echo assets("images/steam-icon.png"); ?>" width="80" height="80" alt="steamfarsi"></a>
         <h2>ثبت نام</h2>
+        <?php echo Form::CSRF_Token(); ?>
+
         <section class="row g-2 mt-4 mb-3">
             <section class="col-md-5">
                 <section class="form-floating">

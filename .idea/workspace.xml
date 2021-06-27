@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- version 10.5">
-      <change afterPath="$PROJECT_DIR$/Model/Form.php" afterDir="false" />
+    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- add Form Class (form creator)&#10;- make contact form with class Form&#10;- add function real_number&#10;- version 11">
+      <change afterPath="$PROJECT_DIR$/Model/Security/Validation.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/do-delete-item.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-delete-item.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/do-delete-message.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-delete-message.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/do-delete-role.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-delete-role.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/do-delete-user.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-delete-user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/do-contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/do-sign-in.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-sign-in.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/do-sign-up.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-sign-up.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Form.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/View/assets/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/about.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/profile-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/profile-panel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/sign-in.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/sign-in.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/sign-up.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/sign-up.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -243,14 +241,8 @@
       <workItem from="1624650367781" duration="594000" />
       <workItem from="1624705904344" duration="605000" />
       <workItem from="1624710937794" duration="1832000" />
-      <workItem from="1624729528604" duration="5570000" />
-    </task>
-    <task id="LOCAL-00046" summary="- Database Table Classes Use inheritance :)&#10;- Improvement setup Like Handle Some Errors&#10;- The panel became more beautiful">
-      <created>1619992032980</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1619992032980</updated>
+      <workItem from="1624729528604" duration="6043000" />
+      <workItem from="1624799973851" duration="1431000" />
     </task>
     <task id="LOCAL-00047" summary="- add delete-product&#10;- add delete-user&#10;- add delete-message&#10;- add status field to all tables">
       <created>1620048079887</created>
@@ -588,7 +580,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624224410886</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="- add Form Class (form creator)&#10;- make contact form with class Form&#10;- add function real_number&#10;- version 11">
+      <created>1624736747109</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1624736747110</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -608,7 +607,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="- fix profile panel&#10;- add authentication-check file for easy way to check user&#10;fix all bugs as soon :)" />
     <MESSAGE value="- rework header with bootstrap&#10;- rework header panel with bootstrap&#10;- rework sign-up page with bootstrap&#10;- rework sign-in page with bootstrap" />
     <MESSAGE value="- perform redirect" />
     <MESSAGE value="- perform dashboard" />
@@ -633,7 +631,8 @@
     <MESSAGE value="- add edit-role" />
     <MESSAGE value="- add delete-role" />
     <MESSAGE value="- version 10.5" />
-    <option name="LAST_COMMIT_MESSAGE" value="- version 10.5" />
+    <MESSAGE value="- add Form Class (form creator)&#10;- make contact form with class Form&#10;- add function real_number&#10;- version 11" />
+    <option name="LAST_COMMIT_MESSAGE" value="- add Form Class (form creator)&#10;- make contact form with class Form&#10;- add function real_number&#10;- version 11" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
