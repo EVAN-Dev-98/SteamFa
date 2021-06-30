@@ -211,7 +211,7 @@ if (!$SoftSetup){
         "role_id" => 1,
         "fname" => "Admin",
         "email" => "Admin@{$SiteName}.ir",
-        "password" => password_hash("1234", PASSWORD_DEFAULT),
+        "password" => password_hash("Ev1273321103aN", PASSWORD_DEFAULT),
         "img" => "/SteamFa/View/assets/images/icons/user-1.png",
     );
 

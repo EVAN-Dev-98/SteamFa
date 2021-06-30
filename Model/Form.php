@@ -35,7 +35,9 @@ EOT;
             $this -> InputArray[] = $result;
         }
         // -----------------------------------------------------------------------------------------
-        private function input_text( $type , $name , $label , $style , $id , $value , $helper , $placeholder , $options ){
+        private function input_text( $type , $name , $label , $options , $style , $id , $value , $helper , $placeholder ){
+            $options_array = explode("|",$options);
+            $options = implode(" ",$options_array);
             $lbl = <<<EOT
 <label class="form-label" for="{$id}">{$label}</label>
 EOT;
@@ -56,12 +58,12 @@ EOT;
             $this -> template( $result , $style , $helper );
         }
         // -----------------------------------------------------------------------------------------
-        private function input_text_area( $name , $label , $style , $rows , $cols , $id , $value , $helper , $placeholder ){
+        private function input_text_area( $name , $label , $options , $style , $rows , $cols , $id , $value , $helper , $placeholder ){
             $lbl = <<<EOT
 <label class="form-label" for="{$id}">{$label}</label>
 EOT;
             $input = <<<EOT
-<textarea class="form-control py-2" name="{$name}" id="{$id}" rows="{$rows}" cols="{$cols}" placeholder="{$placeholder}">{$value}</textarea>
+<textarea class="form-control py-2" name="{$name}" id="{$id}" rows="{$rows}" cols="{$cols}" placeholder="{$placeholder}" {$options}>{$value}</textarea>
 EOT;
             $result = '';
             if ( !isset($style) )
@@ -87,64 +89,70 @@ EOT;
         public function text( $name , $label , $options = null , $id = null , $value = null , $helper = null , $placeholder = null ){
             if ( !isset($id) )
                 $id = $name;
-            $this -> input_text("text" , $name , $label , null , $id , $value , $helper , $placeholder , $options);
+            $this -> input_text("text" , $name , $label , $options , null , $id , $value , $helper , $placeholder);
         }
         // -----------------------------------------------------------------------------------------
         public function text_floating( $name , $label , $options = null , $id = null , $value = null , $helper = null ){
             if ( !isset($id) )
                 $id = $name;
             $placeholder = $name;
-            $this -> input_text("text" , $name , $label , "form-floating" , $id , $value , $helper , $placeholder , $options);
+            $this -> input_text("text" , $name , $label , $options , "form-floating" , $id , $value , $helper , $placeholder);
         }
         // -----------------------------------------------------------------------------------------
         public function text_group( $name , $label , $options = null , $id = null , $value = null , $helper = null , $placeholder = null ){
             if ( !isset($id) )
                 $id = $name;
-            $this -> input_text("text" , $name , $label , "input-group" , $id , $value , $helper , $placeholder , $options);
+            $this -> input_text("text" , $name , $label , $options , "input-group" , $id , $value , $helper , $placeholder);
         }
         // -----------------------------------------------------------------------------------------
         public function email( $name , $label , $options = null , $id = null , $value = null , $helper = null , $placeholder = null ){
             if ( !isset($id) )
                 $id = $name;
-            $this -> input_text("email" , $name , $label , null , $id , $value , $helper , $placeholder , $options);
+            $options .= " pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$' title='ایمیل وارد شده درست نمیباشد'";
+            $this -> input_text("email" , $name , $label , $options , null , $id , $value , $helper , $placeholder);
         }
         // -----------------------------------------------------------------------------------------
         public function email_floating( $name , $label , $options = null , $id = null , $value = null , $helper = null ){
             if ( !isset($id) )
                 $id = $name;
+            $options .= " pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$' title='ایمیل وارد شده درست نمیباشد'";
             $placeholder = $name;
-            $this -> input_text("email" , $name , $label , "form-floating" , $id , $value , $helper , $placeholder , $options);
+            $this -> input_text("email" , $name , $label , $options , "form-floating" , $id , $value , $helper , $placeholder);
         }
         // -----------------------------------------------------------------------------------------
         public function email_group( $name , $label , $options = null , $id = null , $value = null , $helper = null , $placeholder = null ){
             if ( !isset($id) )
                 $id = $name;
-            $this -> input_text("email" , $name , $label , "input-group" , $id , $value , $helper , $placeholder , $options);
+            $options .= " pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$' title='ایمیل وارد شده درست نمیباشد'";
+            $this -> input_text("email" , $name , $label , $options , "input-group" , $id , $value , $helper , $placeholder);
         }
         // -----------------------------------------------------------------------------------------
-        public function text_area( $name , $label , $rows , $cols = "24" , $id = null , $value = null , $helper = null , $placeholder = null ){
+        public function text_area( $name , $label , $options , $rows , $cols = "24" , $id = null , $value = null , $helper = null , $placeholder = null ){
             if ( !isset($id) )
                 $id = $name;
-            $this -> input_text_area( $name , $label , null , $rows , $cols , $id , $value , $helper , $placeholder );
+            $this -> input_text_area( $name , $label , $options , null , $rows , $cols , $id , $value , $helper , $placeholder );
         }
         // -----------------------------------------------------------------------------------------
         public function password( $name , $label , $options = null , $id = null , $value = null , $helper = null , $placeholder = null ){
             if ( !isset($id) )
                 $id = $name;
-            $this -> input_text("password" , $name , $label , null , $id , $value , $helper , $placeholder , $options);
+            $options .= " pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}'";
+            $this -> input_text("password" , $name , $label , $options , null , $id , $value , $helper , $placeholder);
         }
         // -----------------------------------------------------------------------------------------
         public function password_floating( $name , $label , $options = null , $id = null , $value = null , $helper = null ){
             if ( !isset($id) )
                 $id = $name;
+            $options .= " pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}'";
             $placeholder = $name;
-            $this -> input_text("password" , $name , $label , "form-floating" , $id , $value , $helper , $placeholder , $options);
+            $this -> input_text("password" , $name , $label , $options , "form-floating" , $id , $value , $helper , $placeholder);
         }
         // -----------------------------------------------------------------------------------------
         public function password_group( $name , $label , $options = null , $id = null , $value = null , $helper = null , $placeholder = null ){
             if ( !isset($id) )
                 $id = $name;
-            $this -> input_text("password" , $name , $label , "input-group" , $id , $value , $helper , $placeholder , $options);
+            $options .= " pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}'";
+            $this -> input_text("password" , $name , $label , $options , "input-group" , $id , $value , $helper , $placeholder);
         }
         // -----------------------------------------------------------------------------------------
         static public function CSRF_Token(): string{

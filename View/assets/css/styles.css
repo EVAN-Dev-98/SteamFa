@@ -893,3 +893,24 @@ a.like , a.liked{
 a.bookmark , a.bookmarked{
      color: #2ECC71;
 }
+
+/* Validation */
+input[type=text]:focus:valid,
+input[type=email]:focus:valid,
+input[type=password]:focus:valid,
+input[type=number]:focus:valid,
+input[type=time]:focus:valid,
+input[type=date]:focus:valid,
+textarea:focus:valid{
+     border: 2px solid #2ECC71;
+}
+
+input[type=text]:focus:invalid,
+input[type=email]:focus:invalid,
+input[type=password]:focus:invalid,
+input[type=number]:focus:invalid,
+input[type=time]:focus:invalid,
+input[type=date]:focus:invalid,
+textarea:focus:invalid{
+     border: 2px solid #E74C3C;
+}
