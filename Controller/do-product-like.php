@@ -19,7 +19,14 @@ if ( Authentication::check() ){
                 ];
                 Product_Like::add($params);
             }
-            redirect(view("catalog.php#Products"));
+            if ( isset($_SESSION['redirect']) ){
+                $address = $_SESSION['redirect'];
+                unset($_SESSION['redirect']);
+                redirect($address);
+            }
+            else{
+                redirect(view("catalog.php#Products"));
+            }
         }
         else
             Alert::alerts("شناسه نامعتبر!");

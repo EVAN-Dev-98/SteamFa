@@ -67,6 +67,7 @@ if (!class_exists('Table')){
                       WHERE {$where}
                       AND {$joined_table}.{$table_name}_id = {$TableName}.id
                       AND {$TableName}.status != 'deleted'
+                      AND {$joined_table}.status != 'deleted'
                       ORDER BY {$TableName}.{$order}
                       LIMIT {$offset} , {$count}";
             return $GLOBALS['db'] -> Execute($query);
