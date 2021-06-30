@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- add Validation Class&#10;- add CSRF Token to forms and Validation ( sign-in , sign-up , contact , add-item ) others as soon :)" />
+    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="version 11.5">
+      <change afterPath="$PROJECT_DIR$/Controller/do-product-bookmark.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/do-product-like.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/DB/Product_Bookmark.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/DB/Product_Like.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/get-item.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/get-item.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/DB/DB.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DB/DB.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/DB/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DB/Role.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/setup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/View/assets/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/product-template.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/product-template.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -232,14 +245,16 @@
       <workItem from="1624705904344" duration="605000" />
       <workItem from="1624710937794" duration="1832000" />
       <workItem from="1624729528604" duration="6043000" />
-      <workItem from="1624799973851" duration="1779000" />
-    </task>
-    <task id="LOCAL-00048" summary="- Access Modifier Changed :)">
-      <created>1620050326873</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1620050326873</updated>
+      <workItem from="1624799973851" duration="2945000" />
+      <workItem from="1624907233260" duration="714000" />
+      <workItem from="1624952151468" duration="263000" />
+      <workItem from="1624954918645" duration="1793000" />
+      <workItem from="1624964760542" duration="20000" />
+      <workItem from="1624971220646" duration="1158000" />
+      <workItem from="1624976115056" duration="184000" />
+      <workItem from="1624978714869" duration="1577000" />
+      <workItem from="1624982568053" duration="222000" />
+      <workItem from="1625026863442" duration="5193000" />
     </task>
     <task id="LOCAL-00049" summary="- SiteVersion = 6.7">
       <created>1620050515424</created>
@@ -577,7 +592,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624801765565</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="version 11.5">
+      <created>1624801858055</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1624801858055</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -597,7 +619,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="- perform redirect" />
     <MESSAGE value="- perform dashboard" />
     <MESSAGE value="- add auto logout&#10;- session cookie edit parameters&#10;- perform sign up&#10;- perform delete message and delete product" />
     <MESSAGE value="- add master-panel :)&#10;- rework panel with master-panel&#10;- edit roles&#10;- remove duplicate codes" />
@@ -622,7 +643,8 @@
     <MESSAGE value="- version 10.5" />
     <MESSAGE value="- add Form Class (form creator)&#10;- make contact form with class Form&#10;- add function real_number&#10;- version 11" />
     <MESSAGE value="- add Validation Class&#10;- add CSRF Token to forms and Validation ( sign-in , sign-up , contact , add-item ) others as soon :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="- add Validation Class&#10;- add CSRF Token to forms and Validation ( sign-in , sign-up , contact , add-item ) others as soon :)" />
+    <MESSAGE value="version 11.5" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 11.5" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

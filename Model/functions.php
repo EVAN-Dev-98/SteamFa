@@ -153,6 +153,6 @@ if (!function_exists("role_name")){
 
 if (!function_exists("real_number")){
     function real_number( $x ): bool{
-        return ( is_numeric($x) && is_float($x) );
+        return ( is_numeric($x) && !is_float($x) );
     }
 }

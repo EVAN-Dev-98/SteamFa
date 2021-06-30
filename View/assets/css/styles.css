@@ -879,3 +879,17 @@ body.wallpaper{
 .p-card{
      border-radius: .5em;
 }
+a.like:hover,
+a.bookmark:hover{
+     font-weight: 900;
+}
+a.liked:hover,
+a.bookmarked:hover{
+     font-weight: 400;
+}
+a.like , a.liked{
+     color: #FF5733;
+}
+a.bookmark , a.bookmarked{
+     color: #2ECC71;
+}

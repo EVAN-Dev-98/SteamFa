@@ -8,7 +8,7 @@ $p_dota2 = Product::find_join("attr_dota2");
 $p_all = array_merge($p_csgo,$p_dota2);
 $alerts = Alert::alerts();
 ?>
-<section class="container mt-5">
+<section class="container mt-5" id="Products">
     <?php if ($alerts) { ?><section> <?php echo $alerts; ?> </section><?php } ?>
     <section class="row">
         <?php

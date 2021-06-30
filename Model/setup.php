@@ -133,6 +133,36 @@ elseif ($result == 1050){
     Alert::alerts("جدول کاربران در پایگاه داده وجود دارد","","info");
 }
 
+$Query = "CREATE TABLE Product_Like (
+    id INT NOT NULL AUTO_INCREMENT,
+    user_id INT,
+    product_id INT,
+    status VARCHAR (20) DEFAULT 'normal',
+    PRIMARY KEY (id)
+    )ENGINE = INNODB";
+$result = $db->Execute($Query);
+if ($result == 0){
+    Alert::alerts('جدول لایک محصولات با موفقیت ایجاد شد','','success');
+}
+elseif ($result == 1050){
+    Alert::alerts("جدول لایک محصولات در پایگاه داده وجود دارد","","info");
+}
+
+$Query = "CREATE TABLE Product_Bookmark (
+    id INT NOT NULL AUTO_INCREMENT,
+    user_id INT,
+    product_id INT,
+    status VARCHAR (20) DEFAULT 'normal',
+    PRIMARY KEY (id)
+    )ENGINE = INNODB";
+$result = $db->Execute($Query);
+if ($result == 0){
+    Alert::alerts('جدول ذخیره محصولات با موفقیت ایجاد شد','','success');
+}
+elseif ($result == 1050){
+    Alert::alerts("جدول ذخیره محصولات در پایگاه داده وجود دارد","","info");
+}
+
 $Query = "CREATE TABLE Role (
     id INT NOT NULL AUTO_INCREMENT,
     name VARCHAR (20),
