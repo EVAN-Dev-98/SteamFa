@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- add product_liked in Panel&#10;- add product_bookmarked in Panel&#10;- perform Product_Like&#10;- perform Product_Bookmark">
+    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="html Validation for Front :)&#10;- email inputs validation&#10;- password inputs validation&#10;- other text field validation&#10;Back End Validation as SooN :)">
+      <change afterPath="$PROJECT_DIR$/Model/Form/Contact.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Form/sign-in.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/setup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/View/assets/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/do-contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/do-sign-in.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-sign-in.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Form/Form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Security/Validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Security/Validation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/contact.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/View/template/sign-in.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/sign-in.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,11 +76,11 @@
       <recent name="C:\wamp64\www\SteamFa\View" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\SteamFa\Model\Form" />
       <recent name="C:\wamp64\www\SteamFa\Controller" />
       <recent name="C:\wamp64\www\SteamFa\Model\DB" />
       <recent name="C:\wamp64\www\SteamFa\View\account" />
       <recent name="C:\wamp64\www\SteamFa\View\template" />
-      <recent name="C:\wamp64\www\SteamFa\View" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -249,14 +254,8 @@
       <workItem from="1624978714869" duration="1577000" />
       <workItem from="1624982568053" duration="222000" />
       <workItem from="1625026863442" duration="11026000" />
-      <workItem from="1625056363506" duration="8443000" />
-    </task>
-    <task id="LOCAL-00051" summary="- improvement include All Files :)">
-      <created>1620134083666</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1620134083666</updated>
+      <workItem from="1625056363506" duration="9645000" />
+      <workItem from="1625117261752" duration="16230000" />
     </task>
     <task id="LOCAL-00052" summary="- improvement include All Files :)">
       <created>1620134598524</created>
@@ -594,7 +593,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625040228199</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="html Validation for Front :)&#10;- email inputs validation&#10;- password inputs validation&#10;- other text field validation&#10;Back End Validation as SooN :)">
+      <created>1625076797582</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1625076797583</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -614,7 +620,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="- add master-panel :)&#10;- rework panel with master-panel&#10;- edit roles&#10;- remove duplicate codes" />
     <MESSAGE value="- add Authorization class for Check Permissions&#10;- add-product checked&#10;- add find_join function&#10;- add more Roles&#10;- add more Permissions&#10;- panel sidebar menu click toggle show or hide handle with javascript&#10;----&#10;more controller Authorization check as soon :)" />
     <MESSAGE value="- add master for views&#10;- add dota2 products page&#10;- rework all views with master" />
     <MESSAGE value="- redirect bug fixed&#10;- perform design panel need a little more ... :)" />
@@ -639,7 +644,8 @@
     <MESSAGE value="version 11.5" />
     <MESSAGE value="- add Product_Like&#10;- add Product_Bookmark" />
     <MESSAGE value="- add product_liked in Panel&#10;- add product_bookmarked in Panel&#10;- perform Product_Like&#10;- perform Product_Bookmark" />
-    <option name="LAST_COMMIT_MESSAGE" value="- add product_liked in Panel&#10;- add product_bookmarked in Panel&#10;- perform Product_Like&#10;- perform Product_Bookmark" />
+    <MESSAGE value="html Validation for Front :)&#10;- email inputs validation&#10;- password inputs validation&#10;- other text field validation&#10;Back End Validation as SooN :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="html Validation for Front :)&#10;- email inputs validation&#10;- password inputs validation&#10;- other text field validation&#10;Back End Validation as SooN :)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

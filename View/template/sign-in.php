@@ -1,15 +1,7 @@
 <?php
 get_template("head","",$title);
-$email = '';
-if (isset($_SESSION['ins-email'])){
-    $email = $_SESSION['ins-email'];
-    unset($_SESSION['ins-email']);
-}
 
-$form = new Form(controller("do-sign-in.php"),"ورود","w-100 btn-lg","my-3");
-$form->email_floating("email","ایمیل","required",null,$email);
-$form->password_floating("password","گذرواژه","required",null,null,"حداقل 8 کاراکتر و ترکیبی از حروف کوچک و بزرگ و اعداد");
-
+$form = new sign_in(controller("do-sign-in.php"),"ورود",null,"w-100 btn-lg","my-3");
 ?>
 <body class="text-center sign">
     <section class="form-sign-in">
