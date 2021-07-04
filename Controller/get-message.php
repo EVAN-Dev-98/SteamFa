@@ -1,6 +1,11 @@
 <?php
-
+/* Created By Evan ( Sajad Gholami ) */
 include "__php__.php";
+
+if (!Authorization::check("MessageViewOther")){
+    Alert::alerts("متاسفانه شما مجوز مشاهده پیام های تماس با ما را ندارید!");
+    redirect(account("dashboard.php"));
+}
 
 $db = new DB();
 $table = Messages::find();

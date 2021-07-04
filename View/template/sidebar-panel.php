@@ -36,7 +36,7 @@ $role_name = role_name( $role_id );
                         <?php } ?>
                 </ul>
             </li>
-            <li class="items<?php if ($activePage == "show-messages") echo " active"; ?>"><a href="<?php echo account("show-messages.php"); ?>"><span class="far fa-envelope"></span><p>پیام های تماس با ما</p></a></li>
+            <?php if ( Authorization::check( "MessageViewOther" ) ) { ?><li class="items<?php if ($activePage == "show-messages") echo " active"; ?>"><a href="<?php echo account("show-messages.php"); ?>"><span class="far fa-envelope"></span><p>پیام های تماس با ما</p></a></li><?php } ?>
             <li class="items close"><a href="<?php echo controller("do-logout.php"); ?>"><span class="fad fa-times-hexagon"></span><p>خروج</p></a></li>
         </ul>
     </nav>
