@@ -23,5 +23,14 @@ if (!class_exists("Validation")) {
         static public function password( $string ): bool{
             return filter_var($string, FILTER_VALIDATE_REGEXP, array("options"=>array("regexp"=>"/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/")));
         }
+        static public function image( $path ): bool{
+            if ( getimagesize( $path ) )
+                return true;
+            else
+                return false;
+        }
+        static public function Size( $size , $max = 10240 /*1Mb*/ ): bool{
+            return $size < $max;
+        }
     }
 }

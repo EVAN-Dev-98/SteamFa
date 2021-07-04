@@ -45,7 +45,7 @@ switch ($attr_name){
             <?php if ( $owner_id == Authentication::uid() ) { ?>
                 <section class="card-footer">
                     <?php if (Authorization::check("ItemDelete")) { ?>
-                        <a href="#" class="btn btn-outline-danger mx-2">حذف</a>
+                        <a href="<?php echo controller("do-delete-item.php?id={$id}"); ?>" class="btn btn-outline-danger mx-2">حذف</a>
                     <?php } ?>
                     <?php if (Authorization::check("ItemEdit")) { ?>
                         <a href="#" class="btn btn-outline-warning mx-2">ویرایش</a>
@@ -56,7 +56,7 @@ switch ($attr_name){
                 <section class="card-footer">
                     <?php
                     if (Authorization::check("ItemDeleteOther")){ ?>
-                        <a href="#" class="btn btn-outline-danger mx-2">حذف</a>
+                        <a href="<?php echo controller("do-delete-item.php?id={$id}"); ?>" class="btn btn-outline-danger mx-2">حذف</a>
                     <?php }
                     if (Authorization::check("ItemEditOther")){ ?>
                         <a href="#" class="btn btn-outline-warning mx-2">ویرایش</a>

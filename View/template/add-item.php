@@ -108,7 +108,7 @@ $quality = array(
 <h2>افزودن آیتم</h2>
 </header>
 <main>
-    <form action="<?php echo controller("do-add-item.php"); ?>" method="post">
+    <form action="<?php echo controller("do-add-item.php"); ?>" method="post" enctype = "multipart/form-data">
         <?php echo Form::CSRF_Token(); ?>
 
         <!-- attr_name for product -->
@@ -199,7 +199,7 @@ $quality = array(
         <!-- img for product -->
         <section class="input-group mb-3" id="s_img">
             <span class="input-group-text">تصویر : </span>
-            <input class="form-control" type="file" name="img" id="img">
+            <input class="form-control" type="file" name="img" id="img" accept="image/png, image/gif, image/jpeg">
         </section>
         <!-- submit -->
         <input type="submit" name="submit" value="افزودن" class="btn btn-primary">

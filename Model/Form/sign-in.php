@@ -34,7 +34,7 @@ if (!class_exists("sign_in")) {
             }
             else
                 $error = '';
-            parent::password_floating("password","گذرواژه","required",$value,null,"حداقل 8 کاراکتر و ترکیبی از حروف کوچک و بزرگ و اعداد",$error);
+            parent::password_floating("password","گذرواژه","required",null,null,"حداقل 8 کاراکتر و ترکیبی از حروف کوچک و بزرگ و اعداد",$error);
         }
     }
 }

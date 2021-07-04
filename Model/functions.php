@@ -5,6 +5,7 @@ include "DB/DB.php";
 include "Security/Authentication.php";
 include "Security/Authorization.php";
 include "Security/Validation.php";
+include "upload.php";
 include "Form/Form.php";
 include "Form/Contact.php";
 include "Form/sign-in.php";

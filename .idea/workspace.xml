@@ -2,17 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="html Validation for Front :)&#10;- email inputs validation&#10;- password inputs validation&#10;- other text field validation&#10;Back End Validation as SooN :)">
-      <change afterPath="$PROJECT_DIR$/Model/Form/Contact.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Model/Form/sign-in.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/upload.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/do-contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/do-sign-in.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-sign-in.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Form/Form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/do-add-item.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-add-item.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Form/sign-in.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Form/sign-in.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/Security/Validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Security/Validation.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/contact.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/sign-in.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/sign-in.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/catalog.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/catalog.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/add-item.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/add-item.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/product-template.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/product-template.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,21 +253,11 @@
       <workItem from="1624982568053" duration="222000" />
       <workItem from="1625026863442" duration="11026000" />
       <workItem from="1625056363506" duration="9645000" />
-      <workItem from="1625117261752" duration="16230000" />
-    </task>
-    <task id="LOCAL-00052" summary="- improvement include All Files :)">
-      <created>1620134598524</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1620134598524</updated>
-    </task>
-    <task id="LOCAL-00053" summary="- bug fixed">
-      <created>1620157890272</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1620157890272</updated>
+      <workItem from="1625117261752" duration="16395000" />
+      <workItem from="1625160178185" duration="31000" />
+      <workItem from="1625214665002" duration="1121000" />
+      <workItem from="1625216070480" duration="620000" />
+      <workItem from="1625373205299" duration="9405000" />
     </task>
     <task id="LOCAL-00054" summary="- use dynamic variables in extract function :)">
       <created>1620158909420</created>
@@ -600,7 +588,21 @@
       <option name="project" value="LOCAL" />
       <updated>1625076797583</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="- add Validation Back End&#10;- Contact AND Sign-in Form Validate Back End Complete&#10;more Validation as soon :)">
+      <created>1625160127307</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1625160127308</updated>
+    </task>
+    <task id="LOCAL-00102" summary="Stable Version 12 :)">
+      <created>1625160207093</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1625160207093</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -620,8 +622,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="- add Authorization class for Check Permissions&#10;- add-product checked&#10;- add find_join function&#10;- add more Roles&#10;- add more Permissions&#10;- panel sidebar menu click toggle show or hide handle with javascript&#10;----&#10;more controller Authorization check as soon :)" />
-    <MESSAGE value="- add master for views&#10;- add dota2 products page&#10;- rework all views with master" />
     <MESSAGE value="- redirect bug fixed&#10;- perform design panel need a little more ... :)" />
     <MESSAGE value="- add function SafeScript&#10;- SafeScript on all inputs&#10;- all delete process validate" />
     <MESSAGE value="- prevent sql injection attack :)" />
@@ -645,7 +645,9 @@
     <MESSAGE value="- add Product_Like&#10;- add Product_Bookmark" />
     <MESSAGE value="- add product_liked in Panel&#10;- add product_bookmarked in Panel&#10;- perform Product_Like&#10;- perform Product_Bookmark" />
     <MESSAGE value="html Validation for Front :)&#10;- email inputs validation&#10;- password inputs validation&#10;- other text field validation&#10;Back End Validation as SooN :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="html Validation for Front :)&#10;- email inputs validation&#10;- password inputs validation&#10;- other text field validation&#10;Back End Validation as SooN :)" />
+    <MESSAGE value="- add Validation Back End&#10;- Contact AND Sign-in Form Validate Back End Complete&#10;more Validation as soon :)" />
+    <MESSAGE value="Stable Version 12 :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Stable Version 12 :)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
