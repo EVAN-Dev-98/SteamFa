@@ -8,6 +8,7 @@ $View = $root . "View/";
 $Controller = $root . "Controller/";
 $Template = $View . "template/";
 $Account = $View . "account/";
+$Assets = $View . "assets/";
 
 include_once $Model . "initializer.php";
 

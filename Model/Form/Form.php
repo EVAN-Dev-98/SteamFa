@@ -10,11 +10,11 @@ if (!class_exists("Form")) {
         }
         // -----------------------------------------------------------------------------------------
         public $valid = true;
-        var array $InputArray = [];
-        var string $action = '';
-        var string $submit = '';
-        var string $submit_class = '';
-        var string $form_class = '';
+        public array $InputArray = [];
+        public string $action = '';
+        public string $submit = '';
+        public string $submit_class = '';
+        public string $form_class = '';
         // -----------------------------------------------------------------------------------------
         private function template( $input , $style , $helper = null , $error = null ){
             $result = <<<EOT

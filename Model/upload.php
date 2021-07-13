@@ -27,7 +27,8 @@ if (!class_exists("upload")) {
             $fileName = time() . '.' . $extension;
 
             $uid = Authentication::uid();
-            $destinationPath = assets("uploads/") . $uid . '/';
+            include "__php__.php";
+            $destinationPath = $Assets . "uploads/" . $uid . '/';
 
             if( !is_dir( $destinationPath ) ){
                 mkdir( $destinationPath );
@@ -37,7 +38,7 @@ if (!class_exists("upload")) {
 
             move_uploaded_file( $this -> fileInformationArray['tmp_name'] , $destinationAddress);
 
-            return $destinationAddress;
+            return assets("uploads/") . $uid . '/' . $fileName;
         }
     }
 }

@@ -16,16 +16,19 @@ if (isset($_POST['submit'])){
         $product["name"] = $_POST["name"];
         $product["attr_name"] = $_POST["attr_name"];
         $product["number"] = $_POST["number"];
-        /*$image = new upload($_FILES['img']);
-        if ( $image -> validate() ){
-            $imageSRC = $image -> permanent();
-            $product["img"] = $imageSRC;
+        $image = new upload($_FILES['img']);
+        if ( $_FILES['img']['tmp_name'] !== '' ) {
+            if ( $image -> validate() ){
+                $imageSRC = $image -> permanent();
+                $product["img"] = $imageSRC;
+            }
+            else{
+                Alert::alerts("خطا در اعتبارسنجی تصویر!");
+                redirect(account("dashboard.php"));
+            }
         }
-        else{
-            Alert::alerts("خطا در اعتبارسنجی تصویر!");
-            redirect(account("dashboard.php"));
-        }*/
-        $product["img"] = assets("images/default-item.jpg");
+        else
+            $product["img"] = assets("images/default-item.jpg");
         $product["owner_id"] = Authentication::uid();
         $attr["product_id"] = Product::add($product);
         switch ($product["attr_name"]){

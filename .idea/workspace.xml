@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- some edit Validation&#10;- add upload function for product pictures">
+      <change afterPath="$PROJECT_DIR$/View/assets/uploads/1/1626188502.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/assets/uploads/1/1626188528.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/do-add-item.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-add-item.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/get-message.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/get-message.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/sidebar-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/sidebar-panel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Form/Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Form/Form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/upload.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/upload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__php__.php" beforeDir="false" afterPath="$PROJECT_DIR$/__php__.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,13 +51,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Controller" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="AtomConfig" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="ReaderModeSettings">
@@ -253,6 +256,9 @@
       <workItem from="1625214665002" duration="1121000" />
       <workItem from="1625216070480" duration="620000" />
       <workItem from="1625373205299" duration="10457000" />
+      <workItem from="1626184887915" duration="113000" />
+      <workItem from="1626185025295" duration="992000" />
+      <workItem from="1626186948929" duration="1596000" />
     </task>
     <task id="LOCAL-00055" summary="- use php -&gt; htmlspecialchars() function">
       <created>1620161682012</created>
