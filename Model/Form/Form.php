@@ -22,11 +22,11 @@ if (!class_exists("Form")) {
     <section class="{$style} mb-3">
         {$input}
 EOT;
-            if ( isset($helper) ) {
+            if ( $helper != null ) {
                 $result .= <<<EOT
 <section class = "text-muted w-100">{$helper}</section>
 EOT; }
-            if ( isset($error) ) {
+            if ( $error != null ) {
                 $result .= <<<EOT
 <section class = "text-danger">{$error}</section>
 EOT; }
@@ -156,6 +156,25 @@ EOT;
                 $id = $name;
             $options .= " pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}' title='گذرواژه وارد شده مناسب نمیباشد'";
             $this -> input_text("password" , $name , $label , $options , "input-group" , $value , $id , $helper , $error , $placeholder);
+        }
+        // -----------------------------------------------------------------------------------------
+        public function Captcha_Generator( $error = null ){
+            $result = <<<EOT
+<section class="form-control mb-3 bg-steamfa-2">
+<img src="/SteamFa/Model/Form/captcha.php" alt="captcha-image" draggable="false">
+EOT;
+            if ( $error != null ) {
+                $result .= <<<EOT
+<section class = "text-warning">{$error}</section>
+EOT; }
+            $result .= <<<EOT
+</section>
+<section class="form-floating mb-3">
+<input type="text" class="form-control py-2" name="captcha" id="captcha" maxlength="5" placeholder="captcha">
+<label class="form-label" for="captcha">مقدار تصویر</label>
+</section>
+EOT;
+            $this -> InputArray[] = $result;
         }
         // -----------------------------------------------------------------------------------------
         static public function CSRF_Token(): string{

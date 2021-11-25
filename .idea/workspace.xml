@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- some edit Validation&#10;- add upload function for product pictures">
-      <change afterPath="$PROJECT_DIR$/View/assets/uploads/1/1626188502.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/assets/uploads/1/1626188528.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Form/__php__.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/do-add-item.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-add-item.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/Form/Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Form/Form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/upload.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/upload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/__php__.php" beforeDir="false" afterPath="$PROJECT_DIR$/__php__.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Form/sign-in.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Form/sign-in.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Security/Validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Security/Validation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/sign-in.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/sign-in.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/sign-up.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/sign-up.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,13 +53,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Model/Form" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="ReaderModeSettings">
@@ -65,11 +67,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\SteamFa\Model\Form" />
       <recent name="C:\wamp64\www\SteamFa\Controller" />
       <recent name="C:\wamp64\www\SteamFa\View\account" />
       <recent name="C:\wamp64\www\SteamFa\View\template" />
       <recent name="C:\wamp64\www\SteamFa\Model\DB" />
-      <recent name="C:\wamp64\www\SteamFa\View" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\SteamFa\Model\Form" />
@@ -259,6 +261,12 @@
       <workItem from="1626184887915" duration="113000" />
       <workItem from="1626185025295" duration="992000" />
       <workItem from="1626186948929" duration="1596000" />
+      <workItem from="1637790851537" duration="153000" />
+      <workItem from="1637791030956" duration="120000" />
+      <workItem from="1637791162613" duration="119000" />
+      <workItem from="1637791293462" duration="38000" />
+      <workItem from="1637822078544" duration="2233000" />
+      <workItem from="1637826982793" duration="12171000" />
     </task>
     <task id="LOCAL-00055" summary="- use php -&gt; htmlspecialchars() function">
       <created>1620161682012</created>

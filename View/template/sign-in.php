@@ -19,4 +19,4 @@ $form = new sign_in(controller("do-sign-in.php"),"ورود",null,"w-100 btn-lg",
         <?php } ?>
     </section>
     <?php get_template("bootstrap"); ?>
-</body> 
+</body>

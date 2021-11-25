@@ -8,7 +8,7 @@ if (!class_exists("sign_in")) {
                 $params = $_SESSION['params'];
                 unset($_SESSION['params']);
             }
-            $allowedInputs = ["email", "password"];
+            $allowedInputs = ["email", "password","captcha"];
             foreach ( $allowedInputs as $function ){
                 if ( isset( $params[$function] ) ){
                     $value = $params[$function];
@@ -35,6 +35,15 @@ if (!class_exists("sign_in")) {
             else
                 $error = '';
             parent::password_floating("password","گذرواژه","required",null,null,"حداقل 8 کاراکتر و ترکیبی از حروف کوچک و بزرگ و اعداد",$error);
+        }
+        public function captcha( $value = null ){
+            if ( isset($value) && !Validation::Captcha_Check($value) ){
+                $error = "مقدار تصویر وارد شده صحیح نمیباشد!";
+                $this-> valid = false;
+            }
+            else
+                $error = '';
+            parent::Captcha_Generator( $error );
         }
     }
 }
