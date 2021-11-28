@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- some edit Validation&#10;- add upload function for product pictures">
-      <change afterPath="$PROJECT_DIR$/Model/Form/__php__.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="I'm Started completing this project at today And Called That Version 0.45 because We will a long way to go ...&#10;- A review of the past&#10;- Add Captcha in Form and Validate">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/do-sign-in.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-sign-in.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/Form/Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Form/Form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Form/sign-in.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Form/sign-in.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Security/Validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Security/Validation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/settings.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/sign-in.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/sign-in.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/sign-up.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/sign-up.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -266,14 +260,8 @@
       <workItem from="1637791162613" duration="119000" />
       <workItem from="1637791293462" duration="38000" />
       <workItem from="1637822078544" duration="2233000" />
-      <workItem from="1637826982793" duration="12171000" />
-    </task>
-    <task id="LOCAL-00055" summary="- use php -&gt; htmlspecialchars() function">
-      <created>1620161682012</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1620161682012</updated>
+      <workItem from="1637826982793" duration="13539000" />
+      <workItem from="1638130580419" duration="2840000" />
     </task>
     <task id="LOCAL-00056" summary="- add product-detail">
       <created>1620164194442</created>
@@ -611,7 +599,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625383362211</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="I'm Started completing this project at today And Called That Version 0.45 because We will a long way to go ...&#10;- A review of the past&#10;- Add Captcha in Form and Validate">
+      <created>1637878507754</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1637878507754</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -631,7 +626,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="- add function SafeScript&#10;- SafeScript on all inputs&#10;- all delete process validate" />
     <MESSAGE value="- prevent sql injection attack :)" />
     <MESSAGE value="- prevent sql injection attack :)&#10;- rework master-panel&#10;- rework panel and sidebar" />
     <MESSAGE value="- add function BlockSqlInjection and we can easy use that&#10;- prevent sql and script injection on product-detail , sign-up and sign-in pages" />
@@ -656,7 +650,8 @@
     <MESSAGE value="- add Validation Back End&#10;- Contact AND Sign-in Form Validate Back End Complete&#10;more Validation as soon :)" />
     <MESSAGE value="Stable Version 12 :)" />
     <MESSAGE value="- some edit Validation&#10;- add upload function for product pictures" />
-    <option name="LAST_COMMIT_MESSAGE" value="- some edit Validation&#10;- add upload function for product pictures" />
+    <MESSAGE value="I'm Started completing this project at today And Called That Version 0.45 because We will a long way to go ...&#10;- A review of the past&#10;- Add Captcha in Form and Validate" />
+    <option name="LAST_COMMIT_MESSAGE" value="I'm Started completing this project at today And Called That Version 0.45 because We will a long way to go ...&#10;- A review of the past&#10;- Add Captcha in Form and Validate" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

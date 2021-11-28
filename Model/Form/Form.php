@@ -170,7 +170,7 @@ EOT; }
             $result .= <<<EOT
 </section>
 <section class="form-floating mb-3">
-<input type="text" class="form-control py-2" name="captcha" id="captcha" maxlength="5" placeholder="captcha">
+<input type="text" class="form-control py-2 text-center" name="captcha" id="captcha" placeholder="captcha" required pattern="[a-zA-Z0-9]{5}$" title="مقدار تصویر وارد شده صحیح نمیباشد!">
 <label class="form-label" for="captcha">مقدار تصویر</label>
 </section>
 EOT;
