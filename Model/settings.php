@@ -22,7 +22,7 @@ $dbName = DBNAME;
 $dbCharset = CHARSET;
 $dbCollate = COLLATE;
 
-$SiteVersion = 0.45;
+$SiteVersion = 0.46;
 
 $SoftSetup = true;
 $FirstTime = false;

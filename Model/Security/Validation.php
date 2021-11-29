@@ -11,6 +11,9 @@ if (!class_exists("Validation")) {
         static public function Captcha_Check( $string ):bool{
             return $_SESSION['captcha'] === $string;
         }
+        /*static public function Re_Password_Check( $string ):bool{
+            return $_SESSION['password'] === $string;
+        }*/
         static public function Number( $string ):bool{
             return filter_var($string,FILTER_VALIDATE_INT ) !== false;
         }

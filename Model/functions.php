@@ -9,6 +9,7 @@ include "upload.php";
 include "Form/Form.php";
 include "Form/Contact.php";
 include "Form/sign-in.php";
+include "Form/sign-up.php";
 
 if (!function_exists("redirect")){
     function redirect ($address){

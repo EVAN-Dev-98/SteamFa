@@ -9,16 +9,21 @@ if (isset($_POST['submit'])) {
         unset($_SESSION['CSRF_Token']);
         $params = SafeScript($_POST);
         unset($params['submit']);
+        if ( isset( $_POST['captcha'] )){
+            $form = new Contact(controller("do-contact.php"),"ارسال",$params);
+            if ( $form -> valid ){
+                $db = new DB();
+                unset($params['captcha']);
+                Messages::add($params);
+            }
+            else{
+                $_SESSION['params'] = $params;
+                redirect(view("contact.php"));
+            }
+        }
+        else
+            Alert::alerts("مقدار تصویر نامعتبر!");
 
-        $form = new Contact(controller("do-contact.php"),"ارسال",$params);
-        if ( $form -> valid ){
-            $db = new DB();
-            Messages::add($params);
-        }
-        else{
-            $_SESSION['params'] = $params;
-            redirect(view("contact.php"));
-        }
     }
     else
         Alert::alerts("توکن CSRF نامعتبر!");
