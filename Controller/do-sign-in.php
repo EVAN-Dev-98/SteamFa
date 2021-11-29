@@ -9,7 +9,7 @@ if (isset($_POST['submit'])){
         unset($_SESSION['CSRF_Token']);
         $params = SafeScript($_POST);
         $params = BlockSqlInjection($params);
-        if ( isset( $_POST['captcha'] )){
+        if ( isset( $params['captcha'] )){
             $form = new sign_in(controller("do-sign-in.php"),"ورود",$params,"w-100 btn-lg","my-3");
             if ( $form -> valid ){
                 $db = new DB();
