@@ -10,6 +10,7 @@ include "Form/Form.php";
 include "Form/Contact.php";
 include "Form/sign-in.php";
 include "Form/sign-up.php";
+include "Steam/User_Info.php";
 
 if (!function_exists("redirect")){
     function redirect ($address){
