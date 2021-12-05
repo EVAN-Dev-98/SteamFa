@@ -14,6 +14,9 @@ if (! defined('COLLATE')) define('COLLATE','utf8mb4_unicode_ci');
 if (! defined('LoginDeadline')) define('LoginDeadline',15); // days
 if (! defined('ActivityDeadline')) define('ActivityDeadline',10); // minutes
 if (! defined('DOMAIN')) define('DOMAIN',$_SERVER['HTTP_HOST']);
+if (! defined('Domain_Name')) define('Domain_Name','localhost');
+if (! defined('API_KEY')) define('API_KEY','8E259226FE6CC590F1021F238E3E6657');
+
 
 $dbHost = DBHOST;
 $dbUser = DBUSER;
@@ -21,6 +24,8 @@ $dbPass = DBPASS;
 $dbName = DBNAME;
 $dbCharset = CHARSET;
 $dbCollate = COLLATE;
+$api_key = API_KEY;
+$domain_name = Domain_Name;
 
 $SiteVersion = 0.46;
 

@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- add sign-up Form as Class&#10;- add captcha to sign-up Form&#10;- add captcha to Contact Form&#10;- set Version to 0.46">
+    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- some bug fixed">
+      <change afterPath="$PROJECT_DIR$/Controller/do-steam-logout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Steam/Steam_Auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Steam/User_Info.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Steam/openid.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/do-sign-in.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-sign-in.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/do-sign-up.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-sign-up.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Security/Authentication.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Security/Authentication.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/settings.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,13 +52,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Model/Form" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../steam-aut" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="ReaderModeSettings">
@@ -68,11 +73,11 @@
       <recent name="C:\wamp64\www\SteamFa\Model\DB" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\SteamFa" />
       <recent name="C:\wamp64\www\SteamFa\Model\Form" />
       <recent name="C:\wamp64\www\SteamFa\Controller" />
       <recent name="C:\wamp64\www\SteamFa\Model\DB" />
       <recent name="C:\wamp64\www\SteamFa\View\account" />
-      <recent name="C:\wamp64\www\SteamFa\View\template" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -262,14 +267,16 @@
       <workItem from="1637822078544" duration="2233000" />
       <workItem from="1637826982793" duration="13539000" />
       <workItem from="1638130580419" duration="6127000" />
-      <workItem from="1638178766673" duration="2713000" />
-    </task>
-    <task id="LOCAL-00058" summary="- edit some html">
-      <created>1620732269058</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1620732269058</updated>
+      <workItem from="1638178766673" duration="3618000" />
+      <workItem from="1638191151506" duration="1615000" />
+      <workItem from="1638214436340" duration="2481000" />
+      <workItem from="1638383877312" duration="2393000" />
+      <workItem from="1638435733669" duration="3213000" />
+      <workItem from="1638537272513" duration="903000" />
+      <workItem from="1638607405843" duration="3000" />
+      <workItem from="1638608092049" duration="7941000" />
+      <workItem from="1638705219119" duration="509000" />
+      <workItem from="1638719089997" duration="936000" />
     </task>
     <task id="LOCAL-00059" summary="- database edit&#10;- Product table for all Products&#10;- attr_{name} for some specific category Products for now used 2 tables like attr_csgo and attr_dota2&#10;- edit setup and perform handle errors and alerts">
       <created>1620942315738</created>
@@ -607,7 +614,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638184177784</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="- some bug fixed">
+      <created>1638186424724</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1638186424724</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -634,7 +648,6 @@
     <MESSAGE value="- perform dota2 heroes" />
     <MESSAGE value="--- biggest CHANGE ---&#10;- Authorize everything (sidebar,account,controller,...)&#10;- Spilt product AND item&#10;- Split user items AND all-items&#10;- add change password&#10;- add function for return user role_name&#10;- perform a lot of bugs&#10;--- other facilities as soon :) ---" />
     <MESSAGE value="- catalog products bug fixed and improve design" />
-    <MESSAGE value="- some bug fixed" />
     <MESSAGE value="- add view role page&#10;- add count function to table" />
     <MESSAGE value="- add role&#10;- add column_name function" />
     <MESSAGE value="- add edit-role" />
@@ -652,7 +665,8 @@
     <MESSAGE value="I'm Started completing this project at today And Called That Version 0.45 because We will a long way to go ...&#10;- A review of the past&#10;- Add Captcha in Form and Validate" />
     <MESSAGE value="- Validate Captcha From BackEnd" />
     <MESSAGE value="- add sign-up Form as Class&#10;- add captcha to sign-up Form&#10;- add captcha to Contact Form&#10;- set Version to 0.46" />
-    <option name="LAST_COMMIT_MESSAGE" value="- add sign-up Form as Class&#10;- add captcha to sign-up Form&#10;- add captcha to Contact Form&#10;- set Version to 0.46" />
+    <MESSAGE value="- some bug fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="- some bug fixed" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

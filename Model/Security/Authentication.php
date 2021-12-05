@@ -12,6 +12,9 @@ if (!class_exists("Authentication")) {
         static public function logout(){
             unset( $_SESSION['uid'] );
         }
+        static public function steam_logout(){
+            unset( $_SESSION['steamid'] );
+        }
         static public function uid(){
             if (self::check()){
                 return $_SESSION['uid'];
