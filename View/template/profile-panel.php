@@ -26,11 +26,6 @@ if (isset($_SESSION['ins-params'])){
             <input type="password" name="password" class="form-control" aria-label="password" aria-describedby="password" required>
         </section>
         <section class="input-group mb-3">
-            <span class="input-group-text">لینک پروفایل استیم</span>
-            <input type="text" name="steam_url" value="<?php echo $steam_url; ?>" class="form-control dir-ltr">
-            <span class="input-group-text dir-ltr">https://steamcommunity.com/id/</span>
-        </section>
-        <section class="input-group mb-3">
             <section class="input-group-text">
                 <input class="form-check-input mt-0" type="radio" value="male" name="gender" id="male" <?php if ($gender === "male" ) { ?> checked <?php } ?>>
             </section>

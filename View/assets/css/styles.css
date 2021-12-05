@@ -657,6 +657,7 @@ footer .main-footer .info p {
      font-weight: 900;
      position: relative;
      top: 3px;
+     text-align: center;
 }
 .panel-sidebar nav ul li.items a span.icon-more{
      float: left;
@@ -743,16 +744,21 @@ footer .main-footer .info p {
      color: #ffffff;
      font-size: 1.2rem;
 }
-.panel-sidebar .user-panel .user-role{
+.panel-sidebar .user-panel .user-role,
+.panel-sidebar .user-panel .user-steam-check{
      text-align: right;
-     padding: .6rem .8rem;
+     padding: .6rem .8rem .2rem;
      cursor: pointer;
      color: #ffffff;
      font-size: 1rem;
 }
 .panel-sidebar .user-panel .user-info:hover,
-.panel-sidebar .user-panel .user-role:hover{
+.panel-sidebar .user-panel .user-role:hover,
+.panel-sidebar .user-panel .user-steam-check:hover{
      color: #c2c7d0;
+}
+.panel-sidebar .user-panel .user-steam-check p{
+     display: inline-block;
 }
 body.sign{
      display: flex;

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- some bug fixed">
-      <change afterPath="$PROJECT_DIR$/Controller/do-steam-logout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Model/Steam/Steam_Auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Model/Steam/User_Info.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Model/Steam/openid.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
+    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- Login With Steam :)&#10;- Awesome :)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Security/Authentication.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Security/Authentication.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/setup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/View/assets/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/edit-user-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/edit-user-panel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/profile-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/profile-panel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/sidebar-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/sidebar-panel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -276,14 +276,8 @@
       <workItem from="1638607405843" duration="3000" />
       <workItem from="1638608092049" duration="7941000" />
       <workItem from="1638705219119" duration="509000" />
-      <workItem from="1638719089997" duration="936000" />
-    </task>
-    <task id="LOCAL-00059" summary="- database edit&#10;- Product table for all Products&#10;- attr_{name} for some specific category Products for now used 2 tables like attr_csgo and attr_dota2&#10;- edit setup and perform handle errors and alerts">
-      <created>1620942315738</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1620942315738</updated>
+      <workItem from="1638719089997" duration="1734000" />
+      <workItem from="1638728591015" duration="3077000" />
     </task>
     <task id="LOCAL-00060" summary="- rework panel design">
       <created>1621020571806</created>
@@ -621,7 +615,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638186424724</updated>
     </task>
-    <option name="localTasksCounter" value="108" />
+    <task id="LOCAL-00108" summary="- Login With Steam :)&#10;- Awesome :)">
+      <created>1638720061325</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1638720061326</updated>
+    </task>
+    <option name="localTasksCounter" value="109" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -641,7 +642,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="- add function BlockSqlInjection and we can easy use that&#10;- prevent sql and script injection on product-detail , sign-up and sign-in pages" />
     <MESSAGE value="- edit product as soon&#10;- prevent sql and script injection on edit user page" />
     <MESSAGE value="- add change password" />
     <MESSAGE value="- setup bug fixed" />
@@ -666,7 +666,8 @@
     <MESSAGE value="- Validate Captcha From BackEnd" />
     <MESSAGE value="- add sign-up Form as Class&#10;- add captcha to sign-up Form&#10;- add captcha to Contact Form&#10;- set Version to 0.46" />
     <MESSAGE value="- some bug fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="- some bug fixed" />
+    <MESSAGE value="- Login With Steam :)&#10;- Awesome :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Login With Steam :)&#10;- Awesome :)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

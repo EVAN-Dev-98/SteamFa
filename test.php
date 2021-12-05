@@ -42,9 +42,8 @@ else{
     <p>Steam Avatar Medium : <img src="<?php echo $user_info->steamprofile['avatarmedium']; ?>" alt=""></p>
     <p>Steam Avatar Full : <img src="<?php echo $user_info->steamprofile['avatarfull']; ?>" alt=""></p>
     <a href="<?php echo controller("do-steam-logout.php") ?>">حذف اتصال اکانت استیم به حساب کاربری</a>
-<?php
-    var_dump($_SESSION);
-}
+<?php }
+var_dump($_SESSION);
 /*
 $appID = 730;
 $steamID = 76561198358256782;

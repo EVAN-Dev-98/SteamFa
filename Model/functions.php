@@ -155,6 +155,12 @@ if (!function_exists("role_name")){
     }
 }
 
+if (!function_exists("steam_check")){
+    function steam_check( $id ){
+
+    }
+}
+
 if (!function_exists("real_number")){
     function real_number( $x ): bool{
         return ( is_numeric($x) && !is_float($x) );

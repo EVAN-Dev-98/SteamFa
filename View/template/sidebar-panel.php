@@ -7,6 +7,8 @@ $role_name = role_name( $role_id );
         <img src="<?php echo assets("images/icons/user-1.png") ?>" alt="user-image" class="user-img">
         <a href="<?php ?>" class="user-info"><?php if (isset($fname)) echo $fname; if (isset($lname)) echo " " . $lname; ?></a>
         <p class="user-role">سطح کاربری : <?php echo $role_name; ?></p>
+        <?php if (empty($steamid)) { $steam_status = 'عدم اتصال'; $steam_status_b = false; } else { $steam_status = 'متصل'; $steam_status_b = true; } ?>
+        <section class="user-steam-check"><p>اتصال به استیم :</p><p style="padding-right: .2rem;<?php if ($steam_status_b){ echo 'color:#2ECC71;'; } else{ echo 'color:#E74C3C;'; } ?>"><?php echo $steam_status; ?></p></section>
     </section>
     <nav>
         <ul>
