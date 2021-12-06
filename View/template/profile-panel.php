@@ -37,4 +37,9 @@ if (isset($_SESSION['ins-params'])){
         </section>
         <input type="submit" name="submit" value="ویرایش" class="btn btn-outline-primary">
     </form>
+    <section class="steam-login">
+        <?php
+        if (steam_check($steam_id)){ ?><a href="<?php echo controller("do-steam-logout.php") ?>">حذف اتصال اکانت استیم به حساب کاربری</a><?php }
+        else{ ?><a href="<?php echo account("connect-steam") ?>">اتصال اکانت استیم به حساب کاربری</a><?php } ?>
+    </section>
 </main>

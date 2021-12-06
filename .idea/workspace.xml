@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- add steamid field to user structure&#10;- check steam connected in panel&#10;login with steam in panel as soon :)&#10;Awesome :)">
+      <change afterPath="$PROJECT_DIR$/View/account/connect-steam.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/do-steam-logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-steam-logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/DB/Table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DB/Table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Security/Authentication.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Security/Authentication.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Steam/Steam_Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Steam/Steam_Auth.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/setup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/template/profile-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/profile-panel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/template/sidebar-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/sidebar-panel.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -273,6 +280,7 @@
       <workItem from="1638705219119" duration="509000" />
       <workItem from="1638719089997" duration="1734000" />
       <workItem from="1638728591015" duration="5822000" />
+      <workItem from="1638814994739" duration="6070000" />
     </task>
     <task id="LOCAL-00061" summary="- add csgo item done&#10;dota2 items as sooon">
       <created>1621199934944</created>

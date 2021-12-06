@@ -120,7 +120,7 @@ $Query = "CREATE TABLE User (
     email VARCHAR(255),
     password VARCHAR(255),
     gender VARCHAR (6),
-    steamid VARCHAR (255),
+    steam_id VARCHAR (255),
     img VARCHAR(255),
     status VARCHAR (20) DEFAULT 'normal',
     PRIMARY KEY (id)

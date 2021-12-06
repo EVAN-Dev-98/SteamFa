@@ -156,14 +156,41 @@ if (!function_exists("role_name")){
     }
 }
 
-if (!function_exists("steam_check")){
-    function steam_check( $id ){
-
-    }
-}
-
 if (!function_exists("real_number")){
     function real_number( $x ): bool{
         return ( is_numeric($x) && !is_float($x) );
+    }
+}
+
+if (!function_exists("steam_check")){
+    function steam_check( $steam_id ): bool{
+        if (empty($steam_id))
+            return false;
+        else
+            return true;
+    }
+}
+
+if (!function_exists("steam_status")){
+    function steam_status( $steam_id ): string{
+        if (empty($steam_id))
+            return "عدم اتصال";
+        else
+            return "متصل";
+    }
+}
+
+if (!function_exists("steam_persona_state")){
+    function steam_persona_state( $id ): string{
+        return match ($id) {
+            0 => 'Offline',
+            1 => 'Online',
+            2 => 'Busy',
+            3 => 'Away',
+            4 => 'Snooze',
+            5 => 'looking to trade',
+            6 => 'looking to play',
+            default => 'No State Found',
+        };
     }
 }

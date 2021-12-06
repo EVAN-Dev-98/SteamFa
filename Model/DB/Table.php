@@ -84,5 +84,19 @@ if (!class_exists('Table')){
             WHERE TABLE_NAME = '{$TableName}'";
             return $GLOBALS['db'] -> Execute($query);
         }
+        static public function steam_logout( $id ){
+            $TableName = static::class;
+            $query = "UPDATE {$TableName}
+                      SET steam_id = null
+                      WHERE id = {$id}";
+            $result = $GLOBALS['db'] -> Execute($query);
+        }
+        static public function steam_login( $id , $steam_id ){
+            $TableName = static::class;
+            $query = "UPDATE {$TableName}
+                      SET steam_id = {$steam_id}
+                      WHERE id = {$id}";
+            $result = $GLOBALS['db'] -> Execute($query);
+        }
     }
 }
