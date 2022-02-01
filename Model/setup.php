@@ -202,6 +202,42 @@ elseif ($result == 1050){
     Alert::alerts("جدول نقش های کاربران در پایگاه داده وجود دارد","","info");
 }
 
+$Query = "CREATE TABLE CSGO_items (
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(120),
+    price INT,
+    PRIMARY KEY (id)
+    )ENGINE = INNODB";
+$result = $db->Execute($Query);
+if ($result == 0){
+    Alert::alerts('جدول آیتم های کانتر با موفقیت ایجاد شد','','success');
+}
+elseif ($result == 1050){
+    Alert::alerts("جدول آیتم های کانتر در پایگاه داده وجود دارد","","info");
+}
+
+$url = 'https://loot.farm/fullprice.json';
+$data = file_get_contents($url);
+$CSGO_items_array = json_decode($data);
+
+global $db;
+$db = new DB();
+
+//$csgo_item_counter = 0;
+foreach ($CSGO_items_array as $item){
+    /*if ($csgo_item_counter % 500 == 0){
+        sleep(1);
+    }*/
+    $item_select = array(
+        "name" => $item->name,
+        "price" => $item->price
+    );
+    CSGO_items::add($item_select);
+    //$csgo_item_counter ++;
+}
+
+unset($db);
+
 if (!$SoftSetup){
 
     global $db;

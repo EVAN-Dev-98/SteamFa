@@ -27,7 +27,7 @@ $dbCollate = COLLATE;
 $api_key = API_KEY;
 $domain_name = Domain_Name;
 
-$SiteVersion = 0.46;
+$SiteVersion = 0.47;
 
 $SoftSetup = true;
 $FirstTime = false;

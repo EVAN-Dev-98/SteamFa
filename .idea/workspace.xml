@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- add steamid field to user structure&#10;- check steam connected in panel&#10;login with steam in panel as soon :)&#10;Awesome :)">
-      <change afterPath="$PROJECT_DIR$/View/account/connect-steam.php" afterDir="false" />
+    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- login to steam with add steam_id to user database structure and don't use sessions&#10;- complete steam login and logout in user panel&#10;- add two table function for steam login and logout&#10;- add tree function for steam check status&#10;- rework database structure from steamid to steam_id&#10;Awesome :)">
+      <change afterPath="$PROJECT_DIR$/Model/DB/CSGO_items.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/do-steam-logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/do-steam-logout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/DB/Table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DB/Table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Security/Authentication.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Security/Authentication.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Steam/Steam_Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Steam/Steam_Auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/DB/DB.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DB/DB.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/settings.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/setup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/profile-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/profile-panel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/template/sidebar-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/sidebar-panel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +36,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="1pAikBauwmlAAgikeXTUbj9NyIY" />
   <component name="ProjectLevelVcsManager">
@@ -280,14 +281,19 @@
       <workItem from="1638705219119" duration="509000" />
       <workItem from="1638719089997" duration="1734000" />
       <workItem from="1638728591015" duration="5822000" />
-      <workItem from="1638814994739" duration="6070000" />
-    </task>
-    <task id="LOCAL-00061" summary="- add csgo item done&#10;dota2 items as sooon">
-      <created>1621199934944</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1621199934945</updated>
+      <workItem from="1638814994739" duration="6449000" />
+      <workItem from="1639835754914" duration="1571000" />
+      <workItem from="1639900559433" duration="2674000" />
+      <workItem from="1640987770034" duration="15000" />
+      <workItem from="1640987802701" duration="24000" />
+      <workItem from="1640987865582" duration="63000" />
+      <workItem from="1640988005635" duration="10000" />
+      <workItem from="1641034914554" duration="594000" />
+      <workItem from="1641050330084" duration="38000" />
+      <workItem from="1641132750093" duration="1038000" />
+      <workItem from="1643652520175" duration="6959000" />
+      <workItem from="1643706038531" duration="4028000" />
+      <workItem from="1643718023281" duration="631000" />
     </task>
     <task id="LOCAL-00062" summary="- add csgo item done&#10;- add dota2 items done&#10;- basic view catalog">
       <created>1621281719440</created>
@@ -625,7 +631,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638731979212</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="- login to steam with add steam_id to user database structure and don't use sessions&#10;- complete steam login and logout in user panel&#10;- add two table function for steam login and logout&#10;- add tree function for steam check status&#10;- rework database structure from steamid to steam_id&#10;Awesome :)">
+      <created>1638821485978</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1638821485978</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -641,11 +654,9 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="- add change password" />
     <MESSAGE value="- setup bug fixed" />
     <MESSAGE value="- perform dota2 heroes" />
     <MESSAGE value="--- biggest CHANGE ---&#10;- Authorize everything (sidebar,account,controller,...)&#10;- Spilt product AND item&#10;- Split user items AND all-items&#10;- add change password&#10;- add function for return user role_name&#10;- perform a lot of bugs&#10;--- other facilities as soon :) ---" />
@@ -670,7 +681,8 @@
     <MESSAGE value="- some bug fixed" />
     <MESSAGE value="- Login With Steam :)&#10;- Awesome :)" />
     <MESSAGE value="- add steamid field to user structure&#10;- check steam connected in panel&#10;login with steam in panel as soon :)&#10;Awesome :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="- add steamid field to user structure&#10;- check steam connected in panel&#10;login with steam in panel as soon :)&#10;Awesome :)" />
+    <MESSAGE value="- login to steam with add steam_id to user database structure and don't use sessions&#10;- complete steam login and logout in user panel&#10;- add two table function for steam login and logout&#10;- add tree function for steam check status&#10;- rework database structure from steamid to steam_id&#10;Awesome :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="- login to steam with add steam_id to user database structure and don't use sessions&#10;- complete steam login and logout in user panel&#10;- add two table function for steam login and logout&#10;- add tree function for steam check status&#10;- rework database structure from steamid to steam_id&#10;Awesome :)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

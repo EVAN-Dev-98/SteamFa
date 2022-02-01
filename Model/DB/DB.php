@@ -12,6 +12,7 @@ include "Messages.php";
 include "Role.php";
 include "Product_Like.php";
 include "Product_Bookmark.php";
+include "CSGO_items.php";
 
 if (!class_exists("DB")){
     class DB{
