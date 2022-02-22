@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- login to steam with add steam_id to user database structure and don't use sessions&#10;- complete steam login and logout in user panel&#10;- add two table function for steam login and logout&#10;- add tree function for steam check status&#10;- rework database structure from steamid to steam_id&#10;Awesome :)">
-      <change afterPath="$PROJECT_DIR$/Controller/get-inventory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Model/DB/Inventory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/account/show-inventory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/template/item-inventory-template.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/DB/CSGO_items.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DB/CSGO_items.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/DB/DB.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DB/DB.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/DB/Table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DB/Table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/setup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
+    <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- Save User Items From Steam Inventory to Database">
+      <change beforePath="$PROJECT_DIR$/View/template/sidebar-panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/template/sidebar-panel.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -300,14 +290,7 @@
       <workItem from="1645475268968" duration="444000" />
       <workItem from="1645477849200" duration="848000" />
       <workItem from="1645480170201" duration="2973000" />
-      <workItem from="1645503608547" duration="9417000" />
-    </task>
-    <task id="LOCAL-00062" summary="- add csgo item done&#10;- add dota2 items done&#10;- basic view catalog">
-      <created>1621281719440</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1621281719440</updated>
+      <workItem from="1645503608547" duration="9699000" />
     </task>
     <task id="LOCAL-00063" summary="- add alert class&#10;- All Notifications Done :)">
       <created>1621367726524</created>
@@ -645,7 +628,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638821485978</updated>
     </task>
-    <option name="localTasksCounter" value="111" />
+    <task id="LOCAL-00111" summary="- Save User Items From Steam Inventory to Database">
+      <created>1645514289533</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1645514289533</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -664,7 +654,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="- setup bug fixed" />
     <MESSAGE value="- perform dota2 heroes" />
     <MESSAGE value="--- biggest CHANGE ---&#10;- Authorize everything (sidebar,account,controller,...)&#10;- Spilt product AND item&#10;- Split user items AND all-items&#10;- add change password&#10;- add function for return user role_name&#10;- perform a lot of bugs&#10;--- other facilities as soon :) ---" />
     <MESSAGE value="- catalog products bug fixed and improve design" />
@@ -689,7 +678,8 @@
     <MESSAGE value="- Login With Steam :)&#10;- Awesome :)" />
     <MESSAGE value="- add steamid field to user structure&#10;- check steam connected in panel&#10;login with steam in panel as soon :)&#10;Awesome :)" />
     <MESSAGE value="- login to steam with add steam_id to user database structure and don't use sessions&#10;- complete steam login and logout in user panel&#10;- add two table function for steam login and logout&#10;- add tree function for steam check status&#10;- rework database structure from steamid to steam_id&#10;Awesome :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="- login to steam with add steam_id to user database structure and don't use sessions&#10;- complete steam login and logout in user panel&#10;- add two table function for steam login and logout&#10;- add tree function for steam check status&#10;- rework database structure from steamid to steam_id&#10;Awesome :)" />
+    <MESSAGE value="- Save User Items From Steam Inventory to Database" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Save User Items From Steam Inventory to Database" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
