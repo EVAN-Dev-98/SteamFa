@@ -1,10 +1,10 @@
 <?php
-require_once '__php__.php';
-
+/* Created By Evan ( Sajad Gholami ) */
+include "__php__.php";
 
 $appID = 730;
 $db = new DB();
-$user = User::find("id = 1");
+$user = User::find("id = {$_SESSION['uid']}");
 $user = $user[0];
 $steamID = $user['steam_id'];
 $inventoryJsonUrl = 'https://steamcommunity.com/inventory/'.$steamID.'/'.$appID.'/2?l=english&count=5000';
@@ -20,12 +20,23 @@ foreach ($inventories['descriptions'] as $key => $description) {
         $price = CSGO_items::find("name = '{$name}'");
         if (isset($price[0])){
             $items[$key] = [
-              'name' => $price[0]['name'],
-              'price' => $price[0]['price'],
-              'type' => $description['type']
+                'name' => $price[0]['name'],
+                'price' => $price[0]['price'],
+                'type' => $description['type']
             ];
             Inventory::add($items[$key]);
         }
     }
 }
 
+$products = Inventory::find();
+?>
+<section class="container mt-5" id="Products">
+    <section class="row">
+        <?php
+        foreach ($products as $row){
+            get_template_part("item","inventory-template",$row);
+        }
+        ?>
+    </section>
+</section>

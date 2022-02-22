@@ -13,6 +13,7 @@ include "Role.php";
 include "Product_Like.php";
 include "Product_Bookmark.php";
 include "CSGO_items.php";
+include "Inventory.php";
 
 if (!class_exists("DB")){
     class DB{

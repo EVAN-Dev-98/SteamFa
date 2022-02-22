@@ -98,5 +98,13 @@ if (!class_exists('Table')){
                       WHERE id = {$id}";
             $result = $GLOBALS['db'] -> Execute($query);
         }
+        static public function delete_all(){
+            $TableName = static::class;
+            $query = "DELETE FROM {$TableName} WHERE true";
+            $result = $GLOBALS['db'] -> Execute($query);
+            if ($result){
+                Alert::alerts("{$TableName} شما با موفقیت حذف شد!","","success");
+            }
+        }
     }
 }

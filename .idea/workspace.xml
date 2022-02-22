@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b48127b-2c9b-46ff-8731-a8f24b2f8169" name="Default Changelist" comment="- login to steam with add steam_id to user database structure and don't use sessions&#10;- complete steam login and logout in user panel&#10;- add two table function for steam login and logout&#10;- add tree function for steam check status&#10;- rework database structure from steamid to steam_id&#10;Awesome :)">
-      <change afterPath="$PROJECT_DIR$/Model/DB/CSGO_items.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/get-inventory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/DB/Inventory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/account/show-inventory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/template/item-inventory-template.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/DB/CSGO_items.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DB/CSGO_items.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/DB/DB.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DB/DB.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/DB/Table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DB/Table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/setup.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
     </list>
@@ -55,7 +58,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../steam-aut" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/View/account" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -69,9 +72,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\SteamFa\View\account" />
       <recent name="C:\wamp64\www\SteamFa\Model\Form" />
       <recent name="C:\wamp64\www\SteamFa\Controller" />
-      <recent name="C:\wamp64\www\SteamFa\View\account" />
       <recent name="C:\wamp64\www\SteamFa\View\template" />
       <recent name="C:\wamp64\www\SteamFa\Model\DB" />
     </key>
@@ -294,6 +297,10 @@
       <workItem from="1643652520175" duration="6959000" />
       <workItem from="1643706038531" duration="4028000" />
       <workItem from="1643718023281" duration="631000" />
+      <workItem from="1645475268968" duration="444000" />
+      <workItem from="1645477849200" duration="848000" />
+      <workItem from="1645480170201" duration="2973000" />
+      <workItem from="1645503608547" duration="9417000" />
     </task>
     <task id="LOCAL-00062" summary="- add csgo item done&#10;- add dota2 items done&#10;- basic view catalog">
       <created>1621281719440</created>

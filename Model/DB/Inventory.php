@@ -1,6 +1,6 @@
 <?php
-if (!class_exists('CSGO_items')){
-    class CSGO_items extends Table {
+if (!class_exists('Inventory')){
+    class Inventory extends Table {
         static public function find($where = "true" , $order = "" , $count = 0 , $offset = 0){
             $TableName = static::class;
             $query = "SELECT * FROM {$TableName}

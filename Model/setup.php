@@ -202,6 +202,21 @@ elseif ($result == 1050){
     Alert::alerts("جدول نقش های کاربران در پایگاه داده وجود دارد","","info");
 }
 
+$Query = "CREATE TABLE Inventory (
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR (200),
+    price VARCHAR (20),
+    type VARCHAR (200),
+    PRIMARY KEY (id)
+    )ENGINE = INNODB";
+$result = $db->Execute($Query);
+if ($result == 0){
+    Alert::alerts('جدول آیتم های استیم کاربر با موفقیت ایجاد شد','','success');
+}
+elseif ($result == 1050){
+    Alert::alerts("جدول آیتم های استیم کاربر در پایگاه داده وجود دارد","","info");
+}
+
 $Query = "CREATE TABLE CSGO_items (
     id INT NOT NULL AUTO_INCREMENT,
     name VARCHAR(120),
